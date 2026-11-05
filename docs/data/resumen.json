@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-05T16:45+00:00",
+ "actualizado": "2026-11-05T19:02+00:00",
  "ventana": "7d",
  "periodo": {
   "desde": "2026-10-29 00:50",
   "hasta": "2026-11-05 02:01"
  },
  "limpieza": {
-  "brutos_sudamerica": 139422,
+  "brutos_sudamerica": 145975,
   "en_peru": 1959,
   "sin_baja_confianza": 1746,
   "sin_duplicados": 1746,
