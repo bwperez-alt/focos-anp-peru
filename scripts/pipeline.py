@@ -316,9 +316,9 @@ def capas_territorio():
     zr = {f["properties"].get("zr_codi"): f["properties"].get("zr_nomb") for f in json.loads((BASE / "zonas_reservadas.geojson").read_text())["features"]}
     capas = [
         ("ANP nacional", Capa(BASE / "anp_nacional.geojson", lambda p: nombre_oficial(p.get("anp_cate"), p.get("anp_nomb")),
-                              lambda p: {"cat": p.get("anp_cate", ""), "codi": p.get("anp_codi", "")})),
+                              lambda p: {"cat": p.get("anp_cate", ""), "codi": p.get("anp_codi", ""), "ubpo": p.get("anp_ubpo", "")})),
         ("Zona reservada", Capa(BASE / "zonas_reservadas.geojson", lambda p: nombre_oficial("Zona Reservada", p.get("zr_nomb")),
-                                lambda p: {"cat": "Zona Reservada", "codi": p.get("zr_codi", "")})),
+                                lambda p: {"cat": "Zona Reservada", "codi": p.get("zr_codi", ""), "ubpo": p.get("zr_ubpo", "")})),
         ("Área de conservación regional", Capa(BASE / "acr.geojson", lambda p: nombre_oficial("Área de Conservación Regional", p.get("acr_nomb")),
                                                lambda p: {"cat": "Área de Conservación Regional", "codi": p.get("acr_codi", "")})),
         ("Área de conservación privada", Capa(BASE / "acp.geojson", lambda p: nombre_oficial("Área de Conservación Privada", p.get("acp_nomb")),

@@ -109,7 +109,7 @@ def recomendaciones(m: dict, clima_a: dict | None, vis_a: dict | None, eco: str,
         add("Emergencia", "INDECI reporta emergencias en el área o su entorno: consulta a la jefatura del ANP antes de viajar.", ", ".join(m.get("emerg_tipos", [])) or "Reporte del COEN", "media")
     if vis_a and mes in vis_a.get("meses_pico_num", []):
         add("Afluencia", "Temporada de mayor afluencia: reserva con anticipación, llega temprano y respeta los aforos.",
-            f"Meses de más visitas: {', '.join(vis_a.get('meses_pico', []))} (SERNANP)", "baja")
+            f"Meses de más visitas: {', '.join(vis_a.get('meses_pico', []))} ({'MINCETUR/SERNANP' if 'ultimo' in vis_a else 'SERNANP'})", "baja")
     for tema, texto in BASE_ECO.get(eco, []) + BASE_COMUN:
         r.append({"tema": tema, "texto": texto, "motivo": None, "nivel": "base", "tipo": "base"})
     return r
@@ -144,6 +144,7 @@ def ejecutar(salida: Path, capas_anp) -> dict:
     defo = {(r["area"], r["zona"]): r for r in _leer(salida / "deforestacion.json", {}).get("ranking_areas", [])}
     clima = {r["area"]: r for r in _leer(salida / "clima.json", {}).get("areas", [])}
     vis = _leer(salida / "visitas.json", {}).get("areas", {})
+    vis_act = _leer(salida / "visitas_actual.json", {}).get("sitios", {})
     mes = ahora.month
 
     filas = []
@@ -215,10 +216,10 @@ def ejecutar(salida: Path, capas_anp) -> dict:
                     if "tormenta" in av: partes.append("tormenta")
                     if "viento" in av: partes.append(f"ráfagas de {max((d.get('rafaga_kmh') or 0) for d in dias):.0f} km/h")
                     motivos.append("Pronóstico para hoy o mañana: " + ", ".join(partes))
-            va = vis.get(nom) or next((v for k, v in vis.items() if nom.startswith(k)), None)
+            va = vis_act.get(nom) or vis.get(nom) or next((v for k, v in vis.items() if nom.startswith(k)), None)
             cat = it["extra"].get("cat") or tipo
             eco = ecosistema(cat, nom, (ca or {}).get("elevacion"), lo)
-            filas.append({"area": nom, "categoria": cat, "codigo": it["extra"].get("codi", ""),
+            filas.append({"area": nom, "categoria": cat, "codigo": it["extra"].get("codi", ""), "departamentos": g.get("departamentos", ""),
                           "lon": round(lo, 3), "lat": round(la, 3), "nivel": nivel, "motivos": motivos, "ecosistema": eco,
                           "elevacion": (ca or {}).get("elevacion"), "temporada_alta": bool(va and mes in va.get("meses_pico_num", [])),
                           "recomendaciones": recomendaciones(m, ca, va, eco, mes), **m})

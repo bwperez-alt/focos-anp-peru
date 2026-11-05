@@ -34,7 +34,8 @@ def agrupar_anp(capas_anp) -> list[dict]:
     for tipo, capa in capas_anp[:2]:
         for it in capa.items:
             g = grupos.setdefault(it["nombre"], {"area": it["nombre"], "categoria": it["extra"].get("cat") or tipo,
-                                                 "codigo": it["extra"].get("codi", ""), "partes": []})
+                                                 "codigo": it["extra"].get("codi", ""), "partes": [],
+                                                 "departamentos": it["extra"].get("ubpo", "")})
             g["partes"].extend(it["partes"])
     for g in grupos.values():
         # centro ponderado por el tamaño del rectángulo de cada parte

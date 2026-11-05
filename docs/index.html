@@ -260,9 +260,12 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
       </div>
     </div>
     <div class="grid2" style="margin-top:16px">
-      <div class="card"><h3>Visitas a las ANP por mes (SERNANP)</h3><div class="anios" id="anioVis"></div><div class="pad"><svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales a las ANP"></svg><div class="cat" id="visNota"></div></div></div>
-      <div class="card"><h3 id="rankVisT">Áreas más visitadas (promedio anual)</h3><div class="scroll" style="max-height:250px"><table id="rankVis"><thead><tr><th>Área</th><th class="n">Visitas/año</th><th>Meses pico</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="card"><h3 id="visT">Visitas a las ANP por mes</h3>
+        <div class="filters" id="visFiltro" style="border-top:1px solid var(--line);display:none"><select id="selVis" aria-label="Elegir ANP"></select><span id="visRes" style="color:var(--ink-3);font-size:12.5px;margin-left:auto"></span></div>
+        <div class="anios" id="anioVis" style="padding-top:10px"></div><div class="pad"><svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales a las ANP"></svg><div class="cat" id="visNota"></div></div></div>
+      <div class="card"><h3 id="rankVisT">Áreas más visitadas (promedio anual)</h3><div class="scroll" style="max-height:300px"><table id="rankVis"><thead><tr><th>Área</th><th class="n">Visitas/año</th><th>Meses pico</th></tr></thead><tbody></tbody></table></div></div>
     </div>
+    <div class="card" style="margin-top:16px" id="regCard" hidden><h3 id="regT">Flujo turístico por región · arribos a hospedajes</h3><div class="bars" id="regVis"></div><div class="note" id="regNota" style="padding-top:0"></div></div>
   </section>
 
   <!-- ============================== FICHAS ============================== -->
@@ -372,8 +375,8 @@ const fechaCorta = d => new Date((d.length <= 10 ? d + "T12:00" : d.replace(" ",
 async function cargar(){
   if (window.__DATOS__) return window.__DATOS__;
   const j = p => fetch(p, {cache:"no-cache"}).then(r => r.ok ? r.json() : null).catch(() => null);
-  const n = ["clima","visitas","defoS","hansen","airemod","resumen","focos","estado","aire","deforestacion","defoGrid","riesgos","eco","anp","zr","acr","acp","za"];
-  const u = ["data/clima.json","data/visitas.json","data/defo_sernanp.json","estatico/hansen.json","data/aire_modelo.json","data/resumen.json","data/focos.geojson","data/estado.json","data/aire.json","data/deforestacion.json","data/deforestacion_rejilla.geojson","data/riesgos.json","data/ecoturismo.json",
+  const n = ["visAct","clima","visitas","defoS","hansen","airemod","resumen","focos","estado","aire","deforestacion","defoGrid","riesgos","eco","anp","zr","acr","acp","za"];
+  const u = ["data/visitas_actual.json","data/clima.json","data/visitas.json","data/defo_sernanp.json","estatico/hansen.json","data/aire_modelo.json","data/resumen.json","data/focos.geojson","data/estado.json","data/aire.json","data/deforestacion.json","data/deforestacion_rejilla.geojson","data/riesgos.json","data/ecoturismo.json",
              "data/capas/anp_nacional.geojson","data/capas/zonas_reservadas.geojson","data/capas/acr.geojson","data/capas/acp.geojson","data/capas/zonas_amortiguamiento.geojson"];
   const v = await Promise.all(u.map(j));
   return Object.fromEntries(n.map((k, i) => [k, v[i]]));
@@ -393,7 +396,7 @@ cargar().then(D => {
   $("stamp").innerHTML = `Actualizado <b>${loc(est._generado || res.actualizado)}</b><br>Se actualiza cada hora`;
   const FUENTES = [
     ["fuego","Focos de calor","NASA FIRMS", 12],["aire","Aire medido (Lima)","SENAMHI", 6],["aire_modelo","Aire estimado en ANP","CAMS · Open-Meteo", 6],["deforestacion","Deforestación","Geobosques", 24*60],
-    ["riesgos","Emergencias y sismos","INDECI · USGS", 6],["clima","Pronóstico","Open-Meteo", 6],["sernanp","Visitas y deforestación","SERNANP", 24*800],["ecoturismo","Semáforo","Integrado", 6]];
+    ["riesgos","Emergencias y sismos","INDECI · USGS", 6],["clima","Pronóstico","Open-Meteo", 6],["visitas","Visitas a ANP","MINCETUR · SERNANP", 24*75],["sernanp","Registros SERNANP","Datos abiertos", 24*800],["ecoturismo","Semáforo","Integrado", 6]];
   $("fuentes").innerHTML = FUENTES.map(([k, nom, src, maxH]) => {
     const e = est[k] || {}; const ult = e.ultimo_dato;
     const edadH = ult ? (Date.now() - new Date(ult.replace(" ", "T") + (ult.length <= 16 ? "-05:00" : ""))) / 36e5 : null;
@@ -479,7 +482,56 @@ cargar().then(D => {
   const mesHoy = VIS?.mes_actual || new Date().toISOString().slice(0, 7), anioHoy = mesHoy.slice(0, 4);
   const sumaAnio = (serie, y) => (serie || []).filter(d => y === "todos" || d.mes.startsWith(y)).reduce((t, d) => t + (d.v || 0), 0);
   const tieneEst = (serie, y) => (serie || []).some(d => (y === "todos" || d.mes.startsWith(y)) && d.tipo !== "oficial");
-  if (VIS) {
+  const VA = D.visAct;
+  const mesTxt = p => { const [yy, mm] = p.split("-"); return `${MESC[+mm - 1]} ${yy}`; };
+  const pct = v => v == null ? "—" : `${v > 0 ? "+" : ""}${v.toLocaleString("es-PE")} %`;
+  const colPct = v => v == null ? "var(--ink-3)" : v >= 0 ? "#2fbf8a" : "#e5484d";
+  if (VA && Object.keys(VA.sitios || {}).length) {
+    // Cifras oficiales mensuales (MINCETUR con datos del SERNANP), de 2019 al último mes publicado
+    $("visFiltro").style.display = "";
+    $("visT").textContent = "Visitas mensuales a las ANP (cifras oficiales)";
+    const nombresVA = VA.ranking.map(r => r.area);
+    $("selVis").innerHTML = `<option value="__todas">Las ${nombresVA.length} ANP con registro mensual</option>` + nombresVA.map(n => `<option value="${esc(n)}">${esc(n)}</option>`).join("");
+    const serieDe = sel => { const m = {}; (sel === "__todas" ? Object.values(VA.sitios) : [VA.sitios[sel]]).forEach(v => v.serie.forEach(r => { const o = m[r.periodo] ||= {n: 0, e: 0, t: 0}; o.n += r.nacional ?? 0; o.e += r.extranjero ?? 0; o.t += r.total; })); return m; };
+    const ultimoPub = VA.ultimo_mes;
+    const aniosVA = []; for (let yy = 2019; yy <= +anioHoy; yy++) aniosVA.push(String(yy));
+    let anioSel = anioHoy;
+    const pinta = () => {
+      const sel = $("selVis").value, m = serieDe(sel), y = anioSel;
+      const per = y === "todos" ? Object.keys(m).sort() : MESC.map((_, i) => `${y}-${String(i + 1).padStart(2, "0")}`).filter(p => p <= mesHoy);
+      $("serieVisWrap").innerHTML = `<svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales, nacionales y extranjeros"></svg>`;
+      barras("serieVis", per.map(p => { const o = m[p]; const pend = !o;
+          return {lab: y === "todos" ? (p.endsWith("-01") ? p.slice(0, 4) : "") : MESC[+p.slice(5) - 1], full: `${mesTxt(p)}${pend ? " · aún no publicado" : ""}`,
+                  v: pend ? [0, 0] : [o.n || (o.e ? 0 : o.t), o.e]}; }),
+        ["Nacionales", "Extranjeros"], ["#3d8f78", "#7fd4c1"], y === "todos" ? {etiquetas: "dispersas"} : {marca: per.indexOf(mesHoy)});
+      const ult = Object.keys(m).sort().at(-1), prev = `${+ult.slice(0, 4) - 1}${ult.slice(4)}`;
+      const vu = m[ult]?.t, vp = m[prev]?.t, vr = vp ? Math.round(1000 * (vu - vp) / vp) / 10 : null;
+      $("visRes").innerHTML = `Último mes publicado <b style="color:var(--ink)">${mesTxt(ult)}</b>: ${fmt(Math.round(vu))} <span style="color:${colPct(vr)}">${pct(vr)}</span>`;
+      const tot = per.reduce((t, p) => t + (m[p]?.t || 0), 0), totPrev = per.reduce((t, p) => t + (m[`${+p.slice(0, 4) - 1}${p.slice(4)}`]?.t || 0), 0);
+      $("totVisN").innerHTML = y === "todos" ? `${fmt(tot)} visitas` : `${fmt(tot)} visitas en ${y}${per.some(p => !m[p]) ? ` (publicado hasta ${mesTxt(ultimoPub)})` : ""} <span style="color:${colPct(totPrev ? (tot - totPrev) : null)}">${totPrev ? pct(Math.round(1000 * (tot - totPrev) / totPrev) / 10) + " vs mismo periodo " + (+y - 1) : ""}</span>`;
+      // ranking por año elegido
+      const filas = nombresVA.map(n => { const ms = VA.sitios[n].serie.filter(r => y === "todos" || r.periodo.startsWith(y)); const t = ms.reduce((a, r) => a + r.total, 0);
+        const tp = y === "todos" ? 0 : VA.sitios[n].serie.filter(r => r.periodo.startsWith(String(+y - 1)) && ms.some(q => q.periodo.slice(5) === r.periodo.slice(5))).reduce((a, r) => a + r.total, 0);
+        return {area: n, t, v: tp ? Math.round(1000 * (t - tp) / tp) / 10 : null, u: VA.sitios[n].ultimo}; }).filter(r => r.t > 0).sort((a, b) => b.t - a.t);
+      $("rankVisT").textContent = y === "todos" ? "Visitas acumuladas 2019–" + anioHoy : `Visitas en ${y}${y === anioHoy ? " (hasta el último mes publicado)" : ""}`;
+      $("rankVis").querySelector("thead").innerHTML = `<tr><th>Área</th><th class="n">Visitas</th><th class="n">vs año anterior</th><th class="n">Último mes</th></tr>`;
+      $("rankVis").querySelector("tbody").innerHTML = filas.map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(r.t)}</td><td class="n" style="color:${colPct(r.v)}">${pct(r.v)}</td><td class="n">${fmt(r.u.total)}<span class="cat" style="color:${colPct(r.u.variacion_anual_pct)}">${esc(mesTxt(r.u.periodo))} · ${pct(r.u.variacion_anual_pct)}</span></td></tr>`).join("");
+    };
+    if (!$("serieVisWrap")) { const w = document.createElement("div"); w.id = "serieVisWrap"; $("serieVis").before(w); w.appendChild($("serieVis")); }
+    chipsAnio("anioVis", [...aniosVA.map(yy => [yy, yy + (yy === anioHoy ? " (actual)" : "")]), ["todos", `2019–${anioHoy}`]], yy => { anioSel = yy; pinta(); }, `<span id="totVisN"></span>`, anioHoy);
+    $("selVis").addEventListener("change", pinta);
+    $("visNota").innerHTML = `<span class="dot" style="background:#3d8f78"></span> Nacionales · <span class="dot" style="background:#7fd4c1"></span> Extranjeros. ${esc(VA.fuente)}. Información disponible al ${esc(VA.informacion_al || "—")}. Los meses posteriores a ${esc(mesTxt(ultimoPub))} aparecen vacíos hasta que el MINCETUR los publique. ${esc(VA.nota)}`;
+    const reg = VA.regiones?.filas || [];
+    if (reg.length) {
+      $("regCard").hidden = false;
+      const filas = reg.filter(r => r.region.toLowerCase() !== "total").sort((a, b) => (b.variacion_pct ?? -999) - (a.variacion_pct ?? -999));
+      const mx = Math.max(...filas.map(r => Math.abs(r.variacion_pct ?? 0)), 1);
+      $("regT").textContent = `Flujo turístico por región · arribos a hospedajes, ${VA.regiones.periodo} frente al mismo periodo de ${+VA.regiones.periodo.slice(-4) - 1}`;
+      $("regVis").innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2px 24px">` + filas.map(r => `<div class="brow" style="grid-template-columns:110px 1fr 64px" title="${esc(r.region)}: ${fmt(r.acumulado_actual)} arribos"><span>${esc(r.region)}</span><div class="btrack" style="position:relative"><span style="position:absolute;top:0;bottom:0;left:${(r.variacion_pct ?? 0) < 0 ? 50 - 50 * Math.abs(r.variacion_pct) / mx : 50}%;width:${50 * Math.abs(r.variacion_pct ?? 0) / mx}%;background:${colPct(r.variacion_pct)}"></span><span style="position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--ink-3)"></span></div><span class="n" style="color:${colPct(r.variacion_pct)}">${pct(r.variacion_pct)}</span></div>`).join("") + `</div>`;
+      const tot = reg.find(r => r.region.toLowerCase() === "total");
+      $("regNota").textContent = `${VA.regiones.nota} ${tot ? `Total nacional: ${fmt(tot.acumulado_actual)} arribos (${pct(tot.variacion_pct)}).` : ""} Indicador actual del flujo turístico en las regiones de las ANP sin conteo mensual propio.`;
+    }
+  } else if (VIS) {
     const serieN = VIS.serie_hasta_hoy || VIS.serie_nacional.map(d => ({mes: d.mes, v: d.visitas, tipo: "oficial"}));
     const anios = [...new Set(serieN.map(d => d.mes.slice(0, 4)))];
     const etiqueta = y => { const ofi = serieN.filter(d => d.mes.startsWith(y) && d.tipo === "oficial").length, n = serieN.filter(d => d.mes.startsWith(y)).length;
@@ -552,6 +604,23 @@ cargar().then(D => {
   $("selFicha").innerHTML = nombres.map(n => `<option value="${esc(n)}">${esc(n)} — ${ecoBy[n].nivel}</option>`).join("");
   const AV = {lluvia_fuerte: ["Lluvia fuerte", "alta"], lluvia_moderada: ["Lluvia", ""], tormenta: ["Tormenta", "alta"], helada: ["Helada", ""], calor: ["Calor", ""], viento: ["Viento fuerte", ""], uv_extremo: ["UV extremo", ""], uv_muy_alto: ["UV muy alto", ""]};
   const diaNom = (f, i) => i === 0 ? "Hoy" : i === 1 ? "Mañana" : new Date(f + "T12:00").toLocaleDateString("es-PE", {weekday: "long"});
+  const normD = t => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+  function resumenVA(nombre, a){
+    const sv = VA.sitios[nombre], u = sv.ultimo, ac = sv.acumulado;
+    return `<div class="kv"><span>Último mes <b>${esc(mesTxt(u.periodo))}: ${fmt(u.total)}</b> <span style="color:${colPct(u.variacion_anual_pct)}">${pct(u.variacion_anual_pct)}</span></span>
+      <span>Ene–${esc(ac.hasta_mes)} ${ac.anio} <b>${fmt(ac.actual)}</b> <span style="color:${colPct(ac.variacion_pct)}">${pct(ac.variacion_pct)}</span></span>
+      <span>Extranjeros (12 meses) <b>${sv.pct_extranjeros_12m ?? "—"} %</b></span><span>Meses pico <b>${esc(sv.meses_pico.join(", "))}</b></span></div>
+      ${a.temporada_alta ? `<div class="badge" style="margin-top:8px">Este mes suele ser temporada alta</div>` : ""}
+      <div class="cat" style="margin-top:6px">Cifras oficiales mensuales (MINCETUR con datos del SERNANP), información al ${esc(VA.informacion_al || "—")}. Recuadro: mes actual; borde punteado: mes aún no publicado. Variaciones frente al mismo periodo del año anterior.</div>`;
+  }
+  function regionVA(a){
+    const deps = (a.departamentos || "").split(/,| y /).map(normD).filter(Boolean);
+    const regs = (VA?.regiones?.filas || []).filter(r => deps.includes(normD(r.region)));
+    if (!regs.length) return "";
+    return `<div class="subt" style="margin-top:0">Flujo turístico actual en la región · arribos a hospedajes, ${esc(VA.regiones.periodo)}</div>
+      <div class="kv" style="margin-top:0">${regs.map(r => `<span>${esc(r.region)} <b>${fmt(r.acumulado_actual)}</b> <span style="color:${colPct(r.variacion_pct)}">${pct(r.variacion_pct)}</span></span>`).join("")}</div>
+      <div class="cat" style="margin-top:4px">Esta ANP no tiene un conteo mensual oficial publicado; el dato regional muestra la tendencia actual del turismo en su entorno (MINCETUR).</div>`;
+  }
   function ficha(nombre, desplazar){
     const a = ecoBy[nombre]; if (!a) return;
     $("selFicha").value = nombre;
@@ -584,15 +653,27 @@ cargar().then(D => {
           <div class="fbox"><h4>Pronóstico 3 días</h4>${c ? `<div class="dias">${c.dias.map((d, i) => `<div class="dia"><div class="d">${diaNom(d.fecha, i)}</div><div class="e">${esc(d.estado)}</div><div class="t">${d.tmin != null ? Math.round(d.tmin) : "—"}° / ${d.tmax != null ? Math.round(d.tmax) : "—"}°</div>
               <div class="r"><span>Lluvia</span><span>${(d.lluvia_mm ?? 0).toLocaleString("es-PE")} mm${d.prob_lluvia != null ? ` · ${d.prob_lluvia}%` : ""}</span></div><div class="r"><span>Ráfagas</span><span>${d.rafaga_kmh != null ? Math.round(d.rafaga_kmh) : "—"} km/h</span></div><div class="r"><span>UV máx.</span><span>${d.uv != null ? Math.round(d.uv) : "—"}</span></div>
               ${d.avisos.map(x => AV[x] ? `<span class="badge ${AV[x][1]}">${AV[x][0]}</span>` : "").join("")}</div>`).join("")}</div><div class="cat" style="margin-top:6px">Ahora: ${c.ahora.temp != null ? Math.round(c.ahora.temp) + " °C" : "—"}, ${esc(c.ahora.estado)} · Open-Meteo</div>` : `<div class="empty">Sin pronóstico disponible.</div>`}</div>
-          <div class="fbox"><h4>Visitantes (SERNANP)</h4>${v ? `<div class="anios" id="anioFicha"></div><div id="visFicha"></div>
+          <div class="fbox"><h4>Visitantes</h4>${VA?.sitios?.[nombre] ? `<div class="anios" id="anioFicha"></div><div id="visFicha"></div>${resumenVA(nombre, a)}` : `${regionVA(a)}`}${!VA?.sitios?.[nombre] && v ? `<div class="subt">Registro detallado del SERNANP</div><div class="anios" id="anioFicha"></div><div id="visFicha"></div>
               <div class="kv"><span>Promedio anual <b>${fmt(v.promedio_anual)}</b></span><span>Meses pico <b>${esc(v.meses_pico.join(", "))}</b></span><span>Extranjeros <b>${v.pct_extranjeros ?? "—"} %</b></span><span>Pernoctan <b>${v.pct_pernocta ?? "—"} %</b></span></div>
               ${a.temporada_alta ? `<div class="badge" style="margin-top:8px">Este mes es temporada alta</div>` : ""}<div class="cat" style="margin-top:6px">Barras verdes: dato oficial del SERNANP (hasta ${esc(VIS.periodo.hasta)}); oscuras: estimación hasta el mes actual (${esc(mesHoy)}), marcado con recuadro.</div>`
-              : `<p style="margin:0;color:var(--ink-3);font-size:13px">Esta área no figura en el registro de visitas turísticas publicado por el SERNANP.</p>`}</div>
+              : !VA?.sitios?.[nombre] && !regionVA(a) ? `<p style="margin:0;color:var(--ink-3);font-size:13px">Sin registros de visitas publicados para esta área.</p>` : ""}</div>
           <div class="fbox"><h4>Bosque</h4>${(han && han.total >= 1) || (hza && hza.total >= 1) ? `${han && han.total >= 1 ? `<div class="subt" style="margin-top:0">Pérdida dentro del ANP · ${fmt(Math.round(han.total))} ha (2001–${HAN.anios.at(-1)})</div>${mini(HAN.anios.map(y => han[y]), "#d55181")}` : ""}${hza && hza.total >= 1 ? `<div class="subt">Zona de amortiguamiento · ${fmt(Math.round(hza.total))} ha</div>${mini(HAN.anios.map(y => hza[y]), "#b8708f")}` : ""}<div class="cat" style="margin-top:6px">Hansen/UMD, Global Forest Change</div>` : `<p style="margin:0;color:var(--ink-3);font-size:13px">${HAN ? "Sin pérdida de cobertura arbórea registrada (o área sin bosque)." : "Cálculo histórico en preparación."}</p>`}
             ${ds ? `<div class="subt">Registro SERNANP ${esc(DS.anios[0])}–${esc(DS.anios.at(-1))} · ${fmt(Math.round(ds.ha_total))} ha</div><div class="kv">${Object.entries(ds.causas).map(([k, x]) => `<span>${esc(k)} <b>${fmt(Math.round(x))} ha</b></span>`).join("")}</div>` : ""}</div>
         </div>
       </div>`;
-    if (v) {
+    if (VA?.sitios?.[nombre]) {
+      const sv = VA.sitios[nombre], MESL = ["E","F","M","A","M","J","J","A","S","O","N","D"];
+      const anV = []; for (let yy = 2019; yy <= +anioHoy; yy++) anV.push(String(yy));
+      chipsAnio("anioFicha", anV.slice(-5).map(yy => [yy, yy + (yy === anioHoy ? " (actual)" : "")]), y => {
+        const filas = MESC.map((_, i) => { const p = `${y}-${String(i + 1).padStart(2, "0")}`; return {p, r: sv.serie.find(r => r.periodo === p)}; });
+        const mx = Math.max(...sv.serie.filter(r => r.periodo.startsWith(y) || r.periodo.startsWith(String(+y - 1))).map(r => r.total), 1);
+        const tot = filas.reduce((t, f) => t + (f.r?.total || 0), 0);
+        $("visFicha").innerHTML = `<div class="mbars">${filas.map(f => { const act = f.p === mesHoy, fut = f.p > mesHoy, pend = !f.r && !fut;
+            return `<span class="${act ? "on" : ""}" title="${mesTxt(f.p)}: ${f.r ? fmt(f.r.total) + " visitas" : fut ? "mes futuro" : "aún no publicado"}" style="height:${f.r ? 100 * f.r.total / mx : 0}%;${!f.r ? "background:transparent;border:1px dashed " + (pend ? "#3d5c52" : "var(--line)") : ""}${act ? ";outline:1px dashed #eeede8;outline-offset:2px" : ""}"></span>`; }).join("")}</div>
+          <div class="mlab">${MESL.map(m => `<span>${m}</span>`).join("")}</div>
+          <div class="kv"><span>Total ${y} <b>${fmt(tot)}</b>${filas.some(f => !f.r && f.p <= mesHoy) ? ` (publicado hasta ${esc(mesTxt(VA.ultimo_mes))})` : ""}</span></div>`;
+      }, null, anioHoy);
+    } else if (v) {
       const MESL = ["E","F","M","A","M","J","J","A","S","O","N","D"];
       const serieA = v.serie || [];
       const anV = [...new Set(serieA.map(d => d.mes.slice(0, 4)))];
@@ -755,7 +836,7 @@ function barras(id, datos, nombres, colores, opts = {}){
   datos.forEach((d, i) => { const x = m.l + i * bw + (bw - w) / 2; let base = 0;
     d.v.forEach((v, j) => { if (!v) return; const y0 = y(base), y1 = y(base + v); s += `<rect x="${x}" y="${y1}" width="${w}" height="${Math.max(0, y0 - y1 - 2)}" rx="2" fill="${colores[j]}"/>`; base += v; });
     if (opts.marca === i) s += `<rect x="${x - 3}" y="${m.t}" width="${w + 6}" height="${ih}" rx="3" fill="none" stroke="#eeede8" stroke-opacity=".55" stroke-dasharray="3 3"/>`;
-    if (i % cada === 0 || opts.marca === i) s += `<text x="${x + w / 2}" y="${H - 7}" text-anchor="middle" font-size="10.5" fill="${opts.marca === i ? "#eeede8" : "#83857e"}" font-family="IBM Plex Mono">${esc(d.lab)}</text>`;
+    if (d.lab && (opts.etiquetas === "dispersas" || i % cada === 0 || opts.marca === i)) s += `<text x="${x + w / 2}" y="${H - 7}" text-anchor="middle" font-size="10.5" fill="${opts.marca === i ? "#eeede8" : "#83857e"}" font-family="IBM Plex Mono">${esc(d.lab)}</text>`;
     s += `<rect class="hit" data-i="${i}" x="${m.l + i * bw}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/>`; });
   svg.innerHTML = s;
   svg.querySelectorAll(".hit").forEach(r => { const d = datos[+r.dataset.i];

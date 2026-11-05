@@ -15,7 +15,9 @@ Plataforma abierta que integra **fuego, deforestación, calidad del aire, emerge
 | Deforestación | PNCB – MINAM, Geobosques (alertas tempranas, puntos) | Semanas | Carga manual (ver abajo). Geobosques bloquea descargas automáticas desde fuera del Perú. |
 | Emergencias | INDECI – COEN (RSS oficial de reportes) | Minutos | Directo |
 | Clima y pronóstico (3 días) por ANP | Open-Meteo (CC BY 4.0) | Horaria | Directo, sin token |
-| Visitas turísticas por ANP | SERNANP – Plataforma Nacional de Datos Abiertos | Mensual (último corte publicado) | Directo |
+| Visitas mensuales a ANP (2019 → último mes publicado) | MINCETUR – Datos Turismo, con datos del SERNANP (9 ANP con registro propio) | Mensual (1–2 meses de desfase) | Directo (exportación oficial) |
+| Flujo turístico por región | MINCETUR – arribos a establecimientos de hospedaje | Mensual (acumulado del año) | Directo |
+| Visitas detalladas por ANP (sector, procedencia, edad) | SERNANP – Plataforma Nacional de Datos Abiertos | Último corte publicado (2022–2023) | Directo |
 | Registro de deforestación en ANP (con causas) | SERNANP – Plataforma Nacional de Datos Abiertos | Anual | Directo |
 | Pérdida de bosque 2001–2025 por ANP y ZA | Hansen et al., Global Forest Change v1.13 (UMD, CC BY 4.0) | Anual | Workflow `bosques-anual` |
 | Sismos | USGS FDSN Event Service. El servicio de datos del IGP no está disponible públicamente. | Minutos | Directo |
@@ -48,6 +50,8 @@ Una vez al mes, descarga de Geobosques **"Alertas Tempranas 2026 – PNCB (Punto
 - `focos/AAAA-MM/focos_AAAA-MM-DD.csv`: focos clasificados por zona, área y departamento.
 - `aire_modelo/AAAA-MM/aire_modelo_AAAA-MM-DD.csv`: calidad del aire horaria estimada por ANP (CAMS).
 - `aire/AAAA-MM/aire_AAAA-MM-DD.csv`: mediciones horarias por estación (si hay acceso al SENAMHI).
+- `visitas_anp_mincetur.csv`: visitas mensuales oficiales por ANP (nacionales, extranjeros, total) desde 2019.
+- `arribos_hospedaje_region.csv`: arribos a hospedajes por región (acumulado del año y variación).
 - `hansen_perdida_anp_ha.csv`: pérdida de bosque anual por ANP y zona de amortiguamiento (ha).
 - `sernanp/`: copias de los conjuntos del SERNANP (visitas y registro de deforestación).
 - `emergencias_indeci.csv`, `sismos.csv`, `deforestacion_resumen_AAAA.csv`, `historial_indicadores.csv`.
