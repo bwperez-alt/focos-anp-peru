@@ -1,42 +1,23 @@
-"""Sondeo de fuentes oficiales (se ejecuta en GitHub Actions). Imprime un resumen de cada endpoint."""
-import json, re, requests
-H = {"User-Agent": "Mozilla/5.0 (observatorio-ambiental-peru; investigacion academica)"}
-def get(u, **kw):
+"""Sondeo 2: reintentos con cabeceras de navegador y hosts alternativos."""
+import requests, socket, time
+B = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language": "es-PE,es;q=0.9"}
+def t(nombre, u, n=300, **kw):
+    t0 = time.time()
     try:
-        r = requests.get(u, headers=H, timeout=60, **kw)
-        return r.status_code, r.headers.get("content-type", ""), r.text
+        r = requests.get(u, headers=B, timeout=25, **kw)
+        print(f"\n== {nombre} {r.status_code} {r.headers.get('content-type')} {len(r.content)}B {time.time()-t0:.1f}s\n{r.text[:n]}")
     except Exception as e:
-        return "ERR", "", str(e)
-def show(nombre, u, n=700, **kw):
-    s, ct, t = get(u, **kw)
-    print(f"\n===== {nombre}\nURL {u}\nSTATUS {s} | {ct} | {len(t)} chars\n{t[:n]}")
-    return t
-# Sismos IGP
-for y in ["2026"]:
-    show("IGP ajaxb", f"https://ultimosismos.igp.gob.pe/api/ultimo-sismo/ajaxb/{y}", 900)
-show("IGP home", "https://ultimosismos.igp.gob.pe/", 300)
-show("USGS Peru", "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=-18.6&maxlatitude=0.2&minlongitude=-81.6&maxlongitude=-68.5&minmagnitude=3.5&orderby=time&limit=3", 900)
-# SENAMHI avisos
-t = show("SENAMHI avisos", "https://www.senamhi.gob.pe/?p=aviso-meteorologico", 200)
-for m in sorted(set(re.findall(r'["\']([^"\']*(?:aviso|ajax|json|php)[^"\']*)["\']', t)))[:60]:
-    print("  ref:", m)
-t = show("SENAMHI calidad aire", "https://www.senamhi.gob.pe/mapas/mapa-ca-monitoreo/map_data_ca.php", 150)
-# Datos abiertos (DKAN/CKAN API)
-for q in ["visitantes areas naturales protegidas", "SERNANP visitantes", "emergencias INDECI", "incendios forestales", "avisos meteorologicos SENAMHI"]:
-    t = show("datosabiertos " + q, "https://www.datosabiertos.gob.pe/api/3/action/package_search?q=" + requests.utils.quote(q) + "&rows=8", 200)
-    try:
-        d = json.loads(t)
-        res = d.get("result", {})
-        res = res.get("results", res if isinstance(res, list) else [])
-        for p in res[:8]:
-            print("  *", p.get("title"), "|", p.get("name"), "|", p.get("metadata_modified"), "|", [(x.get("format"), x.get("url")) for x in p.get("resources", [])][:4])
-    except Exception as e:
-        print("  (no JSON)", e)
-# SINPAD / INDECI
-show("SINPAD", "https://sinpad.indeci.gob.pe/", 300)
-show("INDECI emergencias portal", "https://portal.indeci.gob.pe/emergencias/", 300)
-# Geobosques ATD
-s, ct, t = get("https://geobosques.minam.gob.pe/geobosque/descargas_geobosque/alerta/espaciales/Alertas_PNCB_shape_2026.zip", stream=True)
-print("\n===== Geobosques ATD 2026", s, ct)
-# SERNANP geoservicios
-show("SERNANP geoservicios", "https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/0/query?where=1%3D1&returnCountOnly=true&f=json", 200)
+        print(f"\n== {nombre} ERR {type(e).__name__} {str(e)[:160]} {time.time()-t0:.1f}s")
+for h in ["www.senamhi.gob.pe", "senamhi.gob.pe", "idesep.senamhi.gob.pe", "ultimosismos.igp.gob.pe", "www.igp.gob.pe", "geobosques.minam.gob.pe", "sinpad.indeci.gob.pe"]:
+    try: print("DNS", h, socket.gethostbyname(h))
+    except Exception as e: print("DNS", h, "ERR", e)
+t("senamhi http", "http://www.senamhi.gob.pe/mapas/mapa-ca-monitoreo/map_data_ca.php", 120)
+t("senamhi sin www", "https://senamhi.gob.pe/mapas/mapa-ca-monitoreo/map_data_ca.php", 120)
+t("idesep", "http://idesep.senamhi.gob.pe/indicadores/", 200)
+t("geobosques UA navegador", "https://geobosques.minam.gob.pe/geobosque/descargas_geobosque/alerta/espaciales/Alertas_PNCB_shape_2026.zip", 80, stream=True)
+t("geobosques home", "https://geobosques.minam.gob.pe/geobosque/view/descargas.php", 200)
+t("igp www", "https://www.igp.gob.pe/servicios/centro-sismologico-nacional/ultimo-sismo/sismos-reportados", 200)
+t("indeci emergencias", "https://portal.indeci.gob.pe/emergencias/", 50)
+t("waqi demo", "https://api.waqi.info/feed/@382/?token=demo", 300)
+t("openaq locations peru", "https://api.openaq.org/v3/locations?countries_id=158&limit=5", 300)
