@@ -5,6 +5,12 @@ import pipeline as P
 from modulos import visitas_actual as V
 capas, za = P.capas_territorio()
 out = Path("/tmp/out"); out.mkdir(exist_ok=True)
+import io, pandas as pd, requests
+ss = requests.Session(); ss.headers.update(V.H)
+xl = pd.read_excel(io.BytesIO(V.exportar(ss, "253", 2024, 2026)), header=None, engine="xlrd")
+for k, row in xl.iterrows():
+    print("XL", k, [ (j, v) for j, v in enumerate(row.tolist()) if str(v) != "nan"][:12])
+print("PARSE", V.leer_sitio(xl).tail(5).to_dict("records"))
 print(V.ejecutar(out, Path("/tmp/arch"), capas))
 d = json.load(open(out / "visitas_actual.json"))
 print("INFO AL:", d["informacion_al"], "ULT:", d["ultimo_mes"])

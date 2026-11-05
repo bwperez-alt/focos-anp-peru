@@ -202,8 +202,8 @@ def ejecutar(salida: Path, archivo: Path, capas_anp) -> dict:
         "errores": errores or None,
     }
     (salida / "visitas_actual.json").write_text(json.dumps(res, ensure_ascii=False, separators=(",", ":")))
+    archivo.mkdir(parents=True, exist_ok=True)
     if largo:
-        archivo.mkdir(parents=True, exist_ok=True)
         pd.concat(largo)[["area", "reporte_mincetur", "periodo", "anio", "mes", "nacional", "extranjero", "total"]].to_csv(archivo / "visitas_anp_mincetur.csv", index=False)
     if regiones:
         pd.DataFrame(regiones).assign(periodo=periodo_reg).to_csv(archivo / "arribos_hospedaje_region.csv", index=False)
