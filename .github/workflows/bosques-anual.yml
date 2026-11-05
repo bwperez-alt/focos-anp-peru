@@ -1,0 +1,34 @@
+name: Bosques (Hansen) – cálculo anual
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 15 5 *"   # 15 de mayo de cada año (la UMD suele publicar la nueva versión en el primer semestre)
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  hansen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt rasterio
+      - name: Calcular pérdida de bosque por ANP y zona de amortiguamiento
+        run: python scripts/bosque_hansen.py
+      - name: Guardar resultados
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/estatico data/archivo/hansen_perdida_anp_ha.csv
+          git diff --cached --quiet || git commit -m "Bosques: pérdida anual por ANP (Hansen GFC)"
+          for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && break; sleep 5; done
+      - name: Publicar de inmediato
+        run: gh workflow run actualizar.yml
+        env:
+          GH_TOKEN: ${{ github.token }}

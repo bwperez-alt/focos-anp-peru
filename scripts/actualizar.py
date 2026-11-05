@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import pipeline as fuego  # noqa: E402
-from modulos import aire, aire_modelo, deforestacion, ecoturismo, riesgos  # noqa: E402
+from modulos import aire, aire_modelo, clima, deforestacion, ecoturismo, riesgos, sernanp_datos  # noqa: E402
 
 SALIDA = fuego.SALIDA
 ARCHIVO = fuego.ARCHIVO
@@ -71,6 +71,8 @@ def main() -> None:
     correr("deforestacion", _defo)
     correr("riesgos", lambda: riesgos.ejecutar(SALIDA, ARCHIVO, capas, za))
     correr("aire_modelo", lambda: aire_modelo.ejecutar(SALIDA, ARCHIVO, capas))
+    correr("clima", lambda: clima.ejecutar(SALIDA, capas))
+    correr("sernanp", lambda: sernanp_datos.ejecutar(SALIDA, ARCHIVO, capas))
     correr("ecoturismo", lambda: ecoturismo.ejecutar(SALIDA, capas))
 
     estado["_generado"] = ahora()

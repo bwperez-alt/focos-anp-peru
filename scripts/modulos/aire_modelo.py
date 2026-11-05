@@ -28,15 +28,25 @@ OMS = {"pm2_5": 15, "pm10": 45}    # 24 h, guías OMS 2021
 LOTE = 40
 
 
-def puntos_anp(capas_anp) -> list[dict]:
-    """Punto representativo (centro del rectángulo envolvente promedio) de cada ANP nacional y zona reservada."""
-    out = []
-    for _, capa in capas_anp[:2]:
+def agrupar_anp(capas_anp) -> list[dict]:
+    """ANP nacionales y zonas reservadas, una entrada por área (une los polígonos de un mismo nombre)."""
+    grupos: dict[str, dict] = {}
+    for tipo, capa in capas_anp[:2]:
         for it in capa.items:
-            lo = float(np.mean([(p[2][0] + p[3][0]) / 2 for p in it["partes"]]))
-            la = float(np.mean([(p[2][1] + p[3][1]) / 2 for p in it["partes"]]))
-            out.append({"area": it["nombre"], "categoria": it["extra"].get("cat", ""), "lon": round(lo, 3), "lat": round(la, 3)})
-    return out
+            g = grupos.setdefault(it["nombre"], {"area": it["nombre"], "categoria": it["extra"].get("cat") or tipo,
+                                                 "codigo": it["extra"].get("codi", ""), "partes": []})
+            g["partes"].extend(it["partes"])
+    for g in grupos.values():
+        # centro ponderado por el tamaño del rectángulo de cada parte
+        pesos = np.array([max((p[3][0] - p[2][0]) * (p[3][1] - p[2][1]), 1e-6) for p in g["partes"]])
+        cx = np.array([(p[2][0] + p[3][0]) / 2 for p in g["partes"]]); cy = np.array([(p[2][1] + p[3][1]) / 2 for p in g["partes"]])
+        g["lon"], g["lat"] = round(float((cx * pesos).sum() / pesos.sum()), 3), round(float((cy * pesos).sum() / pesos.sum()), 3)
+    return list(grupos.values())
+
+
+def puntos_anp(capas_anp) -> list[dict]:
+    """Punto representativo de cada ANP nacional y zona reservada."""
+    return [{"area": g["area"], "categoria": g["categoria"], "lon": g["lon"], "lat": g["lat"]} for g in agrupar_anp(capas_anp)]
 
 
 def consultar(puntos: list[dict]) -> list[dict]:
