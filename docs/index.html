@@ -475,21 +475,29 @@ cargar().then(D => {
 
   // ---------- visitantes
   const VIS = D.visitas, CLI = D.clima, DS = D.defoS, HAN = D.hansen;
+  const MESC = ["ene","feb","mar","abr","may","jun","jul","ago","set","oct","nov","dic"];
+  const mesHoy = VIS?.mes_actual || new Date().toISOString().slice(0, 7), anioHoy = mesHoy.slice(0, 4);
+  const sumaAnio = (serie, y) => (serie || []).filter(d => y === "todos" || d.mes.startsWith(y)).reduce((t, d) => t + (d.v || 0), 0);
+  const tieneEst = (serie, y) => (serie || []).some(d => (y === "todos" || d.mes.startsWith(y)) && d.tipo !== "oficial");
   if (VIS) {
-    const anios = Object.keys(VIS.anios || {});
-    const MESC = ["ene","feb","mar","abr","may","jun","jul","ago","set","oct","nov","dic"];
-    const etiqueta = y => VIS.anios[y].completo ? y : `${y} (${MESC[+VIS.anios[y].desde.slice(5) - 1]}–${MESC[+VIS.anios[y].hasta.slice(5) - 1]})`;
-    $("visNota").textContent = `${VIS.fuente}. ${VIS.nota}`;
+    const serieN = VIS.serie_hasta_hoy || VIS.serie_nacional.map(d => ({mes: d.mes, v: d.visitas, tipo: "oficial"}));
+    const anios = [...new Set(serieN.map(d => d.mes.slice(0, 4)))];
+    const etiqueta = y => { const ofi = serieN.filter(d => d.mes.startsWith(y) && d.tipo === "oficial").length, n = serieN.filter(d => d.mes.startsWith(y)).length;
+      return `${y}${y === anioHoy ? " (actual)" : ""}${ofi === 0 ? " · estimado" : ofi < n ? " · parcial" : ""}`; };
+    $("visNota").innerHTML = `${esc(VIS.fuente)}. <span class="dot" style="background:#7fd4c1"></span> dato oficial hasta ${esc(VIS.periodo.hasta)} · <span class="dot" style="background:#35524a"></span> estimado hasta el mes actual (${esc(mesHoy)}), que se reemplaza solo cuando el SERNANP publique nuevos meses. ${esc(VIS.metodo_estimacion || "")}`;
     if (!$("serieVisWrap")) { const w = document.createElement("div"); w.id = "serieVisWrap"; $("serieVis").before(w); w.appendChild($("serieVis")); }
-    chipsAnio("anioVis", [["todos", `${VIS.periodo.desde.slice(0, 4)}–${VIS.periodo.hasta.slice(0, 4)}`], ...anios.map(y => [y, etiqueta(y)])], y => {
-      const serie = VIS.serie_nacional.filter(d => y === "todos" || d.mes.startsWith(y));
+    chipsAnio("anioVis", [...anios.map(y => [y, etiqueta(y)]), ["todos", `${anios[0]}–${anios.at(-1)}`]], y => {
+      const serie = serieN.filter(d => y === "todos" || d.mes.startsWith(y));
       $("serieVisWrap").innerHTML = `<svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales a las ANP"></svg>`;
-      barras("serieVis", serie.map(d => ({lab: new Date(d.mes + "-15").toLocaleDateString("es-PE", y === "todos" ? {month: "short", year: "2-digit"} : {month: "short"}), full: d.mes, v: [d.visitas]})), ["Visitas"], ["#7fd4c1"]);
-      const filas = VIS.ranking.map(r => ({...r, v: y === "todos" ? r.promedio_anual : (VIS.areas[r.area]?.por_anio?.[y] || 0)})).sort((a, b) => b.v - a.v).filter(r => r.v > 0);
-      $("rankVisT").textContent = y === "todos" ? "Áreas más visitadas (promedio anual)" : `Áreas más visitadas en ${etiqueta(y)}`;
+      barras("serieVis", serie.map(d => ({lab: MESC[+d.mes.slice(5) - 1] + (y === "todos" ? d.mes.slice(2, 4) : ""), full: `${d.mes} · ${d.tipo}`, v: d.tipo === "oficial" ? [d.v || 0, 0] : [0, d.v || 0]})),
+        ["Oficial (SERNANP)", "Estimado"], ["#7fd4c1", "#35524a"], {marca: serie.findIndex(d => d.mes === mesHoy)});
+      const filas = VIS.ranking.map(r => { const ar = VIS.areas[r.area]; return {...r, v: y === "todos" ? r.promedio_anual : sumaAnio(ar?.serie, y), est: y !== "todos" && tieneEst(ar?.serie, y)}; }).sort((a, b) => b.v - a.v).filter(r => r.v > 0);
+      $("rankVisT").textContent = y === "todos" ? "Áreas más visitadas (promedio anual oficial)" : `Áreas más visitadas en ${y}${tieneEst(serieN, y) ? " (incluye estimación)" : ""}`;
       $("rankVis").querySelector("thead").innerHTML = `<tr><th>Área</th><th class="n">${y === "todos" ? "Visitas/año" : "Visitas " + y}</th><th>Meses pico</th></tr>`;
-      $("rankVis").querySelector("tbody").innerHTML = filas.slice(0, 30).map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(r.v)}</td><td>${esc((VIS.areas[r.area]?.meses_pico || []).join(", "))}</td></tr>`).join("");
-    }, `Últimos datos publicados por el SERNANP: ${MESC[+VIS.periodo.hasta.slice(5) - 1]} ${VIS.periodo.hasta.slice(0, 4)}`);
+      $("rankVis").querySelector("tbody").innerHTML = filas.slice(0, 30).map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(r.v)}${r.est ? "*" : ""}</td><td>${esc((VIS.areas[r.area]?.meses_pico || []).join(", "))}</td></tr>`).join("");
+    }, `Total: <b id="totVisN"></b>`, anioHoy);
+    const totN = () => { const y = $("anioVis").querySelector("[aria-pressed=true]")?.dataset.v || anioHoy; $("totVisN").textContent = `${fmt(sumaAnio(serieN, y))} visitas${tieneEst(serieN, y) ? " (con estimación)" : ""}`; };
+    $("anioVis").addEventListener("click", totN); totN();
   } else { $("serieVis").outerHTML = `<div class="empty">Sin datos de visitas todavía.</div>`; }
 
   // ---------- bosques: Hansen y registro SERNANP
@@ -578,20 +586,26 @@ cargar().then(D => {
               ${d.avisos.map(x => AV[x] ? `<span class="badge ${AV[x][1]}">${AV[x][0]}</span>` : "").join("")}</div>`).join("")}</div><div class="cat" style="margin-top:6px">Ahora: ${c.ahora.temp != null ? Math.round(c.ahora.temp) + " °C" : "—"}, ${esc(c.ahora.estado)} · Open-Meteo</div>` : `<div class="empty">Sin pronóstico disponible.</div>`}</div>
           <div class="fbox"><h4>Visitantes (SERNANP)</h4>${v ? `<div class="anios" id="anioFicha"></div><div id="visFicha"></div>
               <div class="kv"><span>Promedio anual <b>${fmt(v.promedio_anual)}</b></span><span>Meses pico <b>${esc(v.meses_pico.join(", "))}</b></span><span>Extranjeros <b>${v.pct_extranjeros ?? "—"} %</b></span><span>Pernoctan <b>${v.pct_pernocta ?? "—"} %</b></span></div>
-              ${a.temporada_alta ? `<div class="badge" style="margin-top:8px">Este mes es temporada alta</div>` : ""}<div class="cat" style="margin-top:6px">Últimos datos publicados por el SERNANP: ${esc(VIS.periodo.hasta)}. La barra clara es el mes actual del calendario.</div>`
+              ${a.temporada_alta ? `<div class="badge" style="margin-top:8px">Este mes es temporada alta</div>` : ""}<div class="cat" style="margin-top:6px">Barras verdes: dato oficial del SERNANP (hasta ${esc(VIS.periodo.hasta)}); oscuras: estimación hasta el mes actual (${esc(mesHoy)}), marcado con recuadro.</div>`
               : `<p style="margin:0;color:var(--ink-3);font-size:13px">Esta área no figura en el registro de visitas turísticas publicado por el SERNANP.</p>`}</div>
-          <div class="fbox"><h4>Bosque</h4>${han || hza ? `${han ? `<div class="subt" style="margin-top:0">Pérdida dentro del ANP · ${fmt(Math.round(han.total))} ha (2001–${HAN.anios.at(-1)})</div>${mini(HAN.anios.map(y => han[y]), "#d55181")}` : ""}${hza ? `<div class="subt">Zona de amortiguamiento · ${fmt(Math.round(hza.total))} ha</div>${mini(HAN.anios.map(y => hza[y]), "#b8708f")}` : ""}<div class="cat" style="margin-top:6px">Hansen/UMD, Global Forest Change</div>` : `<p style="margin:0;color:var(--ink-3);font-size:13px">${HAN ? "Sin pérdida de cobertura arbórea registrada (o área sin bosque)." : "Cálculo histórico en preparación."}</p>`}
+          <div class="fbox"><h4>Bosque</h4>${(han && han.total >= 1) || (hza && hza.total >= 1) ? `${han && han.total >= 1 ? `<div class="subt" style="margin-top:0">Pérdida dentro del ANP · ${fmt(Math.round(han.total))} ha (2001–${HAN.anios.at(-1)})</div>${mini(HAN.anios.map(y => han[y]), "#d55181")}` : ""}${hza && hza.total >= 1 ? `<div class="subt">Zona de amortiguamiento · ${fmt(Math.round(hza.total))} ha</div>${mini(HAN.anios.map(y => hza[y]), "#b8708f")}` : ""}<div class="cat" style="margin-top:6px">Hansen/UMD, Global Forest Change</div>` : `<p style="margin:0;color:var(--ink-3);font-size:13px">${HAN ? "Sin pérdida de cobertura arbórea registrada (o área sin bosque)." : "Cálculo histórico en preparación."}</p>`}
             ${ds ? `<div class="subt">Registro SERNANP ${esc(DS.anios[0])}–${esc(DS.anios.at(-1))} · ${fmt(Math.round(ds.ha_total))} ha</div><div class="kv">${Object.entries(ds.causas).map(([k, x]) => `<span>${esc(k)} <b>${fmt(Math.round(x))} ha</b></span>`).join("")}</div>` : ""}</div>
         </div>
       </div>`;
     if (v) {
-      const MESL = ["E","F","M","A","M","J","J","A","S","O","N","D"], MESN = ["ene","feb","mar","abr","may","jun","jul","ago","set","oct","nov","dic"];
-      const anV = Object.keys(v.por_anio || {});
-      chipsAnio("anioFicha", [["prom", "Promedio mensual"], ...anV.map(y => [y, y])], y => {
-        const vals = y === "prom" ? v.perfil_mensual : MESN.map((_, i) => v.mensual?.[`${y}-${String(i + 1).padStart(2, "0")}`] ?? null);
-        const mx = Math.max(...vals.filter(x => x != null), 1);
-        $("visFicha").innerHTML = `<div class="mbars">${vals.map((x, i) => `<span class="${i === mes ? "on" : ""}" title="${MESN[i]}${y === "prom" ? "" : " " + y}: ${x == null ? "sin dato" : fmt(x) + " visitas"}" style="height:${x == null ? 0 : 100 * x / mx}%;${x == null ? "background:transparent;border:1px dashed var(--line)" : ""}"></span>`).join("")}</div><div class="mlab">${MESL.map(m => `<span>${m}</span>`).join("")}</div>${y !== "prom" ? `<div class="kv"><span>Total ${y} <b>${fmt(v.por_anio[y])}</b></span>${VIS.anios?.[y] && !VIS.anios[y].completo ? `<span>(año incompleto: hasta ${esc(VIS.anios[y].hasta)})</span>` : ""}</div>` : ""}`;
-      });
+      const MESL = ["E","F","M","A","M","J","J","A","S","O","N","D"];
+      const serieA = v.serie || [];
+      const anV = [...new Set(serieA.map(d => d.mes.slice(0, 4)))];
+      chipsAnio("anioFicha", [...anV.map(y => [y, y + (y === anioHoy ? " (actual)" : "")]), ["prom", "Promedio mensual"]], y => {
+        const filas = y === "prom" ? v.perfil_mensual.map((x, i) => ({v: x, tipo: "oficial", mes: `prom-${i}`})) : MESC.map((_, i) => serieA.find(d => d.mes === `${y}-${String(i + 1).padStart(2, "0")}`) || {v: null, tipo: "futuro", mes: `${y}-${String(i + 1).padStart(2, "0")}`});
+        const mx = Math.max(...filas.map(d => d.v || 0), 1);
+        const est = filas.some(d => d.tipo === "estimado");
+        $("visFicha").innerHTML = `<div class="mbars">${filas.map((d, i) => { const actual = y === "prom" ? i === mes : d.mes === mesHoy;
+            const st = d.v == null ? "background:transparent;border:1px dashed var(--line)" : d.tipo === "estimado" ? "background:#35524a" : "";
+            return `<span class="${actual ? "on" : ""}" title="${MESC[i]}${y === "prom" ? " (promedio)" : " " + y}: ${d.v == null ? "sin dato" : fmt(d.v) + " visitas" + (d.tipo === "estimado" ? " (estimado)" : "")}" style="height:${d.v == null ? 0 : 100 * d.v / mx}%;${st}${actual ? ";outline:1px dashed #eeede8;outline-offset:2px" : ""}"></span>`; }).join("")}</div>
+          <div class="mlab">${MESL.map(m => `<span>${m}</span>`).join("")}</div>
+          ${y !== "prom" ? `<div class="kv"><span>Total ${y} <b>${fmt(filas.reduce((t, d) => t + (d.v || 0), 0))}</b>${est ? " (incluye meses estimados)" : ""}</span></div>` : ""}`;
+      }, null, anioHoy);
     }
     try { history.replaceState(null, "", "#ficha-" + slug(nombre)); } catch (e) {}
     if (desplazar) $("fichas").scrollIntoView({behavior: "smooth"});
@@ -720,14 +734,15 @@ cargar().then(D => {
 const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) document.querySelectorAll("#tabs a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id)); }), {rootMargin: "-45% 0px -50% 0px"});
 
 // selector de año reutilizable
-function chipsAnio(id, opciones, alCambiar, aviso){
+function chipsAnio(id, opciones, alCambiar, aviso, inicial){
   const el = $(id); if (!el) return;
-  el.innerHTML = opciones.map(([v, t], i) => `<button type="button" data-v="${esc(v)}" aria-pressed="${i === 0}">${esc(t)}</button>`).join("") + (aviso ? `<span class="aviso">${aviso}</span>` : "");
+  const ini = opciones.some(o => o[0] === inicial) ? inicial : opciones[0][0];
+  el.innerHTML = opciones.map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${v === ini}">${esc(t)}</button>`).join("") + (aviso ? `<span class="aviso">${aviso}</span>` : "");
   el.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { el.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); alCambiar(b.dataset.v); }));
-  alCambiar(opciones[0][0]);
+  alCambiar(ini);
 }
 // barras apiladas genéricas (SVG), con tooltip por columna
-function barras(id, datos, nombres, colores){
+function barras(id, datos, nombres, colores, opts = {}){
   const svg = $(id); if (!datos.length) { svg.outerHTML = `<div class="empty">Sin datos.</div>`; return; }
   const W = svg.clientWidth || 420, H = 180, m = {t: 10, r: 6, b: 24, l: 40}, iw = W - m.l - m.r, ih = H - m.t - m.b;
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
@@ -739,7 +754,8 @@ function barras(id, datos, nombres, colores){
   [0, nice / 2, nice].forEach(v => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="#2b302d"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end" font-size="10.5" fill="#83857e" font-family="IBM Plex Mono">${fmt(v)}</text>`; });
   datos.forEach((d, i) => { const x = m.l + i * bw + (bw - w) / 2; let base = 0;
     d.v.forEach((v, j) => { if (!v) return; const y0 = y(base), y1 = y(base + v); s += `<rect x="${x}" y="${y1}" width="${w}" height="${Math.max(0, y0 - y1 - 2)}" rx="2" fill="${colores[j]}"/>`; base += v; });
-    if (i % cada === 0) s += `<text x="${x + w / 2}" y="${H - 7}" text-anchor="middle" font-size="10.5" fill="#83857e" font-family="IBM Plex Mono">${esc(d.lab)}</text>`;
+    if (opts.marca === i) s += `<rect x="${x - 3}" y="${m.t}" width="${w + 6}" height="${ih}" rx="3" fill="none" stroke="#eeede8" stroke-opacity=".55" stroke-dasharray="3 3"/>`;
+    if (i % cada === 0 || opts.marca === i) s += `<text x="${x + w / 2}" y="${H - 7}" text-anchor="middle" font-size="10.5" fill="${opts.marca === i ? "#eeede8" : "#83857e"}" font-family="IBM Plex Mono">${esc(d.lab)}</text>`;
     s += `<rect class="hit" data-i="${i}" x="${m.l + i * bw}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/>`; });
   svg.innerHTML = s;
   svg.querySelectorAll(".hit").forEach(r => { const d = datos[+r.dataset.i];
