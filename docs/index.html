@@ -182,7 +182,8 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
         <button class="chip" data-capa="defo" aria-pressed="false"><span class="dot" style="background:var(--defo)"></span>Deforestación 90 d</button>
         <button class="chip" data-capa="emerg" aria-pressed="true"><span class="dot" style="background:var(--emerg)"></span>Emergencias INDECI</button>
         <button class="chip" data-capa="sismos" aria-pressed="false"><span class="dot" style="background:var(--sismo)"></span>Sismos 30 d</button>
-        <button class="chip" data-capa="aire" aria-pressed="true"><span class="dot" style="background:var(--aire)"></span>Calidad del aire</button>
+        <button class="chip" data-capa="aire" aria-pressed="true"><span class="dot" style="background:var(--aire)"></span>Aire medido</button>
+        <button class="chip" data-capa="airemod" aria-pressed="false"><span class="dot" style="background:#7fd4c1"></span>Aire estimado (ANP)</button>
         <span class="sep"></span>
         <button class="chip" data-capa="semaforo" aria-pressed="true"><span class="dot" style="background:var(--atencion)"></span>Semáforo ANP</button>
       </div>
@@ -239,7 +240,14 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
 
   <!-- ============================== AIRE ============================== -->
   <section id="aire" aria-label="Calidad del aire">
-    <div class="sec-h"><h2>Calidad del aire en Lima Metropolitana</h2><p id="aireSub">Estaciones oficiales del SENAMHI. PM2,5 y PM10 promediados en 24 h y comparados con el ECA (D.S. 003-2017-MINAM) y con la guía de la OMS (2021).</p></div>
+    <div class="sec-h"><h2>Calidad del aire</h2><p id="amodSub">Estimación horaria del modelo CAMS (Copernicus) en el punto central de cada ANP, comparada con el ECA y la guía OMS. Son valores modelados, no mediciones.</p></div>
+    <div class="grid2" style="margin-bottom:16px">
+      <div class="card"><h3>Estimación por modelo en las ANP · PM2,5 24 h</h3>
+        <div class="filters" style="border-top:1px solid var(--line)"><input type="search" id="buscaAire" placeholder="Buscar ANP…" aria-label="Buscar ANP"><span id="amodRes" style="color:var(--ink-3);font-size:12.5px;margin-left:auto"></span></div>
+        <div class="scroll" style="max-height:420px"><table id="tablaAmod"><thead><tr><th>Área natural protegida</th><th style="width:34%">PM2,5 24 h frente al ECA</th><th class="n">Ahora</th><th class="n">Máx. 24 h siguientes</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="card"><h3>Cómo leer la estimación</h3><div class="note" style="padding-top:0" id="amodNota"></div></div>
+    </div>
+    <div class="sec-h" style="margin-top:8px"><h2 style="font-size:19px">Mediciones oficiales en Lima Metropolitana</h2><p id="aireSub">Estaciones oficiales del SENAMHI. PM2,5 y PM10 promediados en 24 h y comparados con el ECA (D.S. 003-2017-MINAM) y con la guía de la OMS (2021).</p></div>
     <div class="card"><div class="est" id="estaciones" style="padding-top:16px"></div><div class="note" id="aireNota" style="padding-top:0"></div></div>
   </section>
 
@@ -258,7 +266,7 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
     <div class="method">
       <div class="card step"><div class="k">Fuego</div><h4>NASA FIRMS → eventos</h4><p>VIIRS 375 m (S-NPP, NOAA-20, NOAA-21). Se descartan confianza baja, duplicados y fuentes persistentes (celdas de ~400 m con focos en ≥ 4 días: antorchas, industrias). Los focos a menos de 1 km y cercanos en el tiempo forman un evento (DBSCAN).</p></div>
       <div class="card step"><div class="k">Deforestación</div><h4>Geobosques → ANP</h4><p>Alertas tempranas del PNCB (puntos, UTM 18S) reproyectadas a WGS84 y cruzadas con ANP y zonas de amortiguamiento. Serie mensual del año y rejilla de 0,05° de los últimos 90 días.</p></div>
-      <div class="card step"><div class="k">Calidad del aire</div><h4>SENAMHI → ECA</h4><p>Promedios móviles de 24 h de PM2,5 y PM10 por estación, expresados como porcentaje del ECA nacional y de la guía OMS 2021. Con la vía WAQI, el índice AQI se convierte a µg/m³ con los puntos de corte de la US EPA.</p></div>
+      <div class="card step"><div class="k">Calidad del aire</div><h4>CAMS + SENAMHI → ECA</h4><p>Estimación horaria del modelo CAMS (Copernicus, vía Open-Meteo) en el centro de cada ANP y, cuando hay acceso, mediciones de estación del SENAMHI. Promedios de 24 h de PM2,5 y PM10 frente al ECA nacional y la guía OMS 2021.</p></div>
       <div class="card step"><div class="k">Emergencias</div><h4>INDECI → territorio</h4><p>Reportes del COEN leídos de su canal RSS oficial. El tipo, distrito y departamento se extraen del título y se ubican en el centroide del distrito (INEI) para cruzarlos con las ANP.</p></div>
       <div class="card step"><div class="k">Sismos</div><h4>Catálogo sísmico</h4><p>Eventos de magnitud ≥ 3,0 en el territorio y el mar peruano. Se usa el servicio FDSN del USGS porque el servicio de datos del IGP no está disponible públicamente; se indica el ANP más cercana.</p></div>
       <div class="card step"><div class="k">Ecoturismo</div><h4>Semáforo integrado</h4><p>Reglas explícitas que combinan los módulos anteriores por ANP. Pensado para operadores, visitantes y gestores; cada nivel muestra sus motivos.</p></div>
@@ -277,7 +285,7 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
   </section>
 
   <footer>
-    Fuentes: NASA FIRMS · SERNANP – GeoServicios · PNCB-MINAM Geobosques · SENAMHI (directo o vía World Air Quality Index) · INDECI – COEN · USGS · INEI (límites, vía <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a>) · Mapa base © CARTO © OpenStreetMap.<br>
+    Fuentes: NASA FIRMS · SERNANP – GeoServicios · PNCB-MINAM Geobosques · CAMS – Copernicus vía Open-Meteo (CC BY 4.0) · SENAMHI · INDECI – COEN · USGS · INEI (límites, vía <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a>) · Mapa base © CARTO © OpenStreetMap.<br>
     Código y datos: <a id="repo" href="https://github.com/bwperez-alt/focos-anp-peru">github.com/bwperez-alt/focos-anp-peru</a>. Autor: <b style="color:var(--ink-2)">Mg. Pérez Flores, Brandon W.</b> · GreenPulse SAC · <a href="https://www.linkedin.com/in/brandon-perez-flores/" target="_blank" rel="noopener">LinkedIn</a>.
   </footer>
 </div>
@@ -300,8 +308,8 @@ const fechaCorta = d => new Date((d.length <= 10 ? d + "T12:00" : d.replace(" ",
 async function cargar(){
   if (window.__DATOS__) return window.__DATOS__;
   const j = p => fetch(p, {cache:"no-cache"}).then(r => r.ok ? r.json() : null).catch(() => null);
-  const n = ["resumen","focos","estado","aire","deforestacion","defoGrid","riesgos","eco","anp","zr","acr","acp","za"];
-  const u = ["data/resumen.json","data/focos.geojson","data/estado.json","data/aire.json","data/deforestacion.json","data/deforestacion_rejilla.geojson","data/riesgos.json","data/ecoturismo.json",
+  const n = ["airemod","resumen","focos","estado","aire","deforestacion","defoGrid","riesgos","eco","anp","zr","acr","acp","za"];
+  const u = ["data/aire_modelo.json","data/resumen.json","data/focos.geojson","data/estado.json","data/aire.json","data/deforestacion.json","data/deforestacion_rejilla.geojson","data/riesgos.json","data/ecoturismo.json",
              "data/capas/anp_nacional.geojson","data/capas/zonas_reservadas.geojson","data/capas/acr.geojson","data/capas/acp.geojson","data/capas/zonas_amortiguamiento.geojson"];
   const v = await Promise.all(u.map(j));
   return Object.fromEntries(n.map((k, i) => [k, v[i]]));
@@ -312,6 +320,7 @@ cargar().then(D => {
   const eco = D.eco || {areas:[], conteo:{}, reglas:{}};
   const riesgos = D.riesgos || {emergencias:[], sismos:[], resumen_emergencias:{}, resumen_sismos:{}};
   const aire = D.aire || {estaciones:[], resumen:{}};
+  const amod = D.airemod || {areas:[], resumen:{}};
   const defo = D.deforestacion;
   const est = D.estado || {};
 
@@ -319,7 +328,7 @@ cargar().then(D => {
   const loc = d => d ? new Date(d).toLocaleString("es-PE", {timeZone:"America/Lima", dateStyle:"medium", timeStyle:"short"}) : "—";
   $("stamp").innerHTML = `Actualizado <b>${loc(est._generado || res.actualizado)}</b><br>Se actualiza cada hora`;
   const FUENTES = [
-    ["fuego","Focos de calor","NASA FIRMS", 12],["aire","Calidad del aire","SENAMHI", 6],["deforestacion","Deforestación","Geobosques", 24*60],
+    ["fuego","Focos de calor","NASA FIRMS", 12],["aire","Aire medido (Lima)","SENAMHI", 6],["aire_modelo","Aire estimado en ANP","CAMS · Open-Meteo", 6],["deforestacion","Deforestación","Geobosques", 24*60],
     ["riesgos","Emergencias y sismos","INDECI · USGS", 6],["ecoturismo","Semáforo","Integrado", 6]];
   $("fuentes").innerHTML = FUENTES.map(([k, nom, src, maxH]) => {
     const e = est[k] || {}; const ult = e.ultimo_dato;
@@ -336,7 +345,8 @@ cargar().then(D => {
     k("#ecoturismo", "ANP en alerta / atención", `${fmt(eco.conteo?.Alerta)} / ${fmt(eco.conteo?.["Atención"])}`, `de ${fmt(eco.areas.length)} áreas evaluadas`, NIVEL.Alerta) +
     k("#fuego", "Focos dentro de ANP (7 d)", fmt(T.dentro_anp?.focos), `${fmt(T.zona_amortiguamiento?.focos)} en zonas de amortiguamiento`, COL["Dentro de ANP"]) +
     k("#deforestacion", "Alertas de deforestación en ANP", defo ? fmt(defo.totales.dentro_anp) : "—", defo ? `año ${defo.anio} · última ${defo.ultima_alerta}` : "pendiente de carga", "#d55181") +
-    k("#aire", "PM2,5 máx. 24 h (Lima)", AR.pm25_24h_max ? `${AR.pm25_24h_max.toLocaleString("es-PE")} µg/m³` : "—", AR.peor_estacion ? `${esc(AR.peor_estacion)} · ECA 50 µg/m³` : "en acumulación", "#199e70") +
+    (AR.pm25_24h_max ? k("#aire", "PM2,5 máx. 24 h (Lima, medido)", `${AR.pm25_24h_max.toLocaleString("es-PE")} µg/m³`, `${esc(AR.peor_estacion)} · ECA 50 µg/m³`, "#199e70")
+      : k("#aire", "PM2,5 máx. 24 h en ANP (modelo)", amod.resumen?.max_pm25_24h != null ? `${amod.resumen.max_pm25_24h.toLocaleString("es-PE")} µg/m³` : "—", amod.resumen?.area_max ? `${esc(amod.resumen.area_max)} · ${fmt(amod.resumen.sobre_eca_pm25)} ANP sobre el ECA` : "pendiente", "#199e70")) +
     k("#riesgos", "Emergencias INDECI (15 d)", fmt(RE.n), `${fmt(RE.incendios_forestales)} incendios forestales`, "#f2f0e8") +
     k("#riesgos", "Sismos M ≥ 4,5 (30 d)", fmt(RS.n_m45), `${fmt(RS.n)} sismos M ≥ 3 en total`, "#3987e5");
 
@@ -390,7 +400,19 @@ cargar().then(D => {
       <div class="row"><span>PM2,5 · última hora</span><span>${pm.ultimo != null ? pm.ultimo.toLocaleString("es-PE") + " µg/m³" : "—"}</span></div>
       <div class="row"><span>PM10 · 24 h (ECA 100)</span><span>${p10.prom_24h != null ? p10.prom_24h.toLocaleString("es-PE") + " µg/m³" : "—"}</span></div>
       ${spark(e.serie?.["PM2.5"] || [])}</div>`; }).join("")
-    : `<div class="empty">Sin datos de calidad del aire todavía. Esta sección se llena cuando el observatorio tiene acceso al SENAMHI o al token de WAQI.</div>`;
+    : `<div class="empty" style="grid-column:1/-1">Las mediciones de estación del SENAMHI aparecen aquí cuando el observatorio tiene acceso a ellas (token de WAQI). Mientras tanto, la estimación por modelo de arriba cubre todas las ANP.</div>`;
+
+  // ---------- aire estimado (modelo)
+  const AR2 = amod.resumen || {};
+  if (amod.hora_referencia) $("amodSub").textContent = `${amod.fuente}. Hora de referencia: ${amod.hora_referencia} (hora de Perú). ${fmt(AR2.sobre_oms_pm25)} de ${fmt(AR2.n_areas)} ANP superan la guía OMS y ${fmt(AR2.sobre_eca_pm25)} el ECA; mediana: ${(AR2.mediana_pm25_24h ?? 0).toLocaleString("es-PE")} µg/m³.`;
+  $("amodNota").innerHTML = `<p style="margin:0 0 8px">${esc(amod.nota || "Sin datos todavía.")}</p><p style="margin:0 0 8px">La barra muestra el PM2,5 promedio de las últimas 24 h; la línea blanca es el ECA (50 µg/m³) y la gris, la guía OMS (15 µg/m³). Sirve para detectar humo de incendios, polvo y episodios regionales; en ciudades conviene contrastarlo con las estaciones del SENAMHI.</p><p style="margin:0;color:var(--ink-3)">${esc(amod.licencia || "")}</p>`;
+  const pintaAmod = () => { const q = $("buscaAire").value.trim().toLowerCase();
+    const rows = (amod.areas || []).filter(a => !q || a.area.toLowerCase().includes(q));
+    $("amodRes").textContent = `${rows.length} áreas`;
+    $("tablaAmod").querySelector("tbody").innerHTML = rows.length ? rows.map(a => { const v = a.pm2_5_24h, c = v == null ? "#3a403c" : v > 50 ? "#e5484d" : v > 15 ? "#f5a524" : "#2fbf8a";
+      return `<tr class="click" data-lon="${a.lon}" data-lat="${a.lat}"><td>${esc(a.area)}</td><td><div class="meter" style="margin:6px 0 2px"><i style="width:${Math.min(100, (v ?? 0) / 75 * 100)}%;background:${c}"></i><u style="left:${15 / 75 * 100}%"></u><b style="left:${50 / 75 * 100}%"></b></div><span class="cat">${v != null ? v.toLocaleString("es-PE") + " µg/m³" : "sin dato"}</span></td><td class="n">${a.pm2_5_ahora ?? "—"}</td><td class="n">${a.pm2_5_max_prox24h ?? "—"}</td></tr>`; }).join("")
+      : `<tr><td colspan="4" class="empty">Sin datos del modelo todavía.</td></tr>`; };
+  $("buscaAire").addEventListener("input", pintaAmod); pintaAmod();
 
   // ---------- riesgos
   const em = riesgos.emergencias || [];
@@ -406,7 +428,7 @@ cargar().then(D => {
   $("copiarCita").addEventListener("click", () => { const t = $("cita").textContent;
     (navigator.clipboard?.writeText(t) || Promise.reject()).then(() => $("copiado").textContent = "Copiada").catch(() => { const r = document.createRange(); r.selectNodeContents($("cita")); getSelection().removeAllRanges(); getSelection().addRange(r); $("copiado").textContent = "Seleccionada: use Ctrl+C"; }); });
   const DL = [
-    ["Focos de calor clasificados (CSV diarios)", "data/archivo/focos", "tree"], ["Calidad del aire horaria (CSV diarios)", "data/archivo/aire", "tree"],
+    ["Focos de calor clasificados (CSV diarios)", "data/archivo/focos", "tree"], ["Calidad del aire estimada por ANP, horaria (CSV diarios)", "data/archivo/aire_modelo", "tree"], ["Calidad del aire medida, horaria (CSV diarios)", "data/archivo/aire", "tree"],
     ["Emergencias INDECI (CSV)", "data/archivo/emergencias_indeci.csv", "blob"], ["Sismos (CSV)", "data/archivo/sismos.csv", "blob"],
     ["Deforestación: resumen mensual por área (CSV)", "data/archivo", "tree"], ["Indicadores por corrida (CSV)", "data/archivo/historial_indicadores.csv", "blob"],
     ["Capas oficiales usadas (GeoJSON)", "data/base", "tree"], ["Código fuente (Python)", "scripts", "tree"]];
@@ -456,6 +478,9 @@ cargar().then(D => {
       "circle-radius": ["interpolate", ["linear"], ["get", "mag"], 3, 4, 5, 9, 7, 18]}});
     map.addSource("emerg", {type: "geojson", data: pts(em, e => ({tipo: e.tipo || "", lugar: [e.distrito, e.departamento].filter(Boolean).join(", "), t: e.publicado, zona: e.zona || "", area: e.area || ""}))});
     map.addLayer({id: "emerg", type: "circle", source: "emerg", paint: {"circle-color": "#f2f0e8", "circle-radius": 6, "circle-stroke-color": "#0f1110", "circle-stroke-width": 2.5}});
+    map.addSource("airemod", {type: "geojson", data: pts(amod.areas || [], a => ({nom: a.area, pm: a.pm2_5_24h ?? -1, ahora: a.pm2_5_ahora, prox: a.pm2_5_max_prox24h}))});
+    map.addLayer({id: "airemod", type: "circle", source: "airemod", layout: {visibility: "none"}, paint: {"circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 6, 9, 14], "circle-opacity": .85,
+      "circle-stroke-color": "#0f1110", "circle-stroke-width": 1.5, "circle-color": ["step", ["get", "pm"], "#3a403c", 0, "#2fbf8a", 15, "#f5a524", 50, "#e5484d"]}});
     map.addSource("aire", {type: "geojson", data: pts(ests, e => ({nom: e.estacion, pm: e.valores?.["PM2.5"]?.prom_24h ?? -1, ult: e.ultimo}))});
     map.addLayer({id: "aire", type: "circle", source: "aire", paint: {"circle-radius": 7, "circle-stroke-color": "#f2f0e8", "circle-stroke-width": 1.5,
       "circle-color": ["step", ["get", "pm"], "#3a403c", 0, "#199e70", 15, "#f5a524", 50, "#e5484d"]}});
@@ -472,10 +497,11 @@ cargar().then(D => {
       sismos: p => `<b>Sismo M${(+p.mag).toFixed(1)}</b><br><span class="m">${esc(p.t)}</span> · ${p.prof ?? "—"} km<br>${esc(p.ref)}`,
       emerg: p => `<b>${esc(p.tipo)}</b><br>${esc(p.lugar)}<br><span class="m">${esc(p.t)}</span>${p.area ? `<br>${esc(p.zona)}: ${esc(p.area)}` : ""}<br><span class="m">INDECI – COEN</span>`,
       aire: p => `<b>${esc(p.nom)}</b><br>PM2,5 24 h <span class="m">${p.pm >= 0 ? p.pm + " µg/m³" : "en acumulación"}</span><br><span class="m">${esc(p.ult)}</span>`,
+      airemod: p => `<b>${esc(p.nom)}</b><br>PM2,5 24 h (modelo CAMS) <span class="m">${p.pm >= 0 ? p.pm + " µg/m³" : "—"}</span><br>Ahora <span class="m">${p.ahora ?? "—"}</span> · máx. 24 h siguientes <span class="m">${p.prox ?? "—"}</span>`,
       "anp-fill": p => `<b>${esc(p._n)}</b><br>Semáforo: ${esc(p._nivel)}`};
     let sobre = null;
     map.on("mousemove", e => {
-      const f = map.queryRenderedFeatures(e.point, {layers: ["emerg", "aire", "sismos", "focos", "defo", "anp-fill"].filter(l => map.getLayer(l) && map.getLayoutProperty(l, "visibility") !== "none")})[0];
+      const f = map.queryRenderedFeatures(e.point, {layers: ["emerg", "aire", "airemod", "sismos", "focos", "defo", "anp-fill"].filter(l => map.getLayer(l) && map.getLayoutProperty(l, "visibility") !== "none")})[0];
       map.getCanvas().style.cursor = f && f.layer.id !== "anp-fill" ? "pointer" : "";
       if (!f) { if (sobre) { hideTip(); sobre = null; } return; }
       sobre = f.layer.id; showTip(e.originalEvent, T[f.layer.id](f.properties));

@@ -25,6 +25,7 @@ REGLAS = {
         "Otra emergencia INDECI dentro del ANP, o cualquier emergencia en su zona de amortiguamiento (últimos 7 días)",
         "Sismo de magnitud ≥ 5,0 a menos de 100 km en los últimos 7 días",
         "PM2,5 (24 h) sobre el ECA en una estación a menos de 30 km",
+        "PM2,5 (24 h) estimado por el modelo CAMS sobre el ECA (50 µg/m³) en el área",
     ],
 }
 
@@ -54,6 +55,7 @@ def ejecutar(salida: Path, capas_anp) -> dict:
     if not sismos.empty:
         sismos["t"] = pd.to_datetime(sismos.t)
     aire = _leer(salida / "aire.json", {}).get("estaciones", [])
+    aire_mod = {r["area"]: r for r in _leer(salida / "aire_modelo.json", {}).get("areas", [])}
     defo = {(r["area"], r["zona"]): r for r in _leer(salida / "deforestacion.json", {}).get("ranking_areas", [])}
 
     filas = []
@@ -93,6 +95,8 @@ def ejecutar(salida: Path, capas_anp) -> dict:
                     pm = (e.get("valores", {}).get("PM2.5") or {}).get("prom_24h")
                     if pm is not None:
                         m["pm25_24h"] = max(m["pm25_24h"] or 0, pm)
+            am = aire_mod.get(nom, {})
+            m["pm25_modelo_24h"] = am.get("pm2_5_24h")
             m["deforestacion_90d"] = int(defo.get((nom, "Dentro de ANP"), {}).get("ultimos_90d", 0))
 
             if m["fuego_anp_72h"] >= 3:
@@ -109,6 +113,8 @@ def ejecutar(salida: Path, capas_anp) -> dict:
                 nivel = "Atención" if nivel == "Normal" else nivel; motivos.append(f"{m['fuego_za_7d']} focos en la zona de amortiguamiento (7 días)")
             if m["pm25_24h"] is not None and m["pm25_24h"] > 50:
                 nivel = "Atención" if nivel == "Normal" else nivel; motivos.append(f"PM2,5 de {m['pm25_24h']} µg/m³ en 24 h (sobre el ECA)")
+            if m["pm25_modelo_24h"] is not None and m["pm25_modelo_24h"] > 50:
+                nivel = "Atención" if nivel == "Normal" else nivel; motivos.append(f"PM2,5 estimado (CAMS) de {m['pm25_modelo_24h']} µg/m³ en 24 h (sobre el ECA)")
             filas.append({"area": nom, "categoria": it["extra"].get("cat") or tipo, "codigo": it["extra"].get("codi", ""),
                           "lon": round(lo, 3), "lat": round(la, 3), "nivel": nivel, "motivos": motivos, **m})
 
