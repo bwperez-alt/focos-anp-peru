@@ -57,34 +57,47 @@ def nota_corte(xl: pd.DataFrame) -> str | None:
     return None
 
 
+def _anio(v) -> int | None:
+    try:
+        n = int(float(str(v).strip()))
+        return n if 2000 <= n <= 2100 else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _num(v) -> float | None:
+    if isinstance(v, (int, float)) and not pd.isna(v):
+        return float(v)
+    try:
+        return float(str(v).replace(",", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
 def leer_sitio(xl: pd.DataFrame) -> pd.DataFrame:
     """Tabla 'año x (Nacional, Extranjero, Total)' con filas Enero..Diciembre -> formato largo."""
-    fila_anios = next(i for i, r in xl.iterrows() if sum(isinstance(v, (int, float)) and 2000 <= v <= 2100 for v in r.tolist()) >= 1)
-    anios = {}
-    for j, v in enumerate(xl.iloc[fila_anios].tolist()):
-        if isinstance(v, (int, float)) and 2000 <= v <= 2100:
-            anios[j] = int(v)
-    cab = xl.iloc[fila_anios + 1].astype(str).str.lower().tolist()
-    cols = []  # (anio, tipo, j)
-    anio_actual = None
+    fila_anios = next(i for i, r in xl.iterrows() if sum(_anio(v) is not None for v in r.tolist()) >= 1
+                      and not any(str(v).strip().lower() in MESES for v in r.tolist()))
+    anios = {j: _anio(v) for j, v in enumerate(xl.iloc[fila_anios].tolist()) if _anio(v) is not None}
+    cab = [str(v).strip().lower() for v in xl.iloc[fila_anios + 1].tolist()]
+    cols, anio_actual = [], None
     for j, c in enumerate(cab):
         if j in anios:
             anio_actual = anios[j]
-        if anio_actual and c.strip() in ("nacional", "extranjero", "total"):
-            cols.append((anio_actual, c.strip(), j))
+        if anio_actual and c in ("nacional", "extranjero", "total"):
+            cols.append((anio_actual, c, j))
     filas = []
     for _, r in xl.iterrows():
-        etiqueta = str(r.iloc[0]).strip().lower() if str(r.iloc[0]) != "nan" else next((str(v).strip().lower() for v in r.tolist() if str(v) != "nan"), "")
+        valores = r.tolist()
+        etiqueta = str(valores[0]).strip().lower() if len(valores) else ""
         if etiqueta not in MESES:
             continue
-        valores = r.tolist()
-        # las celdas vacías se desplazan en algunas exportaciones: se usan las posiciones de la cabecera
         mes = MESES.index(etiqueta) + 1
-        reg = {}
+        reg: dict[int, dict] = {}
         for anio, tipo, j in cols:
-            v = valores[j] if j < len(valores) else None
-            if isinstance(v, (int, float)) and not pd.isna(v):
-                reg.setdefault(anio, {})[tipo] = float(v)
+            v = _num(valores[j]) if j < len(valores) else None
+            if v is not None:
+                reg.setdefault(anio, {})[tipo] = v
         for anio, d in reg.items():
             if "total" in d or ("nacional" in d and "extranjero" in d):
                 filas.append({"anio": anio, "mes": mes, "nacional": d.get("nacional"), "extranjero": d.get("extranjero"),
