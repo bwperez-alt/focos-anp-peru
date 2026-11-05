@@ -189,13 +189,7 @@ def agrupar_eventos(df: pd.DataFrame) -> pd.DataFrame:
 # 4. Cruce con el territorio
 # --------------------------------------------------------------------------- #
 def cruzar(df: pd.DataFrame) -> pd.DataFrame:
-    capas_anp = [
-        ("ANP nacional", Capa(BASE / "anp_nacional.geojson", "anp_nomb", lambda p: {"cat": p.get("anp_cate", "")})),
-        ("Zona reservada", Capa(BASE / "zonas_reservadas.geojson", "zr_nomb", lambda p: {"cat": "Zona Reservada"})),
-        ("Área de conservación regional", Capa(BASE / "acr.geojson", "acr_nomb", lambda p: {"cat": "Área de Conservación Regional"})),
-        ("Área de conservación privada", Capa(BASE / "acp.geojson", "acp_nomb", lambda p: {"cat": "Área de Conservación Privada"})),
-    ]
-    za = Capa(BASE / "zonas_amortiguamiento.geojson", "anp_nomb")
+    capas_anp, za = capas_territorio()
     xy = df[["longitude", "latitude"]].to_numpy()
     df["zona"] = "Fuera de ANP"
     df["area"] = ""
@@ -292,8 +286,9 @@ def guardar(df: pd.DataFrame, res: dict) -> None:
     ARCHIVO.mkdir(parents=True, exist_ok=True)
     cols = ["acq_date", "acq_time", "latitude", "longitude", "sensor", "frp", "confianza", "daynight", "departamento", "zona", "area", "categoria"]
     nuevo = df[cols].copy()
-    for mes, parte in nuevo.groupby(nuevo.acq_date.str[:7]):
-        f = ARCHIVO / f"focos_{mes}.csv"
+    for dia, parte in nuevo.groupby(nuevo.acq_date.str[:10]):
+        f = ARCHIVO / "focos" / dia[:7] / f"focos_{dia}.csv"
+        f.parent.mkdir(parents=True, exist_ok=True)
         if f.exists():
             parte = pd.concat([pd.read_csv(f), parte], ignore_index=True)
         parte.drop_duplicates(subset=["sensor", "latitude", "longitude", "acq_date", "acq_time"]).sort_values(["acq_date", "acq_time"]).to_csv(f, index=False)
@@ -307,14 +302,36 @@ def guardar(df: pd.DataFrame, res: dict) -> None:
     fila.to_csv(h, mode="a", header=not h.exists(), index=False)
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--ventana", default="7d", choices=["24h", "48h", "7d"])
-    ap.add_argument("--entrada", type=Path, help="carpeta con CSV de FIRMS (modo sin conexión)")
-    a = ap.parse_args()
+def nombre_oficial(cat: str, nomb: str) -> str:
+    """'Parque Nacional' + 'del Manu' -> 'Parque Nacional del Manu'."""
+    cat, nomb = (cat or "").strip(), (nomb or "").strip()
+    return f"{cat} {nomb}".strip() if cat and not nomb.lower().startswith(cat.lower()) else nomb
 
+
+def capas_territorio():
+    """ANP (nacional, ZR, ACR, ACP) y zonas de amortiguamiento, con nombres oficiales completos."""
+    anp = json.loads((BASE / "anp_nacional.geojson").read_text())
+    completo = {f["properties"].get("anp_codi"): nombre_oficial(f["properties"].get("anp_cate"), f["properties"].get("anp_nomb"))
+                for f in anp["features"]}
+    zr = {f["properties"].get("zr_codi"): f["properties"].get("zr_nomb") for f in json.loads((BASE / "zonas_reservadas.geojson").read_text())["features"]}
+    capas = [
+        ("ANP nacional", Capa(BASE / "anp_nacional.geojson", lambda p: nombre_oficial(p.get("anp_cate"), p.get("anp_nomb")),
+                              lambda p: {"cat": p.get("anp_cate", ""), "codi": p.get("anp_codi", "")})),
+        ("Zona reservada", Capa(BASE / "zonas_reservadas.geojson", lambda p: nombre_oficial("Zona Reservada", p.get("zr_nomb")),
+                                lambda p: {"cat": "Zona Reservada", "codi": p.get("zr_codi", "")})),
+        ("Área de conservación regional", Capa(BASE / "acr.geojson", lambda p: nombre_oficial("Área de Conservación Regional", p.get("acr_nomb")),
+                                               lambda p: {"cat": "Área de Conservación Regional", "codi": p.get("acr_codi", "")})),
+        ("Área de conservación privada", Capa(BASE / "acp.geojson", lambda p: nombre_oficial("Área de Conservación Privada", p.get("acp_nomb")),
+                                              lambda p: {"cat": "Área de Conservación Privada", "codi": p.get("acp_codi", "")})),
+    ]
+    za = Capa(BASE / "zonas_amortiguamiento.geojson",
+              lambda p: completo.get(p.get("anp_codi")) or (nombre_oficial("Zona Reservada", zr[p.get("anp_codi")]) if p.get("anp_codi") in zr else p.get("anp_nomb", "")))
+    return capas, za
+
+
+def ejecutar(ventana: str = "7d", entrada: Path | None = None):
     print("1) Captura FIRMS")
-    df = capturar(a.ventana, a.entrada)
+    df = capturar(ventana, entrada)
     print("2) Limpieza")
     deps = Capa(BASE / "departamentos.geojson", "departamento")
     df, limp = limpiar(df, deps)
@@ -325,10 +342,19 @@ def main() -> None:
     print("4) Cruce con ANP y zonas de amortiguamiento")
     df = cruzar(df)
     print("5) Indicadores")
-    res = indicadores(df, limp, a.ventana)
+    res = indicadores(df, limp, ventana)
     guardar(df, res)
     t = res["totales"]
     print(f"   focos={t['focos']:,} eventos={t['eventos']:,} | ANP={t['dentro_anp']} | ZA={t['zona_amortiguamiento']} | áreas afectadas={t['areas_afectadas']}")
+    return df, res
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ventana", default="7d", choices=["24h", "48h", "7d"])
+    ap.add_argument("--entrada", type=Path, help="carpeta con CSV de FIRMS (modo sin conexión)")
+    a = ap.parse_args()
+    ejecutar(a.ventana, a.entrada)
 
 
 if __name__ == "__main__":

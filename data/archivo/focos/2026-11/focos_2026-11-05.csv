@@ -1,0 +1,31 @@
+acq_date,acq_time,latitude,longitude,sensor,frp,confianza,daynight,departamento,zona,area,categoria
+2026-11-05,601,-6.18604,-76.24209,VIIRS NOAA-21,2.23,nominal,N,San Martin,Fuera de ANP,,
+2026-11-05,601,-8.35102,-75.21245,VIIRS NOAA-21,1.37,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-8.45715,-75.06367,VIIRS NOAA-21,2.39,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-8.72712,-74.28338,VIIRS NOAA-21,0.98,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-8.73077,-74.284,VIIRS NOAA-21,0.98,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-8.74163,-74.2636,VIIRS NOAA-21,2.31,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-8.75837,-74.25304,VIIRS NOAA-21,1.01,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-9.01229,-74.12209,VIIRS NOAA-21,2.54,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-9.01303,-74.12531,VIIRS NOAA-21,2.14,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,601,-9.44801,-74.95549,VIIRS NOAA-21,1.06,nominal,N,Huanuco,Zona de amortiguamiento,El Sira,Zona de amortiguamiento
+2026-11-05,603,-10.08918,-74.85919,VIIRS NOAA-21,1.04,nominal,N,Pasco,Zona de amortiguamiento,El Sira,Zona de amortiguamiento
+2026-11-05,603,-10.08804,-74.8571,VIIRS NOAA-21,1.19,nominal,N,Pasco,Zona de amortiguamiento,El Sira,Zona de amortiguamiento
+2026-11-05,603,-10.37608,-73.82035,VIIRS NOAA-21,1.66,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,603,-10.37959,-73.82092,VIIRS NOAA-21,1.5,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,603,-11.7594,-69.37715,VIIRS NOAA-21,0.47,nominal,N,Madre de Dios,Fuera de ANP,,
+2026-11-05,603,-11.85607,-69.43454,VIIRS NOAA-21,0.7,nominal,N,Madre de Dios,Fuera de ANP,,
+2026-11-05,603,-11.02985,-74.91462,VIIRS NOAA-21,2.1,nominal,N,Junin,Fuera de ANP,,
+2026-11-05,603,-12.33534,-69.22507,VIIRS NOAA-21,0.85,nominal,N,Madre de Dios,Fuera de ANP,,
+2026-11-05,603,-12.33881,-69.2256,VIIRS NOAA-21,1.55,nominal,N,Madre de Dios,Fuera de ANP,,
+2026-11-05,603,-12.36659,-69.22986,VIIRS NOAA-21,1.1,nominal,N,Madre de Dios,Fuera de ANP,,
+2026-11-05,603,-11.7612,-74.03619,VIIRS NOAA-21,1.81,nominal,N,Junin,Fuera de ANP,,
+2026-11-05,603,-12.83082,-69.59451,VIIRS NOAA-21,2.1,nominal,N,Madre de Dios,Zona de amortiguamiento,Tambopata,Zona de amortiguamiento
+2026-11-05,603,-12.87268,-74.25293,VIIRS NOAA-21,1.68,nominal,N,Ayacucho,Fuera de ANP,,
+2026-11-05,603,-13.5989,-71.72407,VIIRS NOAA-21,0.94,nominal,N,Cusco,Fuera de ANP,,
+2026-11-05,603,-14.85146,-70.52647,VIIRS NOAA-21,2.32,nominal,N,Puno,Fuera de ANP,,
+2026-11-05,603,-15.57741,-70.11354,VIIRS NOAA-21,0.89,nominal,N,Puno,Fuera de ANP,,
+2026-11-05,603,-16.2567,-71.68542,VIIRS NOAA-21,1.11,nominal,N,Arequipa,Fuera de ANP,,
+2026-11-05,701,-10.37833,-73.82405,VIIRS NOAA-20,1.15,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,701,-10.37882,-73.82032,VIIRS NOAA-20,1.15,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-05,701,-8.35116,-75.21378,VIIRS NOAA-20,1.22,nominal,N,Ucayali,Fuera de ANP,,

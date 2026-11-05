@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+# salidas que se regeneran cada hora (se conservan entre corridas con la caché de Actions)
+docs/data/*
+!docs/data/deforestacion.json
+!docs/data/deforestacion_rejilla.geojson
