@@ -383,7 +383,14 @@ cargar().then(D => {
     barras("serieDefo", defo.serie_mensual.map(d => ({lab: new Date(d.mes + "-15").toLocaleDateString("es-PE", {month:"short"}), full: d.mes, v: [d.fuera, d.za, d.anp]})), ["Fuera de ANP","Zona de amortiguamiento","Dentro de ANP"], ["#5c4652", "#b8708f", "#d55181"]);
     $("rankDefo").querySelector("tbody").innerHTML = defo.ranking_areas.map(r => `<tr><td>${esc(r.zona === "Zona de amortiguamiento" ? "ZA · " + r.area : r.area)}<span class="cat">${esc(r.zona)} · última ${esc(r.ultima)}</span></td><td class="n">${fmt(r.alertas)}</td><td class="n">${fmt(r.ultimos_90d)}</td></tr>`).join("");
   } else {
-    $("kpisDefo").outerHTML = `<div class="card note">Las alertas de deforestación se cargan cuando se sube al repositorio el archivo oficial de Geobosques (los servidores del MINAM no aceptan descargas automáticas desde fuera del Perú). Instrucciones en el <a href="${REPO}#deforestación" target="_blank" rel="noopener">README</a>.</div>`;
+    const sec = $("deforestacion"); sec.querySelector(".grid2").remove();
+    $("kpisDefo").outerHTML = `<div class="card note" style="padding:18px 20px">
+      <p style="margin:0 0 10px"><b>Pendiente de carga.</b> Geobosques (PNCB – MINAM) no permite descargas automáticas desde fuera del Perú, así que este módulo se actualiza cuando se sube el archivo oficial al repositorio (recomendado: una vez al mes).</p>
+      <ol style="margin:0 0 12px;padding-left:20px;line-height:1.8">
+        <li>Descargar en <a href="https://geobosques.minam.gob.pe/geobosque/view/descargas.php" target="_blank" rel="noopener">Geobosques → Descargas</a>, categoría <i>Alerta Temprana de Deforestación (ATD)</i>: <b>“Alertas Tempranas ${new Date().getFullYear()} – PNCB (Puntos)”</b> (archivo .zip, sin descomprimir).</li>
+        <li>Subirlo a la carpeta <code>data/entrada</code> del <a href="${REPO}/upload/main/data/entrada" target="_blank" rel="noopener">repositorio</a> y pulsar <i>Commit changes</i>.</li>
+      </ol>
+      <span style="color:var(--ink-3)">En pocos minutos aparecerán aquí la serie mensual, el ranking de ANP y la capa en el mapa.</span></div>`;
   }
 
   // ---------- aire
