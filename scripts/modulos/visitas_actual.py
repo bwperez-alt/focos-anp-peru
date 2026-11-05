@@ -50,7 +50,8 @@ def exportar(s: requests.Session, rid: str, ini: int, fin: int) -> bytes:
 
 
 def nota_corte(xl: pd.DataFrame) -> str | None:
-    for v in xl.astype(str).values.ravel():
+    for v in xl.values.ravel():
+        v = str(v)
         m = re.search(r"disponible al (\d{1,2} de \w+ (?:de|del) \d{4})", v, re.I)
         if m:
             return m.group(1)
@@ -66,12 +67,11 @@ def _anio(v) -> int | None:
 
 
 def _num(v) -> float | None:
-    if isinstance(v, (int, float)) and not pd.isna(v):
-        return float(v)
     try:
-        return float(str(v).replace(",", "").strip())
+        x = float(str(v).replace(",", "").strip())
     except (TypeError, ValueError):
         return None
+    return None if pd.isna(x) else x
 
 
 def leer_sitio(xl: pd.DataFrame) -> pd.DataFrame:
