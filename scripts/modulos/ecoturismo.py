@@ -16,13 +16,13 @@ import pandas as pd
 REGLAS = {
     "Alerta": [
         "3 o más focos de calor dentro del ANP en las últimas 72 h",
-        "Emergencia reportada por INDECI dentro del ANP en los últimos 7 días",
+        "Incendio forestal reportado por INDECI en un distrito cuyo centroide cae dentro del ANP (últimos 7 días)",
         "Sismo de magnitud ≥ 6,5 a menos de 100 km en las últimas 72 h",
     ],
     "Atención": [
         "Al menos un foco de calor dentro del ANP en los últimos 7 días",
         "5 o más focos en la zona de amortiguamiento en los últimos 7 días",
-        "Emergencia reportada por INDECI en la zona de amortiguamiento en los últimos 7 días",
+        "Otra emergencia INDECI dentro del ANP, o cualquier emergencia en su zona de amortiguamiento (últimos 7 días)",
         "Sismo de magnitud ≥ 5,0 a menos de 100 km en los últimos 7 días",
         "PM2,5 (24 h) sobre el ECA en una estación a menos de 30 km",
     ],
@@ -73,6 +73,7 @@ def ejecutar(salida: Path, capas_anp) -> dict:
             if not emerg.empty and "area" in emerg:
                 rec = emerg[(emerg.area == nom) & (emerg.t > ahora - timedelta(days=7))]
                 m["emerg_anp"] = int((rec.zona == "Dentro de ANP").sum())
+                m["incendio_anp"] = int(((rec.zona == "Dentro de ANP") & rec.tipo.fillna("").str.lower().str.startswith("incendio forestal")).sum())
                 m["emerg_za"] = int((rec.zona == "Zona de amortiguamiento").sum())
                 m["emerg_tipos"] = sorted(set(rec.tipo.dropna()))
             if not sismos.empty:
@@ -98,8 +99,10 @@ def ejecutar(salida: Path, capas_anp) -> dict:
                 nivel = "Alerta"; motivos.insert(0, f"{m['fuego_anp_72h']} focos de calor dentro del área (72 h)")
             elif m["fuego_anp_7d"] >= 1:
                 nivel = "Atención" if nivel == "Normal" else nivel; motivos.insert(0, f"{m['fuego_anp_7d']} foco{'s' if m['fuego_anp_7d'] != 1 else ''} de calor dentro del área (7 días)")
-            if m["emerg_anp"]:
-                nivel = "Alerta"; motivos.append(f"Emergencia INDECI dentro del área: {', '.join(m.get('emerg_tipos', []))}")
+            if m.get("incendio_anp"):
+                nivel = "Alerta"; motivos.append("Incendio forestal reportado por INDECI dentro del área")
+            if m["emerg_anp"] > m.get("incendio_anp", 0):
+                nivel = "Atención" if nivel == "Normal" else nivel; motivos.append(f"Emergencia INDECI dentro del área: {', '.join(t for t in m.get('emerg_tipos', []) if not t.lower().startswith('incendio forestal')) or 'ver reportes'}")
             elif m["emerg_za"]:
                 nivel = "Atención" if nivel == "Normal" else nivel; motivos.append(f"Emergencia INDECI en la zona de amortiguamiento: {', '.join(m.get('emerg_tipos', []))}")
             if m["fuego_za_7d"] >= 5:
