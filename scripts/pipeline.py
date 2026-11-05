@@ -59,7 +59,7 @@ def capturar(ventana: str, entrada: Path | None) -> pd.DataFrame:
             if entrada:
                 texto = (entrada / ARCHIVO_LOCAL[sensor]).read_text()
             else:
-                r = requests.get(f"{FIRMS}/{ruta.format(v=ventana)}", timeout=120)
+                r = requests.get(f"{FIRMS}/{ruta.format(v=ventana)}", timeout=60)
                 r.raise_for_status()
                 texto = r.text
             df = pd.read_csv(io.StringIO(texto))
@@ -69,7 +69,7 @@ def capturar(ventana: str, entrada: Path | None) -> pd.DataFrame:
         except Exception as e:  # un sensor caído no debe tumbar todo el flujo
             print(f"  ! {sensor}: no disponible ({e})", file=sys.stderr)
     if not tablas:
-        raise SystemExit("No se pudo descargar ningún sensor de FIRMS.")
+        raise RuntimeError("No se pudo descargar ningún sensor de FIRMS.")
     return pd.concat(tablas, ignore_index=True)
 
 

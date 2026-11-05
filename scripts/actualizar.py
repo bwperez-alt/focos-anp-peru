@@ -50,7 +50,7 @@ def main() -> None:
             estado[nombre] = {**previo, **r, "ok": True, "error": None, "ejecutado": ahora(), "segundos": round(time.time() - t0, 1)}
             if not r.get("omitido"):
                 estado[nombre]["actualizado"] = ahora()
-        except Exception as e:  # noqa: BLE001
+        except (Exception, SystemExit) as e:  # noqa: BLE001
             traceback.print_exc()
             estado[nombre] = {**previo, "ok": False, "error": f"{type(e).__name__}: {e}"[:300], "ejecutado": ahora()}
         print(f"    -> {estado[nombre]}")
