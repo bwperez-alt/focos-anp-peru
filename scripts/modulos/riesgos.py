@@ -41,8 +41,10 @@ def centroides_distritos(base: Path) -> pd.DataFrame:
     gj = requests.get(DISTRITOS_URL, headers=H, timeout=120).json()
     filas = []
     for ft in gj["features"]:
-        p = ft["properties"]
-        g = ft["geometry"]
+        p = ft.get("properties") or {}
+        g = ft.get("geometry")
+        if not g or not g.get("coordinates"):
+            continue
         polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
         anillo = max((np.asarray(pl[0]) for pl in polys), key=len)
         x, y = anillo[:, 0], anillo[:, 1]
