@@ -19,11 +19,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 00:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,3.3,3.3,15.0,0.2,123.0,0.0
 2026-11-05 00:00,Parque Nacional Yaguas,-71.295,-2.916,7.8,7.8,10.0,1.7,129.0,0.0
 2026-11-05 00:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.4,4.4,5.0,7.9,139.0,0.0
-2026-11-05 00:00,Parque Nacional de Cutervo,-78.793,-6.245,6.1,6.2,45.0,3.0,154.0,0.0
+2026-11-05 00:00,Parque Nacional de Cutervo,-78.786,-6.224,6.1,6.2,45.0,3.0,154.0,0.0
 2026-11-05 00:00,Parque Nacional de Tingo María,-76.005,-9.373,3.1,3.2,20.0,5.6,247.0,0.0
 2026-11-05 00:00,Parque Nacional del Manu,-71.635,-12.261,8.8,8.9,6.0,1.3,124.0,0.0
 2026-11-05 00:00,Parque Nacional del Río Abiseo,-77.225,-7.732,0.9,0.9,26.0,2.1,147.0,0.0
-2026-11-05 00:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,5.2,6.2,33.0,4.6,100.0,0.0
+2026-11-05 00:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,5.2,6.2,33.0,4.6,144.0,0.0
 2026-11-05 00:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.8,7.2,30.0,4.4,106.0,1.0
 2026-11-05 00:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.4,11.8,40.0,5.6,111.0,4.0
 2026-11-05 00:00,Reserva Comunal Airo Pai,-74.881,-0.751,1.7,1.7,11.0,3.0,116.0,0.0
@@ -40,7 +40,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 00:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.5,6.6,13.0,1.0,255.0,0.0
 2026-11-05 00:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,12.0,21.0,63.0,0.0,76.0,0.0
 2026-11-05 00:00,Reserva Nacional Illescas,-81.077,-5.963,5.7,10.1,48.0,0.3,86.0,1.0
-2026-11-05 00:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.6,3.7,31.0,3.1,90.0,0.0
+2026-11-05 00:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,4.4,7.0,44.0,0.8,91.0,1.0
 2026-11-05 00:00,Reserva Nacional Matsés,-73.493,-5.724,2.7,2.7,14.0,0.3,124.0,0.0
 2026-11-05 00:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,1.7,1.7,16.0,0.4,121.0,0.0
 2026-11-05 00:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,7.4,16.0,9.0,16.7,107.0,24.0
@@ -78,7 +78,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 00:00,Reserva Nacional de Paracas,-76.252,-14.117,8.0,16.5,54.0,0.2,82.0,6.0
 2026-11-05 00:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,10.9,48.5,34.0,12.6,124.0,103.0
 2026-11-05 00:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.1,1.3,53.0,4.1,101.0,0.0
-2026-11-05 00:00,Reserva Nacional del Titicaca,-69.808,-15.261,7.5,9.1,25.0,16.5,132.0,3.0
+2026-11-05 00:00,Reserva Nacional del Titicaca,-69.916,-15.646,7.6,8.3,50.0,3.1,126.0,1.0
 2026-11-05 00:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,5.3,5.8,36.0,9.5,149.0,1.0
 2026-11-05 00:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,0.4,0.5,53.0,2.5,112.0,1.0
 2026-11-05 00:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.8,7.2,30.0,4.4,110.0,1.0
@@ -120,11 +120,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 01:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,2.6,2.6,15.0,0.2,122.0,0.0
 2026-11-05 01:00,Parque Nacional Yaguas,-71.295,-2.916,8.0,8.0,12.0,1.4,129.0,0.0
 2026-11-05 01:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.2,4.2,5.0,7.8,140.0,0.0
-2026-11-05 01:00,Parque Nacional de Cutervo,-78.793,-6.245,6.0,6.0,42.0,3.2,145.0,0.0
+2026-11-05 01:00,Parque Nacional de Cutervo,-78.786,-6.224,6.0,6.0,42.0,3.2,145.0,0.0
 2026-11-05 01:00,Parque Nacional de Tingo María,-76.005,-9.373,2.2,2.2,24.0,3.3,244.0,0.0
 2026-11-05 01:00,Parque Nacional del Manu,-71.635,-12.261,8.4,8.4,4.0,1.4,125.0,0.0
 2026-11-05 01:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.1,1.1,18.0,2.6,148.0,0.0
-2026-11-05 01:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,5.5,6.3,31.0,5.5,99.0,0.0
+2026-11-05 01:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,5.5,6.3,31.0,5.5,146.0,0.0
 2026-11-05 01:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,5.1,7.5,28.0,4.7,108.0,1.0
 2026-11-05 01:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.5,11.9,40.0,4.9,100.0,4.0
 2026-11-05 01:00,Reserva Comunal Airo Pai,-74.881,-0.751,1.8,1.8,11.0,2.9,116.0,0.0
@@ -141,7 +141,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 01:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.5,6.6,13.0,1.0,243.0,0.0
 2026-11-05 01:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,11.9,20.7,63.0,0.0,76.0,0.0
 2026-11-05 01:00,Reserva Nacional Illescas,-81.077,-5.963,6.1,10.8,48.0,0.3,86.0,1.0
-2026-11-05 01:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.5,3.6,31.0,3.1,89.0,0.0
+2026-11-05 01:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,4.0,6.3,44.0,0.8,91.0,1.0
 2026-11-05 01:00,Reserva Nacional Matsés,-73.493,-5.724,2.7,2.7,14.0,0.3,123.0,0.0
 2026-11-05 01:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.0,2.0,15.0,0.5,120.0,0.0
 2026-11-05 01:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,7.6,14.7,5.0,18.3,106.0,18.0
@@ -179,7 +179,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 01:00,Reserva Nacional de Paracas,-76.252,-14.117,7.5,15.6,54.0,0.2,83.0,6.0
 2026-11-05 01:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,10.9,45.2,30.0,13.7,121.0,98.0
 2026-11-05 01:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.6,2.0,52.0,4.0,101.0,0.0
-2026-11-05 01:00,Reserva Nacional del Titicaca,-69.808,-15.261,7.5,9.2,20.0,17.8,129.0,4.0
+2026-11-05 01:00,Reserva Nacional del Titicaca,-69.916,-15.646,7.4,8.1,46.0,3.8,123.0,1.0
 2026-11-05 01:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,6.1,6.6,39.0,8.6,150.0,1.0
 2026-11-05 01:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,0.5,0.6,47.0,3.0,111.0,0.0
 2026-11-05 01:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,5.1,7.5,28.0,4.7,111.0,1.0
@@ -221,11 +221,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 02:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,2.1,2.1,15.0,0.2,122.0,0.0
 2026-11-05 02:00,Parque Nacional Yaguas,-71.295,-2.916,8.5,8.5,14.0,1.2,129.0,0.0
 2026-11-05 02:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.1,4.1,5.0,7.6,141.0,0.0
-2026-11-05 02:00,Parque Nacional de Cutervo,-78.793,-6.245,5.6,5.6,39.0,3.3,141.0,0.0
+2026-11-05 02:00,Parque Nacional de Cutervo,-78.786,-6.224,5.6,5.6,39.0,3.3,141.0,0.0
 2026-11-05 02:00,Parque Nacional de Tingo María,-76.005,-9.373,2.0,2.0,21.0,2.8,226.0,0.0
 2026-11-05 02:00,Parque Nacional del Manu,-71.635,-12.261,7.9,8.0,3.0,1.6,126.0,0.0
 2026-11-05 02:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.2,1.3,12.0,3.2,148.0,0.0
-2026-11-05 02:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,5.6,6.2,28.0,6.4,97.0,0.0
+2026-11-05 02:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,5.6,6.2,28.0,6.4,148.0,0.0
 2026-11-05 02:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,5.0,7.3,26.0,4.7,108.0,1.0
 2026-11-05 02:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.5,12.1,41.0,4.1,90.0,4.0
 2026-11-05 02:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.0,2.0,10.0,3.2,115.0,0.0
@@ -242,7 +242,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 02:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.4,6.5,13.0,1.0,232.0,0.0
 2026-11-05 02:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,11.9,20.7,63.0,0.0,76.0,0.0
 2026-11-05 02:00,Reserva Nacional Illescas,-81.077,-5.963,6.4,11.3,48.0,0.3,86.0,1.0
-2026-11-05 02:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.5,3.5,31.0,3.0,89.0,0.0
+2026-11-05 02:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.8,5.9,44.0,0.7,90.0,1.0
 2026-11-05 02:00,Reserva Nacional Matsés,-73.493,-5.724,2.7,2.7,14.0,0.3,122.0,0.0
 2026-11-05 02:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.2,2.2,14.0,0.6,120.0,0.0
 2026-11-05 02:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,7.6,13.6,2.0,19.1,104.0,13.0
@@ -280,7 +280,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 02:00,Reserva Nacional de Paracas,-76.252,-14.117,7.2,15.3,54.0,0.2,83.0,6.0
 2026-11-05 02:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,10.9,39.6,31.0,12.8,117.0,84.0
 2026-11-05 02:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.1,2.6,52.0,3.7,100.0,0.0
-2026-11-05 02:00,Reserva Nacional del Titicaca,-69.808,-15.261,7.6,9.4,18.0,17.6,128.0,5.0
+2026-11-05 02:00,Reserva Nacional del Titicaca,-69.916,-15.646,7.0,7.8,41.0,5.8,124.0,3.0
 2026-11-05 02:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,5.8,6.5,42.0,7.1,151.0,1.0
 2026-11-05 02:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,0.7,0.8,43.0,3.2,110.0,0.0
 2026-11-05 02:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,5.0,7.3,26.0,4.7,108.0,1.0
@@ -322,11 +322,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 03:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,1.7,1.7,15.0,0.2,121.0,0.0
 2026-11-05 03:00,Parque Nacional Yaguas,-71.295,-2.916,8.8,8.8,16.0,1.0,128.0,0.0
 2026-11-05 03:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.0,4.0,6.0,7.3,142.0,0.0
-2026-11-05 03:00,Parque Nacional de Cutervo,-78.793,-6.245,5.3,5.4,36.0,3.4,140.0,0.0
+2026-11-05 03:00,Parque Nacional de Cutervo,-78.786,-6.224,5.3,5.4,36.0,3.4,140.0,0.0
 2026-11-05 03:00,Parque Nacional de Tingo María,-76.005,-9.373,2.1,2.1,16.0,3.0,202.0,0.0
 2026-11-05 03:00,Parque Nacional del Manu,-71.635,-12.261,7.5,7.6,4.0,1.7,126.0,0.0
 2026-11-05 03:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.4,1.4,8.0,3.8,147.0,0.0
-2026-11-05 03:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,5.8,6.3,24.0,7.3,95.0,0.0
+2026-11-05 03:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,5.8,6.3,24.0,7.3,149.0,0.0
 2026-11-05 03:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.7,7.0,25.0,4.6,107.0,1.0
 2026-11-05 03:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.5,12.3,42.0,3.3,83.0,4.0
 2026-11-05 03:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.3,2.3,9.0,3.6,115.0,0.0
@@ -343,7 +343,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 03:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.2,6.3,13.0,0.9,220.0,0.0
 2026-11-05 03:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,12.0,20.9,63.0,0.0,75.0,0.0
 2026-11-05 03:00,Reserva Nacional Illescas,-81.077,-5.963,6.5,11.5,48.0,0.3,86.0,1.0
-2026-11-05 03:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.5,3.5,32.0,2.8,89.0,0.0
+2026-11-05 03:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.6,5.6,43.0,0.6,88.0,1.0
 2026-11-05 03:00,Reserva Nacional Matsés,-73.493,-5.724,2.8,2.8,13.0,0.4,122.0,0.0
 2026-11-05 03:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.4,2.4,13.0,0.7,119.0,0.0
 2026-11-05 03:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,7.3,11.7,1.0,19.1,102.0,10.0
@@ -381,7 +381,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 03:00,Reserva Nacional de Paracas,-76.252,-14.117,6.9,14.5,54.0,0.2,82.0,6.0
 2026-11-05 03:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,12.4,50.6,36.0,10.7,112.0,66.0
 2026-11-05 03:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.4,3.0,51.0,3.3,100.0,0.0
-2026-11-05 03:00,Reserva Nacional del Titicaca,-69.808,-15.261,8.6,10.6,17.0,16.3,126.0,7.0
+2026-11-05 03:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.5,7.7,34.0,8.3,126.0,5.0
 2026-11-05 03:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,5.8,6.5,46.0,5.2,153.0,2.0
 2026-11-05 03:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,1.0,1.1,41.0,3.3,109.0,0.0
 2026-11-05 03:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.7,7.0,25.0,4.6,104.0,1.0
@@ -423,11 +423,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 04:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,1.5,1.5,15.0,0.2,121.0,0.0
 2026-11-05 04:00,Parque Nacional Yaguas,-71.295,-2.916,9.1,9.2,17.0,0.8,128.0,0.0
 2026-11-05 04:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.0,4.0,8.0,6.8,143.0,0.0
-2026-11-05 04:00,Parque Nacional de Cutervo,-78.793,-6.245,5.3,5.3,34.0,3.4,139.0,0.0
+2026-11-05 04:00,Parque Nacional de Cutervo,-78.786,-6.224,5.3,5.3,34.0,3.4,139.0,0.0
 2026-11-05 04:00,Parque Nacional de Tingo María,-76.005,-9.373,2.3,2.3,12.0,3.3,184.0,0.0
 2026-11-05 04:00,Parque Nacional del Manu,-71.635,-12.261,7.4,7.5,5.0,1.7,127.0,0.0
 2026-11-05 04:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.5,1.5,6.0,4.0,147.0,0.0
-2026-11-05 04:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,6.1,6.4,22.0,7.7,97.0,0.0
+2026-11-05 04:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,6.1,6.4,22.0,7.7,150.0,0.0
 2026-11-05 04:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.5,6.4,24.0,4.4,105.0,1.0
 2026-11-05 04:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.1,11.7,42.0,3.1,93.0,4.0
 2026-11-05 04:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.5,2.5,9.0,3.7,114.0,0.0
@@ -444,7 +444,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 04:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.2,6.2,13.0,0.9,210.0,0.0
 2026-11-05 04:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,12.4,21.7,63.0,0.0,75.0,0.0
 2026-11-05 04:00,Reserva Nacional Illescas,-81.077,-5.963,6.5,11.4,48.0,0.3,86.0,1.0
-2026-11-05 04:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.5,3.5,32.0,2.6,90.0,0.0
+2026-11-05 04:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.2,5.0,43.0,0.6,87.0,1.0
 2026-11-05 04:00,Reserva Nacional Matsés,-73.493,-5.724,2.9,2.9,13.0,0.4,121.0,0.0
 2026-11-05 04:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.5,2.5,12.0,0.7,119.0,0.0
 2026-11-05 04:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,6.8,10.4,3.0,17.8,102.0,9.0
@@ -482,7 +482,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 04:00,Reserva Nacional de Paracas,-76.252,-14.117,6.4,13.6,54.0,0.2,82.0,6.0
 2026-11-05 04:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,6.7,24.5,39.0,8.7,108.0,50.0
 2026-11-05 04:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.2,2.8,51.0,3.0,100.0,0.0
-2026-11-05 04:00,Reserva Nacional del Titicaca,-69.808,-15.261,9.7,12.7,18.0,14.5,126.0,8.0
+2026-11-05 04:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.8,9.4,30.0,9.9,128.0,7.0
 2026-11-05 04:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,5.3,6.2,49.0,3.6,154.0,2.0
 2026-11-05 04:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,1.0,1.2,40.0,3.2,108.0,0.0
 2026-11-05 04:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.5,6.4,24.0,4.4,101.0,1.0
@@ -524,11 +524,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 05:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,1.4,1.4,15.0,0.2,121.0,0.0
 2026-11-05 05:00,Parque Nacional Yaguas,-71.295,-2.916,9.5,9.6,18.0,0.7,128.0,0.0
 2026-11-05 05:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.1,4.1,12.0,5.9,143.0,0.0
-2026-11-05 05:00,Parque Nacional de Cutervo,-78.793,-6.245,5.4,5.4,31.0,3.4,138.0,0.0
+2026-11-05 05:00,Parque Nacional de Cutervo,-78.786,-6.224,5.4,5.4,31.0,3.4,138.0,0.0
 2026-11-05 05:00,Parque Nacional de Tingo María,-76.005,-9.373,2.6,2.6,11.0,3.3,183.0,0.0
 2026-11-05 05:00,Parque Nacional del Manu,-71.635,-12.261,7.8,7.8,8.0,1.4,128.0,0.0
 2026-11-05 05:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.4,1.4,8.0,3.4,147.0,0.0
-2026-11-05 05:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,6.1,6.3,21.0,7.5,110.0,0.0
+2026-11-05 05:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,6.1,6.3,21.0,7.5,151.0,0.0
 2026-11-05 05:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.6,6.5,23.0,4.4,103.0,1.0
 2026-11-05 05:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.3,12.0,41.0,4.2,138.0,4.0
 2026-11-05 05:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.7,2.7,9.0,3.3,113.0,0.0
@@ -545,7 +545,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 05:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.4,6.5,13.0,0.9,203.0,0.0
 2026-11-05 05:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,15.5,27.0,63.0,0.0,76.0,0.0
 2026-11-05 05:00,Reserva Nacional Illescas,-81.077,-5.963,6.4,11.3,48.0,0.3,87.0,1.0
-2026-11-05 05:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.8,4.0,31.0,2.6,92.0,0.0
+2026-11-05 05:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,2.7,4.0,42.0,0.8,87.0,1.0
 2026-11-05 05:00,Reserva Nacional Matsés,-73.493,-5.724,3.1,3.1,13.0,0.4,121.0,0.0
 2026-11-05 05:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.7,2.7,11.0,0.6,119.0,0.0
 2026-11-05 05:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,6.4,9.9,11.0,14.2,105.0,9.0
@@ -583,7 +583,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 05:00,Reserva Nacional de Paracas,-76.252,-14.117,6.0,12.7,54.0,0.2,82.0,6.0
 2026-11-05 05:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,5.3,18.3,38.0,7.4,107.0,36.0
 2026-11-05 05:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.4,3.0,49.0,2.9,102.0,0.0
-2026-11-05 05:00,Reserva Nacional del Titicaca,-69.808,-15.261,10.2,13.1,20.0,12.0,127.0,9.0
+2026-11-05 05:00,Reserva Nacional del Titicaca,-69.916,-15.646,7.7,11.0,26.0,9.9,132.0,8.0
 2026-11-05 05:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,4.4,5.2,48.0,2.8,155.0,2.0
 2026-11-05 05:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,0.9,1.1,40.0,2.8,108.0,0.0
 2026-11-05 05:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.6,6.5,23.0,4.4,100.0,1.0
@@ -625,11 +625,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 06:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,1.4,1.4,15.0,0.1,121.0,0.0
 2026-11-05 06:00,Parque Nacional Yaguas,-71.295,-2.916,9.8,9.9,18.0,0.6,128.0,0.0
 2026-11-05 06:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.2,4.2,18.0,4.7,144.0,0.0
-2026-11-05 06:00,Parque Nacional de Cutervo,-78.793,-6.245,5.7,5.7,28.0,3.2,137.0,0.0
+2026-11-05 06:00,Parque Nacional de Cutervo,-78.786,-6.224,5.7,5.7,28.0,3.2,137.0,0.0
 2026-11-05 06:00,Parque Nacional de Tingo María,-76.005,-9.373,3.1,3.1,11.0,3.3,189.0,0.0
 2026-11-05 06:00,Parque Nacional del Manu,-71.635,-12.261,8.0,8.0,11.0,0.9,129.0,0.0
 2026-11-05 06:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.3,1.3,13.0,2.4,146.0,0.0
-2026-11-05 06:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,6.5,6.5,21.0,6.9,127.0,0.0
+2026-11-05 06:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,6.5,6.5,21.0,6.9,152.0,0.0
 2026-11-05 06:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.9,6.8,23.0,4.4,100.0,1.0
 2026-11-05 06:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.7,12.3,40.0,5.9,200.0,4.0
 2026-11-05 06:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.8,2.8,10.0,2.6,113.0,0.0
@@ -646,7 +646,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 06:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,7.0,7.1,12.0,0.8,197.0,0.0
 2026-11-05 06:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,14.9,26.0,63.0,0.0,76.0,0.0
 2026-11-05 06:00,Reserva Nacional Illescas,-81.077,-5.963,6.5,11.3,47.0,0.3,88.0,1.0
-2026-11-05 06:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.5,3.5,30.0,2.6,96.0,0.0
+2026-11-05 06:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,2.7,3.9,40.0,1.0,88.0,1.0
 2026-11-05 06:00,Reserva Nacional Matsés,-73.493,-5.724,3.4,3.4,12.0,0.4,120.0,0.0
 2026-11-05 06:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.9,2.9,11.0,0.5,118.0,0.0
 2026-11-05 06:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,6.0,9.3,22.0,9.3,109.0,11.0
@@ -684,7 +684,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 06:00,Reserva Nacional de Paracas,-76.252,-14.117,5.7,12.1,54.0,0.3,82.0,5.0
 2026-11-05 06:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,4.1,12.6,36.0,6.2,106.0,24.0
 2026-11-05 06:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.3,2.9,46.0,2.9,104.0,0.0
-2026-11-05 06:00,Reserva Nacional del Titicaca,-69.808,-15.261,10.1,13.2,23.0,8.9,128.0,9.0
+2026-11-05 06:00,Reserva Nacional del Titicaca,-69.916,-15.646,8.0,11.6,24.0,9.0,135.0,9.0
 2026-11-05 06:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,3.6,4.3,47.0,2.4,155.0,2.0
 2026-11-05 06:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,0.7,0.8,41.0,2.2,108.0,0.0
 2026-11-05 06:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.9,6.8,23.0,4.4,100.0,1.0
@@ -726,11 +726,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 07:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,1.4,1.4,16.0,0.1,121.0,0.0
 2026-11-05 07:00,Parque Nacional Yaguas,-71.295,-2.916,10.1,10.1,19.0,0.5,128.0,0.0
 2026-11-05 07:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.3,4.3,26.0,3.5,143.0,0.0
-2026-11-05 07:00,Parque Nacional de Cutervo,-78.793,-6.245,5.7,5.7,30.0,2.9,136.0,0.0
+2026-11-05 07:00,Parque Nacional de Cutervo,-78.786,-6.224,5.7,5.7,30.0,2.9,136.0,0.0
 2026-11-05 07:00,Parque Nacional de Tingo María,-76.005,-9.373,3.9,3.9,15.0,3.0,191.0,0.0
 2026-11-05 07:00,Parque Nacional del Manu,-71.635,-12.261,8.8,8.9,15.0,0.5,130.0,0.0
 2026-11-05 07:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.4,1.4,21.0,1.5,146.0,0.0
-2026-11-05 07:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,7.0,7.2,25.0,5.9,136.0,0.0
+2026-11-05 07:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,7.0,7.2,25.0,5.9,151.0,0.0
 2026-11-05 07:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.6,6.3,26.0,4.1,99.0,1.0
 2026-11-05 07:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.0,10.8,40.0,6.9,239.0,4.0
 2026-11-05 07:00,Reserva Comunal Airo Pai,-74.881,-0.751,3.0,3.0,13.0,1.9,113.0,0.0
@@ -747,7 +747,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 07:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,7.0,7.1,14.0,0.7,190.0,0.0
 2026-11-05 07:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,13.9,24.2,63.0,0.0,77.0,0.0
 2026-11-05 07:00,Reserva Nacional Illescas,-81.077,-5.963,6.8,11.8,47.0,0.3,89.0,1.0
-2026-11-05 07:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.9,4.1,32.0,2.5,99.0,0.0
+2026-11-05 07:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,2.8,4.3,40.0,1.2,90.0,1.0
 2026-11-05 07:00,Reserva Nacional Matsés,-73.493,-5.724,3.7,3.7,14.0,0.3,120.0,0.0
 2026-11-05 07:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,3.0,3.0,13.0,0.4,118.0,0.0
 2026-11-05 07:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.4,13.4,35.0,5.3,113.0,20.0
@@ -785,7 +785,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 07:00,Reserva Nacional de Paracas,-76.252,-14.117,5.5,11.6,54.0,0.3,82.0,5.0
 2026-11-05 07:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,3.0,8.3,39.0,4.9,107.0,15.0
 2026-11-05 07:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.7,3.3,47.0,2.8,107.0,0.0
-2026-11-05 07:00,Reserva Nacional del Titicaca,-69.808,-15.261,9.9,13.3,31.0,6.2,128.0,9.0
+2026-11-05 07:00,Reserva Nacional del Titicaca,-69.916,-15.646,8.1,11.4,29.0,7.6,136.0,9.0
 2026-11-05 07:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,2.7,3.4,49.0,2.0,153.0,2.0
 2026-11-05 07:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,1.0,1.2,46.0,1.6,108.0,1.0
 2026-11-05 07:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.6,6.3,26.0,4.1,101.0,1.0
@@ -827,11 +827,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 08:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,1.5,1.5,20.0,0.1,121.0,0.0
 2026-11-05 08:00,Parque Nacional Yaguas,-71.295,-2.916,9.1,9.1,22.0,0.4,127.0,0.0
 2026-11-05 08:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.1,4.1,37.0,2.3,141.0,0.0
-2026-11-05 08:00,Parque Nacional de Cutervo,-78.793,-6.245,3.5,3.5,40.0,2.1,136.0,0.0
+2026-11-05 08:00,Parque Nacional de Cutervo,-78.786,-6.224,3.5,3.5,40.0,2.1,136.0,0.0
 2026-11-05 08:00,Parque Nacional de Tingo María,-76.005,-9.373,4.1,4.1,27.0,2.2,182.0,0.0
 2026-11-05 08:00,Parque Nacional del Manu,-71.635,-12.261,12.0,12.2,19.0,0.3,132.0,0.0
 2026-11-05 08:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.5,1.5,33.0,0.9,146.0,0.0
-2026-11-05 08:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,5.2,5.4,36.0,4.2,129.0,0.0
+2026-11-05 08:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,5.2,5.4,36.0,4.2,146.0,0.0
 2026-11-05 08:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.3,6.0,34.0,3.2,102.0,1.0
 2026-11-05 08:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.7,10.6,42.0,6.6,232.0,4.0
 2026-11-05 08:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.9,2.9,20.0,1.2,114.0,0.0
@@ -848,7 +848,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 08:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.2,6.3,20.0,0.5,181.0,0.0
 2026-11-05 08:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,12.4,21.6,63.0,0.0,77.0,0.0
 2026-11-05 08:00,Reserva Nacional Illescas,-81.077,-5.963,6.9,11.9,47.0,0.3,89.0,1.0
-2026-11-05 08:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.9,4.1,41.0,2.2,102.0,0.0
+2026-11-05 08:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.2,4.9,43.0,1.2,92.0,1.0
 2026-11-05 08:00,Reserva Nacional Matsés,-73.493,-5.724,4.0,4.0,19.0,0.2,120.0,0.0
 2026-11-05 08:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.8,2.8,18.0,0.3,118.0,0.0
 2026-11-05 08:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.3,15.3,50.0,3.0,115.0,40.0
@@ -886,7 +886,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 08:00,Reserva Nacional de Paracas,-76.252,-14.117,5.5,11.7,55.0,0.3,82.0,5.0
 2026-11-05 08:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,3.9,15.0,52.0,3.3,109.0,10.0
 2026-11-05 08:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.0,2.7,55.0,2.4,111.0,0.0
-2026-11-05 08:00,Reserva Nacional del Titicaca,-69.808,-15.261,8.5,12.6,49.0,4.0,125.0,10.0
+2026-11-05 08:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.7,10.4,47.0,5.4,130.0,8.0
 2026-11-05 08:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.7,2.0,59.0,1.4,149.0,3.0
 2026-11-05 08:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.6,3.4,59.0,1.1,110.0,3.0
 2026-11-05 08:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.3,6.0,34.0,3.2,104.0,1.0
@@ -928,11 +928,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 09:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,2.0,2.0,26.0,0.0,121.0,0.0
 2026-11-05 09:00,Parque Nacional Yaguas,-71.295,-2.916,7.9,7.9,25.0,0.2,126.0,0.0
 2026-11-05 09:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,3.5,3.5,50.0,1.1,139.0,0.0
-2026-11-05 09:00,Parque Nacional de Cutervo,-78.793,-6.245,3.1,3.2,55.0,1.1,136.0,0.0
+2026-11-05 09:00,Parque Nacional de Cutervo,-78.786,-6.224,3.1,3.2,55.0,1.1,136.0,0.0
 2026-11-05 09:00,Parque Nacional de Tingo María,-76.005,-9.373,3.5,3.6,43.0,1.1,169.0,0.0
 2026-11-05 09:00,Parque Nacional del Manu,-71.635,-12.261,10.7,10.9,24.0,0.1,134.0,0.0
 2026-11-05 09:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.6,1.6,47.0,0.4,146.0,0.0
-2026-11-05 09:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,4.4,4.7,50.0,2.2,113.0,0.0
+2026-11-05 09:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,4.4,4.7,50.0,2.2,139.0,0.0
 2026-11-05 09:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.6,6.7,45.0,1.9,106.0,1.0
 2026-11-05 09:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.5,10.2,44.0,5.6,201.0,3.0
 2026-11-05 09:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.5,2.5,30.0,0.6,116.0,0.0
@@ -949,7 +949,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 09:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,5.5,5.5,27.0,0.3,170.0,0.0
 2026-11-05 09:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,12.5,21.8,63.0,0.0,76.0,0.0
 2026-11-05 09:00,Reserva Nacional Illescas,-81.077,-5.963,6.9,11.8,48.0,0.2,88.0,1.0
-2026-11-05 09:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.4,3.5,54.0,1.7,104.0,0.0
+2026-11-05 09:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.2,5.0,48.0,1.0,95.0,1.0
 2026-11-05 09:00,Reserva Nacional Matsés,-73.493,-5.724,3.9,4.0,27.0,0.1,120.0,0.0
 2026-11-05 09:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,2.6,2.7,25.0,0.2,119.0,0.0
 2026-11-05 09:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.9,25.6,65.0,1.6,117.0,67.0
@@ -987,7 +987,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 09:00,Reserva Nacional de Paracas,-76.252,-14.117,5.7,12.0,55.0,0.2,81.0,5.0
 2026-11-05 09:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,4.5,9.8,70.0,1.5,111.0,8.0
 2026-11-05 09:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.4,1.7,66.0,1.9,115.0,0.0
-2026-11-05 09:00,Reserva Nacional del Titicaca,-69.808,-15.261,6.0,12.6,72.0,2.1,121.0,11.0
+2026-11-05 09:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.6,8.9,72.0,2.7,121.0,6.0
 2026-11-05 09:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.5,2.1,73.0,0.8,143.0,4.0
 2026-11-05 09:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,3.4,5.6,75.0,0.6,112.0,5.0
 2026-11-05 09:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.6,6.7,45.0,1.9,108.0,1.0
@@ -1029,11 +1029,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 10:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,2.2,2.2,31.0,0.0,121.0,0.0
 2026-11-05 10:00,Parque Nacional Yaguas,-71.295,-2.916,7.2,7.3,28.0,0.1,125.0,0.0
 2026-11-05 10:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,3.0,3.0,59.0,0.2,137.0,0.0
-2026-11-05 10:00,Parque Nacional de Cutervo,-78.793,-6.245,3.2,3.3,66.0,0.3,136.0,0.0
+2026-11-05 10:00,Parque Nacional de Cutervo,-78.786,-6.224,3.2,3.3,66.0,0.3,136.0,0.0
 2026-11-05 10:00,Parque Nacional de Tingo María,-76.005,-9.373,3.6,3.6,55.0,0.3,158.0,0.0
 2026-11-05 10:00,Parque Nacional del Manu,-71.635,-12.261,9.7,9.8,27.0,0.0,136.0,0.0
 2026-11-05 10:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.9,2.0,57.0,0.1,146.0,0.0
-2026-11-05 10:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,4.2,4.5,60.0,0.7,103.0,0.0
+2026-11-05 10:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,4.2,4.5,60.0,0.7,131.0,0.0
 2026-11-05 10:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.7,6.9,53.0,1.0,110.0,1.0
 2026-11-05 10:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.2,9.6,46.0,4.7,175.0,3.0
 2026-11-05 10:00,Reserva Comunal Airo Pai,-74.881,-0.751,2.7,2.8,36.0,0.1,118.0,0.0
@@ -1050,7 +1050,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 10:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,4.8,4.9,33.0,0.1,161.0,0.0
 2026-11-05 10:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,13.7,24.0,62.0,0.0,76.0,0.0
 2026-11-05 10:00,Reserva Nacional Illescas,-81.077,-5.963,7.0,12.1,49.0,0.2,88.0,1.0
-2026-11-05 10:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,1.9,2.5,65.0,1.3,107.0,0.0
+2026-11-05 10:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.0,4.6,53.0,0.9,98.0,1.0
 2026-11-05 10:00,Reserva Nacional Matsés,-73.493,-5.724,3.7,3.8,32.0,0.0,120.0,0.0
 2026-11-05 10:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,3.2,3.3,31.0,0.1,119.0,0.0
 2026-11-05 10:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,7.8,42.6,76.0,0.7,117.0,87.0
@@ -1088,7 +1088,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 10:00,Reserva Nacional de Paracas,-76.252,-14.117,6.1,12.8,56.0,0.2,81.0,5.0
 2026-11-05 10:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,3.3,5.9,83.0,0.3,112.0,7.0
 2026-11-05 10:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.6,1.7,75.0,1.5,117.0,0.0
-2026-11-05 10:00,Reserva Nacional del Titicaca,-69.808,-15.261,5.1,9.0,89.0,0.7,118.0,11.0
+2026-11-05 10:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.0,7.9,90.0,0.7,114.0,5.0
 2026-11-05 10:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.5,3.0,84.0,0.4,138.0,4.0
 2026-11-05 10:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,3.4,6.1,87.0,0.2,113.0,7.0
 2026-11-05 10:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.7,6.9,53.0,1.0,111.0,1.0
@@ -1130,11 +1130,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 11:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,2.5,2.6,33.0,0.0,123.0,0.0
 2026-11-05 11:00,Parque Nacional Yaguas,-71.295,-2.916,6.8,6.8,29.0,0.0,126.0,0.0
 2026-11-05 11:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,2.9,2.9,59.0,0.0,137.0,0.0
-2026-11-05 11:00,Parque Nacional de Cutervo,-78.793,-6.245,3.4,3.5,70.0,0.1,137.0,0.0
+2026-11-05 11:00,Parque Nacional de Cutervo,-78.786,-6.224,3.4,3.5,70.0,0.1,137.0,0.0
 2026-11-05 11:00,Parque Nacional de Tingo María,-76.005,-9.373,3.9,3.9,58.0,0.1,153.0,0.0
 2026-11-05 11:00,Parque Nacional del Manu,-71.635,-12.261,9.3,9.4,29.0,0.0,136.0,0.0
 2026-11-05 11:00,Parque Nacional del Río Abiseo,-77.225,-7.732,2.4,2.4,60.0,0.0,145.0,0.0
-2026-11-05 11:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,3.8,4.3,63.0,0.3,104.0,0.0
+2026-11-05 11:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,3.8,4.3,63.0,0.3,123.0,0.0
 2026-11-05 11:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.9,7.1,57.0,0.6,112.0,1.0
 2026-11-05 11:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.1,9.5,47.0,4.3,163.0,3.0
 2026-11-05 11:00,Reserva Comunal Airo Pai,-74.881,-0.751,5.1,5.2,37.0,0.0,119.0,0.0
@@ -1151,7 +1151,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 11:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,4.1,4.2,35.0,0.1,152.0,0.0
 2026-11-05 11:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,13.7,23.9,61.0,0.0,76.0,0.0
 2026-11-05 11:00,Reserva Nacional Illescas,-81.077,-5.963,7.3,12.5,50.0,0.2,88.0,1.0
-2026-11-05 11:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,1.6,2.0,71.0,1.0,110.0,0.0
+2026-11-05 11:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.1,4.6,57.0,0.8,101.0,1.0
 2026-11-05 11:00,Reserva Nacional Matsés,-73.493,-5.724,3.8,3.9,34.0,0.0,121.0,0.0
 2026-11-05 11:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,3.4,3.4,35.0,0.0,119.0,0.0
 2026-11-05 11:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,9.2,53.3,78.0,0.3,116.0,97.0
@@ -1189,7 +1189,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 11:00,Reserva Nacional de Paracas,-76.252,-14.117,6.5,13.4,56.0,0.2,81.0,5.0
 2026-11-05 11:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,2.8,5.7,87.0,0.0,111.0,2.0
 2026-11-05 11:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.6,1.7,78.0,1.1,115.0,0.0
-2026-11-05 11:00,Reserva Nacional del Titicaca,-69.808,-15.261,4.3,7.0,94.0,0.2,117.0,9.0
+2026-11-05 11:00,Reserva Nacional del Titicaca,-69.916,-15.646,4.8,6.6,96.0,0.1,113.0,4.0
 2026-11-05 11:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.6,2.5,88.0,0.3,133.0,3.0
 2026-11-05 11:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,3.1,5.5,89.0,0.1,112.0,7.0
 2026-11-05 11:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.9,7.1,57.0,0.6,113.0,1.0
@@ -1231,11 +1231,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 12:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,2.6,2.7,34.0,0.0,125.0,0.0
 2026-11-05 12:00,Parque Nacional Yaguas,-71.295,-2.916,6.5,6.6,29.0,0.0,127.0,0.0
 2026-11-05 12:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,2.8,2.8,55.0,0.0,138.0,0.0
-2026-11-05 12:00,Parque Nacional de Cutervo,-78.793,-6.245,3.6,3.7,71.0,0.2,138.0,0.0
+2026-11-05 12:00,Parque Nacional de Cutervo,-78.786,-6.224,3.6,3.7,71.0,0.2,138.0,0.0
 2026-11-05 12:00,Parque Nacional de Tingo María,-76.005,-9.373,4.3,4.3,56.0,0.1,150.0,0.0
 2026-11-05 12:00,Parque Nacional del Manu,-71.635,-12.261,7.3,7.4,29.0,0.0,136.0,0.0
 2026-11-05 12:00,Parque Nacional del Río Abiseo,-77.225,-7.732,2.8,2.9,60.0,0.0,143.0,0.0
-2026-11-05 12:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,3.3,3.9,62.0,0.4,111.0,0.0
+2026-11-05 12:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,3.3,3.9,62.0,0.4,115.0,0.0
 2026-11-05 12:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.8,7.1,59.0,0.6,114.0,1.0
 2026-11-05 12:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.4,10.2,48.0,4.0,156.0,4.0
 2026-11-05 12:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.3,6.3,35.0,0.0,120.0,0.0
@@ -1252,7 +1252,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 12:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,4.0,4.1,35.0,0.1,144.0,0.0
 2026-11-05 12:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,13.5,23.5,59.0,0.0,75.0,0.0
 2026-11-05 12:00,Reserva Nacional Illescas,-81.077,-5.963,7.5,12.9,51.0,0.2,88.0,1.0
-2026-11-05 12:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.3,3.1,74.0,0.8,114.0,0.0
+2026-11-05 12:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,2.8,4.1,62.0,0.7,103.0,0.0
 2026-11-05 12:00,Reserva Nacional Matsés,-73.493,-5.724,4.5,4.6,34.0,0.0,123.0,0.0
 2026-11-05 12:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,3.7,3.8,37.0,0.0,120.0,0.0
 2026-11-05 12:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,10.1,62.9,74.0,0.3,115.0,100.0
@@ -1290,7 +1290,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 12:00,Reserva Nacional de Paracas,-76.252,-14.117,7.2,14.6,55.0,0.2,82.0,5.0
 2026-11-05 12:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,2.4,3.8,86.0,0.1,108.0,0.0
 2026-11-05 12:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.7,1.8,79.0,0.8,111.0,0.0
-2026-11-05 12:00,Reserva Nacional del Titicaca,-69.808,-15.261,3.8,6.0,94.0,0.2,117.0,6.0
+2026-11-05 12:00,Reserva Nacional del Titicaca,-69.916,-15.646,4.1,5.7,95.0,0.2,114.0,4.0
 2026-11-05 12:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.6,2.4,89.0,0.3,129.0,2.0
 2026-11-05 12:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.9,5.2,87.0,0.1,111.0,7.0
 2026-11-05 12:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.8,7.1,59.0,0.6,114.0,1.0
@@ -1332,11 +1332,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 13:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,3.4,3.5,34.0,0.0,127.0,0.0
 2026-11-05 13:00,Parque Nacional Yaguas,-71.295,-2.916,7.2,7.3,29.0,0.0,128.0,0.0
 2026-11-05 13:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,2.6,2.6,51.0,0.1,139.0,0.0
-2026-11-05 13:00,Parque Nacional de Cutervo,-78.793,-6.245,3.7,3.8,70.0,0.3,139.0,0.0
+2026-11-05 13:00,Parque Nacional de Cutervo,-78.786,-6.224,3.7,3.8,70.0,0.3,139.0,0.0
 2026-11-05 13:00,Parque Nacional de Tingo María,-76.005,-9.373,4.6,4.7,54.0,0.2,149.0,0.0
 2026-11-05 13:00,Parque Nacional del Manu,-71.635,-12.261,6.8,6.8,30.0,0.0,136.0,0.0
 2026-11-05 13:00,Parque Nacional del Río Abiseo,-77.225,-7.732,2.9,3.0,58.0,0.1,141.0,0.0
-2026-11-05 13:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,3.1,3.8,60.0,0.6,115.0,0.0
+2026-11-05 13:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,3.1,3.8,60.0,0.6,110.0,0.0
 2026-11-05 13:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.6,6.7,60.0,0.6,115.0,1.0
 2026-11-05 13:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.0,11.1,49.0,3.9,154.0,4.0
 2026-11-05 13:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.7,6.7,33.0,0.1,120.0,0.0
@@ -1353,7 +1353,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 13:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,4.3,4.4,34.0,0.1,139.0,0.0
 2026-11-05 13:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,13.1,22.9,58.0,0.0,75.0,0.0
 2026-11-05 13:00,Reserva Nacional Illescas,-81.077,-5.963,8.5,14.6,52.0,0.2,88.0,1.0
-2026-11-05 13:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,2.8,3.8,76.0,0.6,115.0,0.0
+2026-11-05 13:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.2,4.7,64.0,0.7,103.0,0.0
 2026-11-05 13:00,Reserva Nacional Matsés,-73.493,-5.724,5.3,5.4,34.0,0.0,124.0,0.0
 2026-11-05 13:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,3.7,3.8,38.0,0.0,120.0,0.0
 2026-11-05 13:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,8.6,47.5,70.0,0.4,113.0,99.0
@@ -1391,7 +1391,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 13:00,Reserva Nacional de Paracas,-76.252,-14.117,7.8,15.7,55.0,0.2,82.0,5.0
 2026-11-05 13:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,2.4,4.4,86.0,0.3,108.0,5.0
 2026-11-05 13:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.9,2.0,79.0,0.6,109.0,0.0
-2026-11-05 13:00,Reserva Nacional del Titicaca,-69.808,-15.261,3.5,5.2,92.0,0.3,117.0,4.0
+2026-11-05 13:00,Reserva Nacional del Titicaca,-69.916,-15.646,3.5,5.0,92.0,0.4,116.0,3.0
 2026-11-05 13:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.6,2.1,89.0,0.4,126.0,1.0
 2026-11-05 13:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.7,5.2,84.0,0.1,109.0,7.0
 2026-11-05 13:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.6,6.7,60.0,0.6,114.0,1.0
@@ -1433,11 +1433,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 14:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,4.0,4.1,35.0,0.0,128.0,0.0
 2026-11-05 14:00,Parque Nacional Yaguas,-71.295,-2.916,7.9,8.0,28.0,0.0,128.0,0.0
 2026-11-05 14:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,2.4,2.4,50.0,0.0,139.0,0.0
-2026-11-05 14:00,Parque Nacional de Cutervo,-78.793,-6.245,3.7,3.9,68.0,0.4,137.0,0.0
+2026-11-05 14:00,Parque Nacional de Cutervo,-78.786,-6.224,3.7,3.9,68.0,0.4,137.0,0.0
 2026-11-05 14:00,Parque Nacional de Tingo María,-76.005,-9.373,4.8,4.9,53.0,0.1,147.0,0.0
 2026-11-05 14:00,Parque Nacional del Manu,-71.635,-12.261,6.3,6.4,31.0,0.0,136.0,0.0
 2026-11-05 14:00,Parque Nacional del Río Abiseo,-77.225,-7.732,2.9,3.0,57.0,0.1,140.0,0.0
-2026-11-05 14:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,3.2,4.2,57.0,0.7,114.0,0.0
+2026-11-05 14:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,3.2,4.2,57.0,0.7,108.0,0.0
 2026-11-05 14:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,4.7,7.0,59.0,0.7,116.0,1.0
 2026-11-05 14:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.2,11.6,49.0,4.1,158.0,4.0
 2026-11-05 14:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.7,6.8,31.0,0.1,120.0,0.0
@@ -1454,7 +1454,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 14:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,4.6,4.7,33.0,0.1,140.0,0.0
 2026-11-05 14:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,13.1,22.8,57.0,0.0,75.0,0.0
 2026-11-05 14:00,Reserva Nacional Illescas,-81.077,-5.963,9.1,15.5,52.0,0.2,88.0,1.0
-2026-11-05 14:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,3.0,4.1,77.0,0.5,113.0,0.0
+2026-11-05 14:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,4.1,5.9,63.0,0.7,99.0,0.0
 2026-11-05 14:00,Reserva Nacional Matsés,-73.493,-5.724,5.8,5.9,34.0,0.0,126.0,0.0
 2026-11-05 14:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.5,4.6,38.0,0.0,120.0,0.0
 2026-11-05 14:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,7.6,39.3,68.0,0.3,110.0,91.0
@@ -1492,7 +1492,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 14:00,Reserva Nacional de Paracas,-76.252,-14.117,8.7,17.1,55.0,0.2,81.0,5.0
 2026-11-05 14:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,3.9,13.5,91.0,0.4,113.0,39.0
 2026-11-05 14:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.8,2.0,79.0,0.5,114.0,0.0
-2026-11-05 14:00,Reserva Nacional del Titicaca,-69.808,-15.261,3.1,4.5,92.0,0.3,117.0,3.0
+2026-11-05 14:00,Reserva Nacional del Titicaca,-69.916,-15.646,3.1,4.2,89.0,0.4,117.0,2.0
 2026-11-05 14:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.7,2.1,87.0,0.5,126.0,0.0
 2026-11-05 14:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.7,5.8,82.0,0.1,108.0,9.0
 2026-11-05 14:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,4.7,7.0,59.0,0.7,112.0,1.0
@@ -1534,11 +1534,11 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 15:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,4.5,4.7,35.0,0.0,128.0,0.0
 2026-11-05 15:00,Parque Nacional Yaguas,-71.295,-2.916,8.4,8.5,27.0,0.1,128.0,0.0
 2026-11-05 15:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,2.4,2.5,50.0,0.0,139.0,0.0
-2026-11-05 15:00,Parque Nacional de Cutervo,-78.793,-6.245,3.5,3.7,65.0,0.6,135.0,0.0
+2026-11-05 15:00,Parque Nacional de Cutervo,-78.786,-6.224,3.5,3.7,65.0,0.6,135.0,0.0
 2026-11-05 15:00,Parque Nacional de Tingo María,-76.005,-9.373,4.8,4.9,51.0,0.1,146.0,0.0
 2026-11-05 15:00,Parque Nacional del Manu,-71.635,-12.261,6.1,6.2,31.0,0.1,136.0,0.0
 2026-11-05 15:00,Parque Nacional del Río Abiseo,-77.225,-7.732,3.0,3.0,55.0,0.0,140.0,0.0
-2026-11-05 15:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.186,-6.644,2.9,4.0,53.0,0.9,110.0,0.0
+2026-11-05 15:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.9,4.0,53.0,0.9,109.0,0.0
 2026-11-05 15:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,5.6,8.2,56.0,0.9,116.0,1.0
 2026-11-05 15:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.4,11.8,50.0,4.5,167.0,4.0
 2026-11-05 15:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.7,6.8,30.0,0.1,120.0,0.0
@@ -1555,7 +1555,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 15:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,5.0,5.0,32.0,0.0,144.0,0.0
 2026-11-05 15:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,12.9,22.5,56.0,0.0,74.0,0.0
 2026-11-05 15:00,Reserva Nacional Illescas,-81.077,-5.963,9.6,16.4,52.0,0.2,88.0,1.0
-2026-11-05 15:00,Reserva Nacional Mar Tropical de Grau,-80.981,-3.931,3.5,4.9,76.0,0.4,108.0,0.0
+2026-11-05 15:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,4.8,7.3,60.0,0.7,93.0,0.0
 2026-11-05 15:00,Reserva Nacional Matsés,-73.493,-5.724,6.1,6.2,33.0,0.0,127.0,0.0
 2026-11-05 15:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.4,4.4,38.0,0.0,121.0,0.0
 2026-11-05 15:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,6.7,33.4,66.0,0.3,107.0,77.0
@@ -1593,7 +1593,7 @@ fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
 2026-11-05 15:00,Reserva Nacional de Paracas,-76.252,-14.117,9.5,18.5,56.0,0.3,81.0,5.0
 2026-11-05 15:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,8.2,38.8,97.0,0.6,120.0,87.0
 2026-11-05 15:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.9,2.1,77.0,0.6,121.0,0.0
-2026-11-05 15:00,Reserva Nacional del Titicaca,-69.808,-15.261,3.0,4.3,90.0,0.3,117.0,2.0
+2026-11-05 15:00,Reserva Nacional del Titicaca,-69.916,-15.646,2.7,3.6,83.0,0.4,119.0,2.0
 2026-11-05 15:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.9,2.1,84.0,0.7,128.0,0.0
 2026-11-05 15:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.6,6.2,80.0,0.2,106.0,12.0
 2026-11-05 15:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,5.6,8.2,56.0,0.9,109.0,1.0
