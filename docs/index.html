@@ -30,6 +30,14 @@ header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:flex-end;justify-con
 .kicker{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 h1{font:600 clamp(26px,3.4vw,40px)/1.1 'Fraunces',Georgia,serif;margin:8px 0 6px;letter-spacing:-.01em}
 .lede{color:var(--ink-2);max-width:68ch;margin:0}
+.headside{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.autor{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 8px 6px 6px}
+.autor img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--line)}
+.autor .nm{font:600 14.5px/1.25 'IBM Plex Sans';color:var(--ink)}
+.autor .rl{font-size:12px;color:var(--ink-3)}
+.li{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#0a66c2;flex:none;transition:transform .15s}
+.li:hover,.li:focus-visible{transform:scale(1.08)}
+.li svg{width:17px;height:17px;fill:#fff}
 .stamp{font:400 12.5px/1.6 var(--mono);color:var(--ink-3);text-align:right}
 .stamp b{color:var(--ink-2);font-weight:500}
 .kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:20px 0}
@@ -81,7 +89,7 @@ footer{margin-top:20px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
 .maplibregl-popup-tip{border-top-color:#0b0c0b!important}
 .maplibregl-ctrl-attrib{background:rgba(15,17,16,.7)!important;color:var(--ink-3)}
 .maplibregl-ctrl-attrib a{color:var(--ink-2)}
-@media (max-width:1100px){.stamp{text-align:left}.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:last-child{grid-column:span 2}.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:1100px){.stamp{text-align:left}.headside{align-items:flex-start}.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:last-child{grid-column:span 2}.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.wrap{padding-block:12px 32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}.kpis{grid-template-columns:1fr 1fr}.kpi .v{font-size:24px}.method{grid-template-columns:1fr}.mapcard{min-height:480px}.filters{height:auto}.mapwrap{top:84px}.stamp{text-align:left}}
 </style>
 </head>
@@ -93,7 +101,14 @@ footer{margin-top:20px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
       <h1>Fuego en las Áreas Naturales Protegidas del Perú</h1>
       <p class="lede">Cada pocas horas, los satélites de la NASA registran puntos de calor anómalo en el territorio. Aquí se limpian, se agrupan en eventos y se cruzan con los límites oficiales del SERNANP para responder: <b>¿dónde arde dentro o al borde de nuestras áreas protegidas?</b></p>
     </div>
-    <div class="stamp" id="stamp">Cargando…</div>
+    <div class="headside">
+      <div class="autor">
+        <img src="img/autor.jpg" alt="Foto de Mg. Brandon W. Pérez Flores" width="52" height="52">
+        <div><div class="nm">Mg. Pérez Flores, Brandon W.</div><div class="rl">Autor · Ing. Ambiental y en Ecoturismo · GreenPulse SAC</div></div>
+        <a class="li" id="linkedin" href="https://www.linkedin.com/search/results/people/?keywords=Brandon%20W.%20P%C3%A9rez%20Flores" target="_blank" rel="noopener" aria-label="Perfil de LinkedIn de Brandon W. Pérez Flores" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9.75h4V21H3zM9.5 9.75h3.83v1.54h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.97c0-1.19-.02-2.71-1.65-2.71-1.65 0-1.9 1.29-1.9 2.62V21h-4z"/></svg></a>
+      </div>
+      <div class="stamp" id="stamp">Cargando…</div>
+    </div>
   </header>
 
   <section class="kpis" id="kpis" aria-label="Indicadores"></section>
@@ -141,7 +156,7 @@ footer{margin-top:20px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
 
   <footer>
     Fuentes: NASA FIRMS (VIIRS 375 m, NRT) · SERNANP – GeoServicios (ANP de administración nacional, zonas reservadas, ACR, ACP y zonas de amortiguamiento) · Límites departamentales: INEI vía <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a> · Mapa base © CARTO © OpenStreetMap.<br>
-    Herramientas: Python (pandas, scikit-learn), GitHub Actions, MapLibre GL. Código y datos: <a id="repo" href="#">repositorio en GitHub</a>. Elaborado por Brandon Pérez Flores · GreenPulse SAC.
+    Herramientas: Python (pandas, scikit-learn), GitHub Actions, MapLibre GL. Código y datos: <a id="repo" href="#">repositorio en GitHub</a>. Autor: <b style="color:var(--ink-2)">Mg. Pérez Flores, Brandon W.</b> · GreenPulse SAC · <a href="https://www.linkedin.com/search/results/people/?keywords=Brandon%20W.%20P%C3%A9rez%20Flores" target="_blank" rel="noopener">LinkedIn</a>.
   </footer>
 </div>
 <div class="tip" id="tip"></div>

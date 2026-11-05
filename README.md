@@ -45,4 +45,4 @@ python -m http.server -d docs 8000    # abre http://localhost:8000
 - Límites departamentales: INEI, vía [juaneladio/peru-geojson](https://github.com/juaneladio/peru-geojson).
 - Mapa base © CARTO © OpenStreetMap.
 
-Autor: Brandon Pérez Flores · GreenPulse SAC.
+**Autor:** Mg. Pérez Flores, Brandon W. · GreenPulse SAC
