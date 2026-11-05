@@ -58,7 +58,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/archivo data/base docs/data/deforestacion.json docs/data/deforestacion_rejilla.geojson 2>/dev/null || true
+          for p in data/archivo data/base docs/data/deforestacion.json docs/data/deforestacion_rejilla.geojson; do
+            if [ -e "$p" ]; then git add -A "$p"; fi
+          done
           git diff --cached --quiet || git commit -m "Datos: $(date -u +'%Y-%m-%d %H:%M') UTC"
           for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && break; sleep 5; done || echo "No se pudo guardar (se reintentará)"
 
