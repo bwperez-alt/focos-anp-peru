@@ -14,6 +14,10 @@ Plataforma abierta que integra **fuego, deforestación, calidad del aire, emerge
 | Calidad del aire medida (Lima) | SENAMHI – red de Lima Metropolitana | Horaria | Opcional, vía WAQI (aqicn.org), que retransmite las estaciones del SENAMHI. El SENAMHI no acepta conexiones desde fuera del Perú. |
 | Deforestación | PNCB – MINAM, Geobosques (alertas tempranas, puntos) | Semanas | Carga manual (ver abajo). Geobosques bloquea descargas automáticas desde fuera del Perú. |
 | Emergencias | INDECI – COEN (RSS oficial de reportes) | Minutos | Directo |
+| Clima y pronóstico (3 días) por ANP | Open-Meteo (CC BY 4.0) | Horaria | Directo, sin token |
+| Visitas turísticas por ANP | SERNANP – Plataforma Nacional de Datos Abiertos | Mensual (último corte publicado) | Directo |
+| Registro de deforestación en ANP (con causas) | SERNANP – Plataforma Nacional de Datos Abiertos | Anual | Directo |
+| Pérdida de bosque 2001–2025 por ANP y ZA | Hansen et al., Global Forest Change v1.13 (UMD, CC BY 4.0) | Anual | Workflow `bosques-anual` |
 | Sismos | USGS FDSN Event Service. El servicio de datos del IGP no está disponible públicamente. | Minutos | Directo |
 | Ecoturismo | Semáforo integrado (reglas en `scripts/modulos/ecoturismo.py`) | Horaria | — |
 
@@ -35,6 +39,8 @@ Una vez al mes, descarga de Geobosques **"Alertas Tempranas 2026 – PNCB (Punto
 - **Aire estimado:** PM2,5, PM10, O₃, NO₂, CO y polvo horarios del modelo CAMS en el punto central de cada ANP; promedio de 24 h, valor actual y máximo previsto para las próximas 24 h. Son valores modelados (~10–40 km), no mediciones.
 - **Aire medido:** promedios móviles de 24 h de PM2,5 y PM10 frente al ECA (D.S. 003-2017-MINAM: 50 y 100 µg/m³) y a la guía de la OMS 2021 (15 y 45 µg/m³). Por la vía WAQI, el índice AQI se convierte a µg/m³ con los puntos de corte de la US EPA y el promedio de 24 h se calcula con el historial horario propio.
 - **Emergencias:** del título de cada reporte del COEN se extraen tipo, distrito y departamento. Cada emergencia se ubica en el centroide del distrito (INEI) y se cruza con ANP/ZA.
+- **Fichas de visita:** infografía por ANP con semáforo, condiciones actuales, pronóstico a 3 días, perfil de visitantes y bosque. Las recomendaciones se generan cada hora: unas dependen de las condiciones (fuego, aire, lluvia, helada, calor, viento, UV, sismos, emergencias, temporada alta) y otras son de base según el ecosistema (marino-costero, costa, altoandino, montaña, amazonía).
+- **Bosques:** suma por polígono del área de los píxeles de 30 m con pérdida en cada año (Hansen); las zonas de amortiguamiento excluyen la superficie del ANP.
 - **Semáforo:** reglas explícitas por ANP (fuego, emergencias INDECI, sismos y calidad del aire). Ver `REGLAS` en `scripts/modulos/ecoturismo.py`.
 
 ## Datos para investigación (`data/archivo/`)
@@ -42,6 +48,8 @@ Una vez al mes, descarga de Geobosques **"Alertas Tempranas 2026 – PNCB (Punto
 - `focos/AAAA-MM/focos_AAAA-MM-DD.csv`: focos clasificados por zona, área y departamento.
 - `aire_modelo/AAAA-MM/aire_modelo_AAAA-MM-DD.csv`: calidad del aire horaria estimada por ANP (CAMS).
 - `aire/AAAA-MM/aire_AAAA-MM-DD.csv`: mediciones horarias por estación (si hay acceso al SENAMHI).
+- `hansen_perdida_anp_ha.csv`: pérdida de bosque anual por ANP y zona de amortiguamiento (ha).
+- `sernanp/`: copias de los conjuntos del SERNANP (visitas y registro de deforestación).
 - `emergencias_indeci.csv`, `sismos.csv`, `deforestacion_resumen_AAAA.csv`, `historial_indicadores.csv`.
 
 ## Estructura
