@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Fuego en ANP del Perú</title>
+<meta name="description" content="Focos de calor satelitales (NASA FIRMS) cruzados con las Áreas Naturales Protegidas y zonas de amortiguamiento del SERNANP. Se actualiza automáticamente.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#0f1110; --panel:#171a18; --panel-2:#1e2220; --line:#2b302d;
+  --ink:#eeede8; --ink-2:#b9bab2; --ink-3:#83857e;
+  --anp:#ff6b2c;        /* foco dentro de ANP */
+  --za:#f4b36a;         /* foco en zona de amortiguamiento */
+  --fuera:#7d807a;      /* foco fuera */
+  --area:#2fbf8a;       /* contorno ANP */
+  --accent:#ff6b2c;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 'IBM Plex Sans',system-ui,sans-serif}
+a{color:var(--za)}
+.wrap{max-width:1440px;margin:0 auto;padding-block:20px 48px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:flex-end;justify-content:space-between;padding:8px 0 18px;border-bottom:1px solid var(--line)}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:600 clamp(26px,3.4vw,40px)/1.1 'Fraunces',Georgia,serif;margin:8px 0 6px;letter-spacing:-.01em}
+.lede{color:var(--ink-2);max-width:68ch;margin:0}
+.stamp{font:400 12.5px/1.6 var(--mono);color:var(--ink-3);text-align:right}
+.stamp b{color:var(--ink-2);font-weight:500}
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:20px 0}
+.kpi{background:var(--panel);padding:14px 16px}
+.kpi .l{font-size:12.5px;color:var(--ink-3);display:flex;align-items:center;gap:7px}
+.kpi .v{font:500 30px/1.15 var(--mono);margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.card h2{font:600 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin:0;padding:14px 16px 10px}
+.mapcard{position:relative;overflow:hidden;min-height:620px}
+.mapwrap{position:absolute;inset:46px 0 0 0}
+#map{width:100%;height:100%}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);height:46px;background:var(--panel)}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);border-radius:999px;padding:4px 11px;font:13px 'IBM Plex Sans';cursor:pointer;user-select:none}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip[aria-pressed="false"] .dot{background:transparent!important;box-shadow:inset 0 0 0 1.5px var(--ink-3)}
+select{background:var(--panel-2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font:13px 'IBM Plex Sans'}
+.legend{position:absolute;left:12px;bottom:12px;background:rgba(15,17,16,.88);border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:12.5px;color:var(--ink-2);line-height:1.8}
+.legend .sw{display:inline-block;width:14px;height:10px;vertical-align:-1px;margin-right:6px;border-radius:2px}
+.side{display:flex;flex-direction:column;gap:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);text-align:left;padding:6px 10px;border-bottom:1px solid var(--line)}
+td{padding:7px 10px;border-bottom:1px solid #222723;vertical-align:top}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--panel-2)}
+.cat{display:block;color:var(--ink-3);font-size:11.5px}
+.scroll{max-height:330px;overflow:auto}
+.bars{padding:4px 16px 14px}
+.brow{display:grid;grid-template-columns:110px 1fr 44px;gap:8px;align-items:center;font-size:12.5px;margin:5px 0}
+.btrack{height:12px;display:flex;gap:2px}
+.btrack span{height:100%;border-radius:2px}
+.brow .n{font-family:var(--mono);text-align:right;color:var(--ink-2)}
+#serie{display:block;width:100%;height:170px}
+.tip{position:fixed;pointer-events:none;z-index:20;background:#0b0c0b;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:12.5px;color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.4);display:none;max-width:280px}
+.tip b{font-weight:600}
+.tip .m{font-family:var(--mono);color:var(--ink-2)}
+.method{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:16px}
+.step{padding:16px}
+.step .k{font:500 12px var(--mono);color:var(--accent)}
+.step h3{font:600 16px/1.3 'IBM Plex Sans';margin:6px 0}
+.step p{margin:0;color:var(--ink-2);font-size:13.5px}
+.note{margin-top:16px;padding:14px 16px;color:var(--ink-2);font-size:13.5px}
+.note b{color:var(--ink)}
+footer{margin-top:20px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
+.maplibregl-popup-content{background:#0b0c0b;color:var(--ink);border:1px solid var(--line);font:13px 'IBM Plex Sans'}
+.maplibregl-popup-tip{border-top-color:#0b0c0b!important}
+.maplibregl-ctrl-attrib{background:rgba(15,17,16,.7)!important;color:var(--ink-3)}
+.maplibregl-ctrl-attrib a{color:var(--ink-2)}
+@media (max-width:1100px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:last-child{grid-column:span 2}.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.wrap{padding-block:12px 32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}.kpis{grid-template-columns:1fr 1fr}.kpi .v{font-size:24px}.method{grid-template-columns:1fr}.mapcard{min-height:480px}.filters{height:auto}.mapwrap{top:84px}.stamp{text-align:left}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="kicker">Observatorio · datos abiertos</div>
+      <h1>Fuego en las Áreas Naturales Protegidas del Perú</h1>
+      <p class="lede">Cada pocas horas, los satélites de la NASA registran puntos de calor anómalo en el territorio. Aquí se limpian, se agrupan en eventos y se cruzan con los límites oficiales del SERNANP para responder: <b>¿dónde arde dentro o al borde de nuestras áreas protegidas?</b></p>
+    </div>
+    <div class="stamp" id="stamp">Cargando…</div>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="Indicadores"></section>
+
+  <div class="grid">
+    <section class="card mapcard" aria-label="Mapa">
+      <div class="filters" id="filters">
+        <button class="chip" data-z="Dentro de ANP" aria-pressed="true"><span class="dot" style="background:var(--anp)"></span>Dentro de ANP</button>
+        <button class="chip" data-z="Zona de amortiguamiento" aria-pressed="true"><span class="dot" style="background:var(--za)"></span>Zona de amortiguamiento</button>
+        <button class="chip" data-z="Fuera de ANP" aria-pressed="true"><span class="dot" style="background:var(--fuera)"></span>Fuera de ANP</button>
+        <select id="dia" aria-label="Día"><option value="">Todos los días</option></select>
+      </div>
+      <div class="mapwrap"><div id="map"></div></div>
+      <div class="legend">
+        <div><span class="sw" style="background:rgba(47,191,138,.18);border:1.5px solid var(--area)"></span>Área natural protegida</div>
+        <div><span class="sw" style="border:1.5px dashed var(--area)"></span>Zona de amortiguamiento</div>
+        <div style="color:var(--ink-3)">Tamaño del punto = potencia radiativa (FRP)</div>
+      </div>
+    </section>
+
+    <aside class="side">
+      <section class="card">
+        <h2>Áreas con más focos</h2>
+        <div class="scroll"><table id="rank"><thead><tr><th>Área</th><th class="n">Focos</th><th class="n">Eventos</th></tr></thead><tbody></tbody></table></div>
+      </section>
+      <section class="card">
+        <h2>Focos por día</h2>
+        <svg id="serie" role="img" aria-label="Focos por día según zona"></svg>
+      </section>
+      <section class="card">
+        <h2>Departamentos</h2>
+        <div class="bars" id="deps"></div>
+      </section>
+    </aside>
+  </div>
+
+  <section class="method" aria-label="Método">
+    <div class="card step"><div class="k">01 · Fuente</div><h3>Satélite → dato abierto</h3><p>Detecciones de fuego activo VIIRS (375 m) de los satélites S-NPP, NOAA-20 y NOAA-21, publicadas por NASA FIRMS casi en tiempo real.</p></div>
+    <div class="card step"><div class="k">02 · Limpieza</div><h3>Ruido fuera</h3><p id="limp">Recorte al territorio peruano, descarte de confianza baja, duplicados y fuentes persistentes (antorchas, industrias).</p></div>
+    <div class="card step"><div class="k">03 · Eventos</div><h3>Puntos → incendios</h3><p>Los focos a menos de 1 km y separados por poco tiempo se agrupan en un mismo evento (DBSCAN espacio-temporal) para no contar dos veces un mismo fuego.</p></div>
+    <div class="card step"><div class="k">04 · Territorio</div><h3>Cruce con el SERNANP</h3><p>Cada foco se ubica dentro de una ANP (nacional, zona reservada, ACR o ACP), en su zona de amortiguamiento o fuera, y en su departamento.</p></div>
+  </section>
+
+  <div class="card note"><b>Cómo leer esto.</b> Un foco de calor no equivale a un incendio confirmado: puede ser una quema agrícola, un evento industrial o un falso positivo (playas de río, techos calientes). Las nubes ocultan fuegos. Las cifras muestran el <b>método</b> y sirven para priorizar verificación en campo, no para diagnosticar. Ventana: últimos <span id="vent">7 días</span>, horas en hora de Perú.</div>
+
+  <footer>
+    Fuentes: NASA FIRMS (VIIRS 375 m, NRT) · SERNANP – GeoServicios (ANP de administración nacional, zonas reservadas, ACR, ACP y zonas de amortiguamiento) · Límites departamentales: INEI vía <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a> · Mapa base © CARTO © OpenStreetMap.<br>
+    Herramientas: Python (pandas, scikit-learn), GitHub Actions, MapLibre GL. Código y datos: <a id="repo" href="#">repositorio en GitHub</a>. Elaborado por Brandon Pérez Flores · GreenPulse SAC.
+  </footer>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+const ZONAS = ["Dentro de ANP","Zona de amortiguamiento","Fuera de ANP"];
+const COL = {"Dentro de ANP":"#ff6b2c","Zona de amortiguamiento":"#f4b36a","Fuera de ANP":"#7d807a"};
+const fmt = n => n.toLocaleString("es-PE");
+const tip = document.getElementById("tip");
+function showTip(e, html){ tip.innerHTML = html; tip.style.display="block";
+  const x = Math.min(e.clientX+14, innerWidth - tip.offsetWidth - 8), y = Math.min(e.clientY+14, innerHeight - tip.offsetHeight - 8);
+  tip.style.left = x+"px"; tip.style.top = y+"px"; }
+function hideTip(){ tip.style.display="none"; }
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+async function cargar(){
+  if (window.__DATOS__) return window.__DATOS__;
+  const g = p => fetch(p).then(r => r.json());
+  const [res, focos, anp, zr, acr, acp, za] = await Promise.all([
+    g("data/resumen.json"), g("data/focos.geojson"),
+    g("data/capas/anp_nacional.geojson"), g("data/capas/zonas_reservadas.geojson"),
+    g("data/capas/acr.geojson"), g("data/capas/acp.geojson"), g("data/capas/zonas_amortiguamiento.geojson")]);
+  return {res, focos, capas:{anp, zr, acr, acp, za}};
+}
+
+cargar().then(({res, focos, capas}) => {
+  const T = res.totales, L = res.limpieza;
+  const loc = d => new Date(d).toLocaleString("es-PE",{timeZone:"America/Lima",dateStyle:"medium",timeStyle:"short"});
+  document.getElementById("stamp").innerHTML =
+    `Actualizado <b>${loc(res.actualizado)}</b><br>Periodo ${esc(res.periodo.desde)} → ${esc(res.periodo.hasta)}<br>Se actualiza cada 6 h`;
+  document.getElementById("vent").textContent = {"24h":"24 horas","48h":"48 horas","7d":"7 días"}[res.ventana] || res.ventana;
+  document.getElementById("limp").textContent =
+    `De ${fmt(L.en_peru)} detecciones en el Perú se descartaron ${fmt(L.en_peru - L.sin_baja_confianza)} de confianza baja, ${fmt(L.sin_baja_confianza - L.sin_duplicados)} duplicadas y ${fmt(L.fuentes_persistentes)} de fuentes persistentes (antorchas, industrias). Quedan ${fmt(L.focos_validos)} focos válidos.`;
+  const repo = location.hostname.endsWith("github.io") ? `https://github.com/${location.hostname.split(".")[0]}/${location.pathname.split("/")[1]}` : "#";
+  document.getElementById("repo").href = repo;
+
+  // KPIs
+  const k = (l, v, s, c) => `<div class="kpi"><div class="l">${c?`<span class="dot" style="background:${c}"></span>`:""}${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
+  document.getElementById("kpis").innerHTML =
+    k("Focos válidos en el Perú", fmt(T.focos), `${fmt(T.eventos)} eventos de fuego`) +
+    k("Dentro de áreas protegidas", fmt(T.dentro_anp.focos), `${fmt(T.dentro_anp.eventos)} eventos`, COL["Dentro de ANP"]) +
+    k("En zona de amortiguamiento", fmt(T.zona_amortiguamiento.focos), `${fmt(T.zona_amortiguamiento.eventos)} eventos`, COL["Zona de amortiguamiento"]) +
+    k("Áreas protegidas con fuego", fmt(T.areas_afectadas), "con al menos un foco dentro") +
+    k("En ANP o su borde", T.pct_en_anp_o_za.toLocaleString("es-PE")+" %", "del total de focos válidos");
+
+  // Ranking
+  const tb = document.querySelector("#rank tbody");
+  const top = res.ranking_areas.slice(0, 40);
+  tb.innerHTML = top.length ? top.map((r,i) => `<tr data-i="${i}"><td><span class="dot" style="background:${COL[r.zona]};margin-right:6px"></span>${esc(r.zona==="Zona de amortiguamiento" ? "ZA · "+r.area.replace(/^(del|de la|de los|de las|de)\s+/i,"") : r.area)}<span class="cat">${esc(r.categoria)} · ${esc(r.departamentos)}</span></td><td class="n">${fmt(r.focos)}</td><td class="n">${fmt(r.eventos)}</td></tr>`).join("")
+    : `<tr><td colspan="3" style="color:var(--ink-3)">Sin focos en ANP ni zonas de amortiguamiento en esta ventana.</td></tr>`;
+
+  // Departamentos (barras apiladas por zona)
+  const deps = res.departamentos.slice(0, 12), maxD = Math.max(...deps.map(d => d.focos), 1);
+  document.getElementById("deps").innerHTML = deps.map(d => {
+    const fuera = d.focos - d.en_anp - d.en_za;
+    const seg = (n, c) => n ? `<span style="width:${100*n/maxD}%;background:${c}"></span>` : "";
+    return `<div class="brow" data-tip="${esc(d.departamento)}|${d.en_anp}|${d.en_za}|${fuera}"><span>${esc(d.departamento)}</span><div class="btrack">${seg(d.en_anp,COL["Dentro de ANP"])}${seg(d.en_za,COL["Zona de amortiguamiento"])}${seg(fuera,COL["Fuera de ANP"])}</div><span class="n">${fmt(d.focos)}</span></div>`;
+  }).join("");
+  document.querySelectorAll(".brow").forEach(el => {
+    const [n,a,z,f] = el.dataset.tip.split("|");
+    el.addEventListener("mousemove", e => showTip(e, `<b>${n}</b><br><span class="dot" style="background:${COL["Dentro de ANP"]}"></span> Dentro de ANP <span class="m">${a}</span><br><span class="dot" style="background:${COL["Zona de amortiguamiento"]}"></span> Zona de amortiguamiento <span class="m">${z}</span><br><span class="dot" style="background:${COL["Fuera de ANP"]}"></span> Fuera <span class="m">${f}</span>`));
+    el.addEventListener("mouseleave", hideTip);
+  });
+
+  // Serie diaria (barras apiladas)
+  dibujarSerie(res.serie_diaria);
+
+  // Selector de día
+  const sel = document.getElementById("dia");
+  res.serie_diaria.forEach(d => sel.insertAdjacentHTML("beforeend", `<option value="${d.fecha}">${new Date(d.fecha+"T12:00").toLocaleDateString("es-PE",{weekday:"short",day:"numeric",month:"short"})}</option>`));
+
+  // Mapa
+  const map = new maplibregl.Map({
+    container: "map",
+    style: window.__ESTILO__ || "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+    bounds: [[-81.4,-18.4],[-68.6,-0.1]], fitBoundsOptions:{padding:20},
+    attributionControl: {compact:true}
+  });
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}), "top-right");
+  new ResizeObserver(() => map.resize()).observe(document.getElementById("map"));
+  map.on("load", () => {
+    const anpAll = {type:"FeatureCollection", features:[...capas.anp.features, ...capas.zr.features, ...capas.acr.features, ...capas.acp.features]};
+    map.addSource("za", {type:"geojson", data:capas.za});
+    map.addSource("anp", {type:"geojson", data:anpAll});
+    map.addSource("focos", {type:"geojson", data:focos});
+    map.addLayer({id:"za-line", type:"line", source:"za", paint:{"line-color":"#2fbf8a","line-width":1,"line-opacity":.55,"line-dasharray":[2,2]}});
+    map.addLayer({id:"anp-fill", type:"fill", source:"anp", paint:{"fill-color":"#2fbf8a","fill-opacity":.12}});
+    map.addLayer({id:"anp-line", type:"line", source:"anp", paint:{"line-color":"#2fbf8a","line-width":1.1,"line-opacity":.8}});
+    const orden = ["match",["get","z"],"Dentro de ANP",3,"Zona de amortiguamiento",2,1];
+    map.addLayer({id:"focos", type:"circle", source:"focos",
+      layout:{"circle-sort-key": orden},
+      paint:{
+        "circle-color":["match",["get","z"],"Dentro de ANP",COL["Dentro de ANP"],"Zona de amortiguamiento",COL["Zona de amortiguamiento"],COL["Fuera de ANP"]],
+        "circle-radius":["interpolate",["linear"],["zoom"],4,["interpolate",["linear"],["get","frp"],0,2,20,3.5,100,6],9,["interpolate",["linear"],["get","frp"],0,4,20,7,100,12]],
+        "circle-opacity":["match",["get","z"],"Fuera de ANP",.55,.95],
+        "circle-stroke-color":"#0f1110","circle-stroke-width":1
+      }});
+
+    const nombre = p => p.anp_nomb || p.zr_nomb || p.acr_nomb || p.acp_nomb || "";
+    map.on("mousemove", "anp-fill", e => { if (map.queryRenderedFeatures(e.point,{layers:["focos"]}).length) return;
+      const p = e.features[0].properties; showTip(e.originalEvent, `<b>${esc(nombre(p))}</b><br><span class="m">${esc(p.anp_cate || (p.zr_nomb?"Zona Reservada":p.acr_nomb?"Área de Conservación Regional":"Área de Conservación Privada"))}</span>`); });
+    map.on("mouseleave", "anp-fill", hideTip);
+    map.on("mouseenter", "focos", () => map.getCanvas().style.cursor = "pointer");
+    map.on("mouseleave", "focos", () => { map.getCanvas().style.cursor = ""; hideTip(); });
+    map.on("mousemove", "focos", e => { const p = e.features[0].properties;
+      showTip(e.originalEvent, `<b>${esc(p.z)}</b>${p.a?` · ${esc(p.a)}`:""}<br><span class="m">${esc(p.f)} · ${esc(p.d)}</span><br>FRP <span class="m">${p.frp} MW</span> · confianza ${esc(p.c)} · ${esc(p.s)}<br>Evento #${p.e}`); });
+
+    const filtrar = () => {
+      const on = [...document.querySelectorAll(".chip")].filter(c => c.getAttribute("aria-pressed")==="true").map(c => c.dataset.z);
+      const f = ["all", ["in", ["get","z"], ["literal", on]]];
+      if (sel.value) f.push(["==", ["slice", ["get","f"], 0, 10], sel.value]);
+      map.setFilter("focos", f);
+    };
+    document.querySelectorAll(".chip").forEach(c => c.addEventListener("click", () => { c.setAttribute("aria-pressed", c.getAttribute("aria-pressed")==="true" ? "false" : "true"); filtrar(); }));
+    sel.addEventListener("change", filtrar);
+
+    // clic en el ranking -> acercar a los focos de esa área
+    tb.querySelectorAll("tr[data-i]").forEach(tr => tr.addEventListener("click", () => {
+      const r = top[+tr.dataset.i];
+      const pts = focos.features.filter(f => f.properties.a === r.area && f.properties.z === r.zona).map(f => f.geometry.coordinates);
+      if (!pts.length) return;
+      const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+      map.fitBounds([[Math.min(...xs)-.15, Math.min(...ys)-.15],[Math.max(...xs)+.15, Math.max(...ys)+.15]], {padding:40, maxZoom:10, duration:900});
+      document.getElementById("map").scrollIntoView({behavior:"smooth", block:"center"});
+    }));
+  });
+}).catch(err => { document.getElementById("stamp").textContent = "No se pudieron cargar los datos: " + err; });
+
+function dibujarSerie(serie){
+  const svg = document.getElementById("serie");
+  const W = svg.clientWidth || 380, H = 170, m = {t:10, r:8, b:24, l:34};
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const tot = serie.map(d => d.anp + d.za + d.fuera), max = Math.max(...tot, 1);
+  const paso = Math.pow(10, Math.floor(Math.log10(max))); const nice = Math.ceil(max / paso) * paso;
+  const y = v => m.t + ih - ih * v / nice, bw = iw / serie.length, w = Math.max(4, bw * .62);
+  let s = "";
+  [0, nice/2, nice].forEach(v => { s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="#2b302d" stroke-width="1"/><text x="${m.l-6}" y="${y(v)+4}" text-anchor="end" font-size="10.5" fill="#83857e" font-family="IBM Plex Mono">${fmt(v)}</text>`; });
+  serie.forEach((d, i) => {
+    const x = m.l + i * bw + (bw - w) / 2; let base = 0;
+    [["fuera","Fuera de ANP"],["za","Zona de amortiguamiento"],["anp","Dentro de ANP"]].forEach(([key, z]) => {
+      const v = d[key]; if (!v) return;
+      const y0 = y(base), y1 = y(base + v), h = Math.max(0, y0 - y1 - 2);
+      s += `<rect x="${x}" y="${y1}" width="${w}" height="${h}" rx="2" fill="${COL[z]}"/>`;
+      base += v;
+    });
+    const lab = new Date(d.fecha+"T12:00").toLocaleDateString("es-PE",{day:"numeric",month:"short"});
+    s += `<text x="${x + w/2}" y="${H-7}" text-anchor="middle" font-size="10.5" fill="#83857e" font-family="IBM Plex Mono">${lab}</text>`;
+    s += `<rect class="hit" data-i="${i}" x="${m.l + i*bw}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/>`;
+  });
+  svg.innerHTML = s;
+  svg.querySelectorAll(".hit").forEach(r => {
+    const d = serie[+r.dataset.i];
+    r.addEventListener("mousemove", e => showTip(e, `<b>${new Date(d.fecha+"T12:00").toLocaleDateString("es-PE",{weekday:"long",day:"numeric",month:"long"})}</b><br><span class="dot" style="background:${COL["Dentro de ANP"]}"></span> Dentro de ANP <span class="m">${d.anp}</span><br><span class="dot" style="background:${COL["Zona de amortiguamiento"]}"></span> Zona de amortiguamiento <span class="m">${d.za}</span><br><span class="dot" style="background:${COL["Fuera de ANP"]}"></span> Fuera <span class="m">${d.fuera}</span>`));
+    r.addEventListener("mouseleave", hideTip);
+  });
+}
+</script>
+</body>
+</html>

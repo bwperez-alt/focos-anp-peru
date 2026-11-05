@@ -1,0 +1,54 @@
+name: Actualizar focos y publicar
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # cada 6 horas (UTC)
+  workflow_dispatch:          # botón "Run workflow" para ejecutarlo a mano
+  push:
+    branches: [main]
+    paths: ["docs/index.html", "scripts/**", "data/base/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Capturar, limpiar y cruzar (NASA FIRMS x SERNANP)
+        run: python scripts/pipeline.py --ventana 7d
+
+      - name: Guardar datos en el repositorio
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data/archivo
+          git diff --cached --quiet || git commit -m "Datos: actualización $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase --autostash || true
+          git push || echo "No se pudo hacer push (se reintentará en la próxima corrida)"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4
