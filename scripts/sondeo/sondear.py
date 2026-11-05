@@ -11,11 +11,12 @@ def bajar(rid, ini="2019", fin="2026", fmt="EXCEL"):
     m = re.search(r'(/appDatosTurismo/Reserved\.ReportViewerWebControl\.axd\?Culture=[^"\']*?OpType=Export[^"\']*?Format=)', t2)
     x = s.get(base + m.group(1).replace("\\u0026", "&") + fmt, timeout=120)
     return x
-for fmt in ["EXCEL", "PDF", "WORD"]:
+for fmt in ["EXCEL"]:
     x = bajar("229", fmt=fmt)
     print("\n#####", fmt, x.status_code, x.headers.get("content-type"), len(x.content), x.headers.get("content-disposition"))
     if x.status_code == 200 and fmt == "EXCEL":
         import pandas as pd
         xl = pd.read_excel(io.BytesIO(x.content), header=None, engine="xlrd")
-        pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
-        print(xl.head(40).to_string()); print(xl.shape); print(xl.tail(10).to_string())
+        for i, row in xl.iterrows():
+            vals = [str(v)[:40] for v in row.tolist() if str(v) != "nan"]
+            if vals: print(i, " | ".join(vals))
