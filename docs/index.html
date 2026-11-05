@@ -174,6 +174,11 @@ ul.dl li span{color:var(--ink-3);font-size:12.5px}
 .sel-ficha select{min-width:min(420px,100%);font-size:14px;padding:7px 10px}
 @media (max-width:1180px){.fgrid{grid-template-columns:1fr 1fr}.fcols{grid-template-columns:1fr}}
 @media (max-width:640px){.dias{grid-template-columns:1fr}.ficha{padding:14px}}
+.anios{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0 16px 8px}
+.anios button{border:1px solid var(--line);background:var(--panel-2);color:var(--ink-2);border-radius:999px;padding:3px 10px;font:12.5px 'IBM Plex Sans';cursor:pointer}
+.anios button[aria-pressed="true"]{background:#24302b;color:var(--ink);border-color:#3d5c52}
+.anios .aviso{margin-left:auto;font-size:12px;color:var(--ink-3)}
+.fbox .anios{padding:0 0 8px}
 footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
 
 .tip{position:fixed;pointer-events:none;z-index:50;background:#0b0c0b;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:12.5px;color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.4);display:none;max-width:300px}
@@ -255,8 +260,8 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
       </div>
     </div>
     <div class="grid2" style="margin-top:16px">
-      <div class="card"><h3>Visitas a las ANP por mes (SERNANP)</h3><div class="pad"><svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales a las ANP"></svg><div class="cat" id="visNota"></div></div></div>
-      <div class="card"><h3>Áreas más visitadas (promedio anual)</h3><div class="scroll" style="max-height:250px"><table id="rankVis"><thead><tr><th>Área</th><th class="n">Visitas/año</th><th>Meses pico</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="card"><h3>Visitas a las ANP por mes (SERNANP)</h3><div class="anios" id="anioVis"></div><div class="pad"><svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales a las ANP"></svg><div class="cat" id="visNota"></div></div></div>
+      <div class="card"><h3 id="rankVisT">Áreas más visitadas (promedio anual)</h3><div class="scroll" style="max-height:250px"><table id="rankVis"><thead><tr><th>Área</th><th class="n">Visitas/año</th><th>Meses pico</th></tr></thead><tbody></tbody></table></div></div>
     </div>
   </section>
 
@@ -282,12 +287,12 @@ footer{margin-top:24px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
     <div class="sec-h"><h2>Bosques: pérdida histórica y deforestación reciente</h2><p id="hanSub">Pérdida anual de cobertura arbórea 2001–2025 (Hansen/UMD, 30 m) dentro de las ANP y en sus zonas de amortiguamiento.</p></div>
     <div class="grid2" id="bloqueHansen">
       <div class="card"><h3>Pérdida de bosque por año (ha)</h3><div class="pad"><svg class="chart" id="serieHansen" role="img" aria-label="Pérdida de bosque anual dentro de ANP y en zonas de amortiguamiento"></svg><div class="cat" id="hanNota"></div></div></div>
-      <div class="card"><h3>Áreas con más pérdida 2001–2025</h3><div class="scroll"><table id="rankHansen"><thead><tr><th>Área</th><th class="n">Total ha</th><th class="n">Último año</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="card"><h3 id="rankHanT">Áreas con más pérdida 2001–2025</h3><div class="anios" id="anioHan"></div><div class="scroll"><table id="rankHansen"><thead><tr><th>Área</th><th class="n">Total ha</th><th class="n">Último año</th></tr></thead><tbody></tbody></table></div></div>
     </div>
     <div class="sec-h" style="margin-top:22px"><h2 style="font-size:19px">Registro oficial de deforestación del SERNANP</h2><p id="dsSub">Monitoreo de la deforestación dentro de las ANP con su causa (Plataforma Nacional de Datos Abiertos).</p></div>
     <div class="grid2" id="bloqueDefoS">
-      <div class="card"><h3>Hectáreas por causa</h3><div class="bars" id="causasDefo"></div><div class="note" id="dsNota" style="padding-top:0"></div></div>
-      <div class="card"><h3>ANP con más deforestación registrada</h3><div class="scroll"><table id="rankDefoS"><thead><tr><th>Área</th><th class="n">ha</th><th>Causa principal</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="card"><h3 id="causasT">Hectáreas por causa</h3><div class="anios" id="anioDS"></div><div class="bars" id="causasDefo"></div><div class="note" id="dsNota" style="padding-top:0"></div></div>
+      <div class="card"><h3 id="rankDST">ANP con más deforestación registrada</h3><div class="scroll"><table id="rankDefoS"><thead><tr><th>Área</th><th class="n">ha</th><th>Causa principal</th></tr></thead><tbody></tbody></table></div></div>
     </div>
     <div class="sec-h" style="margin-top:22px"><h2 style="font-size:19px">Alertas tempranas de deforestación</h2><p id="defoSub">PNCB – MINAM (Geobosques). Cada alerta es un píxel de pérdida de bosque detectado por satélite.</p></div>
     <div class="kpis" id="kpisDefo" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px"></div>
@@ -471,9 +476,20 @@ cargar().then(D => {
   // ---------- visitantes
   const VIS = D.visitas, CLI = D.clima, DS = D.defoS, HAN = D.hansen;
   if (VIS) {
-    barras("serieVis", VIS.serie_nacional.map(d => ({lab: new Date(d.mes + "-15").toLocaleDateString("es-PE", {month: "short", year: "2-digit"}), full: d.mes, v: [d.visitas]})), ["Visitas"], ["#7fd4c1"]);
-    $("visNota").textContent = `${VIS.fuente}. Periodo ${VIS.periodo.desde} a ${VIS.periodo.hasta}. ${VIS.nota}`;
-    $("rankVis").querySelector("tbody").innerHTML = VIS.ranking.slice(0, 25).map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(r.promedio_anual)}</td><td>${esc((VIS.areas[r.area]?.meses_pico || []).join(", "))}</td></tr>`).join("");
+    const anios = Object.keys(VIS.anios || {});
+    const MESC = ["ene","feb","mar","abr","may","jun","jul","ago","set","oct","nov","dic"];
+    const etiqueta = y => VIS.anios[y].completo ? y : `${y} (${MESC[+VIS.anios[y].desde.slice(5) - 1]}–${MESC[+VIS.anios[y].hasta.slice(5) - 1]})`;
+    $("visNota").textContent = `${VIS.fuente}. ${VIS.nota}`;
+    if (!$("serieVisWrap")) { const w = document.createElement("div"); w.id = "serieVisWrap"; $("serieVis").before(w); w.appendChild($("serieVis")); }
+    chipsAnio("anioVis", [["todos", `${VIS.periodo.desde.slice(0, 4)}–${VIS.periodo.hasta.slice(0, 4)}`], ...anios.map(y => [y, etiqueta(y)])], y => {
+      const serie = VIS.serie_nacional.filter(d => y === "todos" || d.mes.startsWith(y));
+      $("serieVisWrap").innerHTML = `<svg class="chart" id="serieVis" role="img" aria-label="Visitas mensuales a las ANP"></svg>`;
+      barras("serieVis", serie.map(d => ({lab: new Date(d.mes + "-15").toLocaleDateString("es-PE", y === "todos" ? {month: "short", year: "2-digit"} : {month: "short"}), full: d.mes, v: [d.visitas]})), ["Visitas"], ["#7fd4c1"]);
+      const filas = VIS.ranking.map(r => ({...r, v: y === "todos" ? r.promedio_anual : (VIS.areas[r.area]?.por_anio?.[y] || 0)})).sort((a, b) => b.v - a.v).filter(r => r.v > 0);
+      $("rankVisT").textContent = y === "todos" ? "Áreas más visitadas (promedio anual)" : `Áreas más visitadas en ${etiqueta(y)}`;
+      $("rankVis").querySelector("thead").innerHTML = `<tr><th>Área</th><th class="n">${y === "todos" ? "Visitas/año" : "Visitas " + y}</th><th>Meses pico</th></tr>`;
+      $("rankVis").querySelector("tbody").innerHTML = filas.slice(0, 30).map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(r.v)}</td><td>${esc((VIS.areas[r.area]?.meses_pico || []).join(", "))}</td></tr>`).join("");
+    }, `Últimos datos publicados por el SERNANP: ${MESC[+VIS.periodo.hasta.slice(5) - 1]} ${VIS.periodo.hasta.slice(0, 4)}`);
   } else { $("serieVis").outerHTML = `<div class="empty">Sin datos de visitas todavía.</div>`; }
 
   // ---------- bosques: Hansen y registro SERNANP
@@ -482,17 +498,27 @@ cargar().then(D => {
     barras("serieHansen", HAN.anios.map((a, i) => ({lab: String(a).slice(2), full: String(a), v: [HAN.serie_nacional["Zona de amortiguamiento"][i], HAN.serie_nacional["Dentro de ANP"][i]]})), ["Zona de amortiguamiento", "Dentro de ANP"], ["#b8708f", "#d55181"]);
     const tot = z => HAN.serie_nacional[z].reduce((a, b) => a + b, 0);
     $("hanNota").textContent = `Color intenso: dentro de ANP; color claro: zona de amortiguamiento. Total 2001–${HAN.anios.at(-1)}: ${fmt(Math.round(tot("Dentro de ANP")))} ha dentro de ANP y ${fmt(Math.round(tot("Zona de amortiguamiento")))} ha en zonas de amortiguamiento.`;
-    const ult = String(HAN.anios.at(-1));
-    $("rankHansen").querySelector("tbody").innerHTML = HAN.areas.slice(0, 40).map(r => `<tr${r.zona === "Dentro de ANP" ? ` class="click" data-ficha="${esc(r.area)}"` : ""}><td>${esc(r.zona === "Zona de amortiguamiento" ? "ZA · " + r.area : r.area)}<span class="cat">${esc(r.zona)}</span></td><td class="n">${fmt(Math.round(r.total))}</td><td class="n">${fmt(Math.round(r[ult]))}</td></tr>`).join("");
+    chipsAnio("anioHan", [["total", `Total 2001–${HAN.anios.at(-1)}`], ...HAN.anios.slice(-6).reverse().map(a => [String(a), String(a)])], y => {
+      const col = y === "total" ? "total" : y;
+      const filas = [...HAN.areas].sort((a, b) => (b[col] || 0) - (a[col] || 0)).slice(0, 40);
+      $("rankHanT").textContent = y === "total" ? `Áreas con más pérdida 2001–${HAN.anios.at(-1)}` : `Áreas con más pérdida en ${y}`;
+      $("rankHansen").querySelector("thead").innerHTML = `<tr><th>Área</th><th class="n">${y === "total" ? "Total ha" : "ha " + y}</th><th class="n">${y === "total" ? "ha " + HAN.anios.at(-1) : "Total ha"}</th></tr>`;
+      $("rankHansen").querySelector("tbody").innerHTML = filas.map(r => `<tr${r.zona === "Dentro de ANP" ? ` class="click" data-ficha="${esc(r.area)}"` : ""}><td>${esc(r.zona === "Zona de amortiguamiento" ? "ZA · " + r.area : r.area)}<span class="cat">${esc(r.zona)}</span></td><td class="n">${fmt(Math.round(r[col] || 0))}</td><td class="n">${fmt(Math.round((y === "total" ? r[String(HAN.anios.at(-1))] : r.total) || 0))}</td></tr>`).join("");
+    });
   } else {
     $("bloqueHansen").innerHTML = `<div class="card note" style="grid-column:1/-1">El cálculo de pérdida de bosque 2001–2025 se está generando (proceso anual de unos minutos). Aparecerá aquí automáticamente.</div>`;
   }
   if (DS) {
-    const c = DS.totales.causas, maxc = Math.max(...Object.values(c), 1);
-    $("causasDefo").innerHTML = Object.entries(c).map(([k, v]) => `<div class="brow"><span>${esc(k)}</span><div class="btrack"><span style="width:${100 * v / maxc}%;background:#d55181"></span></div><span class="n">${fmt(Math.round(v))}</span></div>`).join("");
     $("dsSub").textContent = `${DS.fuente}. Años ${DS.anios.join(", ")}: ${fmt(Math.round(DS.totales.ha_total))} ha en ${DS.totales.n_areas} ANP (${Object.entries(DS.totales.ha_por_anio).map(([a, v]) => a + ": " + fmt(Math.round(v)) + " ha").join(" · ")}).`;
     $("dsNota").textContent = `Corte de datos: ${DS.fecha_corte.slice(0, 4)}-${DS.fecha_corte.slice(4, 6)}-${DS.fecha_corte.slice(6)}.`;
-    $("rankDefoS").querySelector("tbody").innerHTML = DS.ranking.map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(Math.round(r.ha_total))}</td><td>${esc(r.causa_principal)}</td></tr>`).join("");
+    chipsAnio("anioDS", [["todos", `${DS.anios[0]}–${DS.anios.at(-1)}`], ...DS.anios.map(a => [String(a), String(a)])], y => {
+      const c = y === "todos" ? DS.totales.causas : (DS.totales.causas_por_anio?.[y] || {}), maxc = Math.max(...Object.values(c), 1);
+      $("causasT").textContent = y === "todos" ? "Hectáreas por causa" : `Hectáreas por causa en ${y}`;
+      $("causasDefo").innerHTML = Object.entries(c).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<div class="brow"><span>${esc(k)}</span><div class="btrack"><span style="width:${100 * v / maxc}%;background:#d55181"></span></div><span class="n">${fmt(Math.round(v))}</span></div>`).join("") || `<div class="empty">Sin registros.</div>`;
+      const filas = DS.ranking.map(r => ({...r, v: y === "todos" ? r.ha_total : (DS.areas[r.area]?.ha_por_anio?.[y] || 0), cp: y === "todos" ? r.causa_principal : Object.entries(DS.areas[r.area]?.causas_por_anio?.[y] || {}).sort((a, b) => b[1] - a[1])[0]?.[0] || "—"})).filter(r => r.v > 0).sort((a, b) => b.v - a.v);
+      $("rankDST").textContent = y === "todos" ? "ANP con más deforestación registrada" : `ANP con más deforestación registrada en ${y}`;
+      $("rankDefoS").querySelector("tbody").innerHTML = filas.map(r => `<tr class="click" data-ficha="${esc(r.area)}"><td>${esc(r.area)}</td><td class="n">${fmt(Math.round(r.v))}</td><td>${esc(r.cp)}</td></tr>`).join("");
+    });
   } else { $("bloqueDefoS").innerHTML = `<div class="card note" style="grid-column:1/-1">Sin datos del registro del SERNANP todavía.</div>`; }
 
   // ---------- fichas de visita
@@ -550,15 +576,23 @@ cargar().then(D => {
           <div class="fbox"><h4>Pronóstico 3 días</h4>${c ? `<div class="dias">${c.dias.map((d, i) => `<div class="dia"><div class="d">${diaNom(d.fecha, i)}</div><div class="e">${esc(d.estado)}</div><div class="t">${d.tmin != null ? Math.round(d.tmin) : "—"}° / ${d.tmax != null ? Math.round(d.tmax) : "—"}°</div>
               <div class="r"><span>Lluvia</span><span>${(d.lluvia_mm ?? 0).toLocaleString("es-PE")} mm${d.prob_lluvia != null ? ` · ${d.prob_lluvia}%` : ""}</span></div><div class="r"><span>Ráfagas</span><span>${d.rafaga_kmh != null ? Math.round(d.rafaga_kmh) : "—"} km/h</span></div><div class="r"><span>UV máx.</span><span>${d.uv != null ? Math.round(d.uv) : "—"}</span></div>
               ${d.avisos.map(x => AV[x] ? `<span class="badge ${AV[x][1]}">${AV[x][0]}</span>` : "").join("")}</div>`).join("")}</div><div class="cat" style="margin-top:6px">Ahora: ${c.ahora.temp != null ? Math.round(c.ahora.temp) + " °C" : "—"}, ${esc(c.ahora.estado)} · Open-Meteo</div>` : `<div class="empty">Sin pronóstico disponible.</div>`}</div>
-          <div class="fbox"><h4>Visitantes (SERNANP)</h4>${v ? `<div class="mbars">${v.perfil_mensual.map((x, i) => `<span class="${i === mes ? "on" : ""}" title="${["ene","feb","mar","abr","may","jun","jul","ago","set","oct","nov","dic"][i]}: ${fmt(x)} visitas/mes" style="height:${100 * x / Math.max(...v.perfil_mensual, 1)}%"></span>`).join("")}</div>
-              <div class="mlab">${["E","F","M","A","M","J","J","A","S","O","N","D"].map(m => `<span>${m}</span>`).join("")}</div>
+          <div class="fbox"><h4>Visitantes (SERNANP)</h4>${v ? `<div class="anios" id="anioFicha"></div><div id="visFicha"></div>
               <div class="kv"><span>Promedio anual <b>${fmt(v.promedio_anual)}</b></span><span>Meses pico <b>${esc(v.meses_pico.join(", "))}</b></span><span>Extranjeros <b>${v.pct_extranjeros ?? "—"} %</b></span><span>Pernoctan <b>${v.pct_pernocta ?? "—"} %</b></span></div>
-              ${a.temporada_alta ? `<div class="badge" style="margin-top:8px">Este mes es temporada alta</div>` : ""}<div class="cat" style="margin-top:6px">Perfil mensual promedio ${esc(VIS.periodo.desde)} a ${esc(VIS.periodo.hasta)}; la barra clara es el mes actual.</div>`
+              ${a.temporada_alta ? `<div class="badge" style="margin-top:8px">Este mes es temporada alta</div>` : ""}<div class="cat" style="margin-top:6px">Últimos datos publicados por el SERNANP: ${esc(VIS.periodo.hasta)}. La barra clara es el mes actual del calendario.</div>`
               : `<p style="margin:0;color:var(--ink-3);font-size:13px">Esta área no figura en el registro de visitas turísticas publicado por el SERNANP.</p>`}</div>
           <div class="fbox"><h4>Bosque</h4>${han || hza ? `${han ? `<div class="subt" style="margin-top:0">Pérdida dentro del ANP · ${fmt(Math.round(han.total))} ha (2001–${HAN.anios.at(-1)})</div>${mini(HAN.anios.map(y => han[y]), "#d55181")}` : ""}${hza ? `<div class="subt">Zona de amortiguamiento · ${fmt(Math.round(hza.total))} ha</div>${mini(HAN.anios.map(y => hza[y]), "#b8708f")}` : ""}<div class="cat" style="margin-top:6px">Hansen/UMD, Global Forest Change</div>` : `<p style="margin:0;color:var(--ink-3);font-size:13px">${HAN ? "Sin pérdida de cobertura arbórea registrada (o área sin bosque)." : "Cálculo histórico en preparación."}</p>`}
             ${ds ? `<div class="subt">Registro SERNANP ${esc(DS.anios[0])}–${esc(DS.anios.at(-1))} · ${fmt(Math.round(ds.ha_total))} ha</div><div class="kv">${Object.entries(ds.causas).map(([k, x]) => `<span>${esc(k)} <b>${fmt(Math.round(x))} ha</b></span>`).join("")}</div>` : ""}</div>
         </div>
       </div>`;
+    if (v) {
+      const MESL = ["E","F","M","A","M","J","J","A","S","O","N","D"], MESN = ["ene","feb","mar","abr","may","jun","jul","ago","set","oct","nov","dic"];
+      const anV = Object.keys(v.por_anio || {});
+      chipsAnio("anioFicha", [["prom", "Promedio mensual"], ...anV.map(y => [y, y])], y => {
+        const vals = y === "prom" ? v.perfil_mensual : MESN.map((_, i) => v.mensual?.[`${y}-${String(i + 1).padStart(2, "0")}`] ?? null);
+        const mx = Math.max(...vals.filter(x => x != null), 1);
+        $("visFicha").innerHTML = `<div class="mbars">${vals.map((x, i) => `<span class="${i === mes ? "on" : ""}" title="${MESN[i]}${y === "prom" ? "" : " " + y}: ${x == null ? "sin dato" : fmt(x) + " visitas"}" style="height:${x == null ? 0 : 100 * x / mx}%;${x == null ? "background:transparent;border:1px dashed var(--line)" : ""}"></span>`).join("")}</div><div class="mlab">${MESL.map(m => `<span>${m}</span>`).join("")}</div>${y !== "prom" ? `<div class="kv"><span>Total ${y} <b>${fmt(v.por_anio[y])}</b></span>${VIS.anios?.[y] && !VIS.anios[y].completo ? `<span>(año incompleto: hasta ${esc(VIS.anios[y].hasta)})</span>` : ""}</div>` : ""}`;
+      });
+    }
     try { history.replaceState(null, "", "#ficha-" + slug(nombre)); } catch (e) {}
     if (desplazar) $("fichas").scrollIntoView({behavior: "smooth"});
   }
@@ -685,6 +719,13 @@ cargar().then(D => {
 
 const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) document.querySelectorAll("#tabs a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id)); }), {rootMargin: "-45% 0px -50% 0px"});
 
+// selector de año reutilizable
+function chipsAnio(id, opciones, alCambiar, aviso){
+  const el = $(id); if (!el) return;
+  el.innerHTML = opciones.map(([v, t], i) => `<button type="button" data-v="${esc(v)}" aria-pressed="${i === 0}">${esc(t)}</button>`).join("") + (aviso ? `<span class="aviso">${aviso}</span>` : "");
+  el.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { el.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); alCambiar(b.dataset.v); }));
+  alCambiar(opciones[0][0]);
+}
 // barras apiladas genéricas (SVG), con tooltip por columna
 function barras(id, datos, nombres, colores){
   const svg = $(id); if (!datos.length) { svg.outerHTML = `<div class="empty">Sin datos.</div>`; return; }

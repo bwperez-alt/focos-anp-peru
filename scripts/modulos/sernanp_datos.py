@@ -83,8 +83,11 @@ def visitas(df: pd.DataFrame, buscar) -> dict:
         total = g.visitas.sum()
         proc = g.groupby("PROCEDENCIA").visitas.sum()
         top3 = list(perfil.sort_values(ascending=False).index[:3])
+        por_anio = {str(y): int(v) for y, v in mensual.groupby(mensual.index.year).sum().items()}
         areas[area] = {
             "nombre_sernanp": g.ANP.iat[0],
+            "por_anio": por_anio,
+            "mensual": {str(p): int(v) for p, v in mensual.items()},
             "promedio_anual": round(float(mensual.sum() / max(1, mensual.index.nunique()) * 12)),
             "perfil_mensual": [round(float(x)) for x in perfil],
             "meses_pico": [MESES[m - 1] for m in top3],
@@ -95,6 +98,10 @@ def visitas(df: pd.DataFrame, buscar) -> dict:
             "sectores": sorted(g.SECTOR.dropna().unique().tolist())[:12],
         }
     nac = df.groupby(df.fecha.dt.to_period("M")).visitas.sum()
+    anios = {}
+    for y, g in nac.groupby(nac.index.year):
+        anios[str(y)] = {"visitas": int(g.sum()), "meses": int(len(g)),
+                         "desde": str(g.index.min()), "hasta": str(g.index.max()), "completo": len(g) == 12}
     return {
         "fuente": "SERNANP – Frecuencia de visitas turísticas en las ANP (Plataforma Nacional de Datos Abiertos)",
         "url": WEB_VISITAS,
@@ -102,6 +109,7 @@ def visitas(df: pd.DataFrame, buscar) -> dict:
         "fecha_corte": str(df.FECHA_CORTE.max()),
         "nota": "Visitas mensuales registradas por el SERNANP. La plataforma muestra la estacionalidad típica de cada área; no es un conteo en tiempo real.",
         "serie_nacional": [{"mes": str(p), "visitas": int(v)} for p, v in nac.items()],
+        "anios": anios,
         "ranking": sorted(({"area": a, "promedio_anual": v["promedio_anual"]} for a, v in areas.items()), key=lambda r: -r["promedio_anual"]),
         "areas": areas,
     }
@@ -118,6 +126,7 @@ def deforestacion(df: pd.DataFrame, buscar) -> dict:
         areas[area] = {
             "ha_por_anio": {str(a): round(float(g[g.ANIO_REPORTE == a].AREA_DEFO.sum()), 1) for a in anios},
             "ha_total": round(float(g.AREA_DEFO.sum()), 1),
+            "causas_por_anio": {str(a): {k: round(float(v), 1) for k, v in g[g.ANIO_REPORTE == a].groupby("DEFO_CAUSA").AREA_DEFO.sum().items()} for a in anios},
             "causas": {k: round(float(v), 1) for k, v in g.groupby("DEFO_CAUSA").AREA_DEFO.sum().sort_values(ascending=False).items()},
             "tipo_bosque": {k.capitalize(): round(float(v), 1) for k, v in g.groupby("TIPO_BOSQUE").AREA_DEFO.sum().items()},
             "zonas": {k.capitalize(): round(float(v), 1) for k, v in g.groupby("ZONIFI_ANP").AREA_DEFO.sum().sort_values(ascending=False).head(4).items()},
@@ -129,7 +138,8 @@ def deforestacion(df: pd.DataFrame, buscar) -> dict:
         "fecha_corte": str(df.FECHA_CORTE.max()),
         "totales": {"ha_total": round(float(df.AREA_DEFO.sum()), 1), "n_areas": int(df.area.nunique()),
                     "ha_por_anio": {str(a): round(float(df[df.ANIO_REPORTE == a].AREA_DEFO.sum()), 1) for a in anios},
-                    "causas": {k: round(float(v), 1) for k, v in df.groupby("DEFO_CAUSA").AREA_DEFO.sum().sort_values(ascending=False).items()}},
+                    "causas": {k: round(float(v), 1) for k, v in df.groupby("DEFO_CAUSA").AREA_DEFO.sum().sort_values(ascending=False).items()},
+                    "causas_por_anio": {str(a): {k: round(float(v), 1) for k, v in df[df.ANIO_REPORTE == a].groupby("DEFO_CAUSA").AREA_DEFO.sum().sort_values(ascending=False).items()} for a in anios}},
         "ranking": sorted(({"area": a, "ha_total": v["ha_total"], "causa_principal": next(iter(v["causas"]), None)} for a, v in areas.items()),
                           key=lambda r: -r["ha_total"]),
         "areas": areas,
