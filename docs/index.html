@@ -81,7 +81,7 @@ footer{margin-top:20px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
 .maplibregl-popup-tip{border-top-color:#0b0c0b!important}
 .maplibregl-ctrl-attrib{background:rgba(15,17,16,.7)!important;color:var(--ink-3)}
 .maplibregl-ctrl-attrib a{color:var(--ink-2)}
-@media (max-width:1100px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:last-child{grid-column:span 2}.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:1100px){.stamp{text-align:left}.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:last-child{grid-column:span 2}.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.wrap{padding-block:12px 32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}.kpis{grid-template-columns:1fr 1fr}.kpi .v{font-size:24px}.method{grid-template-columns:1fr}.mapcard{min-height:480px}.filters{height:auto}.mapwrap{top:84px}.stamp{text-align:left}}
 </style>
 </head>
@@ -221,7 +221,10 @@ cargar().then(({res, focos, capas}) => {
     attributionControl: {compact:true}
   });
   map.addControl(new maplibregl.NavigationControl({showCompass:false}), "top-right");
-  new ResizeObserver(() => map.resize()).observe(document.getElementById("map"));
+  const PERU = [[-81.4,-18.4],[-68.6,-0.1]];
+  let encuadreInicial = true;
+  new ResizeObserver(() => { map.resize(); if (encuadreInicial) map.fitBounds(PERU, {padding:20, duration:0}); }).observe(document.getElementById("map"));
+  ["mousedown","wheel","touchstart"].forEach(ev => document.getElementById("map").addEventListener(ev, () => encuadreInicial = false, {once:true, passive:true}));
   map.on("load", () => {
     const anpAll = {type:"FeatureCollection", features:[...capas.anp.features, ...capas.zr.features, ...capas.acr.features, ...capas.acp.features]};
     map.addSource("za", {type:"geojson", data:capas.za});
