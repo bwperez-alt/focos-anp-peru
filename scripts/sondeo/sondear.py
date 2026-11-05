@@ -14,8 +14,14 @@ def bajar(rid, ini="2024", fin="2026"):
     data = dict(re.findall(r'<input[^>]*type="hidden"[^>]*name="([^"]+)"[^>]*value="([^"]*)"', t))
     sel = dict(re.findall(r'<select[^>]*name="([^"]+)"', t) and [(n, "") for n in re.findall(r'<select[^>]*name="([^"]+)"', t)])
     print("  selects", list(sel))
-    data.update({"ddlINICIO": ini, "ddlINICIOMES": "1", "ddlFIN": fin, "ddlFINMES": "12", "btnGenerarReporte": "Ver reporte"})
+    for n in re.findall(r'<select[^>]*name="([^"]+)"', t):
+        opts = re.findall(r'<option[^>]*value="([^"]*)"', t.split(f'name="{n}"')[1].split("</select>")[0])
+        print("   ", n, opts[:6], "...", len(opts))
+        data[n] = ("12" if "FIN" in n else "1") if "MES" in n else (fin if "FIN" in n else ini)
+    data["btnGenerarReporte"] = "Ver reporte"
+    for b in re.findall(r'<input[^>]*type="submit"[^>]*name="([^"]+)"[^>]*value="([^"]*)"', t): data[b[0]] = b[1]
     t2 = s.post(u, data=data, timeout=90).text
+    if "OpType=Export" not in t2: print(re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",t2))[:800])
     m = re.search(r'(/appDatosTurismo/Reserved\.ReportViewerWebControl\.axd\?Culture=[^"\']*?OpType=Export[^"\']*?Format=)', t2)
     return s.get(base + m.group(1).replace("\\u0026", "&") + "EXCEL", timeout=120)
 for rid in ["310"]:
