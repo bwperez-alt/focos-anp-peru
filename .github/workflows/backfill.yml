@@ -3,6 +3,9 @@ name: Focos 2020–hoy – carga histórica (FIRMS)
 on:
   workflow_dispatch:
     inputs:
+      modo:
+        description: "anual = archivos anuales por país, sin clave; api = API con FIRMS_MAP_KEY"
+        default: "anual"
       desde:
         description: "Fecha inicial (AAAA-MM-DD)"
         default: "2020-01-01"
@@ -48,8 +51,11 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ]; then
             python scripts/backfill_firms.py --entrada data/entrada --borrar
           elif [ "${{ github.event_name }}" = "schedule" ]; then
-            [ -n "$FIRMS_MAP_KEY" ] || { echo "Sin FIRMS_MAP_KEY: se omite la actualización mensual"; exit 0; }
-            python scripts/backfill_firms.py --meses-atras 4
+            # sin clave: completa los años que FIRMS ya publicó como archivo anual (p. ej. 2026 cuando salga)
+            python scripts/backfill_firms.py --anual --desde 2020-01-01 --solo-faltantes
+            [ -z "$FIRMS_MAP_KEY" ] || python scripts/backfill_firms.py --meses-atras 4
+          elif [ "${{ inputs.modo }}" = "anual" ]; then
+            python scripts/backfill_firms.py --anual --desde "${{ inputs.desde }}" ${{ inputs.hasta && format('--hasta {0}', inputs.hasta) || '' }}
           else
             python scripts/backfill_firms.py --desde "${{ inputs.desde }}" ${{ inputs.hasta && format('--hasta {0}', inputs.hasta) || '' }}
           fi

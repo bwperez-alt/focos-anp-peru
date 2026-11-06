@@ -128,6 +128,8 @@ def procesar(df: pd.DataFrame, desde: date) -> pd.DataFrame:
             ctx.append(pd.DataFrame({"celda": fh.celda(a.latitude, a.longitude), "acq_date": a.acq_date.astype(str)}))
     persist = fh.marcar_persistentes(pd.concat([df.loc[ok, ["celda", "acq_date"]], *ctx], ignore_index=True))
     df["persistente"] = [(c, d) in persist for c, d in zip(df.celda, df.acq_date)]
+    if "type" in df:  # clasificación de FIRMS en el producto estándar: 2 = fuente estática terrestre, 3 = mar adentro
+        df["persistente"] = df.persistente | pd.to_numeric(df["type"], errors="coerce").isin([2, 3])
     df["valido"] = ok & ~df.persistente
     df = fuego.cruzar(df.drop(columns=["celda"]).reset_index(drop=True))
     return fh.normalizar(fh.con_fecha_pe(df))
@@ -215,8 +217,48 @@ def importar(carpeta: Path, borrar: bool) -> None:
             f.unlink()
 
 
+# --------------------------------------------------------------------------- #
+# Alternativa sin MAP_KEY ni cuenta: archivos anuales por país que FIRMS publica en abierto
+# (producto estándar, años completos). El año en curso aparece cuando FIRMS lo procesa.
+# --------------------------------------------------------------------------- #
+ANUAL = "https://firms.modaps.eosdis.nasa.gov/data/country/{s}/{y}/{s}_{y}_Peru.csv"
+SENSORES_ANUAL = {"VIIRS S-NPP": "viirs-snpp", "VIIRS NOAA-20": "viirs-jpss1", "VIIRS NOAA-21": "viirs-noaa21"}
+
+
+def anuales(desde: int, hasta: int, solo_faltantes: bool) -> None:
+    deps = fuego.Capa(fuego.BASE / "departamentos.geojson", "departamento")
+    for y in range(desde, hasta + 1):
+        if solo_faltantes and any((fh.HISTORICO / str(y)).glob("focos_*.csv.gz")):
+            hechos = pd.concat([pd.read_csv(f, usecols=["producto"]) for f in (fh.HISTORICO / str(y)).glob("focos_*.csv.gz")])
+            if (hechos.producto == "SP").all() and len(list((fh.HISTORICO / str(y)).glob("focos_*.csv.gz"))) == 12:
+                print(f"{y}: ya cargado con producto estándar")
+                continue
+        tablas = []
+        for sensor, s in SENSORES_ANUAL.items():
+            r = requests.get(ANUAL.format(s=s, y=y), timeout=300)
+            if r.status_code != 200 or not r.text.startswith("latitude"):
+                print(f"  {sensor} {y}: no publicado todavía ({r.status_code})")
+                continue
+            df = pd.read_csv(io.StringIO(r.text))
+            df["sensor"], df["producto"] = sensor, "SP"
+            print(f"  {sensor} {y}: {len(df):,} focos", flush=True)
+            tablas.append(df)
+        if not tablas:
+            continue
+        crudo = pd.concat(tablas, ignore_index=True)
+        crudo["acq_date"] = crudo.acq_date.astype(str).str[:10]
+        idep = deps.asignar(crudo[["longitude", "latitude"]].to_numpy())
+        crudo["departamento"] = [fuego.titulo(deps.items[i]["nombre"]) if i >= 0 else None for i in idep]
+        crudo = crudo[crudo.departamento.notna()]
+        d0, d1 = date.fromisoformat(crudo.acq_date.min()), date.fromisoformat(crudo.acq_date.max())
+        print(f"### {y}: {len(crudo):,} focos en el Perú ({d0} -> {d1})", flush=True)
+        guardar(procesar(crudo, d0), d0, d1)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--anual", action="store_true", help="descarga los archivos anuales por país de FIRMS (sin MAP_KEY)")
+    ap.add_argument("--solo-faltantes", action="store_true", help="con --anual: omite los años ya completos")
     ap.add_argument("--entrada", type=Path, help="importar archivos de FIRMS Archive Download (sin MAP_KEY)")
     ap.add_argument("--borrar", action="store_true", help="con --entrada: borra los archivos ya importados")
     ap.add_argument("--desde", default="2020-01-01")
@@ -225,6 +267,9 @@ def main() -> None:
     a = ap.parse_args()
     if a.entrada:
         importar(a.entrada, a.borrar)
+        return
+    if a.anual:
+        anuales(int(a.desde[:4]), int(a.hasta[:4]), a.solo_faltantes)
         return
     key = os.environ.get("FIRMS_MAP_KEY", "").strip()
     if not key:
