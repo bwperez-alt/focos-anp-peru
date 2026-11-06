@@ -1,0 +1,9 @@
+{
+  "title": "Observatorio Ambiental de las Áreas Naturales Protegidas del Perú",
+  "upload_type": "dataset",
+  "description": "Serie de focos de calor VIIRS (NASA FIRMS) 2020–hoy cruzada con los límites oficiales del SERNANP (ANP y zonas de amortiguamiento), con banderas de limpieza reproducibles, y módulos de deforestación, calidad del aire, emergencias y sismos. Se actualiza cada hora.",
+  "creators": [{"name": "Pérez Flores, Brandon W.", "affiliation": "GreenPulse SAC"}],
+  "license": "cc-by-4.0",
+  "keywords": ["focos de calor", "incendios forestales", "áreas naturales protegidas", "Perú", "NASA FIRMS", "VIIRS", "SERNANP"],
+  "language": "spa"
+}

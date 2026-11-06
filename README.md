@@ -28,7 +28,16 @@ Si una fuente falla, la plataforma conserva el último dato publicado y lo indic
 ## Configuración (una sola vez)
 
 1. **Pages:** Settings → Pages → Source: **GitHub Actions**.
-2. **Opcional, mediciones de estación del SENAMHI:** pide un token gratuito en https://aqicn.org/data-platform/token/ y guárdalo en Settings → Secrets and variables → Actions → **New repository secret** con el nombre `WAQI_TOKEN`.
+2. **Serie 2020–hoy de focos (recomendado):** pide una MAP_KEY gratuita en https://firms.modaps.eosdis.nasa.gov/api/map_key/ y guárdala como secreto **`FIRMS_MAP_KEY`**. Luego, en **Actions → "Focos 2020–hoy – carga histórica (FIRMS)" → Run workflow**, ejecuta la carga una sola vez (1 a 3 horas). El mismo flujo corre solo el día 5 de cada mes para reemplazar los datos NRT por el producto estándar (SP). Con la clave, la corrida horaria también descarga solo el recuadro del Perú (más rápido y con menos fallos). **Sin clave:** pide los años 2020–hoy en el *Archive Download* de FIRMS y sube los zip a `data/entrada/` (instrucciones en [`data/entrada/LEEME.md`](data/entrada/LEEME.md)); se procesan solos.
+3. **Respaldo de la corrida horaria (opcional):** el flujo ya corre dos veces por hora (minutos 23 y 53), así una omisión de GitHub no deja la hora sin dato. Para una garantía externa adicional, crea un token fino (*fine-grained*) con permiso **Actions: Read and write** solo sobre este repositorio y programa en un servicio externo gratuito (cron-job.org o un Cloudflare Worker) una llamada cada hora:
+
+   ```bash
+   curl -X POST -H "Authorization: Bearer <TOKEN>" -H "Accept: application/vnd.github+json" \
+     https://api.github.com/repos/bwperez-alt/focos-anp-peru/dispatches -d '{"event_type":"actualizar"}'
+   ```
+   Si GitHub ya corrió esa hora, la segunda corrida espera en cola y no publica nada distinto.
+4. **DOI (opcional, para citar en revistas):** sin Zenodo, GitHub ya muestra "Cite this repository" con `CITATION.cff`; basta citar la versión de datos que indica la página. Para un DOI conecta el repositorio en https://zenodo.org/account/settings/github/ y publica un *release* en GitHub; Zenodo asigna el DOI usando `.zenodo.json`. Copia el DOI en la constante `DOI` de `docs/index.html`.
+5. **Opcional, mediciones de estación del SENAMHI:** pide un token gratuito en https://aqicn.org/data-platform/token/ y guárdalo en Settings → Secrets and variables → Actions → **New repository secret** con el nombre `WAQI_TOKEN`.
 
 ### Deforestación
 
@@ -36,7 +45,8 @@ Una vez al mes, descarga de Geobosques **"Alertas Tempranas 2026 – PNCB (Punto
 
 ## Método (resumen)
 
-- **Fuego:** recorte al Perú → descarte de confianza baja, duplicados y fuentes persistentes (celdas de ~400 m con focos en ≥ 4 días distintos) → eventos con DBSCAN espacio-temporal (1 km; 1 día ≈ 1 km) → cruce con ANP/ZA y departamentos.
+- **Fuego:** recorte al Perú → duplicados → banderas de confianza baja y de fuente persistente (celdas de ~400 m con focos en ≥ 4 días distintos dentro de cualquier ventana de 30 días; el criterio usa también el archivo reciente, así no depende de la ventana descargada) → eventos con DBSCAN espacio-temporal (1 km; 1 día ≈ 1 km) sobre los focos válidos → cruce con ANP/ZA y departamentos.
+- **Serie 2020–hoy:** misma limpieza y cruce; agregados mensuales por ANP y ZA (`docs/data/serie_focos.json`) con dos conteos: todos los sensores y **sensores comparables** (S-NPP + NOAA-20, observan desde antes de 2020; NOAA-21 se suma en 2024 y por sí solo eleva los conteos). La densidad usa la superficie de cada polígono del SERNANP (km², proyección local equivalente). Cuando un foco existe como NRT y como SP, se conserva el SP.
 - **Deforestación:** lectura del shapefile oficial (UTM 18S → WGS84) → cruce con ANP/ZA → serie mensual, ranking por área y rejilla de 0,05° de los últimos 90 días.
 - **Aire estimado:** PM2,5, PM10, O₃, NO₂, CO y polvo horarios del modelo CAMS en el punto central de cada ANP; promedio de 24 h, valor actual y máximo previsto para las próximas 24 h. Son valores modelados (~10–40 km), no mediciones.
 - **Aire medido:** promedios móviles de 24 h de PM2,5 y PM10 frente al ECA (D.S. 003-2017-MINAM: 50 y 100 µg/m³) y a la guía de la OMS 2021 (15 y 45 µg/m³). Por la vía WAQI, el índice AQI se convierte a µg/m³ con los puntos de corte de la US EPA y el promedio de 24 h se calcula con el historial horario propio.
@@ -47,7 +57,8 @@ Una vez al mes, descarga de Geobosques **"Alertas Tempranas 2026 – PNCB (Punto
 
 ## Datos para investigación (`data/archivo/`)
 
-- `focos/AAAA-MM/focos_AAAA-MM-DD.csv`: focos clasificados por zona, área y departamento.
+- `focos/AAAA-MM/focos_AAAA-MM-DD.csv`: **todos** los focos del Perú de cada día (día de Lima), con sus banderas: `confianza`, `persistente` (fuente persistente) y `valido` (entra en los indicadores). Columnas: `fecha_pe, hora_pe, acq_date, acq_time` (UTC, como FIRMS), `latitude, longitude, sensor, producto` (NRT o SP), `frp, confianza, daynight, departamento, zona, area, categoria, persistente, valido`. Los archivos anteriores al 06-nov-2026 solo contienen focos ya filtrados.
+- `focos_historico/AAAA/focos_AAAA-MM.csv.gz`: carga histórica 2020–hoy desde la API de FIRMS (mismo esquema). La página también ofrece un constructor de descargas por ANP, rango de meses y formato (CSV o GeoJSON).
 - `aire_modelo/AAAA-MM/aire_modelo_AAAA-MM-DD.csv`: calidad del aire horaria estimada por ANP (CAMS).
 - `aire/AAAA-MM/aire_AAAA-MM-DD.csv`: mediciones horarias por estación (si hay acceso al SENAMHI).
 - `visitas_anp_mincetur.csv`: visitas mensuales oficiales por ANP (nacionales, extranjeros, total) desde 2019.
@@ -61,7 +72,10 @@ Una vez al mes, descarga de Geobosques **"Alertas Tempranas 2026 – PNCB (Punto
 ```
 .github/workflows/actualizar.yml   corrida horaria + publicación en Pages
 scripts/actualizar.py              orquestador (cada módulo falla de forma aislada)
-scripts/pipeline.py                módulo de fuego (NASA FIRMS)
+scripts/pipeline.py                módulo de fuego (NASA FIRMS), corrida horaria
+scripts/focos_hist.py              archivo de focos, filtro de persistencia y serie mensual 2020–hoy
+scripts/backfill_firms.py          carga histórica 2020–hoy desde la API de FIRMS (workflow backfill.yml)
+scripts/validar.py                 control de calidad antes y después de publicar
 scripts/modulos/                   aire, deforestacion, riesgos, ecoturismo
 data/base/                         capas oficiales (ANP, ZR, ACR, ACP, ZA, departamentos)
 data/entrada/                      carga manual de Geobosques

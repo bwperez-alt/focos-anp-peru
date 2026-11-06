@@ -20,6 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import pipeline as fuego  # noqa: E402
+import focos_hist  # noqa: E402
 from modulos import aire, aire_modelo, clima, deforestacion, ecoturismo, riesgos, sernanp_datos, visitas_actual  # noqa: E402
 
 SALIDA = fuego.SALIDA
@@ -57,9 +58,11 @@ def main() -> None:
 
     def _fuego():
         df, res = fuego.ejecutar("7d")
-        return {"ultimo_dato": res["periodo"]["hasta"], "registros": res["totales"]["focos"]}
+        return {"ultimo_dato": res["periodo"]["hasta"], "ultimo_foco": res.get("ultimo_foco"), "registros": res["totales"]["focos"]}
 
     correr("fuego", _fuego)
+    # serie mensual 2020–hoy (carga histórica de FIRMS + archivo diario) y CSV mensuales para descargas
+    correr("serie", lambda: focos_hist.construir_serie(capas))
     correr("aire", lambda: aire.ejecutar(SALIDA, ARCHIVO, token=os.environ.get("WAQI_TOKEN")))
 
     def _defo():
