@@ -3,6 +3,11 @@ name: Actualizar observatorio y publicar
 on:
   schedule:
     - cron: "23 * * * *"     # cada hora (minuto 23, UTC)
+  # Respaldo: un servicio externo (cron-job.org, Cloudflare Worker) llama cada hora a
+  # POST /repos/bwperez-alt/focos-anp-peru/dispatches {"event_type":"actualizar"}
+  # porque el cron de GitHub puede retrasarse u omitir corridas en horas de alta carga.
+  repository_dispatch:
+    types: [actualizar]
   workflow_dispatch:
   push:
     branches: [main]
@@ -45,7 +50,11 @@ jobs:
       - name: Ejecutar módulos (fuego, aire, deforestación, emergencias y sismos, ecoturismo)
         env:
           WAQI_TOKEN: ${{ secrets.WAQI_TOKEN }}
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
         run: python scripts/actualizar.py
+
+      - name: Validar salidas antes de publicar
+        run: python scripts/validar.py
 
       - name: Guardar salidas para la próxima corrida
         if: always()
@@ -70,3 +79,6 @@ jobs:
           path: docs
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Vigilar la frescura del dato de fuego (avisa por correo si falla)
+        run: python scripts/validar.py --frescura

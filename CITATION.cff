@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Si usa estos datos o la plataforma, cítelos así. NASA solicita además reconocer FIRMS (ver README)."
+title: "Observatorio Ambiental de las Áreas Naturales Protegidas del Perú"
+type: dataset
+authors:
+  - family-names: "Pérez Flores"
+    given-names: "Brandon W."
+    affiliation: "GreenPulse SAC"
+url: "https://bwperez-alt.github.io/focos-anp-peru/"
+repository-code: "https://github.com/bwperez-alt/focos-anp-peru"
+license: CC-BY-4.0
+keywords:
+  - focos de calor
+  - incendios forestales
+  - áreas naturales protegidas
+  - Perú
+  - NASA FIRMS
+  - VIIRS
+  - SERNANP

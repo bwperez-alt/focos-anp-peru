@@ -7,3 +7,4 @@ docs/data/*
 !docs/data/deforestacion.json
 !docs/data/deforestacion_rejilla.geojson
 data/tmp_hansen/
+data/tmp_firms/
