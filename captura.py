@@ -28,6 +28,10 @@ def main():
         def mapa_listo():
             pg.wait_for_function("() => { const c=document.querySelector('#map canvas'); return c && c.width>0; }", timeout=60000); pg.wait_for_timeout(5000)
 
+        for _ in range(20):
+            pg.goto(URL + "?v=" + str(time.time()), wait_until="networkidle")
+            if "anioRef" in pg.content(): break
+            time.sleep(15)
         pg.goto(URL, wait_until="networkidle"); mapa_listo()
         foto("portada")
         pg.click("#guia summary"); foto("guia", "#guia")
