@@ -1,0 +1,10 @@
+acq_date,acq_time,latitude,longitude,sensor,frp,confianza,daynight,departamento,zona,area,categoria
+2026-11-06,544,-10.37542,-73.77565,VIIRS NOAA-21,2.39,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,639,-7.99046,-75.06823,VIIRS NOAA-20,2.06,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,639,-7.98677,-75.07008,VIIRS NOAA-20,1.2,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,639,-7.99105,-75.06633,VIIRS NOAA-20,1.36,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,639,-7.99533,-75.0626,VIIRS NOAA-20,1.07,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,641,-10.3744,-73.77639,VIIRS NOAA-20,1.33,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,641,-10.37847,-73.777,VIIRS NOAA-20,1.04,nominal,N,Ucayali,Fuera de ANP,,
+2026-11-06,641,-11.8393,-72.94775,VIIRS NOAA-20,0.69,nominal,N,Cusco,Fuera de ANP,,
+2026-11-06,641,-11.84368,-72.9484,VIIRS NOAA-20,0.69,nominal,N,Cusco,Fuera de ANP,,
