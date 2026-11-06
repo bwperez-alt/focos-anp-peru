@@ -2,7 +2,6 @@ name: Captura para video (temporal)
 on:
   push:
     branches: [sonda-firms]
-    paths: [captura.py, .github/workflows/captura.yml]
 permissions:
   contents: write
 jobs:
