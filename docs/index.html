@@ -379,7 +379,7 @@ dfn{font-style:normal;border-bottom:1px dotted var(--ink-3);cursor:help}
     </div>
     <div class="card" style="margin-top:16px"><h3>ANP en el rango elegido<span class="per hper"></span></h3>
       <div class="filters" style="border-top:1px solid var(--line)"><input type="search" id="histBusca" placeholder="Buscar ANP…" aria-label="Buscar ANP"><select id="histOrden" aria-label="Ordenar por"><option value="dens">Ordenar por focos/1 000 km²</option><option value="n">Ordenar por focos</option><option value="frp">Ordenar por FRP</option><option value="var">Ordenar por cambio vs año anterior</option></select><span id="histRes" style="color:var(--ink-3);font-size:12.5px;margin-left:auto"></span></div>
-      <div class="note" style="padding:8px 16px 0">Las áreas de menos de 50 km² pueden mostrar densidades muy altas con solo 1 o 2 focos: lee la densidad junto con el conteo.</div>
+      <div class="note" style="padding:8px 16px 0">La densidad no se calcula para áreas de menos de 5 km² (1 o 2 focos darían valores extremos). La comparación con el año anterior solo aparece si ambos periodos tienen todos sus meses cargados.</div>
       <div class="scroll" style="max-height:420px"><table id="histTabla"><thead><tr><th>Área</th><th class="n">Focos</th><th class="n">/1 000 km²</th><th class="n">FRP (MW)</th><th class="n">Mismo periodo, año anterior</th></tr></thead><tbody></tbody></table></div>
     </div>
   </section>
@@ -565,7 +565,13 @@ cargar().then(D => {
 
   // ---------- serie 2020–hoy (datos base)
   const SER = D.serie && D.serie.meses?.length ? D.serie : null;
-  const KM2 = Object.fromEntries(Object.entries(SER?.areas || {}).filter(([, v]) => v.km2).map(([k, v]) => [k, v.km2]));
+  const KM2_MIN = 5;  // por debajo, 1 o 2 focos dan densidades extremas: no se calcula densidad
+  const KM2 = Object.fromEntries(Object.entries(SER?.areas || {}).filter(([, v]) => v.km2 >= KM2_MIN).map(([k, v]) => [k, v.km2]));
+  const conDatoM = m => !!SER?.totales?.[m];
+  // último año con los 12 meses cargados (las comparaciones solo usan años completos)
+  const anioRef = (() => { if (!SER) return null; const ys = [...new Set(SER.meses.map(m => m.slice(0, 4)))].sort().reverse();
+    return ys.find(y => Array.from({length: 12}, (_, i) => `${y}-${String(i + 1).padStart(2, "0")}`).every(conDatoM)) || null; })();
+  const mesesDe = y => Array.from({length: 12}, (_, i) => `${y}-${String(i + 1).padStart(2, "0")}`);
   const catSerie = n => SER?.areas?.[n]?.cat || "";
 
   // ---------- situación actual: todo lo que depende de la ventana (24 h / 72 h / 7 d)
@@ -576,13 +582,12 @@ cargar().then(D => {
   const focosV = () => { const c = corte(); return FOC.filter(f => f.properties.f >= c); };
   const catDe = Object.fromEntries((res.ranking_areas || []).map(r => [r.area, r.categoria]));
   function kpiAnual(){
-    if (!SER) return k("#historico", "Focos en ANP en el año", "—", "serie 2020–hoy en preparación", COL["Dentro de ANP"]);
-    const yHoy = SER.meses.at(-1).slice(0, 4), mHoy = SER.meses.at(-1).slice(5);
-    const suma = y => SER.meses.filter(m => m.startsWith(y) && m.slice(5) <= mHoy).reduce((t, m) => t + (SER.totales[m]?.comparable?.anp || 0), 0);
-    const prev = [...new Set(SER.meses.map(m => m.slice(0, 4)))].filter(y => y < yHoy && SER.meses.filter(m => m.startsWith(y) && m.slice(5) <= mHoy).length === +mHoy);
-    const act = suma(yHoy), prom = prev.length ? prev.reduce((t, y) => t + suma(y), 0) / prev.length : null;
+    if (!SER || !anioRef) return k("#historico", "Focos en ANP en el año", "—", "serie 2020–hoy en preparación", COL["Dentro de ANP"]);
+    const suma = y => mesesDe(y).reduce((t, m) => t + (SER.totales[m]?.comparable?.anp || 0), 0);
+    const previos = [...new Set(SER.meses.map(m => m.slice(0, 4)))].filter(y => y < anioRef && mesesDe(y).every(conDatoM));
+    const act = suma(anioRef), prom = previos.length ? previos.reduce((t, y) => t + suma(y), 0) / previos.length : null;
     const d = prom ? Math.round(100 * (act - prom) / prom) : null;
-    return k("#historico", `Focos en ANP · ene–${MESC[+mHoy - 1]} ${yHoy}`, fmt(act), prom != null ? `<span style="color:${d > 0 ? "#e5484d" : "#2fbf8a"}">${d > 0 ? "+" : ""}${d} %</span> frente al promedio ${prev[0]}–${prev.at(-1)}` : "sin años previos completos cargados", COL["Dentro de ANP"]);
+    return k("#historico", `Focos en ANP · año ${anioRef}`, fmt(act), prom != null ? `<span style="color:${d > 0 ? "#e5484d" : "#2fbf8a"}">${d > 0 ? "+" : ""}${d} %</span> frente al promedio ${previos[0]}–${previos.at(-1)}` : "primer año completo de la serie", COL["Dentro de ANP"]);
   }
   function pintaVentana(){
     const F = focosV(), lab = VENTANAS[VENT][1];
@@ -795,7 +800,9 @@ cargar().then(D => {
     const idx = m => Math.max(0, MM.indexOf(m));
     const desplaza = (m, n) => { const d = new Date(+m.slice(0, 4), +m.slice(5) - 1 + n, 1); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`; };
     const temporada = () => { const y = +fin.slice(0, 4) - (fin.slice(5) >= "10" ? 0 : 1); return [`${y}-07`, `${y}-10`]; };
-    const preset = r => { if (!r || r === "12m") return [MM[Math.max(0, MM.length - 12)], fin];
+    const ult12ok = MM.slice(-12).every(conDato);
+    const preset = r => { if (!r) r = ult12ok || !anioRef ? "12m" : anioRef;
+      if (r === "12m") return [MM[Math.max(0, MM.length - 12)], fin];
       if (r === "temporada") return temporada(); if (r === "todo") return [MM[0], fin];
       if (/^\d{4}$/.test(r)) return [`${r}-01` < MM[0] ? MM[0] : `${r}-01`, `${r}-12` > fin ? fin : `${r}-12`];
       const [a, b] = r.split("_"); return MM.includes(a) && MM.includes(b) && a <= b ? [a, b] : [MM[Math.max(0, MM.length - 12)], fin]; };
@@ -817,17 +824,17 @@ cargar().then(D => {
 
     const pintaHist = () => {
       ra.value = idx(A); rb.value = idx(B);
-      guardarURL({r: `${A}_${B}` === preset("12m").join("_") ? null : `${A}_${B}`, s: sens === "comp" ? null : "todos", z: zon === "anpza" ? null : "todas"});
+      guardarURL({r: `${A}_${B}` === preset(null).join("_") ? null : `${A}_${B}`, s: sens === "comp" ? null : "todos", z: zon === "anpza" ? null : "todas"});
       document.querySelectorAll("#histSens button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === sens));
       document.querySelectorAll("#histZona button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === zon));
       document.querySelectorAll(".hper").forEach(el => el.textContent = rangoTxt());
       $("densLab").textContent = `· ${rangoTxt()}`;
       const sel = MM.slice(idx(A), idx(B) + 1), faltan = sel.filter(m => !conDato(m));
       const T3 = sel.reduce((t, m) => { const v = tot(m) || [0, 0, 0]; return [t[0] + v[0], t[1] + v[1], t[2] + v[2]]; }, [0, 0, 0]);
-      const prevSel = sel.map(m => desplaza(m, -12)), Tp = prevSel.reduce((t, m) => t + sum3(tot(m)), 0), Tn = T3[0] + T3[1] + T3[2];
-      $("histLect").innerHTML = `<span>Rango <b>${rangoTxt()}</b> (${sel.length} meses)</span><span>Dentro de ANP <b>${fmt(T3[2])}</b></span><span>Zona de amortiguamiento <b>${fmt(T3[1])}</b></span>${zon === "todas" ? `<span>Fuera <b>${fmt(T3[0])}</b></span>` : ""}${prevSel.every(conDato) && Tp ? `<span>Mismo periodo del año anterior <b>${fmt(Tp)}</b> <span style="color:${Tn > Tp ? "#e5484d" : "#2fbf8a"}">${Tn >= Tp ? "+" : ""}${Math.round(100 * (Tn - Tp) / Tp)} %</span></span>` : ""}`;
+      const prevSel = sel.map(m => desplaza(m, -12)), compara = sel.every(conDato) && prevSel.every(conDato), Tp = prevSel.reduce((t, m) => t + sum3(tot(m)), 0), Tn = T3[0] + T3[1] + T3[2];
+      $("histLect").innerHTML = `<span>Rango <b>${rangoTxt()}</b> (${sel.length} meses)</span><span>Dentro de ANP <b>${fmt(T3[2])}</b></span><span>Zona de amortiguamiento <b>${fmt(T3[1])}</b></span>${zon === "todas" ? `<span>Fuera <b>${fmt(T3[0])}</b></span>` : ""}${compara && Tp ? `<span>Mismo periodo del año anterior <b>${fmt(Tp)}</b> <span style="color:${Tn > Tp ? "#e5484d" : "#2fbf8a"}">${Tn >= Tp ? "+" : ""}${Math.round(100 * (Tn - Tp) / Tp)} %</span></span>` : ""}`;
       const conD = MM.filter(conDato), prods = [...new Set(conD.map(m => SER.cobertura[m]?.producto).filter(Boolean))];
-      $("histCob").innerHTML = `Datos cargados: ${conD.length ? `${mesTxt(conD[0])} – ${mesTxt(conD.at(-1))}` : "ninguno"} (${conD.length} de ${MM.length} meses; producto ${prods.join(", ") || "—"}).` + (faltan.length ? ` <b style="color:var(--atencion)">${faltan.length} meses del rango aún no tienen datos</b>: se muestran vacíos, no como cero.` : "") + (conD.length < MM.length ? ` La carga histórica completa se ejecuta con el flujo <i>backfill</i> del repositorio.` : "");
+      $("histCob").innerHTML = `Datos cargados: ${conD.length ? `${mesTxt(conD[0])} – ${mesTxt(conD.at(-1))}` : "ninguno"} (${conD.length} de ${MM.length} meses; producto ${prods.join(", ") || "—"}).` + (faltan.length ? ` <b style="color:var(--atencion)">${faltan.length} meses del rango aún no tienen datos</b>: se muestran vacíos, no como cero.` : "") + (conD.length < MM.length ? ` Los meses del año en curso se completan cuando NASA FIRMS publica su archivo anual.` : "");
       $("histSerieWrap").innerHTML = `<svg class="chart" id="histSerie" role="img" aria-label="Focos por mes según zona"></svg>`;
       barras("histSerie", sel.map(m => ({lab: sel.length > 18 ? (m.endsWith("-01") ? m.slice(0, 4) : "") : MESC[+m.slice(5) - 1] + (m.endsWith("-01") && sel.length > 12 ? " " + m.slice(2, 4) : ""), full: `${mesTxt(m)}${conDato(m) ? ` · ${SER.cobertura[m].producto}` : " · sin datos"}`, v: tot(m) || [0, 0, 0]})),
         ["Fuera de ANP", "Zona de amortiguamiento", "Dentro de ANP"], [COL["Fuera de ANP"], COL["Zona de amortiguamiento"], COL["Dentro de ANP"]], sel.length > 18 ? {etiquetas: "dispersas"} : {});
@@ -841,12 +848,12 @@ cargar().then(D => {
       // ranking por ANP
       const ix = sens === "comp" ? 1 : 0, q = $("histBusca").value.trim().toLowerCase(), ord = $("histOrden").value;
       const filas = Object.entries(SER.areas).map(([n, a]) => { const v = sel.reduce((t, m) => t + (a.m[m]?.[ix] || 0), 0), frp = sel.reduce((t, m) => t + (a.m[m]?.[2] || 0), 0), vp = prevSel.reduce((t, m) => t + (a.m[m]?.[ix] || 0), 0);
-        return {n, za: n.startsWith("ZA · "), cat: a.cat, km2: a.km2, v, frp, vp, d: a.km2 ? 1000 * v / a.km2 : null}; }).filter(r => r.v > 0 && (!q || r.n.toLowerCase().includes(q)));
-      const key = {dens: r => r.d ?? -1, n: r => r.v, frp: r => r.frp, var: r => r.vp ? (r.v - r.vp) / r.vp : r.v ? 9e9 : -9e9}[ord];
+        return {n, za: n.startsWith("ZA · "), cat: a.cat, km2: a.km2, v, frp, vp, d: a.km2 >= KM2_MIN ? 1000 * v / a.km2 : null}; }).filter(r => r.v > 0 && (!q || r.n.toLowerCase().includes(q)));
+      const key = {dens: r => r.d ?? -1, n: r => r.v, frp: r => r.frp, var: r => !compara ? 0 : r.vp ? (r.v - r.vp) / r.vp : r.v ? 9e9 : -9e9}[ord];
       filas.sort((a, b) => key(b) - key(a));
       HIST.dens = Object.fromEntries(filas.filter(r => !r.za && r.d != null).map(r => [r.n, r.d]));
       $("histRes").textContent = `${filas.length} áreas con focos`;
-      $("histTabla").querySelector("tbody").innerHTML = filas.length ? filas.slice(0, 150).map(r => `<tr class="click" ${r.za ? "" : `data-ficha="${esc(r.n)}"`}><td><span class="dot" style="background:${COL[r.za ? "Zona de amortiguamiento" : "Dentro de ANP"]};margin-right:6px"></span>${esc(r.n)}<span class="cat">${esc(r.cat)}${r.km2 ? ` · ${fmt(Math.round(r.km2))} km²` : ""}</span></td><td class="n">${fmt(r.v)}</td><td class="n">${r.d != null ? r.d.toLocaleString("es-PE", {maximumFractionDigits: 2}) : "—"}</td><td class="n">${fmt(Math.round(r.frp))}</td><td class="n">${prevSel.every(conDato) ? `${fmt(r.vp)} <span class="cat" style="display:inline;color:${r.v > r.vp ? "#e5484d" : "#2fbf8a"}">${r.vp ? (r.v >= r.vp ? "+" : "") + Math.round(100 * (r.v - r.vp) / r.vp) + " %" : "nuevo"}</span>` : "—"}</td></tr>`).join("")
+      $("histTabla").querySelector("tbody").innerHTML = filas.length ? filas.slice(0, 150).map(r => `<tr class="click" ${r.za ? "" : `data-ficha="${esc(r.n)}"`}><td><span class="dot" style="background:${COL[r.za ? "Zona de amortiguamiento" : "Dentro de ANP"]};margin-right:6px"></span>${esc(r.n)}<span class="cat">${esc(r.cat)}${r.km2 ? ` · ${fmt(Math.round(r.km2))} km²` : ""}</span></td><td class="n">${fmt(r.v)}</td><td class="n">${r.d != null ? r.d.toLocaleString("es-PE", {maximumFractionDigits: 2}) : "—"}</td><td class="n">${fmt(Math.round(r.frp))}</td><td class="n">${compara ? `${fmt(r.vp)} <span class="cat" style="display:inline;color:${r.v > r.vp ? "#e5484d" : "#2fbf8a"}">${r.vp ? (r.v >= r.vp ? "+" : "") + Math.round(100 * (r.v - r.vp) / r.vp) + " %" : "nuevo"}</span>` : "—"}</td></tr>`).join("")
         : `<tr><td colspan="5" class="empty">Sin focos en ANP ni ZA en este rango.</td></tr>`;
       ctx();
       window.__pintaDensidad && window.__pintaDensidad();
@@ -925,18 +932,18 @@ cargar().then(D => {
     // fuego en la ventana elegida y en la serie 2020–hoy
     const Fv = focosV(), nA = Fv.filter(f => f.properties.a === nombre && f.properties.z === "Dentro de ANP").length, nZ = Fv.filter(f => f.properties.a === nombre && f.properties.z === "Zona de amortiguamiento").length;
     const hA = SER?.areas?.[nombre]?.m || {}, hZ = SER?.areas?.["ZA · " + nombre]?.m || {};
-    const meses = SER?.meses || [], ult12 = meses.slice(-12), prev12 = meses.slice(-24, -12);
+    const meses = SER?.meses || [], ult12 = anioRef ? mesesDe(anioRef) : [], prev12 = anioRef && mesesDe(String(+anioRef - 1)).every(conDatoM) ? mesesDe(String(+anioRef - 1)) : [];
     const sumM = (h, ms) => ms.reduce((t, m) => t + (h[m]?.[0] || 0), 0);
     const histBox = SER ? (() => { const vals = meses.map(m => (hA[m]?.[0] || 0) + (hZ[m]?.[0] || 0)), mx = Math.max(...vals, 1);
       const ys = [...new Set(meses.map(m => m.slice(0, 4)))];
       return `<div class="fbox"><h4>Fuego ${meses[0].slice(0, 4)}–hoy</h4><div class="mbars" style="height:56px;gap:1px">${meses.map((m, i) => `<span title="${mesTxt(m)}: ${fmt(hA[m]?.[0] || 0)} en el ANP · ${fmt(hZ[m]?.[0] || 0)} en la ZA" style="height:${100 * vals[i] / mx}%;background:${(hA[m]?.[0] || 0) ? "#ff6b2c" : "#f4b36a"}"></span>`).join("")}</div>
         <div class="mlab">${ys.map(y => `<span>${y}</span>`).join("")}</div>
-        <div class="kv"><span>Últimos 12 meses <b>${fmt(sumM(hA, ult12))}</b> en el ANP · <b>${fmt(sumM(hZ, ult12))}</b> en la ZA</span>${prev12.length ? `<span>12 meses anteriores <b>${fmt(sumM(hA, prev12))}</b> / <b>${fmt(sumM(hZ, prev12))}</b></span>` : ""}${KM2[nombre] ? `<span>Superficie <b>${fmt(Math.round(KM2[nombre]))} km²</b></span>` : ""}</div>
+        <div class="kv">${anioRef ? `<span>Año ${anioRef} <b>${fmt(sumM(hA, ult12))}</b> en el ANP · <b>${fmt(sumM(hZ, ult12))}</b> en la ZA</span>` : ""}${prev12.length ? `<span>${+anioRef - 1} <b>${fmt(sumM(hA, prev12))}</b> / <b>${fmt(sumM(hZ, prev12))}</b></span>` : ""}${KM2[nombre] ? `<span>Superficie <b>${fmt(Math.round(KM2[nombre]))} km²</b></span>` : ""}</div>
         <div class="cat" style="margin-top:6px">Focos válidos por mes, todos los sensores. Naranja intenso: hubo focos dentro del ANP; claro: solo en la zona de amortiguamiento.</div></div>`; })() : "";
     const interp = (() => { const p = [];
       p.push(`${nA + nZ ? `${fmt(nA)} focos dentro y ${fmt(nZ)} en su zona de amortiguamiento` : "Sin focos de calor"} en ${VENT === "7d" ? "los" : "las"} ${VENTANAS[VENT][1]}`);
       if (SER && ult12.length) { const a12 = sumM(hA, ult12) + sumM(hZ, ult12), p12 = sumM(hA, prev12) + sumM(hZ, prev12);
-        p.push(prev12.length && p12 ? `${fmt(a12)} focos (ANP + ZA) en los últimos 12 meses, ${a12 >= p12 ? "+" : ""}${Math.round(100 * (a12 - p12) / p12)} % frente a los 12 anteriores` : `${fmt(a12)} focos (ANP + ZA) en los últimos 12 meses`); }
+        p.push(prev12.length && p12 ? `${fmt(a12)} focos (ANP + ZA) en ${anioRef}, ${a12 >= p12 ? "+" : ""}${Math.round(100 * (a12 - p12) / p12)} % frente a ${+anioRef - 1}` : `${fmt(a12)} focos (ANP + ZA) en ${anioRef}`); }
       if (han || hza) { const hi = han?.total || 0, hz2 = hza?.total || 0; if (hi + hz2 >= 1) p.push(`pérdida de bosque ${HAN.anios[0]}–${HAN.anios.at(-1)} concentrada ${hz2 > hi ? "en la zona de amortiguamiento" : "dentro del ANP"} (${fmt(Math.round(hi))} ha dentro, ${fmt(Math.round(hz2))} ha en la ZA)`); }
       return p.join("; ") + "."; })();
     const mini = (vals, color) => { const mx = Math.max(...vals, 1); return `<div class="mbars" style="height:56px">${vals.map((x, i) => `<span title="${HAN.anios[i]}: ${fmt(Math.round(x))} ha" style="height:${100 * x / mx}%;background:${color}"></span>`).join("")}</div><div class="mlab"><span>2001</span><span style="flex:8"></span><span>${HAN.anios.at(-1)}</span></div>`; };
