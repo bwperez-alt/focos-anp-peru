@@ -9,6 +9,9 @@ on:
       hasta:
         description: "Fecha final (AAAA-MM-DD, vacío = hoy)"
         default: ""
+  push:
+    branches: [main]
+    paths: ["data/entrada/firms*.zip", "data/entrada/DL_FIRE*.zip", "data/entrada/fire_*.csv"]
   schedule:
     # día 5 de cada mes: rehace los últimos 4 meses para reemplazar NRT por el producto estándar (SP)
     - cron: "17 10 5 * *"
@@ -42,7 +45,10 @@ jobs:
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python scripts/backfill_firms.py --entrada data/entrada --borrar
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            [ -n "$FIRMS_MAP_KEY" ] || { echo "Sin FIRMS_MAP_KEY: se omite la actualización mensual"; exit 0; }
             python scripts/backfill_firms.py --meses-atras 4
           else
             python scripts/backfill_firms.py --desde "${{ inputs.desde }}" ${{ inputs.hasta && format('--hasta {0}', inputs.hasta) || '' }}
@@ -51,7 +57,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/archivo/focos_historico
+          git add -A data/archivo/focos_historico data/entrada
           git diff --cached --quiet || git commit -m "Focos históricos FIRMS: $(date -u +'%Y-%m-%d')"
           for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && break; sleep 5; done
       - name: Publicar de inmediato

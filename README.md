@@ -28,15 +28,15 @@ Si una fuente falla, la plataforma conserva el último dato publicado y lo indic
 ## Configuración (una sola vez)
 
 1. **Pages:** Settings → Pages → Source: **GitHub Actions**.
-2. **Serie 2020–hoy de focos (recomendado):** pide una MAP_KEY gratuita en https://firms.modaps.eosdis.nasa.gov/api/map_key/ y guárdala como secreto **`FIRMS_MAP_KEY`**. Luego, en **Actions → "Focos 2020–hoy – carga histórica (FIRMS)" → Run workflow**, ejecuta la carga una sola vez (1 a 3 horas). El mismo flujo corre solo el día 5 de cada mes para reemplazar los datos NRT por el producto estándar (SP). Con la clave, la corrida horaria también descarga solo el recuadro del Perú (más rápido y con menos fallos).
-3. **Respaldo de la corrida horaria (recomendado):** el cron de GitHub puede retrasarse u omitir corridas. Crea un token fino (*fine-grained*) con permiso **Actions: Read and write** solo sobre este repositorio y programa en un servicio externo gratuito (cron-job.org o un Cloudflare Worker) una llamada cada hora:
+2. **Serie 2020–hoy de focos (recomendado):** pide una MAP_KEY gratuita en https://firms.modaps.eosdis.nasa.gov/api/map_key/ y guárdala como secreto **`FIRMS_MAP_KEY`**. Luego, en **Actions → "Focos 2020–hoy – carga histórica (FIRMS)" → Run workflow**, ejecuta la carga una sola vez (1 a 3 horas). El mismo flujo corre solo el día 5 de cada mes para reemplazar los datos NRT por el producto estándar (SP). Con la clave, la corrida horaria también descarga solo el recuadro del Perú (más rápido y con menos fallos). **Sin clave:** pide los años 2020–hoy en el *Archive Download* de FIRMS y sube los zip a `data/entrada/` (instrucciones en [`data/entrada/LEEME.md`](data/entrada/LEEME.md)); se procesan solos.
+3. **Respaldo de la corrida horaria (opcional):** el flujo ya corre dos veces por hora (minutos 23 y 53), así una omisión de GitHub no deja la hora sin dato. Para una garantía externa adicional, crea un token fino (*fine-grained*) con permiso **Actions: Read and write** solo sobre este repositorio y programa en un servicio externo gratuito (cron-job.org o un Cloudflare Worker) una llamada cada hora:
 
    ```bash
    curl -X POST -H "Authorization: Bearer <TOKEN>" -H "Accept: application/vnd.github+json" \
      https://api.github.com/repos/bwperez-alt/focos-anp-peru/dispatches -d '{"event_type":"actualizar"}'
    ```
    Si GitHub ya corrió esa hora, la segunda corrida espera en cola y no publica nada distinto.
-4. **DOI (para citar en revistas):** conecta el repositorio en https://zenodo.org/account/settings/github/ y publica un *release* en GitHub; Zenodo asigna el DOI usando `.zenodo.json`. Copia el DOI en la constante `DOI` de `docs/index.html`.
+4. **DOI (opcional, para citar en revistas):** sin Zenodo, GitHub ya muestra "Cite this repository" con `CITATION.cff`; basta citar la versión de datos que indica la página. Para un DOI conecta el repositorio en https://zenodo.org/account/settings/github/ y publica un *release* en GitHub; Zenodo asigna el DOI usando `.zenodo.json`. Copia el DOI en la constante `DOI` de `docs/index.html`.
 5. **Opcional, mediciones de estación del SENAMHI:** pide un token gratuito en https://aqicn.org/data-platform/token/ y guárdalo en Settings → Secrets and variables → Actions → **New repository secret** con el nombre `WAQI_TOKEN`.
 
 ### Deforestación

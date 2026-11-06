@@ -3,6 +3,7 @@ name: Actualizar observatorio y publicar
 on:
   schedule:
     - cron: "23 * * * *"     # cada hora (minuto 23, UTC)
+    - cron: "53 * * * *"     # segunda oportunidad: si GitHub omitió la del minuto 23, esta la cubre
   # Respaldo: un servicio externo (cron-job.org, Cloudflare Worker) llama cada hora a
   # POST /repos/bwperez-alt/focos-anp-peru/dispatches {"event_type":"actualizar"}
   # porque el cron de GitHub puede retrasarse u omitir corridas en horas de alta carga.

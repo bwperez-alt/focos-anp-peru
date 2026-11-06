@@ -149,12 +149,83 @@ def guardar(df: pd.DataFrame, desde: date, hasta: date) -> None:
         print(f"  {f.relative_to(fuego.RAIZ)}: {len(parte):,} focos ({parte.valido.sum():,} válidos)")
 
 
+# --------------------------------------------------------------------------- #
+# Alternativa sin MAP_KEY: archivos del "Archive Download" de FIRMS subidos a data/entrada/
+# (https://firms.modaps.eosdis.nasa.gov/download/ -> País: Peru, fuente VIIRS, formato CSV).
+# Nombres que entrega FIRMS: fire_archive_SV-C2_*.csv (S-NPP, estándar), fire_nrt_J1V-C2_*.csv
+# (NOAA-20, casi en tiempo real), J2V = NOAA-21. Pueden venir dentro de un .zip.
+# --------------------------------------------------------------------------- #
+def _sensor_de(nombre: str, sat: str) -> str | None:
+    n = nombre.upper()
+    if "J2V" in n:
+        return "VIIRS NOAA-21"
+    if "J1V" in n:
+        return "VIIRS NOAA-20"
+    if "SV-C2" in n or "SUOMI" in n:
+        return "VIIRS S-NPP"
+    return {"N": "VIIRS S-NPP", "1": "VIIRS NOAA-20", "N20": "VIIRS NOAA-20", "J1": "VIIRS NOAA-20",
+            "2": "VIIRS NOAA-21", "N21": "VIIRS NOAA-21", "J2": "VIIRS NOAA-21"}.get(str(sat).strip().upper())
+
+
+def leer_entrada(carpeta: Path) -> tuple[pd.DataFrame, list[Path]]:
+    import zipfile
+    tablas, usados = [], []
+    archivos = sorted([*carpeta.glob("firms*.zip"), *carpeta.glob("DL_FIRE*.zip"), *carpeta.glob("fire_*.csv")])
+    for f in archivos:
+        textos = []
+        if f.suffix == ".zip":
+            with zipfile.ZipFile(f) as z:
+                textos = [(n, z.read(n).decode("utf-8", "replace")) for n in z.namelist() if n.lower().endswith(".csv") and "fire_" in n.lower()]
+        else:
+            textos = [(f.name, f.read_text())]
+        for nombre, txt in textos:
+            df = pd.read_csv(io.StringIO(txt))
+            if "instrument" in df and not df.instrument.astype(str).str.upper().eq("VIIRS").all():
+                df = df[df.instrument.astype(str).str.upper() == "VIIRS"]
+            if df.empty:
+                continue
+            df["sensor"] = [_sensor_de(nombre, s) for s in df.get("satellite", pd.Series([""] * len(df), index=df.index))]
+            df = df[df.sensor.notna()].copy()
+            df["producto"] = "SP" if "archive" in nombre.lower() else "NRT"
+            df["acq_date"] = df.acq_date.astype(str).str[:10]
+            print(f"  {f.name}/{nombre}: {len(df):,} focos VIIRS", flush=True)
+            tablas.append(df)
+        usados.append(f)
+    return (pd.concat(tablas, ignore_index=True) if tablas else pd.DataFrame()), usados
+
+
+def importar(carpeta: Path, borrar: bool) -> None:
+    crudo, usados = leer_entrada(carpeta)
+    if crudo.empty:
+        print("No hay archivos de FIRMS en", carpeta)
+        return
+    x0, y0, x1, y1 = fuego.BBOX_PERU
+    crudo = crudo[crudo.longitude.between(x0, x1) & crudo.latitude.between(y0, y1)]
+    deps = fuego.Capa(fuego.BASE / "departamentos.geojson", "departamento")
+    for anio, parte in crudo.groupby(crudo.acq_date.str[:4]):
+        parte = parte.copy()
+        idep = deps.asignar(parte[["longitude", "latitude"]].to_numpy())
+        parte["departamento"] = [fuego.titulo(deps.items[i]["nombre"]) if i >= 0 else None for i in idep]
+        parte = parte[parte.departamento.notna()]
+        d0, d1 = date.fromisoformat(parte.acq_date.min()), date.fromisoformat(parte.acq_date.max())
+        print(f"\n### {anio}: {len(parte):,} focos en el Perú ({d0} -> {d1})", flush=True)
+        guardar(procesar(parte, d0), d0, d1)
+    if borrar:
+        for f in usados:
+            f.unlink()
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--entrada", type=Path, help="importar archivos de FIRMS Archive Download (sin MAP_KEY)")
+    ap.add_argument("--borrar", action="store_true", help="con --entrada: borra los archivos ya importados")
     ap.add_argument("--desde", default="2020-01-01")
     ap.add_argument("--hasta", default=date.today().isoformat())
     ap.add_argument("--meses-atras", type=int, help="alternativa a --desde: rehace los últimos N meses")
     a = ap.parse_args()
+    if a.entrada:
+        importar(a.entrada, a.borrar)
+        return
     key = os.environ.get("FIRMS_MAP_KEY", "").strip()
     if not key:
         sys.exit("Falta FIRMS_MAP_KEY (secreto del repositorio).")
