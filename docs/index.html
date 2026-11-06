@@ -799,7 +799,9 @@ cargar().then(D => {
     let sens = Q.get("s") === "todos" ? "todos" : "comp", zon = Q.get("z") === "todas" ? "todas" : "anpza";
     const idx = m => Math.max(0, MM.indexOf(m));
     const desplaza = (m, n) => { const d = new Date(+m.slice(0, 4), +m.slice(5) - 1 + n, 1); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`; };
-    const temporada = () => { const y = +fin.slice(0, 4) - (fin.slice(5) >= "10" ? 0 : 1); return [`${y}-07`, `${y}-10`]; };
+    const temporada = () => { let y = +fin.slice(0, 4);  // última temporada seca (jul–oct) con los 4 meses cargados
+      while (y > +MM[0].slice(0, 4) && !["07", "08", "09", "10"].every(mm => conDato(`${y}-${mm}`))) y--;
+      return [`${y}-07`, `${y}-10`]; };
     const ult12ok = MM.slice(-12).every(conDato);
     const preset = r => { if (!r) r = ult12ok || !anioRef ? "12m" : anioRef;
       if (r === "12m") return [MM[Math.max(0, MM.length - 12)], fin];
