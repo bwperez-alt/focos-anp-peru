@@ -1,0 +1,21 @@
+{
+ "capturas/01_portada.jpg": null,
+ "capturas/02_guia.jpg": "#guia",
+ "capturas/03_selector_7d.jpg": ".tiempo",
+ "capturas/04_mapa_7d.jpg": ".mapcard .filters",
+ "capturas/05_kpis_24h.jpg": "#kpis",
+ "capturas/06_mapa_densidad.jpg": ".chip[data-capa=\"densidad\"]",
+ "capturas/07_ficha_otishi.jpg": ".interp",
+ "capturas/08_ficha_otishi_fuego.jpg": "#ficha .fcols > div:last-child",
+ "capturas/09_fuego_rankings.jpg": "#densFuego",
+ "capturas/10_serie_rango.jpg": "#histCtx",
+ "capturas/11_serie_temporada.jpg": "#histLect",
+ "capturas/12_serie_matriz.jpg": "#histHeat",
+ "capturas/13_serie_tabla.jpg": "#histOrden",
+ "capturas/14_docentes.jpg": ".practicas",
+ "capturas/15_descarga.jpg": "#descargaForm",
+ "capturas/16_cita_parametros.jpg": "#params",
+ "capturas/17_modo_claro.jpg": "#tema",
+ "_errores": [],
+ "_estado": "Página generada 6 nov. 2026, 12:05 p. m.\nÚltimo foco recibido de FIRMS 2026-11-06 01:41\nSe actualiza cada hora"
+}
