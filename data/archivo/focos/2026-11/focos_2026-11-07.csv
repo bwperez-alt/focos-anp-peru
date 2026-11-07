@@ -8,3 +8,166 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-07,01:24,2026-11-07,624,-13.63719,-76.06915,VIIRS NOAA-20,NRT,0.51,nominal,N,Ica,Fuera de ANP,,,False,True
 2026-11-07,02:07,2026-11-07,707,-13.78773,-76.17256,VIIRS NOAA-21,NRT,2.63,nominal,N,Ica,Fuera de ANP,,,False,True
 2026-11-07,02:07,2026-11-07,707,-13.78825,-76.16769,VIIRS NOAA-21,NRT,2.63,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-07,12:58,2026-11-07,1758,-17.49103,-71.36035,VIIRS NOAA-21,NRT,14.73,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-11-07,12:58,2026-11-07,1758,-16.06489,-71.82122,VIIRS NOAA-21,NRT,3.39,nominal,D,Arequipa,Fuera de ANP,,,False,True
+2026-11-07,12:58,2026-11-07,1758,-16.06409,-71.82139,VIIRS NOAA-21,NRT,5.59,nominal,D,Arequipa,Fuera de ANP,,,False,True
+2026-11-07,12:58,2026-11-07,1758,-15.6132,-70.06474,VIIRS NOAA-21,NRT,9.97,nominal,D,Puno,Fuera de ANP,,,False,True
+2026-11-07,12:58,2026-11-07,1758,-15.61184,-70.06356,VIIRS NOAA-21,NRT,7.74,nominal,D,Puno,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.7443,-70.44528,VIIRS NOAA-21,NRT,2.33,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.55504,-69.60562,VIIRS NOAA-21,NRT,13.8,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.43419,-69.24313,VIIRS NOAA-21,NRT,5.42,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.71437,-71.34046,VIIRS NOAA-21,NRT,4.61,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Comunal Amarakaeri,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.62775,-71.20847,VIIRS NOAA-21,NRT,8.32,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Comunal Amarakaeri,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.61568,-71.15027,VIIRS NOAA-21,NRT,11.71,baja,D,Madre de Dios,Zona de amortiguamiento,Reserva Comunal Amarakaeri,Zona de amortiguamiento,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.61182,-71.15081,VIIRS NOAA-21,NRT,6.78,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Comunal Amarakaeri,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.62414,-71.2392,VIIRS NOAA-21,NRT,25.63,nominal,D,Madre de Dios,Zona de amortiguamiento,Parque Nacional del Manu,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.24986,-69.20938,VIIRS NOAA-21,NRT,50.53,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.24638,-69.20991,VIIRS NOAA-21,NRT,50.53,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.24693,-69.2138,VIIRS NOAA-21,NRT,50.53,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.24792,-69.20972,VIIRS NOAA-21,NRT,147.35,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.23646,-69.15574,VIIRS NOAA-21,NRT,40.83,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.17133,-69.1218,VIIRS NOAA-21,NRT,5.61,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.58677,-75.15031,VIIRS NOAA-21,NRT,1.8,nominal,D,Huancavelica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.44072,-74.53904,VIIRS NOAA-21,NRT,7.52,nominal,D,Huancavelica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.09846,-72.79024,VIIRS NOAA-21,NRT,3.72,nominal,D,Cusco,Zona de amortiguamiento,Santuario Nacional Megantoni,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.10315,-72.82648,VIIRS NOAA-21,NRT,4.82,nominal,D,Cusco,Zona de amortiguamiento,Santuario Nacional Megantoni,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.09885,-72.79028,VIIRS NOAA-21,NRT,3.66,nominal,D,Cusco,Zona de amortiguamiento,Santuario Nacional Megantoni,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.10381,-72.82643,VIIRS NOAA-21,NRT,4.93,nominal,D,Cusco,Zona de amortiguamiento,Santuario Nacional Megantoni,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.93472,-72.95261,VIIRS NOAA-21,NRT,13.83,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.85705,-72.9496,VIIRS NOAA-21,NRT,3.5,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.84368,-72.94735,VIIRS NOAA-21,NRT,7.93,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.73403,-72.9325,VIIRS NOAA-21,NRT,9.28,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.70287,-74.44762,VIIRS NOAA-21,NRT,19.6,nominal,D,Junin,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.51603,-73.17805,VIIRS NOAA-21,NRT,5.4,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.51657,-73.18218,VIIRS NOAA-21,NRT,5.4,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.99347,-69.65505,VIIRS NOAA-21,NRT,13.24,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-11.39977,-73.01335,VIIRS NOAA-21,NRT,3.75,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.14775,-73.15366,VIIRS NOAA-21,NRT,15.76,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.14401,-73.15836,VIIRS NOAA-21,NRT,3.29,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.03606,-72.52249,VIIRS NOAA-21,NRT,52.11,alta,D,Ucayali,Zona de amortiguamiento,Parque Nacional Alto Purús,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.03657,-72.52623,VIIRS NOAA-21,NRT,18.53,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-11.03194,-72.52297,VIIRS NOAA-21,NRT,9.53,nominal,D,Ucayali,Zona de amortiguamiento,Parque Nacional Alto Purús,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.96817,-73.20661,VIIRS NOAA-21,NRT,6.95,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.96983,-73.20505,VIIRS NOAA-21,NRT,8.31,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.96119,-73.26971,VIIRS NOAA-21,NRT,76.57,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.95686,-73.27025,VIIRS NOAA-21,NRT,76.57,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.95742,-73.27433,VIIRS NOAA-21,NRT,44.08,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.86067,-73.17392,VIIRS NOAA-21,NRT,24.8,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.87422,-73.27709,VIIRS NOAA-21,NRT,3.99,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.7687,-73.22769,VIIRS NOAA-21,NRT,19.09,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.76925,-73.23186,VIIRS NOAA-21,NRT,12.78,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.7836,-73.37405,VIIRS NOAA-21,NRT,24.18,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.74403,-73.13979,VIIRS NOAA-21,NRT,3.47,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.74724,-73.16424,VIIRS NOAA-21,NRT,17.82,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.73976,-73.1404,VIIRS NOAA-21,NRT,3.26,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.74836,-73.16392,VIIRS NOAA-21,NRT,16.03,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.74893,-73.16796,VIIRS NOAA-21,NRT,12.18,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.7407,-73.14011,VIIRS NOAA-21,NRT,5.71,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.64419,-73.74612,VIIRS NOAA-21,NRT,12.09,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.64478,-73.75055,VIIRS NOAA-21,NRT,15.72,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.69301,-74.36828,VIIRS NOAA-21,NRT,13.06,nominal,D,Pasco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.6944,-74.36996,VIIRS NOAA-21,NRT,9.26,nominal,D,Pasco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.48794,-73.6837,VIIRS NOAA-21,NRT,10.78,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.48793,-73.68317,VIIRS NOAA-21,NRT,10.32,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.22835,-74.02885,VIIRS NOAA-21,NRT,2.86,nominal,D,Ucayali,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.40163,-76.47344,VIIRS NOAA-21,NRT,11.47,nominal,D,Pasco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-9.97889,-73.89792,VIIRS NOAA-21,NRT,3.4,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.11399,-75.06122,VIIRS NOAA-21,NRT,19.32,nominal,D,Pasco,Zona de amortiguamiento,Bosque de Protección San Matias-San Carlos,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.1147,-75.06651,VIIRS NOAA-21,NRT,18.05,nominal,D,Pasco,Zona de amortiguamiento,Bosque de Protección San Matias-San Carlos,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.10916,-75.06183,VIIRS NOAA-21,NRT,62.77,nominal,D,Pasco,Zona de amortiguamiento,Bosque de Protección San Matias-San Carlos,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-9.99861,-75.14948,VIIRS NOAA-21,NRT,31.35,nominal,D,Pasco,Zona de amortiguamiento,Bosque de Protección San Matias-San Carlos,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.06666,-76.5722,VIIRS NOAA-21,NRT,32.74,alta,D,Huanuco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-10.06128,-76.57259,VIIRS NOAA-21,NRT,5.35,nominal,D,Huanuco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-9.97383,-76.47311,VIIRS NOAA-21,NRT,12.7,alta,D,Huanuco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-14.93193,-71.43597,VIIRS NOAA-21,NRT,5.38,baja,D,Cusco,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-13.99397,-68.97919,VIIRS NOAA-21,NRT,7.37,nominal,D,Puno,Zona de amortiguamiento,Parque Nacional Bahuaja-Sonene,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.91144,-69.03554,VIIRS NOAA-21,NRT,12.5,nominal,D,Puno,Zona de amortiguamiento,Parque Nacional Bahuaja-Sonene,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-14.55423,-75.22504,VIIRS NOAA-21,NRT,7.63,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-14.49118,-75.19501,VIIRS NOAA-21,NRT,7.36,alta,D,Ica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-14.49158,-75.1984,VIIRS NOAA-21,NRT,7.36,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.27746,-70.29036,VIIRS NOAA-21,NRT,3.42,nominal,D,Puno,Zona de amortiguamiento,Parque Nacional Bahuaja-Sonene,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.95368,-75.71083,VIIRS NOAA-21,NRT,5.1,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.2075,-70.29442,VIIRS NOAA-21,NRT,4.16,nominal,D,Puno,Zona de amortiguamiento,Parque Nacional Bahuaja-Sonene,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.9813,-69.88142,VIIRS NOAA-21,NRT,7.97,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.78575,-76.17021,VIIRS NOAA-21,NRT,4.56,nominal,D,Ica,Fuera de ANP,,,True,False
+2026-11-07,13:00,2026-11-07,1800,-12.87319,-69.53201,VIIRS NOAA-21,NRT,23.05,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.8683,-69.57446,VIIRS NOAA-21,NRT,4.71,baja,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.94422,-70.17223,VIIRS NOAA-21,NRT,3.48,baja,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.85649,-69.56783,VIIRS NOAA-21,NRT,3.99,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.85706,-69.57191,VIIRS NOAA-21,NRT,4.49,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.977,-70.43859,VIIRS NOAA-21,NRT,6.96,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.93663,-70.28092,VIIRS NOAA-21,NRT,16.84,nominal,D,Madre de Dios,Zona de amortiguamiento,Parque Nacional Bahuaja-Sonene,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.93424,-70.28461,VIIRS NOAA-21,NRT,19.4,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.9156,-70.17984,VIIRS NOAA-21,NRT,15.94,baja,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.85045,-69.74947,VIIRS NOAA-21,NRT,21.84,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.86608,-69.91022,VIIRS NOAA-21,NRT,3.87,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.68724,-76.19046,VIIRS NOAA-21,NRT,3.68,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.90168,-70.26691,VIIRS NOAA-21,NRT,4.94,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.90736,-70.3882,VIIRS NOAA-21,NRT,4.35,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.80873,-69.71307,VIIRS NOAA-21,NRT,4.87,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-13.02745,-71.40665,VIIRS NOAA-21,NRT,14.79,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.80258,-69.79899,VIIRS NOAA-21,NRT,18.9,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-13.00584,-71.2758,VIIRS NOAA-21,NRT,7.06,nominal,D,Cusco,Zona de amortiguamiento,Reserva Comunal Amarakaeri,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.85326,-70.24239,VIIRS NOAA-21,NRT,35.07,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.84777,-70.22972,VIIRS NOAA-21,NRT,3.86,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.87219,-70.40714,VIIRS NOAA-21,NRT,7.89,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.86542,-70.38531,VIIRS NOAA-21,NRT,22.84,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.71298,-69.39391,VIIRS NOAA-21,NRT,11.59,baja,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.98345,-71.37707,VIIRS NOAA-21,NRT,7.72,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.98369,-71.3791,VIIRS NOAA-21,NRT,7.92,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.83736,-70.39207,VIIRS NOAA-21,NRT,5.78,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.96813,-71.46997,VIIRS NOAA-21,NRT,3.75,baja,D,Cusco,Zona de amortiguamiento,Parque Nacional del Manu,Zona de amortiguamiento,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.80707,-70.36459,VIIRS NOAA-21,NRT,3.96,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.9542,-71.45633,VIIRS NOAA-21,NRT,11.95,nominal,D,Cusco,Zona de amortiguamiento,Parque Nacional del Manu,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.96253,-71.51749,VIIRS NOAA-21,NRT,8.13,nominal,D,Cusco,Zona de amortiguamiento,Parque Nacional del Manu,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.77807,-70.26492,VIIRS NOAA-21,NRT,14.48,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.61256,-69.14893,VIIRS NOAA-21,NRT,8.83,nominal,D,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.64601,-69.38245,VIIRS NOAA-21,NRT,3.04,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.75177,-70.21054,VIIRS NOAA-21,NRT,14.86,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.74811,-70.21107,VIIRS NOAA-21,NRT,14.86,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.77505,-70.46047,VIIRS NOAA-21,NRT,5.99,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:00,2026-11-07,1800,-12.71653,-70.14458,VIIRS NOAA-21,NRT,3.49,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.73817,-70.32915,VIIRS NOAA-21,NRT,75.53,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-07,13:00,2026-11-07,1800,-12.7429,-70.44672,VIIRS NOAA-21,NRT,3.49,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-8.7729,-74.04379,VIIRS NOAA-21,NRT,142.47,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-8.7735,-74.04816,VIIRS NOAA-21,NRT,142.47,baja,D,Ucayali,Fuera de ANP,,,False,False
+2026-11-07,13:02,2026-11-07,1802,-8.79219,-74.66114,VIIRS NOAA-21,NRT,2.73,nominal,D,Huanuco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
+2026-11-07,13:02,2026-11-07,1802,-8.79212,-74.65842,VIIRS NOAA-21,NRT,8.33,nominal,D,Huanuco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
+2026-11-07,13:02,2026-11-07,1802,-8.97087,-78.5343,VIIRS NOAA-21,NRT,11.33,nominal,D,Ancash,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-8.96816,-78.53682,VIIRS NOAA-21,NRT,10.07,nominal,D,Ancash,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-8.45574,-74.79939,VIIRS NOAA-21,NRT,1.77,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-7.73608,-79.25388,VIIRS NOAA-21,NRT,11.21,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-7.68854,-79.17612,VIIRS NOAA-21,NRT,9.56,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.92328,-78.91614,VIIRS NOAA-21,NRT,23.59,alta,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.88662,-78.91116,VIIRS NOAA-21,NRT,4.85,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.81995,-73.67933,VIIRS NOAA-21,NRT,5.16,nominal,D,Loreto,Zona de amortiguamiento,Reserva Nacional Pacaya-Samiria,Zona de amortiguamiento,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.51131,-78.98888,VIIRS NOAA-21,NRT,5.69,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.51288,-78.99035,VIIRS NOAA-21,NRT,6.45,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.64892,-73.33314,VIIRS NOAA-21,NRT,8.1,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.42155,-78.93273,VIIRS NOAA-21,NRT,4.4,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.3516,-78.90105,VIIRS NOAA-21,NRT,14.67,alta,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.35117,-78.89798,VIIRS NOAA-21,NRT,9.91,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.34485,-78.89524,VIIRS NOAA-21,NRT,9.91,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.34542,-78.89932,VIIRS NOAA-21,NRT,9.91,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.34589,-78.9027,VIIRS NOAA-21,NRT,14.67,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.60415,-73.74017,VIIRS NOAA-21,NRT,7.23,baja,D,Loreto,Dentro de ANP,Reserva Nacional Pacaya-Samiria,Reserva Nacional,False,False
+2026-11-07,13:02,2026-11-07,1802,-5.33882,-78.89465,VIIRS NOAA-21,NRT,8.15,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.33951,-78.89957,VIIRS NOAA-21,NRT,8.15,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.34005,-78.90349,VIIRS NOAA-21,NRT,7.6,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.05076,-70.12476,VIIRS NOAA-21,NRT,10.24,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-07,13:02,2026-11-07,1802,-4.04739,-70.12526,VIIRS NOAA-21,NRT,10.73,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-07,13:02,2026-11-07,1802,-4.64153,-74.23219,VIIRS NOAA-21,NRT,7.34,baja,D,Loreto,Zona de amortiguamiento,Reserva Nacional Pacaya-Samiria,Zona de amortiguamiento,False,False
+2026-11-07,13:02,2026-11-07,1802,-4.55511,-73.80274,VIIRS NOAA-21,NRT,7.13,nominal,D,Loreto,Zona de amortiguamiento,Reserva Nacional Pacaya-Samiria,Zona de amortiguamiento,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.68493,-74.85371,VIIRS NOAA-21,NRT,6.12,nominal,D,Loreto,Zona de amortiguamiento,Reserva Nacional Pacaya-Samiria,Zona de amortiguamiento,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.50069,-74.06211,VIIRS NOAA-21,NRT,6.27,baja,D,Loreto,Dentro de ANP,Reserva Nacional Pacaya-Samiria,Reserva Nacional,False,False
+2026-11-07,13:02,2026-11-07,1802,-4.50258,-74.06246,VIIRS NOAA-21,NRT,5.12,baja,D,Loreto,Dentro de ANP,Reserva Nacional Pacaya-Samiria,Reserva Nacional,False,False
+2026-11-07,13:02,2026-11-07,1802,-4.77474,-76.55466,VIIRS NOAA-21,NRT,15.43,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-4.77553,-76.5602,VIIRS NOAA-21,NRT,15.43,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-5.10998,-79.16002,VIIRS NOAA-21,NRT,3.08,nominal,D,Cajamarca,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-3.89271,-73.77311,VIIRS NOAA-21,NRT,4.48,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-3.74204,-73.24659,VIIRS NOAA-21,NRT,9.72,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-07,13:02,2026-11-07,1802,-2.90535,-73.48297,VIIRS NOAA-21,NRT,5.79,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-07,13:02,2026-11-07,1802,-2.98759,-75.8194,VIIRS NOAA-21,NRT,6.98,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-3.07068,-76.44123,VIIRS NOAA-21,NRT,7.69,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-2.84418,-76.20776,VIIRS NOAA-21,NRT,12.39,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-07,13:02,2026-11-07,1802,-2.79505,-76.497,VIIRS NOAA-21,NRT,13.43,nominal,D,Loreto,Fuera de ANP,,,False,True
