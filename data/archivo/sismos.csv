@@ -1,5 +1,6 @@
 t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-14 15:34,-0.36,-80.245,4.1,50,"33 km NE of Bahía de Caráquez, Ecuador",Santuario Nacional los Manglares de Tumbes,339,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2c6,USGS
+2026-10-07 11:06,-1.707,-77.753,4.3,159,"23 km E of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,183,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0s2,USGS
 2026-11-02 10:28,-10.17,-78.599,5.1,67,"50 km WSW of Huarmey, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",46,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg,USGS
 2026-10-30 17:46,-16.544,-69.484,4.6,195,"33 km NE of Mazo Cruz, Peru",Zona Reservada Reserva Paisajística Cerro Khapia,42,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tufp,USGS
 2026-10-29 03:17,-8.666,-74.379,4.4,159,"34 km SSE of San Fernando, Peru",Reserva Comunal El Sira,113,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tty4,USGS
@@ -18,4 +19,3 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-11 08:42,-16.858,-72.821,5.3,31,"28 km SSW of Camaná, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",37,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1kt,USGS
 2026-10-11 06:36,-15.82,-75.699,4.6,10,"76 km SW of San Juan, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",72,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1k5,USGS
 2026-10-09 05:55,-16.181,-72.144,4.3,106,"20 km NNE of El Pedregal, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",80,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u156,USGS
-2026-10-07 11:06,-1.707,-77.753,4.3,159,"23 km E of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,183,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0s2,USGS
