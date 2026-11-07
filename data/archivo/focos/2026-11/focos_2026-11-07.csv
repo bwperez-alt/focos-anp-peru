@@ -1,0 +1,8 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-07,01:22,2026-11-07,622,-9.94962,-76.68674,VIIRS NOAA-20,NRT,1.14,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-07,01:22,2026-11-07,622,-10.92062,-75.05942,VIIRS NOAA-20,NRT,0.52,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-07,01:22,2026-11-07,622,-11.37562,-75.77816,VIIRS NOAA-20,NRT,1.33,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-07,01:22,2026-11-07,622,-11.79099,-74.0071,VIIRS NOAA-20,NRT,1.75,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-07,01:22,2026-11-07,622,-12.86605,-69.57635,VIIRS NOAA-20,NRT,1.08,nominal,N,Madre de Dios,Zona de amortiguamiento,Reserva Nacional Tambopata,Zona de amortiguamiento,False,True
+2026-11-07,01:24,2026-11-07,624,-13.24261,-76.29787,VIIRS NOAA-20,NRT,1.02,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-07,01:24,2026-11-07,624,-13.63719,-76.06915,VIIRS NOAA-20,NRT,0.51,nominal,N,Ica,Fuera de ANP,,,False,True

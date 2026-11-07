@@ -1,6 +1,7 @@
 t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-14 15:34,-0.36,-80.245,4.1,50,"33 km NE of Bahía de Caráquez, Ecuador",Santuario Nacional los Manglares de Tumbes,339,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2c6,USGS
 2026-10-07 11:06,-1.707,-77.753,4.3,159,"23 km E of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,183,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0s2,USGS
+2026-10-24 06:30,-1.632,-77.777,4.2,181,"22 km ENE of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,191,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4m7,USGS
 2026-11-07 00:36,-9.842,-75.796,4.3,109,"37 km E of Churubamba, Peru",Parque Nacional de Tingo María,57,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
 2026-11-02 10:28,-10.17,-78.599,5.1,67,"50 km WSW of Huarmey, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",46,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg,USGS
 2026-10-30 17:46,-16.544,-69.484,4.6,195,"33 km NE of Mazo Cruz, Peru",Zona Reservada Reserva Paisajística Cerro Khapia,42,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tufp,USGS
@@ -9,7 +10,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-25 12:11,-16.099,-73.474,4.7,62,"19 km NE of Atico, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",30,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4v1,USGS
 2026-10-25 02:11,-16.068,-74.747,4.6,26,"50 km SW of Atiquipa, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",56,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4t4,USGS
 2026-10-24 15:57,-4.094,-80.354,4.1,68,"37 km ESE of Cañaveral, Peru",Parque Nacional Cerros de Amotape,16,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4pq,USGS
-2026-10-24 06:30,-1.632,-77.777,4.2,181,"22 km ENE of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,191,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4m7,USGS
+2026-10-24 06:30,-1.601,-77.785,4.2,186,"22 km ENE of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,194,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4m7,USGS
 2026-10-19 11:41,-7.828,-74.484,4.6,142,"61 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,96,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttrv,USGS
 2026-10-17 05:53,-4.093,-78.942,4.1,84,"3 km SSE of Zamora, Ecuador",Reserva Comunal Tuntanain,100,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2zp,USGS
 2026-10-16 23:28,-17.161,-72.672,4.2,35,"55 km SSW of Quilca, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",50,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2xt,USGS
