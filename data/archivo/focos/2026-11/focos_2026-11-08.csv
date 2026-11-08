@@ -1,0 +1,17 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-08,01:01,2026-11-08,601,-5.91365,-76.12242,VIIRS NOAA-20,NRT,1.73,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-08,01:01,2026-11-08,601,-5.91265,-76.12459,VIIRS NOAA-20,NRT,1.94,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-08,01:01,2026-11-08,601,-7.29824,-77.74062,VIIRS NOAA-20,NRT,1.06,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-08,01:01,2026-11-08,601,-7.29882,-77.73743,VIIRS NOAA-20,NRT,1.06,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-08,01:01,2026-11-08,601,-7.29921,-77.73524,VIIRS NOAA-20,NRT,0.77,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-10.43283,-73.733,VIIRS NOAA-20,NRT,0.91,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-11.19884,-77.57207,VIIRS NOAA-20,NRT,1.05,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-12.55371,-69.60957,VIIRS NOAA-20,NRT,1.3,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-11.19712,-77.57153,VIIRS NOAA-20,NRT,0.76,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-12.80783,-70.42859,VIIRS NOAA-20,NRT,0.58,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-13.4388,-73.92258,VIIRS NOAA-20,NRT,0.78,nominal,N,Ayacucho,Fuera de ANP,,,False,True
+2026-11-08,01:03,2026-11-08,603,-13.78629,-76.17216,VIIRS NOAA-20,NRT,5.78,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-08,01:46,2026-11-08,646,-5.91397,-76.12234,VIIRS NOAA-21,NRT,1.79,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-08,01:46,2026-11-08,646,-9.83867,-75.85024,VIIRS NOAA-21,NRT,1.53,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-08,01:48,2026-11-08,648,-13.78499,-76.16734,VIIRS NOAA-21,NRT,5.14,nominal,N,Ica,Fuera de ANP,,,True,False
+2026-11-08,01:48,2026-11-08,648,-13.78439,-76.17199,VIIRS NOAA-21,NRT,4.74,nominal,N,Ica,Fuera de ANP,,,True,False

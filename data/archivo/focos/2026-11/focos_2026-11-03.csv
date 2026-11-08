@@ -7,7 +7,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-03,01:39,2026-11-03,639,-9.82984,-76.28695,VIIRS NOAA-21,NRT,0.87,nominal,N,Huanuco,Fuera de ANP,,,False,True
 2026-11-03,01:39,2026-11-03,639,-10.09029,-74.85964,VIIRS NOAA-21,NRT,0.67,nominal,N,Pasco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
 2026-11-03,01:41,2026-11-03,641,-13.78605,-76.17089,VIIRS NOAA-21,NRT,4.33,nominal,N,Ica,Fuera de ANP,,,True,False
-2026-11-03,01:41,2026-11-03,641,-13.78654,-76.16721,VIIRS NOAA-21,NRT,4.33,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-03,01:41,2026-11-03,641,-13.78654,-76.16721,VIIRS NOAA-21,NRT,4.33,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-03,12:34,2026-11-03,1734,-16.30445,-69.33256,VIIRS NOAA-21,NRT,7.42,nominal,D,Puno,Fuera de ANP,,,False,True
 2026-11-03,12:34,2026-11-03,1734,-15.90275,-70.43531,VIIRS NOAA-21,NRT,7.32,nominal,D,Puno,Fuera de ANP,,,False,True
 2026-11-03,12:34,2026-11-03,1734,-14.06569,-68.94701,VIIRS NOAA-21,NRT,5.1,nominal,D,Puno,Fuera de ANP,,,False,True

@@ -193,7 +193,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-01,14:10,2026-11-01,1910,-13.75757,-73.69127,VIIRS NOAA-20,NRT,4.6,alta,D,Apurimac,Fuera de ANP,,,False,True
 2026-11-01,14:10,2026-11-01,1910,-13.75212,-73.69002,VIIRS NOAA-20,NRT,12.35,alta,D,Apurimac,Fuera de ANP,,,False,True
 2026-11-01,14:10,2026-11-01,1910,-13.75264,-73.69267,VIIRS NOAA-20,NRT,9.85,nominal,D,Apurimac,Fuera de ANP,,,False,True
-2026-11-01,14:10,2026-11-01,1910,-13.78573,-76.16652,VIIRS NOAA-20,NRT,11.6,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-01,14:10,2026-11-01,1910,-13.78573,-76.16652,VIIRS NOAA-20,NRT,11.6,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-01,14:10,2026-11-01,1910,-13.78646,-76.1706,VIIRS NOAA-20,NRT,12.34,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-01,14:10,2026-11-01,1910,-12.28471,-69.09018,VIIRS NOAA-20,NRT,8.19,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-01,14:10,2026-11-01,1910,-12.28345,-69.08788,VIIRS NOAA-20,NRT,8.68,nominal,D,Madre de Dios,Fuera de ANP,,,False,True

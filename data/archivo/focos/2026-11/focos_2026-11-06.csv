@@ -99,7 +99,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-06,14:17,2026-11-06,1917,-13.46821,-73.39408,VIIRS NOAA-20,NRT,10.25,nominal,D,Apurimac,Fuera de ANP,,,False,True
 2026-11-06,14:17,2026-11-06,1917,-13.0588,-71.85992,VIIRS NOAA-20,NRT,13.01,nominal,D,Cusco,Fuera de ANP,,,False,True
 2026-11-06,14:17,2026-11-06,1917,-13.78777,-76.16917,VIIRS NOAA-20,NRT,9.92,nominal,D,Ica,Fuera de ANP,,,True,False
-2026-11-06,14:17,2026-11-06,1917,-13.78661,-76.16727,VIIRS NOAA-20,NRT,9.5,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-06,14:17,2026-11-06,1917,-13.78661,-76.16727,VIIRS NOAA-20,NRT,9.5,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-06,14:17,2026-11-06,1917,-12.8621,-74.2277,VIIRS NOAA-20,NRT,4.25,nominal,D,Ayacucho,Fuera de ANP,,,False,True
 2026-11-06,14:17,2026-11-06,1917,-12.86125,-74.22846,VIIRS NOAA-20,NRT,3.73,nominal,D,Ayacucho,Fuera de ANP,,,False,True
 2026-11-06,14:17,2026-11-06,1917,-12.42938,-74.63969,VIIRS NOAA-20,NRT,3.99,nominal,D,Huancavelica,Fuera de ANP,,,False,True
