@@ -1,2 +1,20 @@
 fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
 2026-11-09,01:29,2026-11-09,629,-7.8666,-79.35196,VIIRS NOAA-21,NRT,0.51,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-09,13:17,2026-11-09,1817,-17.49203,-71.35773,VIIRS NOAA-20,NRT,15.2,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-11-09,13:17,2026-11-09,1817,-16.29722,-69.12931,VIIRS NOAA-20,NRT,1.62,nominal,D,Puno,Dentro de ANP,Zona Reservada Reserva Paisajística Cerro Khapia,Zona Reservada,False,True
+2026-11-09,13:17,2026-11-09,1817,-15.35989,-69.34403,VIIRS NOAA-20,NRT,6.65,nominal,D,Puno,Fuera de ANP,,,False,True
+2026-11-09,13:17,2026-11-09,1817,-14.9074,-72.53573,VIIRS NOAA-20,NRT,7.86,nominal,D,Arequipa,Dentro de ANP,Reserva Paisajistica Subcuenca del Cotahuasi,Reserva Paisajistica,False,True
+2026-11-09,13:19,2026-11-09,1819,-11.83737,-75.83242,VIIRS NOAA-20,NRT,5.19,nominal,D,Junin,Dentro de ANP,Reserva Paisajistica Nor Yauyos-Cochas,Reserva Paisajistica,False,True
+2026-11-09,13:21,2026-11-09,1821,-6.00217,-74.07194,VIIRS NOAA-20,NRT,4.05,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-09,13:21,2026-11-09,1821,-4.10546,-70.12409,VIIRS NOAA-20,NRT,7.01,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-4.04909,-70.12538,VIIRS NOAA-20,NRT,2.98,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-09,13:21,2026-11-09,1821,-4.0457,-70.1259,VIIRS NOAA-20,NRT,2.98,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-09,13:21,2026-11-09,1821,-4.02073,-71.04613,VIIRS NOAA-20,NRT,13.83,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-4.21286,-73.30619,VIIRS NOAA-20,NRT,3.57,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-09,13:21,2026-11-09,1821,-4.91496,-79.74818,VIIRS NOAA-20,NRT,4.05,nominal,D,Piura,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-4.72548,-79.56288,VIIRS NOAA-20,NRT,3.54,nominal,D,Piura,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-4.72409,-79.56432,VIIRS NOAA-20,NRT,7.31,nominal,D,Piura,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-4.85881,-80.73901,VIIRS NOAA-20,NRT,5.23,nominal,D,Piura,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-3.53589,-73.06923,VIIRS NOAA-20,NRT,5.85,baja,D,Loreto,Fuera de ANP,,,False,False
+2026-11-09,13:21,2026-11-09,1821,-3.46334,-72.72767,VIIRS NOAA-20,NRT,7.95,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-09,13:21,2026-11-09,1821,-2.20514,-71.79787,VIIRS NOAA-20,NRT,2.64,baja,D,Loreto,Fuera de ANP,,,False,False
