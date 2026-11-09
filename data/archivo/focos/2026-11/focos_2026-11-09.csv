@@ -1,0 +1,2 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-09,01:29,2026-11-09,629,-7.8666,-79.35196,VIIRS NOAA-21,NRT,0.51,nominal,N,La Libertad,Fuera de ANP,,,False,True
