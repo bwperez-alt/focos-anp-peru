@@ -1,5 +1,7 @@
 fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
 2026-11-09,01:29,2026-11-09,629,-7.8666,-79.35196,VIIRS NOAA-21,NRT,0.51,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-09,12:24,2026-11-09,1724,-4.06442,-70.31287,VIIRS NOAA-21,NRT,10.81,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-09,12:24,2026-11-09,1724,-4.06313,-70.31303,VIIRS NOAA-21,NRT,6.88,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-09,13:17,2026-11-09,1817,-17.49203,-71.35773,VIIRS NOAA-20,NRT,15.2,nominal,D,Moquegua,Fuera de ANP,,,False,True
 2026-11-09,13:17,2026-11-09,1817,-16.29722,-69.12931,VIIRS NOAA-20,NRT,1.62,nominal,D,Puno,Dentro de ANP,Zona Reservada Reserva Paisajística Cerro Khapia,Zona Reservada,False,True
 2026-11-09,13:17,2026-11-09,1817,-15.35989,-69.34403,VIIRS NOAA-20,NRT,6.65,nominal,D,Puno,Fuera de ANP,,,False,True
