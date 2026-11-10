@@ -200,3 +200,9 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-10,13:47,2026-11-10,1847,-4.61757,-79.53007,VIIRS NOAA-21,NRT,3.08,nominal,D,Piura,Fuera de ANP,,,False,True
 2026-11-10,13:47,2026-11-10,1847,-4.72156,-80.52557,VIIRS NOAA-21,NRT,4.64,nominal,D,Piura,Fuera de ANP,,,False,True
 2026-11-10,13:47,2026-11-10,1847,-4.70771,-80.52407,VIIRS NOAA-21,NRT,2.96,nominal,D,Piura,Fuera de ANP,,,False,True
+2026-11-10,14:42,2026-11-10,1942,-9.00607,-77.34061,VIIRS NOAA-20,NRT,10.9,nominal,D,Ancash,Fuera de ANP,,,False,True
+2026-11-10,14:42,2026-11-10,1942,-9.00227,-77.34261,VIIRS NOAA-20,NRT,9.96,nominal,D,Ancash,Fuera de ANP,,,False,True
+2026-11-10,14:42,2026-11-10,1942,-7.31908,-79.45351,VIIRS NOAA-20,NRT,3.17,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-10,14:42,2026-11-10,1942,-7.27819,-79.3054,VIIRS NOAA-20,NRT,2.96,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-10,14:42,2026-11-10,1942,-7.23559,-79.40111,VIIRS NOAA-20,NRT,11.6,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-10,14:44,2026-11-10,1944,-5.26397,-80.06873,VIIRS NOAA-20,NRT,5.57,nominal,D,Piura,Fuera de ANP,,,False,True
