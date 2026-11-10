@@ -1,0 +1,3 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-10,02:03,2026-11-10,703,-4.57959,-81.28541,VIIRS NOAA-20,NRT,2.25,nominal,N,Piura,Fuera de ANP,,,False,True
+2026-11-10,02:05,2026-11-10,705,-5.1709,-80.67781,VIIRS NOAA-20,NRT,0.96,nominal,N,Piura,Fuera de ANP,,,False,True
