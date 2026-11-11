@@ -1,0 +1,27 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-11,00:50,2026-11-11,550,-8.30503,-74.76249,VIIRS NOAA-21,NRT,2.28,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.68654,-73.88675,VIIRS NOAA-21,NRT,1.58,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.68726,-73.88249,VIIRS NOAA-21,NRT,1.58,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76144,-79.19093,VIIRS NOAA-21,NRT,2.75,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76236,-79.18586,VIIRS NOAA-21,NRT,1.57,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76329,-79.18077,VIIRS NOAA-21,NRT,1.57,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76422,-79.1757,VIIRS NOAA-21,NRT,2.55,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76955,-79.18192,VIIRS NOAA-21,NRT,1.57,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76109,-79.17967,VIIRS NOAA-21,NRT,3.35,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76205,-79.17461,VIIRS NOAA-21,NRT,1.72,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-7.76734,-79.18085,VIIRS NOAA-21,NRT,1.75,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.37238,-76.38324,VIIRS NOAA-21,NRT,1.78,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.37182,-76.38639,VIIRS NOAA-21,NRT,1.78,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.37752,-76.38436,VIIRS NOAA-21,NRT,1.78,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.37336,-76.38482,VIIRS NOAA-21,NRT,4.73,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-8.37394,-76.38169,VIIRS NOAA-21,NRT,3.76,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-9.62447,-73.66326,VIIRS NOAA-21,NRT,0.96,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-9.64131,-73.64162,VIIRS NOAA-21,NRT,0.86,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-9.8464,-73.7881,VIIRS NOAA-21,NRT,1.79,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-9.85063,-73.78887,VIIRS NOAA-21,NRT,1.79,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-10.4253,-73.76134,VIIRS NOAA-21,NRT,1.42,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-10.42949,-73.76208,VIIRS NOAA-21,NRT,1.58,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-10.43765,-73.715,VIIRS NOAA-21,NRT,0.78,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-10.44182,-73.71572,VIIRS NOAA-21,NRT,0.78,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-11,00:50,2026-11-11,550,-11.84477,-72.9459,VIIRS NOAA-21,NRT,2.36,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-11,00:52,2026-11-11,552,-16.2576,-71.68673,VIIRS NOAA-21,NRT,1.45,nominal,N,Arequipa,Fuera de ANP,,,False,True
