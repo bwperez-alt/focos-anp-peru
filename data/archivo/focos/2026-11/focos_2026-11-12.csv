@@ -1,0 +1,11 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-12,01:29,2026-11-12,629,-6.19269,-76.21987,VIIRS NOAA-20,NRT,1.0,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-7.39656,-78.03916,VIIRS NOAA-20,NRT,0.66,nominal,N,Cajamarca,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-8.02305,-78.79054,VIIRS NOAA-20,NRT,0.47,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-8.0408,-79.03847,VIIRS NOAA-20,NRT,1.2,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-8.9559,-76.95399,VIIRS NOAA-20,NRT,1.85,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-8.97256,-77.41105,VIIRS NOAA-20,NRT,3.1,nominal,N,Ancash,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-8.97318,-77.4073,VIIRS NOAA-20,NRT,1.31,nominal,N,Ancash,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-10.42911,-73.72073,VIIRS NOAA-20,NRT,0.51,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-10.85615,-73.4489,VIIRS NOAA-20,NRT,0.86,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-11.84507,-72.9454,VIIRS NOAA-20,NRT,0.89,nominal,N,Cusco,Fuera de ANP,,,False,True
