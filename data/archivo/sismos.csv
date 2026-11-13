@@ -10,6 +10,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-12 02:08,-1.734,-78.232,4.1,157,"29 km W of Palora, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,176,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1qb,USGS
 2026-10-29 03:17,-8.666,-74.379,4.4,159,"34 km SSE of San Fernando, Peru",Reserva Comunal El Sira,113,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tty4,USGS
 2026-10-13 06:20,-0.238,-80.472,4.5,34,"40 km N of Bahía de Caráquez, Ecuador",Santuario Nacional los Manglares de Tumbes,353,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u20t,USGS
+2026-11-02 10:28,-10.17,-78.599,5.1,67,"50 km WSW of Huarmey, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",46,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg,USGS
 2026-11-13 11:43,-14.993,-75.881,5.8,10,"79 km WSW of Changuillo, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",30,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty1a,USGS
 2026-11-13 07:37,-10.526,-74.613,4.4,126,"52 km NE of Santa Rosa, Peru",Bosque de Protección San Matias-San Carlos,38,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty0j,USGS
 2026-11-13 05:55,-4.523,-75.328,4.5,10,"86 km NNE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,126,https://earthquake.usgs.gov/earthquakes/eventpage/us7000txza,USGS
@@ -17,7 +18,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-11-09 05:23,-4.949,-75.0,5.3,11,"80 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,67,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
 2026-11-07 12:17,-1.851,-81.144,4.7,10,"45 km NNW of Salinas, Ecuador",Reserva Nacional Mar Tropical de Grau,187,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twt8,USGS
 2026-11-07 00:36,-9.842,-75.796,4.3,109,"37 km E of Churubamba, Peru",Parque Nacional de Tingo María,57,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
-2026-11-02 10:28,-10.17,-78.599,5.1,67,"50 km WSW of Huarmey, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",46,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg,USGS
+2026-11-02 10:28,-10.135,-78.544,5.1,55,"43 km W of Huarmey, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",39,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg,USGS
 2026-10-30 17:46,-16.544,-69.484,4.6,195,"33 km NE of Mazo Cruz, Peru",Zona Reservada Reserva Paisajística Cerro Khapia,42,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tufp,USGS
 2026-10-29 03:17,-8.66,-74.352,4.4,159,"35 km SE of San Fernando, Peru",Reserva Comunal El Sira,114,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tty4,USGS
 2026-10-26 22:55,-2.771,-78.886,4.1,75,"5 km SW of Azogues, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,106,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tteg,USGS
