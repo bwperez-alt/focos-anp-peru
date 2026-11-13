@@ -27,3 +27,17 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-13,01:09,2026-11-13,609,-9.4949,-73.54886,VIIRS NOAA-20,NRT,0.87,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-13,01:09,2026-11-13,609,-11.07019,-74.81315,VIIRS NOAA-20,NRT,4.13,nominal,N,Junin,Fuera de ANP,,,False,True
 2026-11-13,01:09,2026-11-13,609,-11.37517,-75.77713,VIIRS NOAA-20,NRT,2.02,nominal,N,Junin,Fuera de ANP,,,True,False
+2026-11-13,01:52,2026-11-13,652,-8.26189,-74.74563,VIIRS NOAA-21,NRT,1.47,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-8.26231,-74.74255,VIIRS NOAA-21,NRT,1.47,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-8.26649,-74.82706,VIIRS NOAA-21,NRT,2.27,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.48405,-73.54248,VIIRS NOAA-21,NRT,2.67,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.48355,-73.54633,VIIRS NOAA-21,NRT,3.04,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.48454,-73.53864,VIIRS NOAA-21,NRT,2.67,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.48873,-73.55088,VIIRS NOAA-21,NRT,3.89,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.48922,-73.54705,VIIRS NOAA-21,NRT,3.89,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.48971,-73.54321,VIIRS NOAA-21,NRT,3.16,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.4902,-73.53938,VIIRS NOAA-21,NRT,3.16,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.49486,-73.54799,VIIRS NOAA-21,NRT,3.89,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:52,2026-11-13,652,-9.49437,-73.55182,VIIRS NOAA-21,NRT,3.89,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-13,01:54,2026-11-13,654,-11.95052,-77.13755,VIIRS NOAA-21,NRT,2.28,nominal,N,Callao,Fuera de ANP,,,False,True
+2026-11-13,01:54,2026-11-13,654,-11.95072,-77.13425,VIIRS NOAA-21,NRT,2.58,nominal,N,Callao,Fuera de ANP,,,False,True
