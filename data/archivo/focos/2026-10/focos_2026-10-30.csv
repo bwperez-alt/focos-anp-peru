@@ -2,7 +2,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-10-30,00:33,2026-10-30,533,-16.25452,-71.68644,VIIRS NOAA-20,NRT,0.74,nominal,N,Arequipa,Fuera de ANP,,,False,True
 2026-10-30,01:16,2026-10-30,616,-8.17562,-77.97952,VIIRS NOAA-21,NRT,1.56,nominal,N,La Libertad,Fuera de ANP,,,False,True
 2026-10-30,01:16,2026-10-30,616,-9.24642,-77.63134,VIIRS NOAA-21,NRT,1.22,nominal,N,Ancash,Fuera de ANP,,,False,True
-2026-10-30,01:16,2026-10-30,616,-11.37571,-75.77802,VIIRS NOAA-21,NRT,1.84,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-10-30,01:16,2026-10-30,616,-11.37571,-75.77802,VIIRS NOAA-21,NRT,1.84,nominal,N,Junin,Fuera de ANP,,,True,False
 2026-10-30,01:16,2026-10-30,616,-12.3819,-76.14859,VIIRS NOAA-21,NRT,0.68,nominal,N,Lima,Fuera de ANP,,,False,True
 2026-10-30,01:52,2026-10-30,652,-8.17285,-77.98088,VIIRS S-NPP,NRT,1.22,nominal,N,La Libertad,Fuera de ANP,,,False,True
 2026-10-30,01:52,2026-10-30,652,-8.17628,-77.98132,VIIRS S-NPP,NRT,1.22,nominal,N,La Libertad,Fuera de ANP,,,False,True

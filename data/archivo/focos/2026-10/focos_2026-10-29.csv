@@ -1,6 +1,6 @@
 fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
 2026-10-29,00:50,2026-10-29,550,-9.9966,-77.03568,VIIRS NOAA-20,NRT,5.16,nominal,N,Ancash,Fuera de ANP,,,False,True
-2026-10-29,00:53,2026-10-29,553,-11.37423,-75.77987,VIIRS NOAA-20,NRT,1.03,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-10-29,00:53,2026-10-29,553,-11.37423,-75.77987,VIIRS NOAA-20,NRT,1.03,nominal,N,Junin,Fuera de ANP,,,True,False
 2026-10-29,00:53,2026-10-29,553,-12.19217,-76.90863,VIIRS NOAA-20,NRT,1.26,nominal,N,Lima,Fuera de ANP,,,False,True
 2026-10-29,00:53,2026-10-29,553,-12.93005,-76.49198,VIIRS NOAA-20,NRT,1.07,nominal,N,Lima,Fuera de ANP,,,False,True
 2026-10-29,00:53,2026-10-29,553,-13.60275,-75.33759,VIIRS NOAA-20,NRT,2.66,nominal,N,Huancavelica,Fuera de ANP,,,False,True
