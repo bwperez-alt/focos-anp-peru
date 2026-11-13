@@ -171,7 +171,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-07,13:02,2026-11-07,1802,-3.07068,-76.44123,VIIRS NOAA-21,NRT,7.69,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-07,13:02,2026-11-07,1802,-2.84418,-76.20776,VIIRS NOAA-21,NRT,12.39,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-07,13:02,2026-11-07,1802,-2.79505,-76.497,VIIRS NOAA-21,NRT,13.43,nominal,D,Loreto,Fuera de ANP,,,False,True
-2026-11-07,13:55,2026-11-07,1855,-17.49062,-71.35618,VIIRS NOAA-20,NRT,7.71,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-11-07,13:55,2026-11-07,1855,-17.49062,-71.35618,VIIRS NOAA-20,NRT,7.71,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-11-07,13:55,2026-11-07,1855,-16.28221,-69.25076,VIIRS NOAA-20,NRT,7.69,alta,D,Puno,Fuera de ANP,,,False,True
 2026-11-07,13:55,2026-11-07,1855,-14.29937,-69.42841,VIIRS NOAA-20,NRT,17.2,alta,D,Puno,Fuera de ANP,,,False,True
 2026-11-07,13:55,2026-11-07,1855,-14.29984,-69.43079,VIIRS NOAA-20,NRT,17.2,nominal,D,Puno,Fuera de ANP,,,False,True

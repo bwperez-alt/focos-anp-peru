@@ -15,7 +15,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-08,01:46,2026-11-08,646,-9.83867,-75.85024,VIIRS NOAA-21,NRT,1.53,nominal,N,Huanuco,Fuera de ANP,,,False,True
 2026-11-08,01:48,2026-11-08,648,-13.78499,-76.16734,VIIRS NOAA-21,NRT,5.14,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-08,01:48,2026-11-08,648,-13.78439,-76.17199,VIIRS NOAA-21,NRT,4.74,nominal,N,Ica,Fuera de ANP,,,True,False
-2026-11-08,12:41,2026-11-08,1741,-17.49056,-71.35847,VIIRS NOAA-21,NRT,8.15,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-11-08,12:41,2026-11-08,1741,-17.49056,-71.35847,VIIRS NOAA-21,NRT,8.15,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-11-08,12:41,2026-11-08,1741,-14.85408,-70.79125,VIIRS NOAA-21,NRT,10.62,alta,D,Puno,Fuera de ANP,,,False,True
 2026-11-08,12:41,2026-11-08,1741,-9.94101,-73.85593,VIIRS NOAA-21,NRT,5.01,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-08,12:41,2026-11-08,1741,-10.07821,-75.23733,VIIRS NOAA-21,NRT,4.68,nominal,D,Pasco,Fuera de ANP,,,False,True
