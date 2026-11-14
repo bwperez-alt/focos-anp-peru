@@ -2,3 +2,17 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-14,01:33,2026-11-14,633,-5.20904,-80.62656,VIIRS NOAA-21,NRT,1.04,nominal,N,Piura,Fuera de ANP,,,False,True
 2026-11-14,01:33,2026-11-14,633,-7.36728,-79.12343,VIIRS NOAA-21,NRT,0.61,nominal,N,Cajamarca,Fuera de ANP,,,False,True
 2026-11-14,01:33,2026-11-14,633,-7.40821,-79.55367,VIIRS NOAA-21,NRT,1.3,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-16.33237,-69.84306,VIIRS NOAA-21,NRT,12.17,nominal,D,Puno,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-16.33379,-69.84196,VIIRS NOAA-21,NRT,12.82,nominal,D,Puno,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-13.01997,-71.29845,VIIRS NOAA-21,NRT,9.27,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.93594,-71.43473,VIIRS NOAA-21,NRT,8.58,nominal,D,Cusco,Zona de amortiguamiento,Parque Nacional del Manu,Zona de amortiguamiento,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.74656,-69.75765,VIIRS NOAA-21,NRT,10.14,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.74305,-69.83466,VIIRS NOAA-21,NRT,27.86,alta,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.74908,-69.75774,VIIRS NOAA-21,NRT,10.01,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.93739,-71.43254,VIIRS NOAA-21,NRT,6.6,nominal,D,Cusco,Zona de amortiguamiento,Parque Nacional del Manu,Zona de amortiguamiento,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.73958,-69.83073,VIIRS NOAA-21,NRT,12.64,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.74011,-69.83518,VIIRS NOAA-21,NRT,12.64,baja,D,Madre de Dios,Fuera de ANP,,,False,False
+2026-11-14,12:28,2026-11-14,1728,-12.40086,-69.16439,VIIRS NOAA-21,NRT,10.37,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.01957,-69.07536,VIIRS NOAA-21,NRT,10.1,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-12.02202,-69.0765,VIIRS NOAA-21,NRT,8.56,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
+2026-11-14,12:28,2026-11-14,1728,-11.75854,-69.18092,VIIRS NOAA-21,NRT,9.32,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
