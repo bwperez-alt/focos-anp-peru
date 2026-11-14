@@ -1,0 +1,4 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-14,01:33,2026-11-14,633,-5.20904,-80.62656,VIIRS NOAA-21,NRT,1.04,nominal,N,Piura,Fuera de ANP,,,False,True
+2026-11-14,01:33,2026-11-14,633,-7.36728,-79.12343,VIIRS NOAA-21,NRT,0.61,nominal,N,Cajamarca,Fuera de ANP,,,False,True
+2026-11-14,01:33,2026-11-14,633,-7.40821,-79.55367,VIIRS NOAA-21,NRT,1.3,nominal,N,La Libertad,Fuera de ANP,,,False,True
