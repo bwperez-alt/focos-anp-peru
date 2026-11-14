@@ -85,7 +85,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-13,12:47,2026-11-13,1747,-11.12009,-75.40964,VIIRS NOAA-21,NRT,9.7,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-13,12:49,2026-11-13,1749,-6.89198,-76.76602,VIIRS NOAA-21,NRT,9.83,nominal,D,San Martin,Fuera de ANP,,,False,True
 2026-11-13,12:49,2026-11-13,1749,-4.11968,-70.42509,VIIRS NOAA-21,NRT,1.88,nominal,D,Loreto,Fuera de ANP,,,False,True
-2026-11-13,13:45,2026-11-13,1845,-17.49396,-71.3595,VIIRS NOAA-20,NRT,13.07,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-11-13,13:45,2026-11-13,1845,-17.49396,-71.3595,VIIRS NOAA-20,NRT,13.07,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-11-13,13:45,2026-11-13,1845,-17.49029,-71.36015,VIIRS NOAA-20,NRT,17.19,nominal,D,Moquegua,Fuera de ANP,,,False,True
 2026-11-13,13:45,2026-11-13,1845,-13.75223,-73.68714,VIIRS NOAA-20,NRT,3.92,baja,D,Apurimac,Fuera de ANP,,,False,False
 2026-11-13,13:45,2026-11-13,1845,-12.86813,-69.81857,VIIRS NOAA-20,NRT,6.74,nominal,D,Madre de Dios,Fuera de ANP,,,False,True

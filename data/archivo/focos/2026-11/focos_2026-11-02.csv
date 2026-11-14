@@ -146,7 +146,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-02,13:51,2026-11-02,1851,-9.21212,-76.25127,VIIRS NOAA-20,NRT,5.79,nominal,D,Huanuco,Fuera de ANP,,,False,True
 2026-11-02,13:51,2026-11-02,1851,-8.81327,-74.32661,VIIRS NOAA-20,NRT,17.94,nominal,D,Ucayali,Dentro de ANP,Área de Conservación Regional Imiria,Área de Conservación Regional,False,True
 2026-11-02,13:51,2026-11-02,1851,-8.4771,-74.68488,VIIRS NOAA-20,NRT,6.03,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-02,13:51,2026-11-02,1851,-9.05811,-78.60279,VIIRS NOAA-20,NRT,2.98,nominal,D,Ancash,Fuera de ANP,,,False,True
+2026-11-02,13:51,2026-11-02,1851,-9.05811,-78.60279,VIIRS NOAA-20,NRT,2.98,nominal,D,Ancash,Fuera de ANP,,,True,False
 2026-11-02,13:51,2026-11-02,1851,-9.05149,-78.60382,VIIRS NOAA-20,NRT,2.58,nominal,D,Ancash,Fuera de ANP,,,False,True
 2026-11-02,13:51,2026-11-02,1851,-8.40854,-75.25511,VIIRS NOAA-20,NRT,3.73,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-02,13:51,2026-11-02,1851,-8.36127,-75.01471,VIIRS NOAA-20,NRT,5.94,nominal,D,Ucayali,Fuera de ANP,,,False,True
