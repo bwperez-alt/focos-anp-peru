@@ -205,3 +205,5 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-15,13:51,2026-11-15,1851,-2.94916,-76.39051,VIIRS NOAA-21,NRT,4.51,baja,D,Loreto,Fuera de ANP,,,False,False
 2026-11-15,13:51,2026-11-15,1851,-2.79504,-76.49655,VIIRS NOAA-21,NRT,5.67,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-15,13:51,2026-11-15,1851,-2.34217,-73.79447,VIIRS NOAA-21,NRT,3.9,nominal,D,Loreto,Fuera de ANP,,,False,True
+2026-11-15,14:51,2026-11-15,1951,-4.88835,-80.68497,VIIRS NOAA-20,NRT,6.85,nominal,D,Piura,Fuera de ANP,,,False,True
+2026-11-15,14:51,2026-11-15,1951,-4.8628,-80.81489,VIIRS NOAA-20,NRT,5.3,nominal,D,Piura,Fuera de ANP,,,False,True
