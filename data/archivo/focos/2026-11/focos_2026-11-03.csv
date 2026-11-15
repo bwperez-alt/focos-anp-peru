@@ -3,7 +3,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-03,00:59,2026-11-03,559,-9.82703,-76.29031,VIIRS NOAA-20,NRT,0.9,nominal,N,Huanuco,Fuera de ANP,,,False,True
 2026-11-03,00:59,2026-11-03,559,-11.74923,-69.37819,VIIRS NOAA-20,NRT,0.72,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-03,00:59,2026-11-03,559,-12.93537,-72.6782,VIIRS NOAA-20,NRT,2.21,nominal,N,Cusco,Fuera de ANP,,,False,True
-2026-11-03,00:59,2026-11-03,559,-16.25494,-71.68584,VIIRS NOAA-20,NRT,1.24,nominal,N,Arequipa,Fuera de ANP,,,False,True
+2026-11-03,00:59,2026-11-03,559,-16.25494,-71.68584,VIIRS NOAA-20,NRT,1.24,nominal,N,Arequipa,Fuera de ANP,,,True,False
 2026-11-03,01:39,2026-11-03,639,-9.82984,-76.28695,VIIRS NOAA-21,NRT,0.87,nominal,N,Huanuco,Fuera de ANP,,,False,True
 2026-11-03,01:39,2026-11-03,639,-10.09029,-74.85964,VIIRS NOAA-21,NRT,0.67,nominal,N,Pasco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True
 2026-11-03,01:41,2026-11-03,641,-13.78605,-76.17089,VIIRS NOAA-21,NRT,4.33,nominal,N,Ica,Fuera de ANP,,,True,False

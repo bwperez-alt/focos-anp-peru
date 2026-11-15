@@ -1,0 +1,4 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-15,00:33,2026-11-15,533,-16.25516,-71.68728,VIIRS NOAA-20,NRT,0.72,nominal,N,Arequipa,Fuera de ANP,,,True,False
+2026-11-15,01:16,2026-11-15,616,-13.7845,-76.16936,VIIRS NOAA-21,NRT,3.09,nominal,N,Ica,Fuera de ANP,,,True,False
+2026-11-15,01:16,2026-11-15,616,-13.78784,-76.16992,VIIRS NOAA-21,NRT,3.09,nominal,N,Ica,Fuera de ANP,,,True,False

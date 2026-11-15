@@ -9,7 +9,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-01,01:16,2026-11-01,616,-13.78297,-76.17094,VIIRS S-NPP,NRT,2.26,nominal,N,Ica,Fuera de ANP,,,False,True
 2026-11-01,01:16,2026-11-01,616,-13.78688,-76.1717,VIIRS S-NPP,NRT,2.26,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-01,01:16,2026-11-01,616,-15.78532,-71.85712,VIIRS S-NPP,NRT,0.91,nominal,N,Arequipa,Fuera de ANP,,,False,True
-2026-11-01,01:16,2026-11-01,616,-16.25547,-71.68456,VIIRS S-NPP,NRT,0.93,nominal,N,Arequipa,Fuera de ANP,,,False,True
+2026-11-01,01:16,2026-11-01,616,-16.25547,-71.68456,VIIRS S-NPP,NRT,0.93,nominal,N,Arequipa,Fuera de ANP,,,True,False
 2026-11-01,01:16,2026-11-01,616,-16.4045,-71.66468,VIIRS S-NPP,NRT,0.61,nominal,N,Arequipa,Fuera de ANP,,,False,True
 2026-11-01,01:33,2026-11-01,633,-4.58057,-81.28618,VIIRS NOAA-20,NRT,1.94,nominal,N,Piura,Fuera de ANP,,,False,True
 2026-11-01,01:33,2026-11-01,633,-9.05079,-78.60246,VIIRS NOAA-20,NRT,2.02,nominal,N,Ancash,Fuera de ANP,,,False,True

@@ -1,5 +1,5 @@
 fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
-2026-10-30,00:33,2026-10-30,533,-16.25452,-71.68644,VIIRS NOAA-20,NRT,0.74,nominal,N,Arequipa,Fuera de ANP,,,False,True
+2026-10-30,00:33,2026-10-30,533,-16.25452,-71.68644,VIIRS NOAA-20,NRT,0.74,nominal,N,Arequipa,Fuera de ANP,,,True,False
 2026-10-30,01:16,2026-10-30,616,-8.17562,-77.97952,VIIRS NOAA-21,NRT,1.56,nominal,N,La Libertad,Fuera de ANP,,,False,True
 2026-10-30,01:16,2026-10-30,616,-9.24642,-77.63134,VIIRS NOAA-21,NRT,1.22,nominal,N,Ancash,Fuera de ANP,,,False,True
 2026-10-30,01:16,2026-10-30,616,-11.37571,-75.77802,VIIRS NOAA-21,NRT,1.84,nominal,N,Junin,Fuera de ANP,,,True,False
