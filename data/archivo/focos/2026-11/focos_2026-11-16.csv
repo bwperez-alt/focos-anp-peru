@@ -17,3 +17,11 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-16,00:59,2026-11-16,559,-17.49231,-71.36329,VIIRS NOAA-21,NRT,0.72,nominal,N,Moquegua,Fuera de ANP,,,False,True
 2026-11-16,00:59,2026-11-16,559,-17.49288,-71.35969,VIIRS NOAA-21,NRT,0.72,nominal,N,Moquegua,Fuera de ANP,,,True,False
 2026-11-16,00:59,2026-11-16,559,-17.49345,-71.35607,VIIRS NOAA-21,NRT,0.74,nominal,N,Moquegua,Fuera de ANP,,,True,False
+2026-11-16,01:52,2026-11-16,652,-5.60501,-75.88483,VIIRS NOAA-20,NRT,0.61,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-11.83966,-72.94825,VIIRS NOAA-20,NRT,0.63,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-11.84509,-72.94902,VIIRS NOAA-20,NRT,1.04,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-8.05373,-74.91128,VIIRS NOAA-20,NRT,1.08,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-8.05823,-74.91193,VIIRS NOAA-20,NRT,1.49,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-8.2907,-74.75671,VIIRS NOAA-20,NRT,1.47,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-8.29593,-74.75267,VIIRS NOAA-20,NRT,1.68,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-16,01:54,2026-11-16,654,-8.24837,-75.12201,VIIRS NOAA-20,NRT,1.92,nominal,N,Ucayali,Fuera de ANP,,,False,True
