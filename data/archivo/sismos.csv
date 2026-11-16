@@ -15,6 +15,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-24 15:57,-4.094,-80.354,4.1,68,"37 km ESE of Cañaveral, Peru",Parque Nacional Cerros de Amotape,16,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4pq,USGS
 2026-10-14 15:34,-0.321,-80.325,4.2,30,"32 km NNE of Bahía de Caráquez, Ecuador",Santuario Nacional los Manglares de Tumbes,343,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2c6,USGS
 2026-10-15 15:08,-11.298,-75.505,4.2,10,"15 km ESE of Huasahuasi, Peru",Santuario Nacional Pampa Hermosa,28,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4d0,USGS
+2026-11-16 14:26,-14.978,-75.868,4.7,10,"77 km WSW of Changuillo, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",29,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tym8,USGS
 2026-11-16 11:23,-14.836,-75.423,4.8,39,"28 km SW of Changuillo, Peru",Reserva Nacional San Fernando,20,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tykk,USGS
 2026-11-16 11:16,-15.031,-76.026,5.4,10,"95 km WSW of Changuillo, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",39,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tykh,USGS
 2026-11-16 01:47,-13.606,-68.57,4.3,626,"124 km NE of Quiaca, Peru",Parque Nacional Bahuaja-Sonene,109,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyie,USGS
