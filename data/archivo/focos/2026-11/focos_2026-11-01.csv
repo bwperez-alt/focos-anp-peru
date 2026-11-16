@@ -134,7 +134,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-01,13:49,2026-11-01,1849,-11.81306,-73.90805,VIIRS S-NPP,NRT,2.04,nominal,D,Junin,Zona de amortiguamiento,Reserva Comunal Ashaninka,Zona de amortiguamiento,False,True
 2026-11-01,13:49,2026-11-01,1849,-12.14047,-76.21862,VIIRS S-NPP,NRT,4.14,nominal,D,Lima,Fuera de ANP,,,False,True
 2026-11-01,13:49,2026-11-01,1849,-12.13715,-76.21912,VIIRS S-NPP,NRT,35.2,nominal,D,Lima,Fuera de ANP,,,False,True
-2026-11-01,13:49,2026-11-01,1849,-9.86562,-73.84936,VIIRS S-NPP,NRT,5.18,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-01,13:49,2026-11-01,1849,-9.86562,-73.84936,VIIRS S-NPP,NRT,5.18,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-01,13:49,2026-11-01,1849,-9.97675,-75.25253,VIIRS S-NPP,NRT,2.49,nominal,D,Pasco,Fuera de ANP,,,False,True
 2026-11-01,13:49,2026-11-01,1849,-9.97908,-76.31738,VIIRS S-NPP,NRT,7.64,nominal,D,Huanuco,Fuera de ANP,,,False,True
 2026-11-01,13:49,2026-11-01,1849,-9.97577,-76.31789,VIIRS S-NPP,NRT,20.13,nominal,D,Huanuco,Fuera de ANP,,,False,True
