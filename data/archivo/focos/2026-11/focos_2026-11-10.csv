@@ -1,5 +1,5 @@
 fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
-2026-11-10,01:09,2026-11-10,609,-11.84585,-72.94644,VIIRS NOAA-21,NRT,1.42,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-10,01:09,2026-11-10,609,-11.84585,-72.94644,VIIRS NOAA-21,NRT,1.42,nominal,N,Cusco,Fuera de ANP,,,True,False
 2026-11-10,02:03,2026-11-10,703,-4.57959,-81.28541,VIIRS NOAA-20,NRT,2.25,nominal,N,Piura,Fuera de ANP,,,False,True
 2026-11-10,02:05,2026-11-10,705,-5.1709,-80.67781,VIIRS NOAA-20,NRT,0.96,nominal,N,Piura,Fuera de ANP,,,False,True
 2026-11-10,13:00,2026-11-10,1800,-16.76534,-70.69901,VIIRS NOAA-20,NRT,3.53,nominal,D,Moquegua,Fuera de ANP,,,False,True
@@ -14,7 +14,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-10,13:00,2026-11-10,1800,-11.9201,-72.95175,VIIRS NOAA-20,NRT,31.7,nominal,D,Cusco,Fuera de ANP,,,False,True
 2026-11-10,13:00,2026-11-10,1800,-12.05382,-74.07604,VIIRS NOAA-20,NRT,5.11,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-10,13:00,2026-11-10,1800,-12.04857,-74.07649,VIIRS NOAA-20,NRT,3.94,nominal,D,Junin,Fuera de ANP,,,False,True
-2026-11-10,13:00,2026-11-10,1800,-11.84564,-72.94543,VIIRS NOAA-20,NRT,6.25,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-10,13:00,2026-11-10,1800,-11.84564,-72.94543,VIIRS NOAA-20,NRT,6.25,nominal,D,Cusco,Fuera de ANP,,,True,False
 2026-11-10,13:00,2026-11-10,1800,-11.84227,-73.95486,VIIRS NOAA-20,NRT,1.61,nominal,D,Junin,Zona de amortiguamiento,Reserva Comunal Ashaninka,Zona de amortiguamiento,False,True
 2026-11-10,13:00,2026-11-10,1800,-11.79926,-74.21659,VIIRS NOAA-20,NRT,3.59,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-10,13:02,2026-11-10,1802,-11.32649,-74.23569,VIIRS NOAA-20,NRT,0.44,nominal,D,Junin,Fuera de ANP,,,False,True

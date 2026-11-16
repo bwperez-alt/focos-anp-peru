@@ -586,7 +586,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-04,13:57,2026-11-04,1857,-8.30621,-74.75175,VIIRS NOAA-21,NRT,14.82,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-04,13:57,2026-11-04,1857,-8.65878,-76.87136,VIIRS NOAA-21,NRT,24.29,nominal,D,Huanuco,Fuera de ANP,,,False,True
 2026-11-04,13:57,2026-11-04,1857,-8.30072,-74.74766,VIIRS NOAA-21,NRT,19.39,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-04,13:57,2026-11-04,1857,-8.30155,-74.75259,VIIRS NOAA-21,NRT,14.82,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-04,13:57,2026-11-04,1857,-8.30155,-74.75259,VIIRS NOAA-21,NRT,14.82,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-04,13:57,2026-11-04,1857,-8.38463,-75.35439,VIIRS NOAA-21,NRT,14.15,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-04,13:57,2026-11-04,1857,-8.38091,-75.3596,VIIRS NOAA-21,NRT,15.61,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-04,13:57,2026-11-04,1857,-8.35109,-75.21132,VIIRS NOAA-21,NRT,5.23,nominal,D,Ucayali,Fuera de ANP,,,False,True

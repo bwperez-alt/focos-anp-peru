@@ -8,7 +8,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-12,01:29,2026-11-12,629,-8.97318,-77.4073,VIIRS NOAA-20,NRT,1.31,nominal,N,Ancash,Fuera de ANP,,,False,True
 2026-11-12,01:29,2026-11-12,629,-10.42911,-73.72073,VIIRS NOAA-20,NRT,0.51,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-12,01:29,2026-11-12,629,-10.85615,-73.4489,VIIRS NOAA-20,NRT,0.86,nominal,N,Ucayali,Fuera de ANP,,,False,True
-2026-11-12,01:29,2026-11-12,629,-11.84507,-72.9454,VIIRS NOAA-20,NRT,0.89,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-12,01:29,2026-11-12,629,-11.84507,-72.9454,VIIRS NOAA-20,NRT,0.89,nominal,N,Cusco,Fuera de ANP,,,True,False
 2026-11-12,02:11,2026-11-12,711,-8.9708,-77.41289,VIIRS NOAA-21,NRT,3.96,nominal,N,Ancash,Fuera de ANP,,,False,True
 2026-11-12,13:06,2026-11-12,1806,-13.0012,-70.49875,VIIRS NOAA-21,NRT,6.05,baja,D,Madre de Dios,Fuera de ANP,,,False,False
 2026-11-12,13:06,2026-11-12,1806,-12.81205,-69.70181,VIIRS NOAA-21,NRT,17.9,baja,D,Madre de Dios,Fuera de ANP,,,False,False
@@ -151,7 +151,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-12,13:08,2026-11-12,1808,-8.34011,-74.91506,VIIRS NOAA-21,NRT,3.63,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-12,13:08,2026-11-12,1808,-8.30457,-74.75013,VIIRS NOAA-21,NRT,4.21,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-12,13:08,2026-11-12,1808,-8.3056,-74.75763,VIIRS NOAA-21,NRT,12.75,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-12,13:08,2026-11-12,1808,-8.30095,-74.75444,VIIRS NOAA-21,NRT,5.49,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-12,13:08,2026-11-12,1808,-8.30095,-74.75444,VIIRS NOAA-21,NRT,5.49,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-12,13:08,2026-11-12,1808,-8.29217,-74.75182,VIIRS NOAA-21,NRT,25.46,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-12,13:08,2026-11-12,1808,-8.28753,-74.74865,VIIRS NOAA-21,NRT,8.21,baja,D,Ucayali,Fuera de ANP,,,False,False
 2026-11-12,13:08,2026-11-12,1808,-8.28804,-74.75238,VIIRS NOAA-21,NRT,25.46,nominal,D,Ucayali,Fuera de ANP,,,False,True
@@ -253,7 +253,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-12,14:04,2026-11-12,1904,-12.15093,-74.05684,VIIRS NOAA-20,NRT,2.93,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-12,14:04,2026-11-12,1904,-12.11928,-74.06287,VIIRS NOAA-20,NRT,5.75,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-12,14:04,2026-11-12,1904,-12.04994,-73.99128,VIIRS NOAA-20,NRT,4.14,nominal,D,Junin,Zona de amortiguamiento,Reserva Comunal Ashaninka,Zona de amortiguamiento,False,True
-2026-11-12,14:04,2026-11-12,1904,-11.84472,-72.94519,VIIRS NOAA-20,NRT,9.49,nominal,D,Cusco,Fuera de ANP,,,False,True
+2026-11-12,14:04,2026-11-12,1904,-11.84472,-72.94519,VIIRS NOAA-20,NRT,9.49,nominal,D,Cusco,Fuera de ANP,,,True,False
 2026-11-12,14:04,2026-11-12,1904,-12.04956,-73.99014,VIIRS NOAA-20,NRT,2.44,nominal,D,Junin,Zona de amortiguamiento,Reserva Comunal Ashaninka,Zona de amortiguamiento,False,True
 2026-11-12,14:04,2026-11-12,1904,-11.8474,-72.94181,VIIRS NOAA-20,NRT,4.72,nominal,D,Cusco,Fuera de ANP,,,False,True
 2026-11-12,14:04,2026-11-12,1904,-12.03454,-74.01148,VIIRS NOAA-20,NRT,2.94,nominal,D,Junin,Fuera de ANP,,,False,True
