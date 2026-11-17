@@ -2,7 +2,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-01,00:37,2026-11-01,537,-13.22546,-73.90762,VIIRS NOAA-21,NRT,1.76,nominal,N,Ayacucho,Fuera de ANP,,,False,True
 2026-11-01,00:40,2026-11-01,540,-13.78744,-76.16898,VIIRS NOAA-21,NRT,2.2,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-01,00:40,2026-11-01,540,-15.78516,-71.85729,VIIRS NOAA-21,NRT,1.13,nominal,N,Arequipa,Fuera de ANP,,,False,True
-2026-11-01,00:40,2026-11-01,540,-16.25714,-71.68642,VIIRS NOAA-21,NRT,0.66,nominal,N,Arequipa,Fuera de ANP,,,False,True
+2026-11-01,00:40,2026-11-01,540,-16.25714,-71.68642,VIIRS NOAA-21,NRT,0.66,nominal,N,Arequipa,Fuera de ANP,,,True,False
 2026-11-01,01:16,2026-11-01,616,-12.57446,-69.22176,VIIRS S-NPP,NRT,0.65,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-01,01:16,2026-11-01,616,-12.39756,-75.46618,VIIRS S-NPP,NRT,0.99,nominal,N,Junin,Fuera de ANP,,,False,True
 2026-11-01,01:16,2026-11-01,616,-13.59759,-71.7262,VIIRS S-NPP,NRT,0.76,nominal,N,Cusco,Fuera de ANP,,,False,True
