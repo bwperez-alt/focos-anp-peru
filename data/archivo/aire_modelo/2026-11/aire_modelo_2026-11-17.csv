@@ -1,506 +1,607 @@
 fecha_hora,area,lon,lat,pm2_5,pm10,ozone,nitrogen_dioxide,carbon_monoxide,dust
-2026-11-17 00:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,6.8,12.1,39.0,2.0,114.0,4.0
-2026-11-17 00:00,Bosque de Protección Alto Mayo,-77.487,-5.788,3.2,3.2,17.0,2.1,147.0,0.0
-2026-11-17 00:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.7,5.6,38.0,1.8,101.0,0.0
-2026-11-17 00:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,4.8,4.8,17.0,0.7,137.0,0.0
-2026-11-17 00:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,2.8,2.8,17.0,4.1,127.0,0.0
-2026-11-17 00:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,0.2,0.2,40.0,1.7,119.0,0.0
-2026-11-17 00:00,Bosque de Protección de Pui Pui,-75.063,-11.28,3.4,3.4,13.0,9.2,127.0,0.0
-2026-11-17 00:00,Coto de Caza El Angolo,-80.793,-4.311,1.1,1.6,30.0,2.2,107.0,0.0
-2026-11-17 00:00,Coto de Caza Sunchubamba,-78.457,-7.403,1.6,1.6,53.0,2.8,126.0,0.0
-2026-11-17 00:00,Parque Nacional Alto Purús,-71.548,-10.837,6.4,6.4,7.0,0.1,133.0,0.0
-2026-11-17 00:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,2.6,2.6,5.0,1.9,150.0,0.0
-2026-11-17 00:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,2.1,2.3,32.0,6.7,109.0,0.0
-2026-11-17 00:00,Parque Nacional Cordillera Azul,-75.991,-7.695,4.6,4.7,4.0,0.9,124.0,0.0
-2026-11-17 00:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,9.3,10.2,18.0,1.1,123.0,0.0
-2026-11-17 00:00,Parque Nacional Huascarán,-77.45,-9.418,2.9,2.9,16.0,12.7,141.0,0.0
-2026-11-17 00:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,3.3,3.3,15.0,3.5,130.0,0.0
-2026-11-17 00:00,Parque Nacional Otishi,-73.697,-11.845,1.4,1.5,18.0,0.8,145.0,0.0
-2026-11-17 00:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,3.8,3.8,10.0,0.1,125.0,0.0
-2026-11-17 00:00,Parque Nacional Yaguas,-71.295,-2.916,6.0,6.3,10.0,0.9,122.0,0.0
-2026-11-17 00:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,1.8,1.9,12.0,6.1,140.0,0.0
-2026-11-17 00:00,Parque Nacional de Cutervo,-78.786,-6.224,1.7,1.7,26.0,4.4,147.0,0.0
-2026-11-17 00:00,Parque Nacional de Tingo María,-76.005,-9.373,5.9,6.0,24.0,5.0,245.0,0.0
-2026-11-17 00:00,Parque Nacional del Manu,-71.635,-12.261,3.2,3.3,7.0,0.9,146.0,0.0
-2026-11-17 00:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.3,1.3,21.0,2.4,144.0,0.0
-2026-11-17 00:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.2,2.8,27.0,3.4,128.0,0.0
-2026-11-17 00:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,2.5,3.4,31.0,3.0,124.0,0.0
-2026-11-17 00:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.6,12.3,39.0,3.7,111.0,5.0
-2026-11-17 00:00,Reserva Comunal Airo Pai,-74.881,-0.751,9.3,10.1,19.0,1.0,124.0,0.0
-2026-11-17 00:00,Reserva Comunal Amarakaeri,-70.913,-12.793,2.2,2.2,3.0,2.3,134.0,0.0
-2026-11-17 00:00,Reserva Comunal Ashaninka,-73.794,-11.881,1.4,1.5,18.0,0.8,145.0,0.0
-2026-11-17 00:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,6.1,6.3,8.0,0.9,122.0,0.0
-2026-11-17 00:00,Reserva Comunal Chayu Naín,-78.243,-5.439,4.8,4.9,17.0,6.5,132.0,0.0
-2026-11-17 00:00,Reserva Comunal El Sira,-74.451,-9.684,4.9,4.9,6.0,0.7,138.0,0.0
-2026-11-17 00:00,Reserva Comunal Huimeki,-74.828,-0.374,9.2,10.0,21.0,1.0,122.0,0.0
-2026-11-17 00:00,Reserva Comunal Machiguenga,-73.251,-11.85,3.2,3.3,13.0,0.8,138.0,0.0
-2026-11-17 00:00,Reserva Comunal Purús,-71.099,-10.21,6.8,6.9,7.0,0.1,129.0,0.0
-2026-11-17 00:00,Reserva Comunal Tuntanain,-78.04,-4.149,2.0,2.0,17.0,0.4,128.0,0.0
-2026-11-17 00:00,Reserva Comunal Yanesha,-75.274,-10.32,4.6,4.7,19.0,1.3,141.0,0.0
-2026-11-17 00:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,7.2,7.3,11.0,0.9,153.0,0.0
-2026-11-17 00:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,10.7,18.6,47.0,0.1,92.0,1.0
-2026-11-17 00:00,Reserva Nacional Illescas,-81.077,-5.963,7.4,11.9,37.0,0.3,95.0,0.0
-2026-11-17 00:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,5.0,7.3,27.0,2.0,104.0,0.0
-2026-11-17 00:00,Reserva Nacional Matsés,-73.493,-5.724,4.9,4.9,11.0,0.2,128.0,0.0
-2026-11-17 00:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.2,4.3,12.0,0.3,125.0,0.0
-2026-11-17 00:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.8,31.2,34.0,4.2,103.0,53.0
-2026-11-17 00:00,Reserva Nacional Pucacuro,-75.414,-2.602,4.0,4.0,16.0,0.5,128.0,0.0
-2026-11-17 00:00,Reserva Nacional San Fernando,-75.346,-15.006,7.2,16.1,45.0,0.4,89.0,9.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,8.5,16.3,45.0,0.6,93.0,6.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,7.0,12.5,46.0,0.4,87.0,3.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.3,11.3,42.0,1.6,93.0,1.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,7.0,12.5,46.0,0.4,87.0,3.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.2,9.7,40.0,0.2,94.0,0.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.7,12.7,42.0,0.7,93.0,1.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,8.6,14.3,40.0,7.6,95.0,3.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.7,5.6,38.0,1.8,92.0,0.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,6.8,10.8,41.0,0.3,95.0,0.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,8.1,13.5,45.0,0.3,95.0,0.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,6.6,12.3,39.0,3.7,105.0,5.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.3,11.3,42.0,1.6,96.0,1.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,9.1,20.4,41.0,3.4,90.0,13.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,7.6,15.3,41.0,7.0,163.0,9.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,9.1,15.4,52.0,0.2,90.0,2.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,7.0,11.2,48.0,1.2,91.0,1.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,7.4,15.8,43.0,1.3,90.0,9.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,7.7,15.1,42.0,0.4,92.0,5.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,10.2,18.3,53.0,0.3,90.0,5.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,6.9,11.1,47.0,0.4,93.0,2.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,9.7,19.4,45.0,1.4,90.0,9.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,7.6,15.5,44.0,0.4,88.0,6.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,9.1,16.4,48.0,0.1,88.0,3.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,9.1,20.4,41.0,3.4,88.0,13.0
-2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,7.2,16.1,45.0,0.4,88.0,9.0
-2026-11-17 00:00,Reserva Nacional Tambopata,-69.416,-12.838,8.4,8.4,4.0,2.0,139.0,0.0
-2026-11-17 00:00,Reserva Nacional de Calipuy,-78.353,-8.561,2.1,2.5,33.0,4.2,101.0,0.0
-2026-11-17 00:00,Reserva Nacional de Junín,-76.128,-11.009,3.5,3.6,32.0,12.4,148.0,0.0
-2026-11-17 00:00,Reserva Nacional de Lachay,-77.362,-11.377,4.6,10.3,36.0,6.2,96.0,8.0
-2026-11-17 00:00,Reserva Nacional de Paracas,-76.252,-14.117,7.0,13.4,47.0,0.2,88.0,4.0
-2026-11-17 00:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,13.0,63.8,46.0,10.5,123.0,143.0
-2026-11-17 00:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.1,2.3,32.0,6.7,115.0,0.0
-2026-11-17 00:00,Reserva Nacional del Titicaca,-69.916,-15.646,4.1,12.7,43.0,8.5,111.0,24.0
-2026-11-17 00:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.3,1.4,51.0,3.8,110.0,0.0
-2026-11-17 00:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,4.4,19.3,35.0,6.2,101.0,39.0
-2026-11-17 00:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,2.5,3.4,31.0,3.0,118.0,0.0
-2026-11-17 00:00,Santuario Histórico Machupicchu,-72.478,-13.234,2.8,3.0,36.0,9.5,128.0,1.0
-2026-11-17 00:00,Santuario Histórico de Chacamarca,-75.971,-11.217,3.5,3.6,32.0,12.4,172.0,0.0
-2026-11-17 00:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,1.5,2.1,46.0,3.0,129.0,1.0
-2026-11-17 00:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,2.8,2.8,17.0,4.1,134.0,0.0
-2026-11-17 00:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,11.0,20.8,51.0,0.7,91.0,7.0
-2026-11-17 00:00,Santuario Nacional Megantoni,-72.449,-12.277,2.0,2.0,17.0,0.7,152.0,0.0
-2026-11-17 00:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,3.7,3.7,9.0,13.2,141.0,0.0
-2026-11-17 00:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,0.6,0.6,27.0,2.5,123.0,0.0
-2026-11-17 00:00,Santuario Nacional de Ampay,-72.893,-13.584,8.5,9.9,37.0,21.5,204.0,4.0
-2026-11-17 00:00,Santuario Nacional de Calipuy,-78.3,-8.344,2.1,2.5,33.0,4.2,120.0,0.0
-2026-11-17 00:00,Santuario Nacional de Huayllay,-76.333,-10.951,6.3,6.3,17.0,19.3,166.0,0.0
-2026-11-17 00:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,5.4,6.2,27.0,11.3,129.0,0.0
-2026-11-17 00:00,Zona Reservada Ancón,-77.188,-11.735,7.6,15.3,41.0,7.0,173.0,9.0
-2026-11-17 00:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,1.0,2.1,50.0,4.2,202.0,2.0
-2026-11-17 00:00,Zona Reservada Chancaybaños,-78.921,-6.559,1.7,1.7,26.0,4.4,128.0,0.0
-2026-11-17 00:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,2.0,2.0,22.0,7.7,113.0,0.0
-2026-11-17 00:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,5.9,30.9,47.0,6.6,120.0,71.0
-2026-11-17 00:00,Zona Reservada Santiago Comaina,-77.517,-3.71,5.0,5.0,10.0,0.7,126.0,0.0
-2026-11-17 01:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,6.3,10.7,39.0,1.8,115.0,3.0
-2026-11-17 01:00,Bosque de Protección Alto Mayo,-77.487,-5.788,3.1,3.1,16.0,1.8,140.0,0.0
-2026-11-17 01:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.7,5.6,37.0,1.8,101.0,0.0
-2026-11-17 01:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,4.8,4.9,16.0,0.7,136.0,0.0
-2026-11-17 01:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,2.7,2.8,17.0,3.7,127.0,0.0
-2026-11-17 01:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,0.2,0.2,40.0,1.7,119.0,0.0
-2026-11-17 01:00,Bosque de Protección de Pui Pui,-75.063,-11.28,3.1,3.1,13.0,8.3,126.0,0.0
-2026-11-17 01:00,Coto de Caza El Angolo,-80.793,-4.311,1.3,1.9,31.0,2.0,106.0,0.0
-2026-11-17 01:00,Coto de Caza Sunchubamba,-78.457,-7.403,1.5,1.5,57.0,2.0,125.0,0.0
-2026-11-17 01:00,Parque Nacional Alto Purús,-71.548,-10.837,6.2,6.2,6.0,0.1,134.0,0.0
-2026-11-17 01:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,2.7,2.7,4.0,2.3,148.0,0.0
-2026-11-17 01:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,2.1,2.3,33.0,6.2,111.0,0.0
-2026-11-17 01:00,Parque Nacional Cordillera Azul,-75.991,-7.695,4.7,4.8,4.0,0.9,124.0,0.0
-2026-11-17 01:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,9.2,10.0,18.0,1.2,122.0,0.0
-2026-11-17 01:00,Parque Nacional Huascarán,-77.45,-9.418,2.6,2.6,14.0,13.4,135.0,0.0
-2026-11-17 01:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,3.4,3.4,15.0,3.3,130.0,0.0
-2026-11-17 01:00,Parque Nacional Otishi,-73.697,-11.845,1.4,1.6,19.0,0.7,145.0,0.0
-2026-11-17 01:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,4.0,4.0,10.0,0.1,125.0,0.0
-2026-11-17 01:00,Parque Nacional Yaguas,-71.295,-2.916,6.5,6.8,9.0,0.9,122.0,0.0
-2026-11-17 01:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,1.6,1.7,7.0,6.7,138.0,0.0
-2026-11-17 01:00,Parque Nacional de Cutervo,-78.786,-6.224,1.7,1.7,27.0,4.2,140.0,0.0
-2026-11-17 01:00,Parque Nacional de Tingo María,-76.005,-9.373,5.9,6.0,24.0,4.8,237.0,0.0
-2026-11-17 01:00,Parque Nacional del Manu,-71.635,-12.261,3.0,3.1,6.0,1.1,145.0,0.0
-2026-11-17 01:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.2,1.2,19.0,2.4,144.0,0.0
-2026-11-17 01:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.0,2.5,26.0,3.7,128.0,0.0
-2026-11-17 01:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,2.5,3.5,30.0,3.2,127.0,0.0
-2026-11-17 01:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.4,9.7,39.0,2.8,103.0,4.0
-2026-11-17 01:00,Reserva Comunal Airo Pai,-74.881,-0.751,9.3,10.1,19.0,1.0,123.0,0.0
-2026-11-17 01:00,Reserva Comunal Amarakaeri,-70.913,-12.793,2.1,2.2,3.0,2.6,134.0,0.0
-2026-11-17 01:00,Reserva Comunal Ashaninka,-73.794,-11.881,1.4,1.6,19.0,0.7,145.0,0.0
-2026-11-17 01:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,6.5,6.7,8.0,1.0,122.0,0.0
-2026-11-17 01:00,Reserva Comunal Chayu Naín,-78.243,-5.439,4.9,5.0,17.0,5.8,131.0,0.0
-2026-11-17 01:00,Reserva Comunal El Sira,-74.451,-9.684,5.0,5.1,7.0,0.7,139.0,0.0
-2026-11-17 01:00,Reserva Comunal Huimeki,-74.828,-0.374,9.1,10.0,22.0,1.0,120.0,0.0
-2026-11-17 01:00,Reserva Comunal Machiguenga,-73.251,-11.85,3.3,3.4,14.0,0.7,137.0,0.0
-2026-11-17 01:00,Reserva Comunal Purús,-71.099,-10.21,6.3,6.4,7.0,0.1,128.0,0.0
-2026-11-17 01:00,Reserva Comunal Tuntanain,-78.04,-4.149,1.2,1.3,18.0,0.4,127.0,0.0
-2026-11-17 01:00,Reserva Comunal Yanesha,-75.274,-10.32,4.7,4.8,18.0,1.4,140.0,0.0
-2026-11-17 01:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.7,6.7,11.0,0.8,139.0,0.0
-2026-11-17 01:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,11.3,19.6,47.0,0.1,92.0,1.0
-2026-11-17 01:00,Reserva Nacional Illescas,-81.077,-5.963,7.1,11.4,38.0,0.3,95.0,0.0
-2026-11-17 01:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,4.4,6.3,26.0,1.8,103.0,0.0
-2026-11-17 01:00,Reserva Nacional Matsés,-73.493,-5.724,4.9,4.9,11.0,0.2,127.0,0.0
-2026-11-17 01:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.4,4.4,12.0,0.3,125.0,0.0
-2026-11-17 01:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.2,24.4,32.0,4.9,98.0,47.0
-2026-11-17 01:00,Reserva Nacional Pucacuro,-75.414,-2.602,4.4,4.5,16.0,0.5,127.0,0.0
-2026-11-17 01:00,Reserva Nacional San Fernando,-75.346,-15.006,7.2,15.3,45.0,0.4,89.0,8.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,8.4,15.5,45.0,0.5,92.0,4.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,6.9,13.2,47.0,0.3,87.0,4.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.3,11.4,41.0,1.7,92.0,1.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,6.9,13.2,47.0,0.3,87.0,4.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.0,9.3,40.0,0.2,94.0,0.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.6,12.7,42.0,0.7,92.0,1.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,7.9,12.9,41.0,6.1,93.0,2.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.7,5.6,37.0,1.8,91.0,0.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,6.5,10.4,41.0,0.3,95.0,0.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,8.1,13.6,45.0,0.3,95.0,0.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,5.4,9.7,39.0,2.8,101.0,4.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.3,11.4,41.0,1.7,95.0,1.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,8.7,19.0,40.0,3.6,89.0,12.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,7.2,13.7,40.0,6.7,142.0,7.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,8.5,14.4,52.0,0.2,90.0,2.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,6.7,10.5,47.0,1.1,90.0,0.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,7.5,15.9,44.0,1.4,89.0,9.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,7.9,15.5,43.0,0.5,91.0,6.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,9.6,17.4,52.0,0.3,90.0,5.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,6.8,10.7,46.0,0.3,92.0,2.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.0,20.4,45.0,1.6,89.0,10.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,7.2,13.4,44.0,0.4,88.0,5.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,9.3,17.0,48.0,0.1,88.0,3.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,8.7,19.0,40.0,3.6,88.0,12.0
-2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,7.2,15.3,45.0,0.4,88.0,8.0
-2026-11-17 01:00,Reserva Nacional Tambopata,-69.416,-12.838,8.7,8.8,4.0,1.7,138.0,0.0
-2026-11-17 01:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.8,2.2,30.0,4.4,99.0,0.0
-2026-11-17 01:00,Reserva Nacional de Junín,-76.128,-11.009,3.7,3.8,25.0,12.7,153.0,0.0
-2026-11-17 01:00,Reserva Nacional de Lachay,-77.362,-11.377,4.1,8.9,32.0,6.7,96.0,8.0
-2026-11-17 01:00,Reserva Nacional de Paracas,-76.252,-14.117,7.0,13.3,47.0,0.2,88.0,4.0
-2026-11-17 01:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,12.8,62.6,50.0,8.9,118.0,141.0
-2026-11-17 01:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.1,2.3,33.0,6.2,114.0,0.0
-2026-11-17 01:00,Reserva Nacional del Titicaca,-69.916,-15.646,4.3,13.4,37.0,10.0,105.0,24.0
-2026-11-17 01:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.7,1.7,43.0,4.4,109.0,0.0
-2026-11-17 01:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,4.2,16.8,35.0,6.4,101.0,35.0
-2026-11-17 01:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,2.5,3.5,30.0,3.2,115.0,0.0
-2026-11-17 01:00,Santuario Histórico Machupicchu,-72.478,-13.234,2.4,2.7,40.0,5.3,123.0,1.0
-2026-11-17 01:00,Santuario Histórico de Chacamarca,-75.971,-11.217,3.7,3.8,25.0,12.7,170.0,0.0
-2026-11-17 01:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,1.6,2.1,46.0,3.2,128.0,1.0
-2026-11-17 01:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,2.7,2.8,17.0,3.7,133.0,0.0
-2026-11-17 01:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,11.1,21.0,50.0,0.8,91.0,7.0
-2026-11-17 01:00,Santuario Nacional Megantoni,-72.449,-12.277,1.9,2.0,17.0,0.6,149.0,0.0
-2026-11-17 01:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,3.9,3.9,6.0,14.2,138.0,0.0
-2026-11-17 01:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,0.5,0.5,28.0,2.6,123.0,0.0
-2026-11-17 01:00,Santuario Nacional de Ampay,-72.893,-13.584,9.2,10.7,31.0,22.7,203.0,4.0
-2026-11-17 01:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.8,2.2,30.0,4.4,121.0,0.0
-2026-11-17 01:00,Santuario Nacional de Huayllay,-76.333,-10.951,5.2,5.2,11.0,18.6,156.0,0.0
-2026-11-17 01:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.8,5.6,25.0,11.4,118.0,0.0
-2026-11-17 01:00,Zona Reservada Ancón,-77.188,-11.735,7.2,13.7,40.0,6.7,143.0,7.0
-2026-11-17 01:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,1.1,2.1,50.0,4.0,207.0,2.0
-2026-11-17 01:00,Zona Reservada Chancaybaños,-78.921,-6.559,1.7,1.7,27.0,4.2,128.0,0.0
-2026-11-17 01:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,1.6,1.6,14.0,8.6,112.0,0.0
-2026-11-17 01:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,6.0,31.7,45.0,7.5,124.0,71.0
-2026-11-17 01:00,Zona Reservada Santiago Comaina,-77.517,-3.71,4.8,4.8,9.0,0.8,125.0,0.0
-2026-11-17 02:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,6.2,10.8,39.0,1.4,116.0,3.0
-2026-11-17 02:00,Bosque de Protección Alto Mayo,-77.487,-5.788,3.0,3.0,16.0,1.6,136.0,0.0
-2026-11-17 02:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.6,5.4,36.0,1.8,100.0,0.0
-2026-11-17 02:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,4.9,4.9,15.0,0.8,135.0,0.0
-2026-11-17 02:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,2.5,2.6,17.0,3.4,127.0,0.0
-2026-11-17 02:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,0.3,0.3,40.0,1.7,120.0,0.0
-2026-11-17 02:00,Bosque de Protección de Pui Pui,-75.063,-11.28,2.8,2.9,14.0,7.2,123.0,0.0
-2026-11-17 02:00,Coto de Caza El Angolo,-80.793,-4.311,1.3,1.8,31.0,1.9,106.0,0.0
-2026-11-17 02:00,Coto de Caza Sunchubamba,-78.457,-7.403,1.3,1.3,56.0,2.6,126.0,0.0
-2026-11-17 02:00,Parque Nacional Alto Purús,-71.548,-10.837,6.0,6.1,5.0,0.1,135.0,0.0
-2026-11-17 02:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,2.8,2.8,3.0,2.9,146.0,0.0
-2026-11-17 02:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,2.0,2.2,32.0,5.9,110.0,0.0
-2026-11-17 02:00,Parque Nacional Cordillera Azul,-75.991,-7.695,4.9,4.9,3.0,1.0,124.0,0.0
-2026-11-17 02:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,9.0,9.8,20.0,1.1,121.0,0.0
-2026-11-17 02:00,Parque Nacional Huascarán,-77.45,-9.418,2.6,2.6,13.0,13.1,130.0,0.0
-2026-11-17 02:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,3.4,3.4,15.0,3.3,129.0,0.0
-2026-11-17 02:00,Parque Nacional Otishi,-73.697,-11.845,1.5,1.8,20.0,0.6,145.0,0.0
-2026-11-17 02:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,4.2,4.2,10.0,0.1,125.0,0.0
-2026-11-17 02:00,Parque Nacional Yaguas,-71.295,-2.916,7.0,7.2,9.0,0.8,122.0,0.0
-2026-11-17 02:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,1.4,1.4,7.0,6.7,137.0,0.0
-2026-11-17 02:00,Parque Nacional de Cutervo,-78.786,-6.224,1.5,1.5,30.0,3.6,132.0,0.0
-2026-11-17 02:00,Parque Nacional de Tingo María,-76.005,-9.373,6.0,6.1,21.0,4.7,223.0,0.0
-2026-11-17 02:00,Parque Nacional del Manu,-71.635,-12.261,2.8,2.9,5.0,1.3,143.0,0.0
-2026-11-17 02:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.2,1.2,16.0,2.8,142.0,0.0
-2026-11-17 02:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.0,2.5,24.0,4.4,126.0,0.0
-2026-11-17 02:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,2.7,3.7,29.0,3.5,127.0,0.0
-2026-11-17 02:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,4.7,8.5,39.0,1.9,97.0,3.0
-2026-11-17 02:00,Reserva Comunal Airo Pai,-74.881,-0.751,9.3,10.0,20.0,1.0,122.0,0.0
-2026-11-17 02:00,Reserva Comunal Amarakaeri,-70.913,-12.793,2.1,2.1,3.0,2.9,133.0,0.0
-2026-11-17 02:00,Reserva Comunal Ashaninka,-73.794,-11.881,1.5,1.8,20.0,0.6,145.0,0.0
-2026-11-17 02:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,6.7,7.0,10.0,0.9,122.0,0.0
-2026-11-17 02:00,Reserva Comunal Chayu Naín,-78.243,-5.439,4.1,4.1,18.0,4.9,130.0,0.0
-2026-11-17 02:00,Reserva Comunal El Sira,-74.451,-9.684,5.1,5.2,9.0,0.6,135.0,0.0
-2026-11-17 02:00,Reserva Comunal Huimeki,-74.828,-0.374,9.1,9.9,24.0,1.0,119.0,0.0
-2026-11-17 02:00,Reserva Comunal Machiguenga,-73.251,-11.85,3.2,3.3,15.0,0.6,137.0,0.0
-2026-11-17 02:00,Reserva Comunal Purús,-71.099,-10.21,5.8,5.8,7.0,0.1,128.0,0.0
-2026-11-17 02:00,Reserva Comunal Tuntanain,-78.04,-4.149,1.3,1.3,17.0,0.5,126.0,0.0
-2026-11-17 02:00,Reserva Comunal Yanesha,-75.274,-10.32,4.8,4.9,17.0,1.3,138.0,0.0
-2026-11-17 02:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.2,6.3,10.0,0.8,135.0,0.0
-2026-11-17 02:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,11.7,20.2,47.0,0.1,92.0,1.0
-2026-11-17 02:00,Reserva Nacional Illescas,-81.077,-5.963,7.0,11.1,38.0,0.3,95.0,0.0
-2026-11-17 02:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.7,5.3,25.0,1.6,102.0,0.0
-2026-11-17 02:00,Reserva Nacional Matsés,-73.493,-5.724,4.8,4.9,10.0,0.2,126.0,0.0
-2026-11-17 02:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.4,4.4,12.0,0.3,125.0,0.0
-2026-11-17 02:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,4.8,20.1,32.0,4.9,95.0,45.0
-2026-11-17 02:00,Reserva Nacional Pucacuro,-75.414,-2.602,5.1,5.3,16.0,0.5,126.0,0.0
-2026-11-17 02:00,Reserva Nacional San Fernando,-75.346,-15.006,7.3,14.6,45.0,0.4,89.0,7.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,8.1,14.6,45.0,0.4,91.0,4.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,6.9,13.6,47.0,0.3,87.0,5.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.3,11.4,40.0,1.7,92.0,1.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,6.9,13.6,47.0,0.3,87.0,5.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,5.8,9.1,40.0,0.2,94.0,0.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.5,12.9,42.0,0.7,91.0,2.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,7.5,12.0,42.0,4.8,91.0,1.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.6,5.4,36.0,1.8,91.0,0.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,6.1,9.8,41.0,0.3,95.0,0.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,8.3,13.9,45.0,0.3,95.0,0.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,4.7,8.5,39.0,1.9,97.0,3.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.3,11.4,40.0,1.7,94.0,1.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,8.1,16.9,39.0,3.5,88.0,10.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,7.3,12.9,40.0,6.3,124.0,5.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,8.1,13.8,53.0,0.2,90.0,2.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,6.3,9.8,45.0,1.1,89.0,0.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,8.2,17.3,45.0,1.4,88.0,10.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,8.1,15.9,44.0,0.5,91.0,6.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,9.3,16.9,51.0,0.3,90.0,5.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,6.7,10.4,45.0,0.3,91.0,2.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.6,21.8,45.0,1.6,88.0,10.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,7.0,12.1,44.0,0.4,88.0,4.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,9.6,17.9,48.0,0.1,88.0,4.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,8.1,16.9,39.0,3.5,89.0,10.0
-2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,7.3,14.6,45.0,0.4,88.0,7.0
-2026-11-17 02:00,Reserva Nacional Tambopata,-69.416,-12.838,9.1,9.1,4.0,1.4,138.0,0.0
-2026-11-17 02:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.3,1.7,31.0,4.1,97.0,0.0
-2026-11-17 02:00,Reserva Nacional de Junín,-76.128,-11.009,4.0,4.0,25.0,11.7,156.0,0.0
-2026-11-17 02:00,Reserva Nacional de Lachay,-77.362,-11.377,3.6,7.3,30.0,6.7,94.0,7.0
-2026-11-17 02:00,Reserva Nacional de Paracas,-76.252,-14.117,7.0,13.3,47.0,0.2,88.0,4.0
-2026-11-17 02:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,10.8,46.4,49.0,7.9,112.0,109.0
-2026-11-17 02:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.0,2.2,32.0,5.9,112.0,0.0
-2026-11-17 02:00,Reserva Nacional del Titicaca,-69.916,-15.646,4.9,12.6,30.0,11.2,104.0,22.0
-2026-11-17 02:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,1.9,1.9,42.0,4.2,108.0,0.0
-2026-11-17 02:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,3.5,11.3,38.0,5.9,101.0,25.0
-2026-11-17 02:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,2.7,3.7,29.0,3.5,114.0,0.0
-2026-11-17 02:00,Santuario Histórico Machupicchu,-72.478,-13.234,2.7,3.0,40.0,4.2,121.0,1.0
-2026-11-17 02:00,Santuario Histórico de Chacamarca,-75.971,-11.217,4.0,4.0,25.0,11.7,159.0,0.0
-2026-11-17 02:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,1.7,2.2,46.0,3.0,126.0,1.0
-2026-11-17 02:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,2.5,2.6,17.0,3.4,132.0,0.0
-2026-11-17 02:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,10.4,19.3,49.0,0.8,91.0,6.0
-2026-11-17 02:00,Santuario Nacional Megantoni,-72.449,-12.277,1.9,1.9,17.0,0.6,145.0,0.0
-2026-11-17 02:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,4.0,4.0,10.0,12.9,136.0,0.0
-2026-11-17 02:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,0.6,0.6,27.0,3.1,122.0,0.0
-2026-11-17 02:00,Santuario Nacional de Ampay,-72.893,-13.584,9.7,11.3,26.0,23.2,194.0,4.0
-2026-11-17 02:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.3,1.7,31.0,4.1,121.0,0.0
-2026-11-17 02:00,Santuario Nacional de Huayllay,-76.333,-10.951,3.7,3.7,15.0,15.6,146.0,0.0
-2026-11-17 02:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.3,5.0,24.0,11.2,123.0,0.0
-2026-11-17 02:00,Zona Reservada Ancón,-77.188,-11.735,7.3,12.9,40.0,6.3,128.0,5.0
-2026-11-17 02:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,1.8,2.5,47.0,3.8,198.0,2.0
-2026-11-17 02:00,Zona Reservada Chancaybaños,-78.921,-6.559,1.5,1.5,30.0,3.6,127.0,0.0
-2026-11-17 02:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,1.3,1.3,16.0,8.2,113.0,0.0
-2026-11-17 02:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,6.2,32.5,40.0,8.9,121.0,74.0
-2026-11-17 02:00,Zona Reservada Santiago Comaina,-77.517,-3.71,4.6,4.6,8.0,0.9,124.0,0.0
-2026-11-17 03:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,6.1,10.9,40.0,1.1,116.0,3.0
-2026-11-17 03:00,Bosque de Protección Alto Mayo,-77.487,-5.788,2.9,2.9,17.0,1.5,133.0,0.0
-2026-11-17 03:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.5,5.3,36.0,1.7,98.0,0.0
-2026-11-17 03:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,4.9,5.0,14.0,1.0,133.0,0.0
-2026-11-17 03:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,2.4,2.4,17.0,3.1,127.0,0.0
-2026-11-17 03:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,0.3,0.3,41.0,1.6,121.0,0.0
-2026-11-17 03:00,Bosque de Protección de Pui Pui,-75.063,-11.28,2.5,2.6,16.0,5.9,120.0,0.0
-2026-11-17 03:00,Coto de Caza El Angolo,-80.793,-4.311,1.2,1.6,30.0,1.8,106.0,0.0
-2026-11-17 03:00,Coto de Caza Sunchubamba,-78.457,-7.403,1.6,1.6,53.0,3.8,127.0,0.0
-2026-11-17 03:00,Parque Nacional Alto Purús,-71.548,-10.837,5.8,5.9,5.0,0.2,135.0,0.0
-2026-11-17 03:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,3.0,3.1,2.0,3.5,144.0,0.0
-2026-11-17 03:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,2.0,2.1,31.0,5.7,109.0,0.0
-2026-11-17 03:00,Parque Nacional Cordillera Azul,-75.991,-7.695,5.0,5.1,3.0,1.1,125.0,0.0
-2026-11-17 03:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,8.8,9.6,22.0,1.0,121.0,0.0
-2026-11-17 03:00,Parque Nacional Huascarán,-77.45,-9.418,2.4,2.4,13.0,12.1,125.0,0.0
-2026-11-17 03:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,3.5,3.6,16.0,3.3,129.0,0.0
-2026-11-17 03:00,Parque Nacional Otishi,-73.697,-11.845,1.4,1.6,20.0,0.5,146.0,0.0
-2026-11-17 03:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,4.4,4.4,10.0,0.1,126.0,0.0
-2026-11-17 03:00,Parque Nacional Yaguas,-71.295,-2.916,7.4,7.7,10.0,0.7,122.0,0.0
-2026-11-17 03:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,1.3,1.4,10.0,6.2,138.0,0.0
-2026-11-17 03:00,Parque Nacional de Cutervo,-78.786,-6.224,1.2,1.3,34.0,2.9,124.0,0.0
-2026-11-17 03:00,Parque Nacional de Tingo María,-76.005,-9.373,6.0,6.0,16.0,4.7,206.0,0.0
-2026-11-17 03:00,Parque Nacional del Manu,-71.635,-12.261,2.5,2.6,5.0,1.5,140.0,0.0
-2026-11-17 03:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.3,1.3,13.0,3.3,140.0,0.0
-2026-11-17 03:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.1,2.6,21.0,5.2,124.0,0.0
-2026-11-17 03:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,2.9,4.0,29.0,3.7,126.0,0.0
-2026-11-17 03:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,4.5,7.9,39.0,1.2,94.0,2.0
-2026-11-17 03:00,Reserva Comunal Airo Pai,-74.881,-0.751,9.3,10.0,22.0,0.9,120.0,0.0
-2026-11-17 03:00,Reserva Comunal Amarakaeri,-70.913,-12.793,2.1,2.1,2.0,3.1,131.0,0.0
-2026-11-17 03:00,Reserva Comunal Ashaninka,-73.794,-11.881,1.4,1.6,20.0,0.5,144.0,0.0
-2026-11-17 03:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,6.8,7.1,13.0,0.7,122.0,0.0
-2026-11-17 03:00,Reserva Comunal Chayu Naín,-78.243,-5.439,4.0,4.0,20.0,3.7,129.0,0.0
-2026-11-17 03:00,Reserva Comunal El Sira,-74.451,-9.684,5.1,5.2,12.0,0.5,129.0,0.0
-2026-11-17 03:00,Reserva Comunal Huimeki,-74.828,-0.374,8.9,9.9,26.0,1.0,119.0,0.0
-2026-11-17 03:00,Reserva Comunal Machiguenga,-73.251,-11.85,2.9,3.0,17.0,0.6,137.0,0.0
-2026-11-17 03:00,Reserva Comunal Purús,-71.099,-10.21,5.5,5.5,6.0,0.1,127.0,0.0
-2026-11-17 03:00,Reserva Comunal Tuntanain,-78.04,-4.149,1.4,1.4,16.0,0.6,125.0,0.0
-2026-11-17 03:00,Reserva Comunal Yanesha,-75.274,-10.32,4.8,4.9,17.0,1.2,134.0,0.0
-2026-11-17 03:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.0,6.2,10.0,0.7,137.0,0.0
-2026-11-17 03:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,11.7,20.0,48.0,0.0,92.0,1.0
-2026-11-17 03:00,Reserva Nacional Illescas,-81.077,-5.963,6.9,10.9,39.0,0.4,94.0,0.0
-2026-11-17 03:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.5,4.8,24.0,1.5,101.0,0.0
-2026-11-17 03:00,Reserva Nacional Matsés,-73.493,-5.724,4.8,4.8,10.0,0.3,125.0,0.0
-2026-11-17 03:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.4,4.4,12.0,0.4,124.0,0.0
-2026-11-17 03:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,4.6,19.4,34.0,4.6,94.0,46.0
-2026-11-17 03:00,Reserva Nacional Pucacuro,-75.414,-2.602,5.8,6.2,16.0,0.5,125.0,0.0
-2026-11-17 03:00,Reserva Nacional San Fernando,-75.346,-15.006,7.5,14.4,45.0,0.3,88.0,6.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.9,14.3,46.0,0.4,90.0,4.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,6.9,13.9,46.0,0.3,87.0,5.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.1,11.1,39.0,1.8,91.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,6.9,13.9,46.0,0.3,87.0,5.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,5.7,8.8,41.0,0.2,95.0,0.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.4,13.0,42.0,0.7,90.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,7.1,11.4,43.0,3.7,90.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.5,5.3,36.0,1.7,91.0,0.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,5.8,9.2,42.0,0.3,95.0,0.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,8.3,13.8,44.0,0.3,95.0,0.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,4.5,7.9,39.0,1.2,94.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.1,11.1,39.0,1.8,92.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,7.6,15.2,39.0,3.3,87.0,8.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,7.3,12.1,40.0,5.8,111.0,4.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,7.8,13.4,53.0,0.1,91.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,6.1,9.3,43.0,1.2,89.0,0.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,8.6,18.2,45.0,1.5,86.0,11.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,8.4,16.5,44.0,0.6,90.0,7.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,8.9,16.3,50.0,0.4,90.0,5.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,6.6,10.6,45.0,0.2,89.0,2.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.6,21.7,46.0,1.5,86.0,10.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,7.0,12.6,44.0,0.3,88.0,3.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,9.6,18.2,49.0,0.1,88.0,5.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,7.6,15.2,39.0,3.3,89.0,8.0
-2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,7.5,14.4,45.0,0.3,88.0,6.0
-2026-11-17 03:00,Reserva Nacional Tambopata,-69.416,-12.838,9.4,9.4,4.0,1.2,139.0,0.0
-2026-11-17 03:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.4,1.7,34.0,3.6,95.0,0.0
-2026-11-17 03:00,Reserva Nacional de Junín,-76.128,-11.009,4.5,4.6,28.0,10.0,158.0,0.0
-2026-11-17 03:00,Reserva Nacional de Lachay,-77.362,-11.377,3.2,5.9,28.0,6.4,91.0,5.0
-2026-11-17 03:00,Reserva Nacional de Paracas,-76.252,-14.117,7.0,13.4,47.0,0.2,88.0,4.0
-2026-11-17 03:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,5.4,21.0,45.0,6.9,106.0,62.0
-2026-11-17 03:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.0,2.1,31.0,5.7,109.0,0.0
-2026-11-17 03:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.1,13.0,22.0,12.2,104.0,19.0
-2026-11-17 03:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,2.1,2.1,44.0,3.6,107.0,0.0
-2026-11-17 03:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.1,5.2,43.0,4.9,100.0,12.0
-2026-11-17 03:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,2.9,4.0,29.0,3.7,114.0,0.0
-2026-11-17 03:00,Santuario Histórico Machupicchu,-72.478,-13.234,2.8,3.2,39.0,4.5,119.0,1.0
-2026-11-17 03:00,Santuario Histórico de Chacamarca,-75.971,-11.217,4.5,4.6,28.0,10.0,142.0,0.0
-2026-11-17 03:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,1.8,2.3,46.0,2.7,124.0,1.0
-2026-11-17 03:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,2.4,2.4,17.0,3.1,132.0,0.0
-2026-11-17 03:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,10.0,18.4,49.0,0.8,91.0,6.0
-2026-11-17 03:00,Santuario Nacional Megantoni,-72.449,-12.277,1.8,1.9,17.0,0.5,141.0,0.0
-2026-11-17 03:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,3.3,3.4,19.0,10.3,135.0,0.0
-2026-11-17 03:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,0.7,0.7,26.0,3.7,121.0,0.0
-2026-11-17 03:00,Santuario Nacional de Ampay,-72.893,-13.584,9.4,11.0,22.0,22.8,180.0,4.0
-2026-11-17 03:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.4,1.7,34.0,3.6,121.0,0.0
-2026-11-17 03:00,Santuario Nacional de Huayllay,-76.333,-10.951,3.5,3.6,26.0,11.2,135.0,0.0
-2026-11-17 03:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.0,4.6,23.0,10.6,135.0,0.0
-2026-11-17 03:00,Zona Reservada Ancón,-77.188,-11.735,7.3,12.1,40.0,5.8,121.0,4.0
-2026-11-17 03:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,2.2,2.6,43.0,3.6,181.0,1.0
-2026-11-17 03:00,Zona Reservada Chancaybaños,-78.921,-6.559,1.2,1.3,34.0,2.9,126.0,0.0
-2026-11-17 03:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,1.1,1.1,23.0,7.0,114.0,0.0
-2026-11-17 03:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,6.5,33.3,35.0,10.4,115.0,77.0
-2026-11-17 03:00,Zona Reservada Santiago Comaina,-77.517,-3.71,4.4,4.5,7.0,1.1,123.0,0.0
-2026-11-17 04:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,6.0,11.0,41.0,0.9,116.0,4.0
-2026-11-17 04:00,Bosque de Protección Alto Mayo,-77.487,-5.788,2.9,2.9,18.0,1.4,133.0,0.0
-2026-11-17 04:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.6,5.4,35.0,1.7,97.0,0.0
-2026-11-17 04:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,5.1,5.1,14.0,1.0,132.0,0.0
-2026-11-17 04:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,2.1,2.1,18.0,2.9,127.0,0.0
-2026-11-17 04:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,0.2,0.2,42.0,1.5,123.0,0.0
-2026-11-17 04:00,Bosque de Protección de Pui Pui,-75.063,-11.28,2.1,2.1,18.0,4.7,119.0,0.0
-2026-11-17 04:00,Coto de Caza El Angolo,-80.793,-4.311,0.9,1.3,30.0,1.7,106.0,0.0
-2026-11-17 04:00,Coto de Caza Sunchubamba,-78.457,-7.403,2.2,2.2,51.0,4.5,127.0,0.0
-2026-11-17 04:00,Parque Nacional Alto Purús,-71.548,-10.837,5.6,5.6,5.0,0.2,135.0,0.0
-2026-11-17 04:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,3.4,3.4,2.0,3.6,142.0,0.0
-2026-11-17 04:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,1.3,1.4,30.0,5.5,107.0,0.0
-2026-11-17 04:00,Parque Nacional Cordillera Azul,-75.991,-7.695,5.1,5.1,3.0,1.1,125.0,0.0
-2026-11-17 04:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,8.6,9.5,25.0,0.9,120.0,0.0
-2026-11-17 04:00,Parque Nacional Huascarán,-77.45,-9.418,2.4,2.4,14.0,10.7,123.0,0.0
-2026-11-17 04:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,3.5,3.5,19.0,3.1,128.0,0.0
-2026-11-17 04:00,Parque Nacional Otishi,-73.697,-11.845,1.2,1.3,21.0,0.4,146.0,0.0
-2026-11-17 04:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,4.5,4.5,10.0,0.1,126.0,0.0
-2026-11-17 04:00,Parque Nacional Yaguas,-71.295,-2.916,7.5,7.7,11.0,0.6,122.0,0.0
-2026-11-17 04:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,1.1,1.1,14.0,5.6,138.0,0.0
-2026-11-17 04:00,Parque Nacional de Cutervo,-78.786,-6.224,0.9,0.9,37.0,2.3,120.0,0.0
-2026-11-17 04:00,Parque Nacional de Tingo María,-76.005,-9.373,5.5,5.6,13.0,4.6,193.0,0.0
-2026-11-17 04:00,Parque Nacional del Manu,-71.635,-12.261,2.4,2.5,5.0,1.5,139.0,0.0
-2026-11-17 04:00,Parque Nacional del Río Abiseo,-77.225,-7.732,1.6,1.6,12.0,3.6,138.0,0.0
-2026-11-17 04:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.5,3.0,19.0,5.6,121.0,0.0
-2026-11-17 04:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,3.1,4.2,29.0,3.8,125.0,0.0
-2026-11-17 04:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,4.2,7.4,39.0,0.9,101.0,2.0
-2026-11-17 04:00,Reserva Comunal Airo Pai,-74.881,-0.751,9.2,10.1,24.0,0.8,119.0,0.0
-2026-11-17 04:00,Reserva Comunal Amarakaeri,-70.913,-12.793,2.1,2.1,3.0,3.0,131.0,0.0
-2026-11-17 04:00,Reserva Comunal Ashaninka,-73.794,-11.881,1.2,1.3,21.0,0.4,143.0,0.0
-2026-11-17 04:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,6.9,7.2,15.0,0.5,122.0,0.0
-2026-11-17 04:00,Reserva Comunal Chayu Naín,-78.243,-5.439,4.0,4.0,22.0,2.9,128.0,0.0
-2026-11-17 04:00,Reserva Comunal El Sira,-74.451,-9.684,5.2,5.2,16.0,0.4,125.0,0.0
-2026-11-17 04:00,Reserva Comunal Huimeki,-74.828,-0.374,8.8,9.8,28.0,0.9,118.0,0.0
-2026-11-17 04:00,Reserva Comunal Machiguenga,-73.251,-11.85,2.6,2.7,19.0,0.5,137.0,0.0
-2026-11-17 04:00,Reserva Comunal Purús,-71.099,-10.21,5.2,5.3,6.0,0.1,127.0,0.0
-2026-11-17 04:00,Reserva Comunal Tuntanain,-78.04,-4.149,1.0,1.0,16.0,0.6,124.0,0.0
-2026-11-17 04:00,Reserva Comunal Yanesha,-75.274,-10.32,5.0,5.1,17.0,1.0,132.0,0.0
-2026-11-17 04:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,6.1,6.3,10.0,0.7,140.0,0.0
-2026-11-17 04:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,11.8,20.1,48.0,0.0,92.0,1.0
-2026-11-17 04:00,Reserva Nacional Illescas,-81.077,-5.963,6.6,10.3,39.0,0.4,94.0,0.0
-2026-11-17 04:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,3.1,4.1,24.0,1.4,101.0,0.0
-2026-11-17 04:00,Reserva Nacional Matsés,-73.493,-5.724,4.8,4.8,9.0,0.3,124.0,0.0
-2026-11-17 04:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,4.4,4.5,12.0,0.4,124.0,0.0
-2026-11-17 04:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,4.9,23.6,37.0,4.1,94.0,46.0
-2026-11-17 04:00,Reserva Nacional Pucacuro,-75.414,-2.602,6.5,6.9,16.0,0.5,124.0,0.0
-2026-11-17 04:00,Reserva Nacional San Fernando,-75.346,-15.006,7.5,14.1,45.0,0.3,88.0,5.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,8.0,14.8,46.0,0.4,91.0,4.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,6.9,14.2,46.0,0.3,87.0,6.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,6.8,10.8,38.0,1.8,91.0,2.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,6.9,14.2,46.0,0.3,87.0,6.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,5.3,8.3,41.0,0.2,95.0,0.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.2,13.0,42.0,0.7,90.0,3.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,6.8,11.1,43.0,3.3,92.0,2.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.6,5.4,35.0,1.7,91.0,0.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,5.5,8.7,42.0,0.3,95.0,0.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,8.3,13.7,44.0,0.3,95.0,0.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,4.2,7.4,39.0,0.9,94.0,2.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,6.8,10.8,38.0,1.8,92.0,2.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,7.1,13.6,39.0,3.2,87.0,6.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,7.1,11.1,40.0,5.4,117.0,3.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,7.4,12.9,54.0,0.1,91.0,2.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,5.6,8.6,42.0,1.2,89.0,0.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,8.8,18.7,46.0,1.5,86.0,12.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,8.4,16.7,45.0,0.6,91.0,7.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,8.5,15.7,49.0,0.4,90.0,5.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,6.5,10.7,44.0,0.2,88.0,3.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.6,21.4,46.0,1.4,86.0,10.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,6.5,11.4,44.0,0.3,88.0,3.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,9.9,18.8,49.0,0.1,88.0,5.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,7.1,13.6,39.0,3.2,90.0,6.0
-2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,7.5,14.1,45.0,0.3,88.0,5.0
-2026-11-17 04:00,Reserva Nacional Tambopata,-69.416,-12.838,9.6,9.7,4.0,1.0,139.0,0.0
-2026-11-17 04:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.1,1.4,36.0,3.1,94.0,0.0
-2026-11-17 04:00,Reserva Nacional de Junín,-76.128,-11.009,4.9,5.0,34.0,8.2,158.0,0.0
-2026-11-17 04:00,Reserva Nacional de Lachay,-77.362,-11.377,3.1,4.7,28.0,6.0,91.0,3.0
-2026-11-17 04:00,Reserva Nacional de Paracas,-76.252,-14.117,7.0,13.4,47.0,0.2,88.0,4.0
-2026-11-17 04:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,3.9,13.2,42.0,6.1,102.0,26.0
-2026-11-17 04:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.3,1.4,30.0,5.5,107.0,0.0
-2026-11-17 04:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.4,12.7,18.0,12.3,105.0,17.0
-2026-11-17 04:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,2.2,2.3,47.0,3.0,107.0,0.0
-2026-11-17 04:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,1.2,2.5,47.0,4.0,100.0,3.0
-2026-11-17 04:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,3.1,4.2,29.0,3.8,113.0,0.0
-2026-11-17 04:00,Santuario Histórico Machupicchu,-72.478,-13.234,3.1,3.5,39.0,4.7,119.0,1.0
-2026-11-17 04:00,Santuario Histórico de Chacamarca,-75.971,-11.217,4.9,5.0,34.0,8.2,131.0,0.0
-2026-11-17 04:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,1.9,2.4,46.0,2.5,125.0,1.0
-2026-11-17 04:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,2.1,2.1,18.0,2.9,132.0,0.0
-2026-11-17 04:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,9.5,17.6,49.0,0.8,91.0,5.0
-2026-11-17 04:00,Santuario Nacional Megantoni,-72.449,-12.277,1.7,1.7,17.0,0.5,138.0,0.0
-2026-11-17 04:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,3.5,3.5,27.0,8.0,134.0,0.0
-2026-11-17 04:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,0.8,0.9,26.0,4.0,120.0,0.0
-2026-11-17 04:00,Santuario Nacional de Ampay,-72.893,-13.584,8.8,10.4,21.0,20.9,168.0,4.0
-2026-11-17 04:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.1,1.4,36.0,3.1,121.0,0.0
-2026-11-17 04:00,Santuario Nacional de Huayllay,-76.333,-10.951,3.7,3.8,35.0,7.6,128.0,0.0
-2026-11-17 04:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,3.8,4.4,23.0,10.0,140.0,0.0
-2026-11-17 04:00,Zona Reservada Ancón,-77.188,-11.735,7.1,11.1,40.0,5.4,123.0,3.0
-2026-11-17 04:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,2.4,2.7,40.0,3.4,167.0,1.0
-2026-11-17 04:00,Zona Reservada Chancaybaños,-78.921,-6.559,0.9,0.9,37.0,2.3,125.0,0.0
-2026-11-17 04:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,1.0,1.0,30.0,5.7,115.0,0.0
-2026-11-17 04:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,6.9,34.0,33.0,10.7,109.0,75.0
-2026-11-17 04:00,Zona Reservada Santiago Comaina,-77.517,-3.71,4.2,4.3,7.0,1.1,122.0,0.0
+2026-11-17 00:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,6.3,16.4,40.0,2.4,114.0,14.0
+2026-11-17 00:00,Bosque de Protección Alto Mayo,-77.487,-5.788,4.8,4.9,22.0,3.5,147.0,0.0
+2026-11-17 00:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.6,5.6,39.0,1.4,101.0,0.0
+2026-11-17 00:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,14.3,14.4,17.0,0.9,137.0,0.0
+2026-11-17 00:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,5.7,5.8,15.0,7.1,127.0,0.0
+2026-11-17 00:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,2.4,2.7,26.0,3.9,119.0,0.0
+2026-11-17 00:00,Bosque de Protección de Pui Pui,-75.063,-11.28,7.0,7.2,14.0,8.4,127.0,0.0
+2026-11-17 00:00,Coto de Caza El Angolo,-80.793,-4.311,1.7,2.4,30.0,2.3,107.0,0.0
+2026-11-17 00:00,Coto de Caza Sunchubamba,-78.457,-7.403,4.2,4.4,29.0,8.8,126.0,0.0
+2026-11-17 00:00,Parque Nacional Alto Purús,-71.548,-10.837,10.5,10.6,6.0,0.1,133.0,0.0
+2026-11-17 00:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,15.7,16.3,5.0,1.8,150.0,1.0
+2026-11-17 00:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,1.7,2.2,38.0,4.5,109.0,0.0
+2026-11-17 00:00,Parque Nacional Cordillera Azul,-75.991,-7.695,13.3,13.4,4.0,1.0,124.0,0.0
+2026-11-17 00:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,6.7,7.4,23.0,1.1,123.0,0.0
+2026-11-17 00:00,Parque Nacional Huascarán,-77.45,-9.418,6.6,6.7,11.0,17.4,141.0,0.0
+2026-11-17 00:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,9.4,9.5,24.0,1.6,130.0,0.0
+2026-11-17 00:00,Parque Nacional Otishi,-73.697,-11.845,9.6,9.7,17.0,0.8,145.0,0.0
+2026-11-17 00:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,11.7,11.8,10.0,0.1,125.0,0.0
+2026-11-17 00:00,Parque Nacional Yaguas,-71.295,-2.916,5.6,5.8,7.0,1.6,122.0,0.0
+2026-11-17 00:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,5.4,5.4,21.0,5.5,140.0,0.0
+2026-11-17 00:00,Parque Nacional de Cutervo,-78.786,-6.224,8.5,8.7,14.0,8.3,147.0,0.0
+2026-11-17 00:00,Parque Nacional de Tingo María,-76.005,-9.373,10.0,10.0,11.0,8.1,245.0,0.0
+2026-11-17 00:00,Parque Nacional del Manu,-71.635,-12.261,8.3,8.4,6.0,1.0,146.0,0.0
+2026-11-17 00:00,Parque Nacional del Río Abiseo,-77.225,-7.732,4.8,4.8,21.0,2.8,144.0,0.0
+2026-11-17 00:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,4.2,4.9,16.0,5.8,128.0,0.0
+2026-11-17 00:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,3.5,4.7,30.0,3.4,124.0,0.0
+2026-11-17 00:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,6.3,11.4,33.0,5.8,111.0,5.0
+2026-11-17 00:00,Reserva Comunal Airo Pai,-74.881,-0.751,7.2,7.8,19.0,1.2,124.0,0.0
+2026-11-17 00:00,Reserva Comunal Amarakaeri,-70.913,-12.793,13.1,14.0,3.0,2.3,134.0,2.0
+2026-11-17 00:00,Reserva Comunal Ashaninka,-73.794,-11.881,9.6,9.7,17.0,0.8,145.0,0.0
+2026-11-17 00:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,4.7,4.8,7.0,1.3,122.0,0.0
+2026-11-17 00:00,Reserva Comunal Chayu Naín,-78.243,-5.439,9.7,9.9,17.0,6.6,132.0,0.0
+2026-11-17 00:00,Reserva Comunal El Sira,-74.451,-9.684,15.0,15.3,19.0,0.4,138.0,0.0
+2026-11-17 00:00,Reserva Comunal Huimeki,-74.828,-0.374,7.2,8.0,24.0,1.0,122.0,0.0
+2026-11-17 00:00,Reserva Comunal Machiguenga,-73.251,-11.85,14.5,14.6,12.0,0.8,138.0,0.0
+2026-11-17 00:00,Reserva Comunal Purús,-71.099,-10.21,11.4,11.6,7.0,0.1,129.0,0.0
+2026-11-17 00:00,Reserva Comunal Tuntanain,-78.04,-4.149,7.5,7.6,18.0,0.4,128.0,0.0
+2026-11-17 00:00,Reserva Comunal Yanesha,-75.274,-10.32,11.2,11.5,34.0,1.7,141.0,0.0
+2026-11-17 00:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,11.7,11.8,9.0,1.3,153.0,0.0
+2026-11-17 00:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,8.6,15.1,47.0,0.1,92.0,0.0
+2026-11-17 00:00,Reserva Nacional Illescas,-81.077,-5.963,7.5,12.0,38.0,0.4,95.0,0.0
+2026-11-17 00:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,5.7,8.4,31.0,1.6,104.0,0.0
+2026-11-17 00:00,Reserva Nacional Matsés,-73.493,-5.724,7.3,7.3,7.0,0.3,128.0,0.0
+2026-11-17 00:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,6.9,6.9,8.0,0.4,125.0,0.0
+2026-11-17 00:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.4,29.8,37.0,3.7,103.0,64.0
+2026-11-17 00:00,Reserva Nacional Pucacuro,-75.414,-2.602,7.1,7.4,16.0,0.7,128.0,0.0
+2026-11-17 00:00,Reserva Nacional San Fernando,-75.346,-15.006,5.5,13.4,46.0,0.5,89.0,11.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.8,16.5,45.0,0.8,93.0,8.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,5.6,9.2,46.0,0.5,87.0,0.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.5,11.6,45.0,1.0,93.0,1.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,5.6,9.2,46.0,0.5,87.0,0.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,7.0,10.8,41.0,0.2,94.0,0.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,8.3,13.4,45.0,0.6,93.0,1.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,9.5,18.8,34.0,11.8,95.0,11.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.6,5.6,39.0,1.4,92.0,0.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,7.7,12.0,41.0,0.3,95.0,0.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,7.7,12.7,45.0,0.4,95.0,0.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,6.3,11.4,33.0,5.8,105.0,5.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.5,11.6,45.0,1.0,96.0,1.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,8.9,19.4,40.0,4.1,90.0,11.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,8.4,19.2,37.0,10.0,163.0,15.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,6.0,10.3,51.0,0.2,90.0,1.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,3.2,5.5,46.0,1.3,91.0,1.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,8.4,16.1,41.0,1.2,90.0,6.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,8.0,13.4,42.0,0.4,92.0,2.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,6.6,11.7,53.0,0.3,90.0,3.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,4.6,7.2,45.0,0.4,93.0,1.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.7,19.8,43.0,1.3,90.0,7.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,5.5,11.8,45.0,0.4,88.0,6.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,7.6,14.1,48.0,0.2,88.0,3.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,8.9,19.4,40.0,4.1,88.0,11.0
+2026-11-17 00:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,5.5,13.4,46.0,0.5,88.0,11.0
+2026-11-17 00:00,Reserva Nacional Tambopata,-69.416,-12.838,11.1,11.1,4.0,2.1,139.0,0.0
+2026-11-17 00:00,Reserva Nacional de Calipuy,-78.353,-8.561,2.0,2.2,31.0,4.3,101.0,0.0
+2026-11-17 00:00,Reserva Nacional de Junín,-76.128,-11.009,7.0,7.3,39.0,9.8,148.0,1.0
+2026-11-17 00:00,Reserva Nacional de Lachay,-77.362,-11.377,3.0,6.1,33.0,7.7,96.0,5.0
+2026-11-17 00:00,Reserva Nacional de Paracas,-76.252,-14.117,5.9,11.2,47.0,0.2,88.0,4.0
+2026-11-17 00:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,11.9,61.0,32.0,14.8,123.0,106.0
+2026-11-17 00:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.7,2.2,38.0,4.5,115.0,0.0
+2026-11-17 00:00,Reserva Nacional del Titicaca,-69.916,-15.646,3.8,12.0,37.0,9.7,111.0,20.0
+2026-11-17 00:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,3.4,4.2,63.0,3.8,110.0,2.0
+2026-11-17 00:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,4.8,16.8,49.0,3.5,101.0,35.0
+2026-11-17 00:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,3.5,4.7,30.0,3.4,118.0,0.0
+2026-11-17 00:00,Santuario Histórico Machupicchu,-72.478,-13.234,11.2,13.0,18.0,23.2,128.0,5.0
+2026-11-17 00:00,Santuario Histórico de Chacamarca,-75.971,-11.217,7.0,7.3,39.0,9.8,172.0,1.0
+2026-11-17 00:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,7.7,9.2,42.0,2.0,129.0,4.0
+2026-11-17 00:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,5.7,5.8,15.0,7.1,134.0,0.0
+2026-11-17 00:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,7.3,13.9,51.0,0.7,91.0,5.0
+2026-11-17 00:00,Santuario Nacional Megantoni,-72.449,-12.277,10.9,11.0,18.0,0.8,152.0,0.0
+2026-11-17 00:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,5.6,5.6,16.0,9.5,141.0,0.0
+2026-11-17 00:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,6.9,7.0,21.0,3.7,123.0,0.0
+2026-11-17 00:00,Santuario Nacional de Ampay,-72.893,-13.584,12.5,15.1,38.0,20.4,204.0,6.0
+2026-11-17 00:00,Santuario Nacional de Calipuy,-78.3,-8.344,2.0,2.2,31.0,4.3,120.0,0.0
+2026-11-17 00:00,Santuario Nacional de Huayllay,-76.333,-10.951,13.0,13.8,22.0,22.0,166.0,1.0
+2026-11-17 00:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.9,6.6,39.0,4.8,129.0,0.0
+2026-11-17 00:00,Zona Reservada Ancón,-77.188,-11.735,8.4,19.2,37.0,10.0,173.0,15.0
+2026-11-17 00:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,1.5,2.6,51.0,4.8,202.0,1.0
+2026-11-17 00:00,Zona Reservada Chancaybaños,-78.921,-6.559,8.5,8.7,14.0,8.3,128.0,0.0
+2026-11-17 00:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,4.3,4.8,24.0,7.7,113.0,1.0
+2026-11-17 00:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,5.4,29.0,47.0,6.6,120.0,67.0
+2026-11-17 00:00,Zona Reservada Santiago Comaina,-77.517,-3.71,9.7,9.9,15.0,0.4,126.0,0.0
+2026-11-17 01:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,5.9,13.3,40.0,2.0,115.0,10.0
+2026-11-17 01:00,Bosque de Protección Alto Mayo,-77.487,-5.788,5.4,5.5,22.0,3.4,140.0,0.0
+2026-11-17 01:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.5,5.4,39.0,1.3,101.0,0.0
+2026-11-17 01:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,14.4,14.6,16.0,1.0,136.0,0.0
+2026-11-17 01:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,5.8,5.9,15.0,6.9,127.0,0.0
+2026-11-17 01:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,2.8,3.0,22.0,4.5,119.0,0.0
+2026-11-17 01:00,Bosque de Protección de Pui Pui,-75.063,-11.28,6.7,7.0,12.0,8.5,126.0,0.0
+2026-11-17 01:00,Coto de Caza El Angolo,-80.793,-4.311,2.2,3.2,30.0,2.3,106.0,0.0
+2026-11-17 01:00,Coto de Caza Sunchubamba,-78.457,-7.403,3.9,4.1,25.0,9.7,125.0,0.0
+2026-11-17 01:00,Parque Nacional Alto Purús,-71.548,-10.837,10.8,10.9,5.0,0.1,134.0,0.0
+2026-11-17 01:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,15.5,16.2,4.0,2.3,148.0,1.0
+2026-11-17 01:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,1.5,1.9,36.0,4.9,111.0,0.0
+2026-11-17 01:00,Parque Nacional Cordillera Azul,-75.991,-7.695,12.8,12.9,5.0,0.9,124.0,0.0
+2026-11-17 01:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,6.8,7.6,23.0,1.1,122.0,0.0
+2026-11-17 01:00,Parque Nacional Huascarán,-77.45,-9.418,6.2,6.3,8.0,17.3,135.0,0.0
+2026-11-17 01:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,9.7,9.8,25.0,1.6,130.0,0.0
+2026-11-17 01:00,Parque Nacional Otishi,-73.697,-11.845,8.7,8.8,17.0,0.8,145.0,0.0
+2026-11-17 01:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,10.9,11.0,10.0,0.1,125.0,0.0
+2026-11-17 01:00,Parque Nacional Yaguas,-71.295,-2.916,5.6,5.8,9.0,1.3,122.0,0.0
+2026-11-17 01:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.6,4.6,18.0,5.2,138.0,0.0
+2026-11-17 01:00,Parque Nacional de Cutervo,-78.786,-6.224,8.5,8.6,11.0,8.6,140.0,0.0
+2026-11-17 01:00,Parque Nacional de Tingo María,-76.005,-9.373,9.5,9.6,10.0,7.4,237.0,0.0
+2026-11-17 01:00,Parque Nacional del Manu,-71.635,-12.261,8.3,8.4,5.0,1.1,145.0,0.0
+2026-11-17 01:00,Parque Nacional del Río Abiseo,-77.225,-7.732,5.3,5.4,19.0,2.8,144.0,0.0
+2026-11-17 01:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,4.2,4.8,12.0,6.5,128.0,0.0
+2026-11-17 01:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,3.3,4.5,28.0,3.5,127.0,0.0
+2026-11-17 01:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,5.4,9.7,33.0,4.9,103.0,4.0
+2026-11-17 01:00,Reserva Comunal Airo Pai,-74.881,-0.751,7.3,7.8,19.0,1.2,123.0,0.0
+2026-11-17 01:00,Reserva Comunal Amarakaeri,-70.913,-12.793,12.8,13.9,3.0,2.5,134.0,2.0
+2026-11-17 01:00,Reserva Comunal Ashaninka,-73.794,-11.881,8.7,8.8,17.0,0.8,145.0,0.0
+2026-11-17 01:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,5.0,5.2,8.0,1.0,122.0,0.0
+2026-11-17 01:00,Reserva Comunal Chayu Naín,-78.243,-5.439,9.5,9.6,17.0,6.5,131.0,0.0
+2026-11-17 01:00,Reserva Comunal El Sira,-74.451,-9.684,14.1,14.4,22.0,0.3,139.0,0.0
+2026-11-17 01:00,Reserva Comunal Huimeki,-74.828,-0.374,7.2,7.9,25.0,1.0,120.0,0.0
+2026-11-17 01:00,Reserva Comunal Machiguenga,-73.251,-11.85,14.0,14.0,12.0,0.7,137.0,0.0
+2026-11-17 01:00,Reserva Comunal Purús,-71.099,-10.21,11.0,11.1,7.0,0.1,128.0,0.0
+2026-11-17 01:00,Reserva Comunal Tuntanain,-78.04,-4.149,6.9,7.0,19.0,0.4,127.0,0.0
+2026-11-17 01:00,Reserva Comunal Yanesha,-75.274,-10.32,11.4,11.6,34.0,1.9,140.0,0.0
+2026-11-17 01:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,11.6,11.7,8.0,1.3,139.0,0.0
+2026-11-17 01:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,9.0,15.8,47.0,0.1,92.0,0.0
+2026-11-17 01:00,Reserva Nacional Illescas,-81.077,-5.963,7.4,11.8,38.0,0.4,95.0,0.0
+2026-11-17 01:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,6.2,9.5,30.0,1.5,103.0,0.0
+2026-11-17 01:00,Reserva Nacional Matsés,-73.493,-5.724,7.1,7.1,7.0,0.3,127.0,0.0
+2026-11-17 01:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,7.0,7.0,8.0,0.4,125.0,0.0
+2026-11-17 01:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.6,29.0,33.0,4.9,98.0,58.0
+2026-11-17 01:00,Reserva Nacional Pucacuro,-75.414,-2.602,7.4,7.7,15.0,0.7,127.0,0.0
+2026-11-17 01:00,Reserva Nacional San Fernando,-75.346,-15.006,5.4,12.5,45.0,0.5,89.0,9.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.5,15.3,45.0,0.7,92.0,6.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,5.5,9.3,46.0,0.4,87.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.5,11.6,44.0,1.1,92.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,5.5,9.3,46.0,0.4,87.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.8,10.5,40.0,0.2,94.0,0.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,8.1,13.1,44.0,0.6,92.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,8.2,14.7,35.0,10.1,93.0,6.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.5,5.4,39.0,1.3,91.0,0.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,7.7,12.0,41.0,0.3,95.0,0.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,7.6,12.6,45.0,0.4,95.0,0.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,5.4,9.7,33.0,4.9,101.0,4.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.5,11.6,44.0,1.1,95.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,8.7,19.0,39.0,4.5,89.0,12.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,7.1,15.1,35.0,9.6,142.0,10.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,6.1,10.4,52.0,0.2,90.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,3.0,4.8,44.0,1.3,90.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,8.7,16.4,41.0,1.3,89.0,6.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,7.7,13.2,41.0,0.4,91.0,2.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,6.4,11.4,52.0,0.3,90.0,3.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,4.7,7.2,44.0,0.4,92.0,1.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.9,20.7,44.0,1.5,89.0,7.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,5.3,10.5,44.0,0.4,88.0,5.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,7.8,14.8,48.0,0.2,88.0,4.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,8.7,19.0,39.0,4.5,88.0,12.0
+2026-11-17 01:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,5.4,12.5,45.0,0.5,88.0,9.0
+2026-11-17 01:00,Reserva Nacional Tambopata,-69.416,-12.838,10.1,10.2,4.0,1.7,138.0,0.0
+2026-11-17 01:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.7,1.9,29.0,4.4,99.0,0.0
+2026-11-17 01:00,Reserva Nacional de Junín,-76.128,-11.009,7.2,7.4,31.0,10.7,153.0,1.0
+2026-11-17 01:00,Reserva Nacional de Lachay,-77.362,-11.377,2.3,4.7,29.0,8.2,96.0,4.0
+2026-11-17 01:00,Reserva Nacional de Paracas,-76.252,-14.117,5.9,11.4,47.0,0.2,88.0,4.0
+2026-11-17 01:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,10.5,44.6,31.0,14.7,118.0,96.0
+2026-11-17 01:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.5,1.9,36.0,4.9,114.0,0.0
+2026-11-17 01:00,Reserva Nacional del Titicaca,-69.916,-15.646,3.9,11.5,31.0,10.7,105.0,20.0
+2026-11-17 01:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,3.6,4.3,57.0,4.1,109.0,2.0
+2026-11-17 01:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,4.7,14.7,42.0,4.3,101.0,27.0
+2026-11-17 01:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,3.3,4.5,28.0,3.5,115.0,0.0
+2026-11-17 01:00,Santuario Histórico Machupicchu,-72.478,-13.234,10.0,11.4,16.0,22.5,123.0,4.0
+2026-11-17 01:00,Santuario Histórico de Chacamarca,-75.971,-11.217,7.2,7.4,31.0,10.7,170.0,1.0
+2026-11-17 01:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,7.6,9.2,41.0,2.3,128.0,4.0
+2026-11-17 01:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,5.8,5.9,15.0,6.9,133.0,0.0
+2026-11-17 01:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,7.2,13.8,50.0,0.8,91.0,5.0
+2026-11-17 01:00,Santuario Nacional Megantoni,-72.449,-12.277,11.2,11.4,17.0,0.6,149.0,0.0
+2026-11-17 01:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,5.8,5.8,13.0,9.9,138.0,0.0
+2026-11-17 01:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,6.4,6.5,20.0,3.9,123.0,0.0
+2026-11-17 01:00,Santuario Nacional de Ampay,-72.893,-13.584,12.9,15.4,33.0,21.3,203.0,6.0
+2026-11-17 01:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.7,1.9,29.0,4.4,121.0,0.0
+2026-11-17 01:00,Santuario Nacional de Huayllay,-76.333,-10.951,12.3,12.8,15.0,21.7,156.0,1.0
+2026-11-17 01:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.7,6.3,36.0,5.7,118.0,0.0
+2026-11-17 01:00,Zona Reservada Ancón,-77.188,-11.735,7.1,15.1,35.0,9.6,143.0,10.0
+2026-11-17 01:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,2.0,2.6,47.0,4.7,207.0,1.0
+2026-11-17 01:00,Zona Reservada Chancaybaños,-78.921,-6.559,8.5,8.6,11.0,8.6,128.0,0.0
+2026-11-17 01:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,3.6,3.9,16.0,8.4,112.0,1.0
+2026-11-17 01:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,5.5,29.7,45.0,7.6,124.0,67.0
+2026-11-17 01:00,Zona Reservada Santiago Comaina,-77.517,-3.71,9.8,9.9,11.0,0.5,125.0,0.0
+2026-11-17 02:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,5.6,11.2,40.0,1.7,116.0,8.0
+2026-11-17 02:00,Bosque de Protección Alto Mayo,-77.487,-5.788,6.4,6.5,23.0,2.8,136.0,0.0
+2026-11-17 02:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.4,5.2,39.0,1.2,100.0,0.0
+2026-11-17 02:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,14.6,14.8,15.0,1.1,135.0,0.0
+2026-11-17 02:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,6.4,6.5,17.0,5.9,127.0,0.0
+2026-11-17 02:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,2.8,3.1,23.0,4.4,120.0,0.0
+2026-11-17 02:00,Bosque de Protección de Pui Pui,-75.063,-11.28,6.4,6.7,14.0,7.6,123.0,0.0
+2026-11-17 02:00,Coto de Caza El Angolo,-80.793,-4.311,2.4,3.4,30.0,2.3,106.0,0.0
+2026-11-17 02:00,Coto de Caza Sunchubamba,-78.457,-7.403,3.9,4.1,34.0,7.6,126.0,0.0
+2026-11-17 02:00,Parque Nacional Alto Purús,-71.548,-10.837,10.9,11.0,4.0,0.1,135.0,0.0
+2026-11-17 02:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,15.2,15.9,3.0,2.9,146.0,1.0
+2026-11-17 02:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,1.6,2.1,34.0,5.4,110.0,0.0
+2026-11-17 02:00,Parque Nacional Cordillera Azul,-75.991,-7.695,11.6,11.8,8.0,0.8,124.0,0.0
+2026-11-17 02:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,6.7,7.4,24.0,1.1,121.0,0.0
+2026-11-17 02:00,Parque Nacional Huascarán,-77.45,-9.418,5.6,5.7,9.0,16.0,130.0,0.0
+2026-11-17 02:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,9.5,9.6,26.0,1.6,129.0,0.0
+2026-11-17 02:00,Parque Nacional Otishi,-73.697,-11.845,8.6,8.7,16.0,0.8,145.0,0.0
+2026-11-17 02:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,10.1,10.2,10.0,0.1,125.0,0.0
+2026-11-17 02:00,Parque Nacional Yaguas,-71.295,-2.916,5.4,5.6,11.0,1.0,122.0,0.0
+2026-11-17 02:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.5,4.5,14.0,5.3,137.0,0.0
+2026-11-17 02:00,Parque Nacional de Cutervo,-78.786,-6.224,8.4,8.6,15.0,7.9,132.0,0.0
+2026-11-17 02:00,Parque Nacional de Tingo María,-76.005,-9.373,9.3,9.3,10.0,7.0,223.0,0.0
+2026-11-17 02:00,Parque Nacional del Manu,-71.635,-12.261,8.3,8.4,4.0,1.3,143.0,0.0
+2026-11-17 02:00,Parque Nacional del Río Abiseo,-77.225,-7.732,5.4,5.5,19.0,2.8,142.0,0.0
+2026-11-17 02:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,4.0,4.6,10.0,7.1,126.0,0.0
+2026-11-17 02:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,3.1,4.1,28.0,3.2,127.0,0.0
+2026-11-17 02:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,4.6,8.4,34.0,3.8,97.0,3.0
+2026-11-17 02:00,Reserva Comunal Airo Pai,-74.881,-0.751,7.1,7.7,20.0,1.1,122.0,0.0
+2026-11-17 02:00,Reserva Comunal Amarakaeri,-70.913,-12.793,12.7,13.9,3.0,3.0,133.0,2.0
+2026-11-17 02:00,Reserva Comunal Ashaninka,-73.794,-11.881,8.6,8.7,16.0,0.8,145.0,0.0
+2026-11-17 02:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,5.1,5.3,10.0,0.9,122.0,0.0
+2026-11-17 02:00,Reserva Comunal Chayu Naín,-78.243,-5.439,8.9,9.1,20.0,5.5,130.0,0.0
+2026-11-17 02:00,Reserva Comunal El Sira,-74.451,-9.684,11.4,11.6,23.0,0.3,135.0,0.0
+2026-11-17 02:00,Reserva Comunal Huimeki,-74.828,-0.374,6.9,7.6,26.0,1.0,119.0,0.0
+2026-11-17 02:00,Reserva Comunal Machiguenga,-73.251,-11.85,13.8,13.8,12.0,0.7,137.0,0.0
+2026-11-17 02:00,Reserva Comunal Purús,-71.099,-10.21,10.5,10.6,7.0,0.1,128.0,0.0
+2026-11-17 02:00,Reserva Comunal Tuntanain,-78.04,-4.149,3.7,3.7,18.0,0.5,126.0,0.0
+2026-11-17 02:00,Reserva Comunal Yanesha,-75.274,-10.32,12.2,12.5,33.0,1.8,138.0,0.0
+2026-11-17 02:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,11.3,11.4,7.0,1.3,135.0,0.0
+2026-11-17 02:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,9.7,16.9,47.0,0.1,92.0,0.0
+2026-11-17 02:00,Reserva Nacional Illescas,-81.077,-5.963,7.5,11.9,38.0,0.4,95.0,0.0
+2026-11-17 02:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,6.0,9.0,29.0,1.4,102.0,0.0
+2026-11-17 02:00,Reserva Nacional Matsés,-73.493,-5.724,7.0,7.1,7.0,0.3,126.0,0.0
+2026-11-17 02:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,7.1,7.1,8.0,0.4,125.0,0.0
+2026-11-17 02:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,5.0,20.4,27.0,6.2,95.0,46.0
+2026-11-17 02:00,Reserva Nacional Pucacuro,-75.414,-2.602,7.5,7.8,14.0,0.7,126.0,0.0
+2026-11-17 02:00,Reserva Nacional San Fernando,-75.346,-15.006,5.3,11.4,45.0,0.5,89.0,8.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.2,14.1,45.0,0.6,91.0,5.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,5.5,9.7,46.0,0.3,87.0,2.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,7.1,11.0,43.0,1.2,92.0,1.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,5.5,9.7,46.0,0.3,87.0,2.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.9,10.5,40.0,0.2,94.0,0.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.9,12.7,43.0,0.6,91.0,1.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,7.3,12.5,36.0,8.3,91.0,3.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.4,5.2,39.0,1.2,91.0,0.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,7.7,11.9,41.0,0.3,95.0,0.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,7.7,12.6,45.0,0.4,95.0,0.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,4.6,8.4,34.0,3.8,97.0,3.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,7.1,11.0,43.0,1.2,94.0,1.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,8.2,17.6,38.0,4.5,88.0,11.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,6.1,11.8,34.0,8.7,124.0,7.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,6.0,10.3,52.0,0.2,90.0,1.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,2.8,4.6,42.0,1.3,89.0,1.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,9.0,16.9,42.0,1.4,88.0,7.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,7.5,13.0,41.0,0.4,91.0,2.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,6.1,10.9,50.0,0.3,90.0,3.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,4.6,7.3,43.0,0.3,91.0,1.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,11.0,21.4,44.0,1.6,88.0,8.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,5.2,10.1,43.0,0.4,88.0,4.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,7.9,15.1,48.0,0.2,88.0,4.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,8.2,17.6,38.0,4.5,89.0,11.0
+2026-11-17 02:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,5.3,11.4,45.0,0.5,88.0,8.0
+2026-11-17 02:00,Reserva Nacional Tambopata,-69.416,-12.838,9.1,9.1,3.0,1.4,138.0,0.0
+2026-11-17 02:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.7,1.9,30.0,4.1,97.0,0.0
+2026-11-17 02:00,Reserva Nacional de Junín,-76.128,-11.009,7.5,7.7,31.0,10.0,156.0,1.0
+2026-11-17 02:00,Reserva Nacional de Lachay,-77.362,-11.377,1.6,3.1,27.0,8.1,94.0,3.0
+2026-11-17 02:00,Reserva Nacional de Paracas,-76.252,-14.117,5.9,11.5,47.0,0.2,88.0,4.0
+2026-11-17 02:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,10.5,47.8,34.0,12.5,112.0,76.0
+2026-11-17 02:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.6,2.1,34.0,5.4,112.0,0.0
+2026-11-17 02:00,Reserva Nacional del Titicaca,-69.916,-15.646,4.3,12.1,25.0,11.3,104.0,20.0
+2026-11-17 02:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,3.8,4.3,55.0,4.0,108.0,2.0
+2026-11-17 02:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,4.2,10.8,40.0,4.6,101.0,23.0
+2026-11-17 02:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,3.1,4.1,28.0,3.2,114.0,0.0
+2026-11-17 02:00,Santuario Histórico Machupicchu,-72.478,-13.234,8.1,9.3,18.0,18.4,121.0,4.0
+2026-11-17 02:00,Santuario Histórico de Chacamarca,-75.971,-11.217,7.5,7.7,31.0,10.0,159.0,1.0
+2026-11-17 02:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,7.4,8.9,39.0,2.8,126.0,4.0
+2026-11-17 02:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,6.4,6.5,17.0,5.9,132.0,0.0
+2026-11-17 02:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,7.0,13.5,49.0,0.8,91.0,5.0
+2026-11-17 02:00,Santuario Nacional Megantoni,-72.449,-12.277,11.2,11.4,16.0,0.6,145.0,0.0
+2026-11-17 02:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,5.9,6.0,15.0,9.4,136.0,0.0
+2026-11-17 02:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,5.8,5.8,19.0,4.4,122.0,0.0
+2026-11-17 02:00,Santuario Nacional de Ampay,-72.893,-13.584,13.1,15.4,28.0,21.8,194.0,6.0
+2026-11-17 02:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.7,1.9,30.0,4.1,121.0,0.0
+2026-11-17 02:00,Santuario Nacional de Huayllay,-76.333,-10.951,10.3,10.9,19.0,18.1,146.0,1.0
+2026-11-17 02:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.6,6.0,33.0,6.5,123.0,0.0
+2026-11-17 02:00,Zona Reservada Ancón,-77.188,-11.735,6.1,11.8,34.0,8.7,128.0,7.0
+2026-11-17 02:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,2.5,2.8,45.0,4.3,198.0,1.0
+2026-11-17 02:00,Zona Reservada Chancaybaños,-78.921,-6.559,8.4,8.6,15.0,7.9,127.0,0.0
+2026-11-17 02:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,2.8,3.0,19.0,7.8,113.0,1.0
+2026-11-17 02:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,5.7,31.0,41.0,8.7,121.0,70.0
+2026-11-17 02:00,Zona Reservada Santiago Comaina,-77.517,-3.71,9.5,9.6,9.0,0.6,124.0,0.0
+2026-11-17 03:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,5.5,10.7,40.0,1.4,116.0,6.0
+2026-11-17 03:00,Bosque de Protección Alto Mayo,-77.487,-5.788,6.5,6.7,24.0,1.9,133.0,0.0
+2026-11-17 03:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.3,5.0,39.0,1.1,98.0,0.0
+2026-11-17 03:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,14.7,14.9,14.0,1.2,133.0,0.0
+2026-11-17 03:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,6.6,6.8,20.0,4.4,127.0,0.0
+2026-11-17 03:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,3.2,3.4,27.0,3.8,121.0,0.0
+2026-11-17 03:00,Bosque de Protección de Pui Pui,-75.063,-11.28,6.4,6.7,17.0,6.1,120.0,0.0
+2026-11-17 03:00,Coto de Caza El Angolo,-80.793,-4.311,2.5,3.6,30.0,2.3,106.0,0.0
+2026-11-17 03:00,Coto de Caza Sunchubamba,-78.457,-7.403,3.6,4.1,51.0,4.1,127.0,1.0
+2026-11-17 03:00,Parque Nacional Alto Purús,-71.548,-10.837,10.9,11.0,4.0,0.2,135.0,0.0
+2026-11-17 03:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,14.9,15.7,2.0,3.5,144.0,1.0
+2026-11-17 03:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,1.7,2.1,32.0,6.0,109.0,0.0
+2026-11-17 03:00,Parque Nacional Cordillera Azul,-75.991,-7.695,10.0,10.1,11.0,0.6,125.0,0.0
+2026-11-17 03:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,6.3,7.0,25.0,1.0,121.0,0.0
+2026-11-17 03:00,Parque Nacional Huascarán,-77.45,-9.418,5.4,5.5,14.0,13.7,125.0,0.0
+2026-11-17 03:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,9.7,9.8,27.0,1.6,129.0,0.0
+2026-11-17 03:00,Parque Nacional Otishi,-73.697,-11.845,8.7,8.8,15.0,0.8,146.0,0.0
+2026-11-17 03:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,9.5,9.6,9.0,0.1,126.0,0.0
+2026-11-17 03:00,Parque Nacional Yaguas,-71.295,-2.916,5.6,5.8,14.0,0.7,122.0,0.0
+2026-11-17 03:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.0,4.0,9.0,5.5,138.0,0.0
+2026-11-17 03:00,Parque Nacional de Cutervo,-78.786,-6.224,8.5,8.6,22.0,6.6,124.0,0.0
+2026-11-17 03:00,Parque Nacional de Tingo María,-76.005,-9.373,8.8,8.9,11.0,6.6,206.0,0.0
+2026-11-17 03:00,Parque Nacional del Manu,-71.635,-12.261,8.3,8.5,4.0,1.5,140.0,0.0
+2026-11-17 03:00,Parque Nacional del Río Abiseo,-77.225,-7.732,6.9,6.9,21.0,2.8,140.0,0.0
+2026-11-17 03:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,3.8,4.2,9.0,7.5,124.0,0.0
+2026-11-17 03:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,3.1,4.3,30.0,2.8,126.0,0.0
+2026-11-17 03:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,4.1,7.5,34.0,2.7,94.0,3.0
+2026-11-17 03:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.9,7.5,23.0,0.9,120.0,0.0
+2026-11-17 03:00,Reserva Comunal Amarakaeri,-70.913,-12.793,12.7,13.9,2.0,3.5,131.0,2.0
+2026-11-17 03:00,Reserva Comunal Ashaninka,-73.794,-11.881,8.7,8.8,15.0,0.8,144.0,0.0
+2026-11-17 03:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,5.3,5.6,13.0,0.8,122.0,0.0
+2026-11-17 03:00,Reserva Comunal Chayu Naín,-78.243,-5.439,8.1,8.3,24.0,4.1,129.0,0.0
+2026-11-17 03:00,Reserva Comunal El Sira,-74.451,-9.684,12.0,12.3,23.0,0.4,129.0,0.0
+2026-11-17 03:00,Reserva Comunal Huimeki,-74.828,-0.374,6.4,7.1,28.0,0.9,119.0,0.0
+2026-11-17 03:00,Reserva Comunal Machiguenga,-73.251,-11.85,13.1,13.2,12.0,0.6,137.0,0.0
+2026-11-17 03:00,Reserva Comunal Purús,-71.099,-10.21,10.0,10.1,7.0,0.1,127.0,0.0
+2026-11-17 03:00,Reserva Comunal Tuntanain,-78.04,-4.149,2.1,2.1,16.0,0.6,125.0,0.0
+2026-11-17 03:00,Reserva Comunal Yanesha,-75.274,-10.32,14.0,14.3,33.0,1.6,134.0,0.0
+2026-11-17 03:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,11.0,11.1,7.0,1.2,137.0,0.0
+2026-11-17 03:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,10.4,18.2,47.0,0.1,92.0,0.0
+2026-11-17 03:00,Reserva Nacional Illescas,-81.077,-5.963,7.4,11.8,38.0,0.4,94.0,0.0
+2026-11-17 03:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,5.3,7.7,28.0,1.3,101.0,0.0
+2026-11-17 03:00,Reserva Nacional Matsés,-73.493,-5.724,7.1,7.1,6.0,0.3,125.0,0.0
+2026-11-17 03:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,7.2,7.2,8.0,0.4,124.0,0.0
+2026-11-17 03:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,4.4,14.1,20.0,7.5,94.0,32.0
+2026-11-17 03:00,Reserva Nacional Pucacuro,-75.414,-2.602,7.7,8.0,13.0,0.8,125.0,0.0
+2026-11-17 03:00,Reserva Nacional San Fernando,-75.346,-15.006,5.4,11.2,45.0,0.4,88.0,6.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.0,13.6,45.0,0.5,90.0,4.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,5.4,9.8,47.0,0.3,87.0,3.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,6.8,10.5,41.0,1.3,91.0,0.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,5.4,9.8,47.0,0.3,87.0,3.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.8,10.4,40.0,0.3,95.0,0.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.7,12.3,42.0,0.6,90.0,1.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,6.6,11.2,36.0,6.6,90.0,2.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.3,5.0,39.0,1.1,91.0,0.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,7.6,11.7,41.0,0.4,95.0,0.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,7.7,12.6,44.0,0.3,95.0,0.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,4.1,7.5,34.0,2.7,94.0,3.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,6.8,10.5,41.0,1.3,92.0,0.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,7.7,16.2,38.0,4.2,87.0,10.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,5.6,10.1,34.0,7.4,111.0,5.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,5.9,10.0,53.0,0.1,91.0,1.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,2.8,4.6,40.0,1.2,89.0,1.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,9.2,17.4,43.0,1.4,86.0,7.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,8.3,14.5,41.0,0.4,90.0,3.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,5.9,10.7,48.0,0.4,90.0,3.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,4.6,7.7,42.0,0.2,89.0,1.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.7,21.2,45.0,1.7,86.0,9.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,5.0,9.1,42.0,0.3,88.0,2.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,7.9,15.3,48.0,0.2,88.0,4.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,7.7,16.2,38.0,4.2,89.0,10.0
+2026-11-17 03:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,5.4,11.2,45.0,0.4,88.0,6.0
+2026-11-17 03:00,Reserva Nacional Tambopata,-69.416,-12.838,8.1,8.2,3.0,1.2,139.0,0.0
+2026-11-17 03:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.6,1.8,33.0,3.5,95.0,0.0
+2026-11-17 03:00,Reserva Nacional de Junín,-76.128,-11.009,7.9,8.3,36.0,8.4,158.0,1.0
+2026-11-17 03:00,Reserva Nacional de Lachay,-77.362,-11.377,1.5,2.6,25.0,7.7,91.0,2.0
+2026-11-17 03:00,Reserva Nacional de Paracas,-76.252,-14.117,5.9,11.6,47.0,0.3,88.0,4.0
+2026-11-17 03:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,6.0,23.8,40.0,9.0,106.0,50.0
+2026-11-17 03:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.7,2.1,32.0,6.0,109.0,0.0
+2026-11-17 03:00,Reserva Nacional del Titicaca,-69.916,-15.646,5.7,13.1,21.0,11.6,104.0,19.0
+2026-11-17 03:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,4.3,4.8,55.0,3.6,107.0,1.0
+2026-11-17 03:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,3.4,9.0,41.0,4.5,100.0,21.0
+2026-11-17 03:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,3.1,4.3,30.0,2.8,114.0,0.0
+2026-11-17 03:00,Santuario Histórico Machupicchu,-72.478,-13.234,7.6,8.8,23.0,12.4,119.0,3.0
+2026-11-17 03:00,Santuario Histórico de Chacamarca,-75.971,-11.217,7.9,8.3,36.0,8.4,142.0,1.0
+2026-11-17 03:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,7.6,9.1,36.0,3.5,124.0,3.0
+2026-11-17 03:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,6.6,6.8,20.0,4.4,132.0,0.0
+2026-11-17 03:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,6.8,13.0,47.0,0.9,91.0,4.0
+2026-11-17 03:00,Santuario Nacional Megantoni,-72.449,-12.277,11.2,11.4,16.0,0.7,141.0,1.0
+2026-11-17 03:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,6.7,6.8,21.0,8.3,135.0,0.0
+2026-11-17 03:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,6.0,6.0,19.0,5.0,121.0,0.0
+2026-11-17 03:00,Santuario Nacional de Ampay,-72.893,-13.584,13.0,15.3,23.0,21.8,180.0,6.0
+2026-11-17 03:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.6,1.8,33.0,3.5,121.0,0.0
+2026-11-17 03:00,Santuario Nacional de Huayllay,-76.333,-10.951,9.9,10.3,29.0,12.6,135.0,1.0
+2026-11-17 03:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.5,5.7,29.0,7.3,135.0,0.0
+2026-11-17 03:00,Zona Reservada Ancón,-77.188,-11.735,5.6,10.1,34.0,7.4,121.0,5.0
+2026-11-17 03:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,2.9,3.0,43.0,3.8,181.0,0.0
+2026-11-17 03:00,Zona Reservada Chancaybaños,-78.921,-6.559,8.5,8.6,22.0,6.6,126.0,0.0
+2026-11-17 03:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,2.3,2.7,27.0,6.6,114.0,1.0
+2026-11-17 03:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,5.9,31.7,38.0,9.8,115.0,72.0
+2026-11-17 03:00,Zona Reservada Santiago Comaina,-77.517,-3.71,9.1,9.2,8.0,0.7,123.0,0.0
+2026-11-17 04:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,5.5,10.3,40.0,1.3,116.0,5.0
+2026-11-17 04:00,Bosque de Protección Alto Mayo,-77.487,-5.788,6.5,6.7,24.0,1.3,133.0,0.0
+2026-11-17 04:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.2,4.8,38.0,1.1,97.0,0.0
+2026-11-17 04:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,14.8,15.1,14.0,1.2,132.0,0.0
+2026-11-17 04:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,6.2,6.4,22.0,3.2,127.0,0.0
+2026-11-17 04:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,2.4,2.6,30.0,3.3,123.0,0.0
+2026-11-17 04:00,Bosque de Protección de Pui Pui,-75.063,-11.28,6.1,6.3,22.0,4.8,119.0,0.0
+2026-11-17 04:00,Coto de Caza El Angolo,-80.793,-4.311,2.2,3.0,30.0,2.2,106.0,0.0
+2026-11-17 04:00,Coto de Caza Sunchubamba,-78.457,-7.403,3.7,4.4,63.0,1.4,127.0,1.0
+2026-11-17 04:00,Parque Nacional Alto Purús,-71.548,-10.837,10.9,11.0,4.0,0.2,135.0,0.0
+2026-11-17 04:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,14.6,15.4,2.0,3.7,142.0,1.0
+2026-11-17 04:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,1.8,2.2,31.0,6.4,107.0,0.0
+2026-11-17 04:00,Parque Nacional Cordillera Azul,-75.991,-7.695,3.3,3.3,13.0,0.4,125.0,0.0
+2026-11-17 04:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,5.9,6.5,26.0,0.9,120.0,0.0
+2026-11-17 04:00,Parque Nacional Huascarán,-77.45,-9.418,5.4,5.5,18.0,11.4,123.0,0.0
+2026-11-17 04:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,9.4,9.5,27.0,1.6,128.0,0.0
+2026-11-17 04:00,Parque Nacional Otishi,-73.697,-11.845,9.2,9.4,15.0,0.8,146.0,0.0
+2026-11-17 04:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,9.1,9.2,9.0,0.1,126.0,0.0
+2026-11-17 04:00,Parque Nacional Yaguas,-71.295,-2.916,5.9,6.1,16.0,0.5,122.0,0.0
+2026-11-17 04:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,3.7,3.7,8.0,5.5,138.0,0.0
+2026-11-17 04:00,Parque Nacional de Cutervo,-78.786,-6.224,6.7,6.9,28.0,5.4,120.0,0.0
+2026-11-17 04:00,Parque Nacional de Tingo María,-76.005,-9.373,8.7,8.8,13.0,5.9,193.0,0.0
+2026-11-17 04:00,Parque Nacional del Manu,-71.635,-12.261,8.4,8.6,5.0,1.5,139.0,0.0
+2026-11-17 04:00,Parque Nacional del Río Abiseo,-77.225,-7.732,7.3,7.4,23.0,2.7,138.0,0.0
+2026-11-17 04:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,3.2,3.4,10.0,7.4,121.0,0.0
+2026-11-17 04:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,2.5,3.5,31.0,2.4,125.0,0.0
+2026-11-17 04:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,3.8,7.0,35.0,2.1,101.0,3.0
+2026-11-17 04:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.6,7.1,25.0,0.8,119.0,0.0
+2026-11-17 04:00,Reserva Comunal Amarakaeri,-70.913,-12.793,13.1,14.3,3.0,3.6,131.0,2.0
+2026-11-17 04:00,Reserva Comunal Ashaninka,-73.794,-11.881,9.2,9.4,15.0,0.8,143.0,0.0
+2026-11-17 04:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,5.5,5.7,15.0,0.7,122.0,0.0
+2026-11-17 04:00,Reserva Comunal Chayu Naín,-78.243,-5.439,7.9,8.1,28.0,3.1,128.0,0.0
+2026-11-17 04:00,Reserva Comunal El Sira,-74.451,-9.684,12.2,12.5,24.0,0.4,125.0,0.0
+2026-11-17 04:00,Reserva Comunal Huimeki,-74.828,-0.374,5.9,6.5,29.0,0.9,118.0,0.0
+2026-11-17 04:00,Reserva Comunal Machiguenga,-73.251,-11.85,12.6,12.7,13.0,0.6,137.0,0.0
+2026-11-17 04:00,Reserva Comunal Purús,-71.099,-10.21,9.5,9.6,7.0,0.1,127.0,0.0
+2026-11-17 04:00,Reserva Comunal Tuntanain,-78.04,-4.149,2.2,2.2,15.0,0.6,124.0,0.0
+2026-11-17 04:00,Reserva Comunal Yanesha,-75.274,-10.32,15.6,16.0,32.0,1.3,132.0,0.0
+2026-11-17 04:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,10.7,10.7,7.0,1.1,140.0,0.0
+2026-11-17 04:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,10.5,18.3,47.0,0.1,92.0,0.0
+2026-11-17 04:00,Reserva Nacional Illescas,-81.077,-5.963,7.3,11.6,38.0,0.4,94.0,0.0
+2026-11-17 04:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,5.0,7.2,28.0,1.2,101.0,0.0
+2026-11-17 04:00,Reserva Nacional Matsés,-73.493,-5.724,7.2,7.2,6.0,0.3,124.0,0.0
+2026-11-17 04:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,7.3,7.3,9.0,0.4,124.0,0.0
+2026-11-17 04:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,4.2,13.6,19.0,7.9,94.0,24.0
+2026-11-17 04:00,Reserva Nacional Pucacuro,-75.414,-2.602,7.7,8.1,13.0,0.8,124.0,0.0
+2026-11-17 04:00,Reserva Nacional San Fernando,-75.346,-15.006,5.4,10.8,45.0,0.4,88.0,5.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.0,13.2,45.0,0.5,91.0,4.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,5.6,10.8,47.0,0.3,87.0,4.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,6.6,10.1,40.0,1.4,91.0,0.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,5.6,10.8,47.0,0.3,87.0,4.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.8,10.4,40.0,0.3,95.0,0.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.5,12.1,41.0,0.6,90.0,1.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,6.1,10.1,37.0,5.5,92.0,2.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.2,4.8,38.0,1.1,91.0,0.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,7.4,11.5,41.0,0.4,95.0,0.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,7.5,12.3,44.0,0.3,95.0,0.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,3.8,7.0,35.0,2.1,94.0,3.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,6.6,10.1,40.0,1.4,92.0,0.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,7.4,15.0,38.0,3.9,87.0,8.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,4.7,8.2,35.0,6.3,117.0,3.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,5.6,9.6,53.0,0.1,91.0,1.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,2.7,4.8,40.0,1.2,89.0,1.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,9.3,17.9,44.0,1.5,86.0,8.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,8.0,14.1,42.0,0.4,91.0,3.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,5.5,10.2,46.0,0.4,90.0,3.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,4.7,7.7,42.0,0.2,88.0,2.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,10.2,20.1,45.0,1.7,86.0,9.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,4.9,8.6,42.0,0.3,88.0,2.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,7.6,14.5,48.0,0.2,88.0,4.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,7.4,15.0,38.0,3.9,90.0,8.0
+2026-11-17 04:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,5.4,10.8,45.0,0.4,88.0,5.0
+2026-11-17 04:00,Reserva Nacional Tambopata,-69.416,-12.838,7.5,7.6,3.0,1.0,139.0,0.0
+2026-11-17 04:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.4,1.5,35.0,3.0,94.0,0.0
+2026-11-17 04:00,Reserva Nacional de Junín,-76.128,-11.009,8.2,8.6,41.0,6.9,158.0,1.0
+2026-11-17 04:00,Reserva Nacional de Lachay,-77.362,-11.377,1.2,2.2,25.0,7.1,91.0,1.0
+2026-11-17 04:00,Reserva Nacional de Paracas,-76.252,-14.117,5.6,10.8,47.0,0.3,88.0,4.0
+2026-11-17 04:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,4.1,14.7,43.0,6.2,102.0,29.0
+2026-11-17 04:00,Reserva Nacional de Tumbes,-80.26,-3.934,1.8,2.2,31.0,6.4,107.0,0.0
+2026-11-17 04:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.2,13.0,20.0,11.2,105.0,18.0
+2026-11-17 04:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,4.4,4.9,56.0,3.2,107.0,1.0
+2026-11-17 04:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,3.0,9.9,43.0,4.2,100.0,19.0
+2026-11-17 04:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,2.5,3.5,31.0,2.4,113.0,0.0
+2026-11-17 04:00,Santuario Histórico Machupicchu,-72.478,-13.234,8.0,9.3,28.0,7.5,119.0,3.0
+2026-11-17 04:00,Santuario Histórico de Chacamarca,-75.971,-11.217,8.2,8.6,41.0,6.9,131.0,1.0
+2026-11-17 04:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,7.7,8.9,36.0,3.9,125.0,3.0
+2026-11-17 04:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,6.2,6.4,22.0,3.2,132.0,0.0
+2026-11-17 04:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,6.7,12.6,47.0,0.9,91.0,4.0
+2026-11-17 04:00,Santuario Nacional Megantoni,-72.449,-12.277,11.0,11.4,16.0,0.7,138.0,1.0
+2026-11-17 04:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,7.4,7.5,27.0,7.2,134.0,0.0
+2026-11-17 04:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,4.7,4.7,20.0,5.2,120.0,0.0
+2026-11-17 04:00,Santuario Nacional de Ampay,-72.893,-13.584,13.0,15.3,21.0,20.4,168.0,6.0
+2026-11-17 04:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.4,1.5,35.0,3.0,121.0,0.0
+2026-11-17 04:00,Santuario Nacional de Huayllay,-76.333,-10.951,9.1,9.5,36.0,8.3,128.0,1.0
+2026-11-17 04:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.4,5.5,26.0,8.0,140.0,0.0
+2026-11-17 04:00,Zona Reservada Ancón,-77.188,-11.735,4.7,8.2,35.0,6.3,123.0,3.0
+2026-11-17 04:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,3.4,3.5,44.0,3.3,167.0,0.0
+2026-11-17 04:00,Zona Reservada Chancaybaños,-78.921,-6.559,6.7,6.9,28.0,5.4,125.0,0.0
+2026-11-17 04:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,1.9,2.2,33.0,5.4,115.0,1.0
+2026-11-17 04:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,6.2,31.8,36.0,10.0,109.0,70.0
+2026-11-17 04:00,Zona Reservada Santiago Comaina,-77.517,-3.71,8.8,8.9,7.0,0.7,122.0,0.0
+2026-11-17 05:00,Bosque de Protección Aledaño a la Bocatoma del Canal Nuevo Imperial,-76.217,-13.044,5.4,9.9,40.0,1.5,116.0,4.0
+2026-11-17 05:00,Bosque de Protección Alto Mayo,-77.487,-5.788,6.2,6.3,21.0,1.2,136.0,0.0
+2026-11-17 05:00,Bosque de Protección Puquio Santa Rosa,-78.717,-8.598,3.0,4.5,36.0,1.3,97.0,0.0
+2026-11-17 05:00,Bosque de Protección San Matias-San Carlos,-74.941,-10.403,14.7,15.0,16.0,1.1,131.0,0.0
+2026-11-17 05:00,Bosque de Protección Tijae-Río Nieva,-77.829,-5.493,5.1,5.3,21.0,2.6,128.0,0.0
+2026-11-17 05:00,Bosque de Protección de Pagaibamba,-79.061,-6.407,1.6,1.7,31.0,3.0,125.0,0.0
+2026-11-17 05:00,Bosque de Protección de Pui Pui,-75.063,-11.28,5.7,5.8,27.0,3.9,122.0,0.0
+2026-11-17 05:00,Coto de Caza El Angolo,-80.793,-4.311,2.3,3.3,30.0,2.0,106.0,0.0
+2026-11-17 05:00,Coto de Caza Sunchubamba,-78.457,-7.403,3.9,4.5,65.0,0.8,126.0,1.0
+2026-11-17 05:00,Parque Nacional Alto Purús,-71.548,-10.837,10.9,11.0,5.0,0.2,133.0,0.0
+2026-11-17 05:00,Parque Nacional Bahuaja-Sonene,-69.526,-13.303,14.1,14.9,5.0,3.0,140.0,1.0
+2026-11-17 05:00,Parque Nacional Cerros de Amotape,-80.474,-4.013,2.3,2.7,29.0,6.6,106.0,0.0
+2026-11-17 05:00,Parque Nacional Cordillera Azul,-75.991,-7.695,3.9,3.9,13.0,0.3,125.0,0.0
+2026-11-17 05:00,Parque Nacional Güeppí-Sekime,-75.249,-0.405,5.4,6.1,27.0,0.9,119.0,0.0
+2026-11-17 05:00,Parque Nacional Huascarán,-77.45,-9.418,5.4,5.5,20.0,9.3,126.0,0.0
+2026-11-17 05:00,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,-78.113,-3.325,9.3,9.3,25.0,1.7,128.0,0.0
+2026-11-17 05:00,Parque Nacional Otishi,-73.697,-11.845,10.0,10.2,16.0,0.6,145.0,0.0
+2026-11-17 05:00,Parque Nacional Sierra del Divisor,-73.949,-7.145,8.9,8.9,8.0,0.1,126.0,0.0
+2026-11-17 05:00,Parque Nacional Yaguas,-71.295,-2.916,6.1,6.4,16.0,0.4,122.0,0.0
+2026-11-17 05:00,Parque Nacional Yanachaga-Chemillén,-75.401,-10.386,4.7,4.8,12.0,5.0,139.0,0.0
+2026-11-17 05:00,Parque Nacional de Cutervo,-78.786,-6.224,5.3,5.4,32.0,4.4,123.0,0.0
+2026-11-17 05:00,Parque Nacional de Tingo María,-76.005,-9.373,8.7,8.8,17.0,4.8,190.0,0.0
+2026-11-17 05:00,Parque Nacional del Manu,-71.635,-12.261,8.5,8.8,9.0,1.2,141.0,0.0
+2026-11-17 05:00,Parque Nacional del Río Abiseo,-77.225,-7.732,7.2,7.3,23.0,2.5,137.0,0.0
+2026-11-17 05:00,Refugio de Vida Silvestre Bosques Nublados de Udima,-79.086,-6.824,2.8,3.0,15.0,6.3,119.0,0.0
+2026-11-17 05:00,Refugio de Vida Silvestre Laquipampa,-79.501,-6.337,2.4,3.3,31.0,2.3,124.0,0.0
+2026-11-17 05:00,Refugio de Vida Silvestre Los Pantanos de Villa,-76.989,-12.213,3.8,6.7,35.0,2.5,127.0,3.0
+2026-11-17 05:00,Reserva Comunal Airo Pai,-74.881,-0.751,6.1,6.7,26.0,0.7,118.0,0.0
+2026-11-17 05:00,Reserva Comunal Amarakaeri,-70.913,-12.793,13.9,15.0,7.0,2.9,132.0,2.0
+2026-11-17 05:00,Reserva Comunal Ashaninka,-73.794,-11.881,10.0,10.2,16.0,0.6,142.0,0.0
+2026-11-17 05:00,Reserva Comunal Bajo Putumayo Yaguas,-70.918,-2.689,5.9,6.2,15.0,0.6,122.0,0.0
+2026-11-17 05:00,Reserva Comunal Chayu Naín,-78.243,-5.439,7.7,7.9,30.0,3.0,127.0,0.0
+2026-11-17 05:00,Reserva Comunal El Sira,-74.451,-9.684,9.5,9.7,26.0,0.4,124.0,0.0
+2026-11-17 05:00,Reserva Comunal Huimeki,-74.828,-0.374,5.5,6.2,30.0,0.8,117.0,0.0
+2026-11-17 05:00,Reserva Comunal Machiguenga,-73.251,-11.85,12.1,12.2,14.0,0.5,137.0,0.0
+2026-11-17 05:00,Reserva Comunal Purús,-71.099,-10.21,9.1,9.2,7.0,0.1,127.0,0.0
+2026-11-17 05:00,Reserva Comunal Tuntanain,-78.04,-4.149,2.4,2.4,16.0,0.6,124.0,0.0
+2026-11-17 05:00,Reserva Comunal Yanesha,-75.274,-10.32,16.0,16.4,31.0,1.0,131.0,0.0
+2026-11-17 05:00,Reserva Nacional Allpahuayo Mishana,-73.547,-3.932,10.4,10.5,7.0,1.0,143.0,0.0
+2026-11-17 05:00,Reserva Nacional Dorsal de Nasca,-77.334,-16.308,10.3,18.0,48.0,0.1,92.0,0.0
+2026-11-17 05:00,Reserva Nacional Illescas,-81.077,-5.963,7.1,11.2,38.0,0.4,94.0,0.0
+2026-11-17 05:00,Reserva Nacional Mar Tropical de Grau,-81.152,-4.282,4.7,6.6,27.0,1.3,103.0,0.0
+2026-11-17 05:00,Reserva Nacional Matsés,-73.493,-5.724,7.3,7.3,6.0,0.3,124.0,0.0
+2026-11-17 05:00,Reserva Nacional Pacaya-Samiria,-74.511,-5.308,7.5,7.5,9.0,0.3,124.0,0.0
+2026-11-17 05:00,Reserva Nacional Pampa Galeras Barbara D' Achille,-74.384,-14.702,4.6,18.3,28.0,6.6,96.0,27.0
+2026-11-17 05:00,Reserva Nacional Pucacuro,-75.414,-2.602,7.8,8.1,11.0,0.8,123.0,0.0
+2026-11-17 05:00,Reserva Nacional San Fernando,-75.346,-15.006,5.1,9.9,45.0,0.4,89.0,5.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Asia",-76.622,-12.796,7.0,13.2,45.0,0.6,94.0,4.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Ballestas Norte, Centro y Sur",-76.394,-13.736,5.7,11.2,46.0,0.5,87.0,5.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chao",-78.799,-8.764,6.4,9.7,39.0,1.7,91.0,0.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Chincha Norte, Centro y Sur",-76.397,-13.634,5.7,11.2,46.0,0.5,87.0,5.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",-80.859,-6.428,6.8,10.3,40.0,0.3,95.0,0.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Santa",-78.682,-9.029,7.3,11.9,40.0,0.7,92.0,1.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Cavinzas e Islotes Palominos",-77.228,-12.138,5.9,9.5,37.0,5.7,102.0,2.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Guañape Norte y Guañape Sur",-78.965,-8.55,3.0,4.5,36.0,1.3,91.0,0.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Lobos de Afuera",-80.726,-6.939,7.2,11.1,41.0,0.4,95.0,0.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Macabí",-79.499,-7.806,7.7,12.5,44.0,0.3,95.0,0.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islas Pachacamac",-76.904,-12.314,3.8,6.7,35.0,2.5,100.0,3.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Corcovado",-78.701,-8.938,6.4,9.7,39.0,1.7,93.0,0.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Don Martín",-77.676,-11.022,6.9,13.6,38.0,3.6,90.0,7.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Islote Grupo de Pescadores",-77.231,-11.793,4.1,6.9,37.0,5.5,160.0,2.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",-73.708,-16.248,5.2,8.9,53.0,0.2,91.0,1.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Coles",-71.385,-17.714,2.8,5.3,42.0,1.1,90.0,1.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Colorado",-77.982,-10.492,9.2,17.9,43.0,1.6,87.0,8.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",-78.238,-9.956,7.7,13.6,42.0,0.5,93.0,3.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Hornillos",-72.295,-16.89,5.5,10.1,45.0,0.4,90.0,3.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Chira",-72.935,-16.538,4.5,7.5,41.0,0.2,89.0,2.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta La Litera",-77.897,-10.615,9.9,19.6,45.0,1.7,89.0,9.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",-74.859,-15.577,4.7,9.1,43.0,0.3,88.0,3.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",-75.859,-14.72,7.9,15.0,49.0,0.2,88.0,4.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Salinas, Isla Huampanú e Isla Mazorca",-77.718,-11.346,6.9,13.6,38.0,3.6,90.0,7.0
+2026-11-17 05:00,"Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",-75.204,-15.375,5.1,9.9,45.0,0.4,88.0,5.0
+2026-11-17 05:00,Reserva Nacional Tambopata,-69.416,-12.838,7.3,7.3,4.0,0.8,137.0,0.0
+2026-11-17 05:00,Reserva Nacional de Calipuy,-78.353,-8.561,1.4,1.6,35.0,2.8,94.0,0.0
+2026-11-17 05:00,Reserva Nacional de Junín,-76.128,-11.009,8.0,8.4,44.0,6.0,157.0,1.0
+2026-11-17 05:00,Reserva Nacional de Lachay,-77.362,-11.377,1.0,1.8,26.0,6.5,95.0,1.0
+2026-11-17 05:00,Reserva Nacional de Paracas,-76.252,-14.117,5.8,11.0,47.0,0.4,88.0,4.0
+2026-11-17 05:00,Reserva Nacional de Salinas y Aguada Blanca,-71.224,-16.082,1.9,5.9,40.0,5.1,101.0,18.0
+2026-11-17 05:00,Reserva Nacional de Tumbes,-80.26,-3.934,2.3,2.7,29.0,6.6,105.0,0.0
+2026-11-17 05:00,Reserva Nacional del Titicaca,-69.916,-15.646,6.3,13.9,21.0,9.6,105.0,18.0
+2026-11-17 05:00,Reserva Paisajistica Nor Yauyos-Cochas,-75.861,-12.108,3.7,4.1,58.0,2.9,108.0,1.0
+2026-11-17 05:00,Reserva Paisajistica Subcuenca del Cotahuasi,-72.797,-15.118,2.7,9.7,45.0,3.5,99.0,18.0
+2026-11-17 05:00,Santuario Histórico Bosque de Pomac,-79.779,-6.49,2.4,3.3,31.0,2.3,111.0,0.0
+2026-11-17 05:00,Santuario Histórico Machupicchu,-72.478,-13.234,8.1,9.5,30.0,5.3,120.0,3.0
+2026-11-17 05:00,Santuario Histórico de Chacamarca,-75.971,-11.217,8.0,8.4,44.0,6.0,130.0,1.0
+2026-11-17 05:00,Santuario Histórico de la Pampa de Ayacucho,-74.121,-13.034,7.6,8.9,39.0,3.7,134.0,3.0
+2026-11-17 05:00,Santuario Nacional Cordillera de Colán,-78.16,-5.521,5.1,5.3,21.0,2.6,132.0,0.0
+2026-11-17 05:00,Santuario Nacional Lagunas de Mejía,-71.863,-17.146,6.6,12.3,48.0,0.9,91.0,4.0
+2026-11-17 05:00,Santuario Nacional Megantoni,-72.449,-12.277,10.9,11.3,18.0,0.6,138.0,1.0
+2026-11-17 05:00,Santuario Nacional Pampa Hermosa,-75.498,-11.043,8.1,8.3,33.0,6.2,134.0,0.0
+2026-11-17 05:00,Santuario Nacional Tabaconas-Namballe,-79.249,-5.172,4.7,4.8,23.0,4.7,120.0,0.0
+2026-11-17 05:00,Santuario Nacional de Ampay,-72.893,-13.584,12.3,14.4,22.0,16.6,160.0,6.0
+2026-11-17 05:00,Santuario Nacional de Calipuy,-78.3,-8.344,1.4,1.6,35.0,2.8,121.0,0.0
+2026-11-17 05:00,Santuario Nacional de Huayllay,-76.333,-10.951,8.2,8.5,35.0,6.6,127.0,1.0
+2026-11-17 05:00,Santuario Nacional los Manglares de Tumbes,-80.272,-3.426,4.5,5.5,24.0,8.9,130.0,0.0
+2026-11-17 05:00,Zona Reservada Ancón,-77.188,-11.735,4.1,6.9,37.0,5.5,135.0,2.0
+2026-11-17 05:00,Zona Reservada Bosque de Zárate,-76.493,-11.927,3.5,3.6,47.0,2.8,159.0,1.0
+2026-11-17 05:00,Zona Reservada Chancaybaños,-78.921,-6.559,5.3,5.4,32.0,4.4,124.0,0.0
+2026-11-17 05:00,Zona Reservada Cordillera Huayhuash,-76.882,-10.333,1.7,1.9,33.0,4.6,115.0,1.0
+2026-11-17 05:00,Zona Reservada Reserva Paisajística Cerro Khapia,-69.137,-16.357,6.5,30.3,37.0,8.5,105.0,61.0
+2026-11-17 05:00,Zona Reservada Santiago Comaina,-77.517,-3.71,8.6,8.7,6.0,0.7,122.0,0.0
