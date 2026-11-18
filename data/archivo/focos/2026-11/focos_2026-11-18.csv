@@ -504,3 +504,12 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-18,13:53,2026-11-18,1853,-3.6833,-74.73788,VIIRS NOAA-20,NRT,4.27,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-18,13:53,2026-11-18,1853,-3.41284,-73.34355,VIIRS NOAA-20,NRT,3.0,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-18,13:53,2026-11-18,1853,-4.05233,-77.76458,VIIRS NOAA-20,NRT,4.57,nominal,D,Amazonas,Fuera de ANP,,,False,True
+2026-11-18,14:34,2026-11-18,1934,-13.68592,-76.09853,VIIRS NOAA-21,NRT,4.63,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-18,14:34,2026-11-18,1934,-13.68826,-76.09546,VIIRS NOAA-21,NRT,5.87,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-8.96646,-78.52591,VIIRS NOAA-21,NRT,3.48,nominal,D,Ancash,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-7.32107,-79.394,VIIRS NOAA-21,NRT,6.03,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-7.14055,-79.54235,VIIRS NOAA-21,NRT,3.52,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-6.95875,-79.60676,VIIRS NOAA-21,NRT,5.23,nominal,D,Lambayeque,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-5.80206,-78.42133,VIIRS NOAA-21,NRT,9.16,nominal,D,Amazonas,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-5.80464,-78.42354,VIIRS NOAA-21,NRT,7.29,nominal,D,Amazonas,Fuera de ANP,,,False,True
+2026-11-18,14:36,2026-11-18,1936,-5.78914,-78.45814,VIIRS NOAA-21,NRT,9.57,nominal,D,Amazonas,Fuera de ANP,,,False,True
