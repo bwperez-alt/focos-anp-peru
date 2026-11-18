@@ -1,0 +1,11 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-18,00:20,2026-11-18,520,-9.54451,-73.52695,VIIRS NOAA-21,NRT,3.29,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-9.54584,-73.52021,VIIRS NOAA-21,NRT,5.72,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-9.54467,-73.5209,VIIRS NOAA-21,NRT,6.96,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.83525,-70.33415,VIIRS NOAA-21,NRT,0.86,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.83802,-70.34684,VIIRS NOAA-21,NRT,9.73,alta,N,Puno,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.83868,-70.34357,VIIRS NOAA-21,NRT,6.02,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.83997,-70.33717,VIIRS NOAA-21,NRT,3.99,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.84057,-70.33421,VIIRS NOAA-21,NRT,3.99,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.83933,-70.34035,VIIRS NOAA-21,NRT,6.02,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-18,00:20,2026-11-18,520,-15.84331,-70.34704,VIIRS NOAA-21,NRT,9.73,nominal,N,Puno,Fuera de ANP,,,False,True
