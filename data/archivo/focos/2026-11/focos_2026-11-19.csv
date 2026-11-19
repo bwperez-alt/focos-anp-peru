@@ -1,0 +1,22 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-19,01:39,2026-11-19,639,-5.57126,-74.8259,VIIRS NOAA-21,NRT,4.02,nominal,N,Loreto,Dentro de ANP,Reserva Nacional Pacaya-Samiria,Reserva Nacional,False,True
+2026-11-19,01:39,2026-11-19,639,-5.61183,-75.89445,VIIRS NOAA-21,NRT,1.12,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-6.21819,-75.88717,VIIRS NOAA-21,NRT,1.59,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-7.2923,-76.57011,VIIRS NOAA-21,NRT,6.57,nominal,N,San Martin,Zona de amortiguamiento,Parque Nacional Cordillera Azul,Zona de amortiguamiento,False,True
+2026-11-19,01:39,2026-11-19,639,-8.07679,-75.38223,VIIRS NOAA-21,NRT,1.9,nominal,N,Loreto,Zona de amortiguamiento,Parque Nacional Cordillera Azul,Zona de amortiguamiento,False,True
+2026-11-19,01:39,2026-11-19,639,-8.36119,-74.64683,VIIRS NOAA-21,NRT,1.24,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-9.54297,-73.52057,VIIRS NOAA-21,NRT,1.4,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-9.63291,-73.7795,VIIRS NOAA-21,NRT,2.85,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-9.63354,-73.77499,VIIRS NOAA-21,NRT,0.94,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-9.63506,-73.78138,VIIRS NOAA-21,NRT,1.27,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-9.63566,-73.77686,VIIRS NOAA-21,NRT,1.27,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,01:39,2026-11-19,639,-9.84823,-76.11781,VIIRS NOAA-21,NRT,1.87,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-14.376,-75.60168,VIIRS NOAA-21,NRT,1.61,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-12.04154,-77.01369,VIIRS NOAA-21,NRT,0.67,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-12.61869,-74.52629,VIIRS NOAA-21,NRT,2.07,nominal,N,Huancavelica,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-12.63988,-74.50337,VIIRS NOAA-21,NRT,2.52,nominal,N,Huancavelica,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-13.45574,-71.96806,VIIRS NOAA-21,NRT,2.99,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-13.45752,-71.95308,VIIRS NOAA-21,NRT,1.84,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-13.46175,-71.96324,VIIRS NOAA-21,NRT,6.13,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-13.46219,-71.9596,VIIRS NOAA-21,NRT,6.13,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-19,01:41,2026-11-19,641,-13.4626,-71.95616,VIIRS NOAA-21,NRT,3.49,nominal,N,Cusco,Fuera de ANP,,,False,True
