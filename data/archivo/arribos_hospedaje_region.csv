@@ -2,9 +2,9 @@ region,acumulado_previo,acumulado_actual,variacion_pct,periodo
 Amazonas,222468,313682,41.0,Enero-Julio 2026
 Ancash,731435,888911,21.5,Enero-Julio 2026
 Apurímac,242426,251820,3.9,Enero-Julio 2026
-Arequipa,985634,1080587,9.6,Enero-Julio 2026
+Arequipa,985634,1080113,9.6,Enero-Julio 2026
 Ayacucho,233852,228010,-2.5,Enero-Julio 2026
-Cajamarca,570794,636111,11.4,Enero-Julio 2026
+Cajamarca,570794,636134,11.4,Enero-Julio 2026
 Callao,1300009,1252590,-3.6,Enero-Julio 2026
 Cusco,2103754,2317149,10.1,Enero-Julio 2026
 Huancavelica,99350,110231,11.0,Enero-Julio 2026
@@ -15,7 +15,7 @@ La Libertad,664888,754029,13.4,Enero-Julio 2026
 Lambayeque,563976,625919,11.0,Enero-Julio 2026
 Lima,21475878,26262405,22.3,Enero-Julio 2026
 Loreto,266530,302124,13.4,Enero-Julio 2026
-Madre de Dios,356984,434335,21.7,Enero-Julio 2026
+Madre de Dios,356984,436522,22.3,Enero-Julio 2026
 Moquegua,176933,202563,14.5,Enero-Julio 2026
 Pasco,234558,287966,22.8,Enero-Julio 2026
 Piura,601605,578709,-3.8,Enero-Julio 2026
@@ -24,4 +24,4 @@ San Martin,637357,629914,-1.2,Enero-Julio 2026
 Tacna,305700,319206,4.4,Enero-Julio 2026
 Tumbes,208074,270468,30.0,Enero-Julio 2026
 Ucayali,197914,187783,-5.1,Enero-Julio 2026
-Total,35361323,41052368,16.1,Enero-Julio 2026
+Total,35361323,41054104,16.1,Enero-Julio 2026
