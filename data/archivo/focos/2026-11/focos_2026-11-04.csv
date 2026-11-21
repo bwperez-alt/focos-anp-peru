@@ -8,7 +8,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-04,01:22,2026-11-04,622,-11.85515,-72.94839,VIIRS NOAA-21,NRT,2.41,nominal,N,Cusco,Fuera de ANP,,,False,True
 2026-11-04,01:22,2026-11-04,622,-11.75869,-74.01527,VIIRS NOAA-21,NRT,1.4,nominal,N,Junin,Fuera de ANP,,,False,True
 2026-11-04,01:22,2026-11-04,622,-13.78654,-76.16821,VIIRS NOAA-21,NRT,2.17,nominal,N,Ica,Fuera de ANP,,,True,False
-2026-11-04,02:20,2026-11-04,720,-13.78418,-76.17304,VIIRS NOAA-20,NRT,3.21,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-04,02:20,2026-11-04,720,-13.78418,-76.17304,VIIRS NOAA-20,NRT,3.21,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-04,13:13,2026-11-04,1813,-15.75154,-70.72334,VIIRS NOAA-20,NRT,26.14,baja,D,Puno,Fuera de ANP,,,False,False
 2026-11-04,13:13,2026-11-04,1813,-15.74737,-70.71976,VIIRS NOAA-20,NRT,11.14,baja,D,Puno,Fuera de ANP,,,False,False
 2026-11-04,13:13,2026-11-04,1813,-15.34399,-69.23266,VIIRS NOAA-20,NRT,9.19,baja,D,Puno,Fuera de ANP,,,False,False
