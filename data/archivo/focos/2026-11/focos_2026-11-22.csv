@@ -1,0 +1,9 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-22,00:44,2026-11-22,544,-11.37458,-75.77784,VIIRS NOAA-21,NRT,1.03,nominal,N,Junin,Fuera de ANP,,,True,False
+2026-11-22,00:44,2026-11-22,544,-11.73178,-75.55686,VIIRS NOAA-21,NRT,0.63,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-22,00:44,2026-11-22,544,-13.62194,-72.35215,VIIRS NOAA-21,NRT,1.71,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-22,00:46,2026-11-22,546,-16.24351,-71.51904,VIIRS NOAA-21,NRT,0.54,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,00:46,2026-11-22,546,-16.24709,-71.52032,VIIRS NOAA-21,NRT,0.54,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,00:46,2026-11-22,546,-16.26655,-71.51748,VIIRS NOAA-21,NRT,2.3,nominal,N,Arequipa,Zona de amortiguamiento,Reserva Nacional de Salinas y Aguada Blanca,Zona de amortiguamiento,False,True
+2026-11-22,00:46,2026-11-22,546,-16.26592,-71.51534,VIIRS NOAA-21,NRT,2.46,nominal,N,Arequipa,Zona de amortiguamiento,Reserva Nacional de Salinas y Aguada Blanca,Zona de amortiguamiento,False,True
+2026-11-22,00:46,2026-11-22,546,-16.25882,-71.68414,VIIRS NOAA-21,NRT,1.32,nominal,N,Arequipa,Fuera de ANP,,,True,False
