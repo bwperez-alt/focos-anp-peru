@@ -20,6 +20,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-30 17:46,-16.544,-69.484,4.6,195,"33 km NE of Mazo Cruz, Peru",Zona Reservada Reserva Paisajística Cerro Khapia,42,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tufp,USGS
 2026-10-26 22:55,-2.771,-78.886,4.1,75,"5 km SW of Azogues, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,106,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tteg,USGS
 2026-10-19 11:41,-7.828,-74.484,4.6,142,"61 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,96,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttrv,USGS
+2026-11-22 00:51,-10.796,-75.963,5.0,108,"15 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,30,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqu,USGS
 2026-11-21 00:12,-10.913,-76.031,5.0,111,"0 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,15,https://earthquake.usgs.gov/earthquakes/eventpage/us6000uchd,USGS
 2026-11-20 19:09,-10.855,-75.978,6.7,108,"9 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,24,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucfm,USGS
 2026-11-19 04:08,-15.384,-76.025,4.7,10,"92 km W of San Juan, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",76,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubyt,USGS
