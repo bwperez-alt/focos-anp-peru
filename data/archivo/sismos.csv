@@ -22,6 +22,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-19 11:41,-7.828,-74.484,4.6,142,"61 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,96,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttrv,USGS
 2026-11-07 00:36,-9.842,-75.796,4.3,109,"37 km E of Churubamba, Peru",Parque Nacional de Tingo María,57,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
 2026-11-09 05:23,-4.949,-75.0,5.3,11,"80 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,67,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
+2026-11-22 16:35,-10.835,-76.015,5.4,109,"9 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,23,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuf,USGS
 2026-11-22 00:51,-10.796,-75.963,5.0,108,"15 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,30,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqu,USGS
 2026-11-22 00:09,-7.862,-74.508,4.3,150,"57 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,100,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqn,USGS
 2026-11-21 00:12,-10.913,-76.031,5.0,111,"0 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,15,https://earthquake.usgs.gov/earthquakes/eventpage/us6000uchd,USGS
