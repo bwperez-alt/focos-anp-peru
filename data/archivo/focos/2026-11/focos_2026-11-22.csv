@@ -7,3 +7,32 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-22,00:46,2026-11-22,546,-16.26655,-71.51748,VIIRS NOAA-21,NRT,2.3,nominal,N,Arequipa,Zona de amortiguamiento,Reserva Nacional de Salinas y Aguada Blanca,Zona de amortiguamiento,False,True
 2026-11-22,00:46,2026-11-22,546,-16.26592,-71.51534,VIIRS NOAA-21,NRT,2.46,nominal,N,Arequipa,Zona de amortiguamiento,Reserva Nacional de Salinas y Aguada Blanca,Zona de amortiguamiento,False,True
 2026-11-22,00:46,2026-11-22,546,-16.25882,-71.68414,VIIRS NOAA-21,NRT,1.32,nominal,N,Arequipa,Fuera de ANP,,,True,False
+2026-11-22,01:39,2026-11-22,639,-7.19833,-76.85835,VIIRS NOAA-20,NRT,0.54,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-7.62488,-77.9831,VIIRS NOAA-20,NRT,7.26,nominal,N,Cajamarca,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-8.28693,-74.72387,VIIRS NOAA-20,NRT,1.53,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-8.29064,-74.72441,VIIRS NOAA-20,NRT,1.53,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-7.89708,-79.30939,VIIRS NOAA-20,NRT,3.96,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-7.90042,-79.30993,VIIRS NOAA-20,NRT,3.96,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-7.89985,-79.31347,VIIRS NOAA-20,NRT,3.68,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-8.03896,-79.04015,VIIRS NOAA-20,NRT,0.52,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-9.13885,-73.67236,VIIRS NOAA-20,NRT,1.06,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-22,01:39,2026-11-22,639,-9.13935,-73.66889,VIIRS NOAA-20,NRT,1.06,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-22,01:41,2026-11-22,641,-12.48262,-75.25066,VIIRS NOAA-20,NRT,1.83,nominal,N,Huancavelica,Fuera de ANP,,,False,True
+2026-11-22,01:41,2026-11-22,641,-12.48711,-75.24628,VIIRS NOAA-20,NRT,0.9,nominal,N,Huancavelica,Fuera de ANP,,,False,True
+2026-11-22,01:41,2026-11-22,641,-13.78708,-76.16998,VIIRS NOAA-20,NRT,2.67,nominal,N,Ica,Fuera de ANP,,,True,False
+2026-11-22,01:41,2026-11-22,641,-10.71879,-77.65004,VIIRS NOAA-20,NRT,1.44,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-22,01:41,2026-11-22,641,-10.72215,-77.65057,VIIRS NOAA-20,NRT,1.44,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23395,-71.51562,VIIRS NOAA-20,NRT,3.57,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23792,-71.52572,VIIRS NOAA-20,NRT,7.1,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23825,-71.52299,VIIRS NOAA-20,NRT,5.57,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23618,-71.52442,VIIRS NOAA-20,NRT,3.06,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23743,-71.51331,VIIRS NOAA-20,NRT,3.17,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23649,-71.52165,VIIRS NOAA-20,NRT,3.06,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.23712,-71.51611,VIIRS NOAA-20,NRT,2.77,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.24116,-71.5261,VIIRS NOAA-20,NRT,4.58,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.24146,-71.52341,VIIRS NOAA-20,NRT,3.06,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.24675,-71.52238,VIIRS NOAA-20,NRT,3.93,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.24645,-71.52505,VIIRS NOAA-20,NRT,3.29,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,01:44,2026-11-22,644,-16.24707,-71.51958,VIIRS NOAA-20,NRT,3.93,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-22,02:24,2026-11-22,724,-7.89638,-79.31062,VIIRS NOAA-21,NRT,4.6,nominal,N,La Libertad,Fuera de ANP,,,False,True
+2026-11-22,02:24,2026-11-22,724,-7.90274,-79.31146,VIIRS NOAA-21,NRT,1.66,nominal,N,La Libertad,Fuera de ANP,,,False,True
