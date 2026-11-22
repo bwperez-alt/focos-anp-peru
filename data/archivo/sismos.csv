@@ -21,6 +21,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-26 22:55,-2.771,-78.886,4.1,75,"5 km SW of Azogues, Ecuador",Parque Nacional Ichigkat Muja-Cordillera del Cóndor,106,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tteg,USGS
 2026-10-19 11:41,-7.828,-74.484,4.6,142,"61 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,96,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttrv,USGS
 2026-11-07 00:36,-9.842,-75.796,4.3,109,"37 km E of Churubamba, Peru",Parque Nacional de Tingo María,57,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
+2026-11-09 05:23,-4.949,-75.0,5.3,11,"80 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,67,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
 2026-11-22 00:51,-10.796,-75.963,5.0,108,"15 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,30,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqu,USGS
 2026-11-22 00:09,-7.862,-74.508,4.3,150,"57 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,100,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqn,USGS
 2026-11-21 00:12,-10.913,-76.031,5.0,111,"0 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,15,https://earthquake.usgs.gov/earthquakes/eventpage/us6000uchd,USGS
@@ -39,7 +40,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-11-13 07:37,-10.526,-74.613,4.4,126,"52 km NE of Santa Rosa, Peru",Bosque de Protección San Matias-San Carlos,38,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty0j,USGS
 2026-11-13 05:55,-4.523,-75.328,4.5,10,"86 km NNE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,126,https://earthquake.usgs.gov/earthquakes/eventpage/us7000txza,USGS
 2026-11-13 05:32,-9.132,-74.284,4.4,132,"51 km ESE of Tournavista, Peru",Reserva Comunal El Sira,64,https://earthquake.usgs.gov/earthquakes/eventpage/us7000txz8,USGS
-2026-11-09 05:23,-4.949,-75.0,5.3,11,"80 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,67,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
+2026-11-09 05:23,-4.92,-74.89,5.3,10,"93 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,60,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
 2026-11-07 12:17,-1.851,-81.144,4.7,10,"45 km NNW of Salinas, Ecuador",Reserva Nacional Mar Tropical de Grau,187,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twt8,USGS
 2026-11-07 00:36,-9.906,-75.854,4.3,113,"32 km ESE of Churubamba, Peru",Parque Nacional de Tingo María,61,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
 2026-11-02 10:28,-10.135,-78.544,5.1,55,"43 km W of Huarmey, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Culebras",39,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg,USGS
