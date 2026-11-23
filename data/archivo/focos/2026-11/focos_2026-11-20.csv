@@ -131,7 +131,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-20,02:18,2026-11-20,718,-8.25455,-74.8238,VIIRS NOAA-20,NRT,1.0,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-20,02:18,2026-11-20,718,-8.2614,-74.82469,VIIRS NOAA-20,NRT,1.0,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-20,02:18,2026-11-20,718,-8.67537,-74.55529,VIIRS NOAA-20,NRT,3.41,nominal,N,Huanuco,Fuera de ANP,,,False,True
-2026-11-20,02:18,2026-11-20,718,-4.57855,-81.28515,VIIRS NOAA-20,NRT,2.71,nominal,N,Piura,Fuera de ANP,,,False,True
+2026-11-20,02:18,2026-11-20,718,-4.57855,-81.28515,VIIRS NOAA-20,NRT,2.71,nominal,N,Piura,Fuera de ANP,,,True,False
 2026-11-20,02:20,2026-11-20,720,-9.41594,-76.66015,VIIRS NOAA-20,NRT,8.9,nominal,N,Huanuco,Fuera de ANP,,,False,True
 2026-11-20,02:20,2026-11-20,720,-9.42223,-76.66029,VIIRS NOAA-20,NRT,1.89,nominal,N,Huanuco,Fuera de ANP,,,False,True
 2026-11-20,12:15,2026-11-20,1715,-12.12523,-69.52784,VIIRS NOAA-21,NRT,16.81,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
