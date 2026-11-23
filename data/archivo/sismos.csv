@@ -23,11 +23,12 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-11-07 00:36,-9.842,-75.796,4.3,109,"37 km E of Churubamba, Peru",Parque Nacional de Tingo María,57,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
 2026-11-09 05:23,-4.949,-75.0,5.3,11,"80 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,67,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
 2026-11-22 16:35,-10.835,-76.015,5.4,109,"9 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,23,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuf,USGS
+2026-11-20 19:09,-10.855,-75.978,6.7,108,"9 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,24,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucfm,USGS
 2026-11-22 16:35,-10.835,-76.017,5.4,117,"9 km N of Carhuamayo, Peru",Reserva Nacional de Junín,23,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuf,USGS
 2026-11-22 00:51,-10.796,-75.963,5.0,108,"15 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,30,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqu,USGS
 2026-11-22 00:09,-7.862,-74.508,4.3,150,"57 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,100,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqn,USGS
 2026-11-21 00:12,-10.913,-76.031,5.0,111,"0 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,15,https://earthquake.usgs.gov/earthquakes/eventpage/us6000uchd,USGS
-2026-11-20 19:09,-10.855,-75.978,6.7,108,"9 km NE of Carhuamayo, Peru",Reserva Nacional de Junín,24,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucfm,USGS
+2026-11-20 19:09,-10.889,-75.966,6.7,125,"7 km ENE of Carhuamayo, Peru",Reserva Nacional de Junín,22,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucfm,USGS
 2026-11-19 04:08,-15.384,-76.025,4.7,10,"92 km W of San Juan, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",76,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubyt,USGS
 2026-11-19 00:49,-2.402,-79.82,4.8,69,"23 km SSE of Guayaquil, Ecuador",Santuario Nacional los Manglares de Tumbes,124,https://earthquake.usgs.gov/earthquakes/eventpage/us6000uby4,USGS
 2026-11-18 01:07,-15.144,-75.924,5.9,22,"85 km WNW of San Juan, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomitas",47,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyy8,USGS
