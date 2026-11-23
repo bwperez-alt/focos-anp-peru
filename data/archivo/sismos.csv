@@ -43,6 +43,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-11-13 07:37,-10.526,-74.613,4.4,126,"52 km NE of Santa Rosa, Peru",Bosque de Protección San Matias-San Carlos,38,https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty0j,USGS
 2026-11-13 05:55,-4.523,-75.328,4.5,10,"86 km NNE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,126,https://earthquake.usgs.gov/earthquakes/eventpage/us7000txza,USGS
 2026-11-13 05:32,-9.132,-74.284,4.4,132,"51 km ESE of Tournavista, Peru",Reserva Comunal El Sira,64,https://earthquake.usgs.gov/earthquakes/eventpage/us7000txz8,USGS
+2026-11-10 15:37,-6.33,-80.605,4.0,88,"69 km WNW of Mórrope, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Isla Lobos de Tierra",30,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz2l,USGS
 2026-11-09 05:23,-4.92,-74.89,5.3,10,"93 km ENE of Lagunas, Peru",Reserva Nacional Pacaya-Samiria,60,https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx38,USGS
 2026-11-07 12:17,-1.851,-81.144,4.7,10,"45 km NNW of Salinas, Ecuador",Reserva Nacional Mar Tropical de Grau,187,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twt8,USGS
 2026-11-07 00:36,-9.906,-75.854,4.3,113,"32 km ESE of Churubamba, Peru",Parque Nacional de Tingo María,61,https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqe,USGS
