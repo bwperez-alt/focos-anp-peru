@@ -1,0 +1,41 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-23,00:22,2026-11-23,522,-8.24575,-74.77527,VIIRS NOAA-21,NRT,4.53,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.08605,-71.86419,VIIRS NOAA-21,NRT,24.3,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.08658,-71.86152,VIIRS NOAA-21,NRT,9.66,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-12.8571,-73.90215,VIIRS NOAA-21,NRT,2.75,nominal,N,Ayacucho,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71883,-71.65345,VIIRS NOAA-21,NRT,10.5,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71948,-71.65009,VIIRS NOAA-21,NRT,10.5,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71792,-71.65822,VIIRS NOAA-21,NRT,6.34,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.72009,-71.64692,VIIRS NOAA-21,NRT,4.16,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.72608,-71.644,VIIRS NOAA-21,NRT,6.7,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.72557,-71.64661,VIIRS NOAA-21,NRT,6.7,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.73145,-71.6443,VIIRS NOAA-21,NRT,6.7,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.73097,-71.64676,VIIRS NOAA-21,NRT,6.7,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71839,-71.65458,VIIRS NOAA-21,NRT,10.55,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71912,-71.65092,VIIRS NOAA-21,NRT,10.55,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71975,-71.64774,VIIRS NOAA-21,NRT,5.7,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.71737,-71.65961,VIIRS NOAA-21,NRT,4.18,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.72583,-71.64455,VIIRS NOAA-21,NRT,7.99,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.72528,-71.64731,VIIRS NOAA-21,NRT,7.99,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.73124,-71.64468,VIIRS NOAA-21,NRT,7.99,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.73598,-71.64818,VIIRS NOAA-21,NRT,9.4,alta,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-13.73654,-71.64534,VIIRS NOAA-21,NRT,9.4,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.43458,-69.49504,VIIRS NOAA-21,NRT,1.3,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.24998,-71.51537,VIIRS NOAA-21,NRT,2.21,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25055,-71.51241,VIIRS NOAA-21,NRT,2.21,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25453,-71.51842,VIIRS NOAA-21,NRT,2.21,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25392,-71.52158,VIIRS NOAA-21,NRT,3.2,nominal,N,Arequipa,Zona de amortiguamiento,Reserva Nacional de Salinas y Aguada Blanca,Zona de amortiguamiento,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25101,-71.51414,VIIRS NOAA-21,NRT,2.61,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25041,-71.51711,VIIRS NOAA-21,NRT,2.61,nominal,N,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25493,-71.5202,VIIRS NOAA-21,NRT,1.05,nominal,N,Arequipa,Zona de amortiguamiento,Reserva Nacional de Salinas y Aguada Blanca,Zona de amortiguamiento,False,True
+2026-11-23,00:25,2026-11-23,525,-16.25797,-71.68542,VIIRS NOAA-21,NRT,1.23,nominal,N,Arequipa,Fuera de ANP,,,True,False
+2026-11-23,00:25,2026-11-23,525,-16.73816,-69.83253,VIIRS NOAA-21,NRT,37.37,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74089,-69.84217,VIIRS NOAA-21,NRT,11.9,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74172,-69.83778,VIIRS NOAA-21,NRT,11.9,alta,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74256,-69.83339,VIIRS NOAA-21,NRT,15.51,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74446,-69.84739,VIIRS NOAA-21,NRT,9.95,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74529,-69.84303,VIIRS NOAA-21,NRT,11.9,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74612,-69.83866,VIIRS NOAA-21,NRT,11.9,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74363,-69.85178,VIIRS NOAA-21,NRT,9.95,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,00:25,2026-11-23,525,-16.74885,-69.8483,VIIRS NOAA-21,NRT,3.68,nominal,N,Puno,Fuera de ANP,,,False,True
+2026-11-23,02:05,2026-11-23,705,-12.49695,-74.50568,VIIRS NOAA-21,NRT,2.95,nominal,N,Huancavelica,Fuera de ANP,,,False,True
