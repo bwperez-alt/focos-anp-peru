@@ -62,7 +62,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-21,01:03,2026-11-21,603,-13.78518,-76.17027,VIIRS NOAA-21,NRT,2.84,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-21,01:03,2026-11-21,603,-13.78407,-76.17262,VIIRS NOAA-21,NRT,1.35,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-21,01:03,2026-11-21,603,-13.78492,-76.16782,VIIRS NOAA-21,NRT,1.35,nominal,N,Ica,Fuera de ANP,,,True,False
-2026-11-21,01:03,2026-11-21,603,-13.78872,-76.16851,VIIRS NOAA-21,NRT,0.79,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-21,01:03,2026-11-21,603,-13.78872,-76.16851,VIIRS NOAA-21,NRT,0.79,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-21,01:03,2026-11-21,603,-16.25734,-71.68633,VIIRS NOAA-21,NRT,0.49,nominal,N,Arequipa,Fuera de ANP,,,True,False
 2026-11-21,01:58,2026-11-21,658,-5.53521,-75.95559,VIIRS NOAA-20,NRT,1.54,nominal,N,Loreto,Fuera de ANP,,,False,True
 2026-11-21,02:01,2026-11-21,701,-9.78071,-73.78482,VIIRS NOAA-20,NRT,4.1,nominal,N,Ucayali,Fuera de ANP,,,False,True
@@ -136,7 +136,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-21,13:36,2026-11-21,1836,-16.25257,-71.50959,VIIRS NOAA-21,NRT,19.83,baja,D,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,False
 2026-11-21,13:36,2026-11-21,1836,-16.24897,-71.51088,VIIRS NOAA-21,NRT,19.83,nominal,D,Arequipa,Dentro de ANP,Reserva Nacional de Salinas y Aguada Blanca,Reserva Nacional,False,True
 2026-11-21,13:36,2026-11-21,1836,-15.28957,-74.30161,VIIRS NOAA-21,NRT,2.56,baja,D,Ayacucho,Fuera de ANP,,,False,False
-2026-11-21,13:38,2026-11-21,1838,-13.78821,-76.16962,VIIRS NOAA-21,NRT,6.11,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-21,13:38,2026-11-21,1838,-13.78821,-76.16962,VIIRS NOAA-21,NRT,6.11,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-21,13:38,2026-11-21,1838,-13.7849,-76.17015,VIIRS NOAA-21,NRT,6.11,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-21,13:38,2026-11-21,1838,-13.58511,-76.15247,VIIRS NOAA-21,NRT,4.86,nominal,D,Ica,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-12.24166,-69.21038,VIIRS NOAA-21,NRT,6.72,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
