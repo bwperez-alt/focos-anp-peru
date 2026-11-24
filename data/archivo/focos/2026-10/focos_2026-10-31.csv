@@ -9,7 +9,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-10-31,00:55,2026-10-31,555,-9.48173,-77.28091,VIIRS NOAA-21,NRT,1.49,nominal,N,Ancash,Dentro de ANP,Parque Nacional Huascarán,Parque Nacional,False,True
 2026-10-31,00:57,2026-10-31,557,-11.84039,-72.94706,VIIRS NOAA-21,NRT,0.72,nominal,N,Cusco,Fuera de ANP,,,False,True
 2026-10-31,00:57,2026-10-31,557,-11.84396,-72.94765,VIIRS NOAA-21,NRT,0.72,nominal,N,Cusco,Fuera de ANP,,,False,True
-2026-10-31,00:57,2026-10-31,557,-11.37736,-75.77747,VIIRS NOAA-21,NRT,1.79,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-10-31,00:57,2026-10-31,557,-11.37736,-75.77747,VIIRS NOAA-21,NRT,1.79,nominal,N,Junin,Fuera de ANP,,,True,False
 2026-10-31,00:57,2026-10-31,557,-14.83695,-70.56854,VIIRS NOAA-21,NRT,0.82,nominal,N,Puno,Fuera de ANP,,,False,True
 2026-10-31,01:54,2026-10-31,654,-11.37537,-75.78034,VIIRS NOAA-20,NRT,0.71,nominal,N,Junin,Fuera de ANP,,,False,True
 2026-10-31,01:54,2026-10-31,654,-12.4233,-75.31704,VIIRS NOAA-20,NRT,3.27,nominal,N,Junin,Fuera de ANP,,,False,True

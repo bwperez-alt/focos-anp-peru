@@ -3,7 +3,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-02,01:16,2026-11-02,616,-11.41083,-69.35798,VIIRS NOAA-20,NRT,0.59,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-02,01:16,2026-11-02,616,-11.41451,-69.35853,VIIRS NOAA-20,NRT,2.37,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-02,01:16,2026-11-02,616,-11.41515,-69.35412,VIIRS NOAA-20,NRT,1.48,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
-2026-11-02,01:16,2026-11-02,616,-11.37637,-75.77952,VIIRS NOAA-20,NRT,1.25,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-02,01:16,2026-11-02,616,-11.37637,-75.77952,VIIRS NOAA-20,NRT,1.25,nominal,N,Junin,Fuera de ANP,,,True,False
 2026-11-02,01:16,2026-11-02,616,-12.7669,-74.1909,VIIRS NOAA-20,NRT,3.48,nominal,N,Ayacucho,Fuera de ANP,,,False,True
 2026-11-02,01:18,2026-11-02,618,-15.04203,-70.38979,VIIRS NOAA-20,NRT,0.81,nominal,N,Puno,Fuera de ANP,,,False,True
 2026-11-02,01:18,2026-11-02,618,-15.06563,-70.37982,VIIRS NOAA-20,NRT,5.83,nominal,N,Puno,Fuera de ANP,,,False,True

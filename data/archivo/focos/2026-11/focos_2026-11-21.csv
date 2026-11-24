@@ -54,7 +54,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-21,01:03,2026-11-21,603,-10.57362,-76.17977,VIIRS NOAA-21,NRT,0.72,nominal,N,Pasco,Fuera de ANP,,,False,True
 2026-11-21,01:03,2026-11-21,603,-12.12794,-69.43732,VIIRS NOAA-21,NRT,2.87,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-21,01:03,2026-11-21,603,-12.12807,-69.52998,VIIRS NOAA-21,NRT,3.24,nominal,N,Madre de Dios,Fuera de ANP,,,False,True
-2026-11-21,01:03,2026-11-21,603,-11.37678,-75.77978,VIIRS NOAA-21,NRT,1.17,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-21,01:03,2026-11-21,603,-11.37678,-75.77978,VIIRS NOAA-21,NRT,1.17,nominal,N,Junin,Fuera de ANP,,,True,False
 2026-11-21,01:03,2026-11-21,603,-12.0512,-74.86994,VIIRS NOAA-21,NRT,0.7,nominal,N,Junin,Fuera de ANP,,,False,True
 2026-11-21,01:03,2026-11-21,603,-12.50504,-74.94003,VIIRS NOAA-21,NRT,0.88,nominal,N,Huancavelica,Fuera de ANP,,,False,True
 2026-11-21,01:03,2026-11-21,603,-12.94381,-74.75116,VIIRS NOAA-21,NRT,2.49,nominal,N,Huancavelica,Fuera de ANP,,,False,True
@@ -281,7 +281,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-21,13:38,2026-11-21,1838,-8.42764,-74.53394,VIIRS NOAA-21,NRT,8.96,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.70639,-76.38637,VIIRS NOAA-21,NRT,3.76,nominal,D,Huanuco,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.41961,-74.77746,VIIRS NOAA-21,NRT,8.35,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-21,13:38,2026-11-21,1838,-8.39358,-74.63702,VIIRS NOAA-21,NRT,8.29,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-21,13:38,2026-11-21,1838,-8.39358,-74.63702,VIIRS NOAA-21,NRT,8.29,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-21,13:38,2026-11-21,1838,-8.45114,-74.99771,VIIRS NOAA-21,NRT,5.99,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.82061,-77.53197,VIIRS NOAA-21,NRT,2.65,nominal,D,Ancash,Zona de amortiguamiento,Parque Nacional Huascarán,Zona de amortiguamiento,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.3794,-74.772,VIIRS NOAA-21,NRT,3.22,nominal,D,Ucayali,Fuera de ANP,,,False,True
@@ -298,7 +298,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-21,13:38,2026-11-21,1838,-8.30716,-74.68711,VIIRS NOAA-21,NRT,6.59,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.30779,-74.69104,VIIRS NOAA-21,NRT,6.59,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.39715,-75.25475,VIIRS NOAA-21,NRT,10.23,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-21,13:38,2026-11-21,1838,-8.32112,-74.79723,VIIRS NOAA-21,NRT,2.8,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-21,13:38,2026-11-21,1838,-8.32112,-74.79723,VIIRS NOAA-21,NRT,2.8,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-21,13:38,2026-11-21,1838,-8.64058,-76.93034,VIIRS NOAA-21,NRT,3.86,nominal,D,Huanuco,Fuera de ANP,,,False,True
 2026-11-21,13:38,2026-11-21,1838,-8.25751,-74.55711,VIIRS NOAA-21,NRT,3.85,baja,D,Ucayali,Fuera de ANP,,,False,False
 2026-11-21,13:38,2026-11-21,1838,-8.27784,-74.72813,VIIRS NOAA-21,NRT,8.43,baja,D,Ucayali,Fuera de ANP,,,False,False
