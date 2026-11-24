@@ -491,7 +491,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-19,13:34,2026-11-19,1834,-8.3217,-74.79655,VIIRS NOAA-20,NRT,1.96,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-19,13:34,2026-11-19,1834,-8.31837,-74.79706,VIIRS NOAA-20,NRT,5.28,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-19,13:34,2026-11-19,1834,-8.31889,-74.80059,VIIRS NOAA-20,NRT,5.28,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-19,13:34,2026-11-19,1834,-8.30713,-74.7446,VIIRS NOAA-20,NRT,4.29,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-19,13:34,2026-11-19,1834,-8.30713,-74.7446,VIIRS NOAA-20,NRT,4.29,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-19,13:34,2026-11-19,1834,-8.30379,-74.7451,VIIRS NOAA-20,NRT,6.48,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-19,13:34,2026-11-19,1834,-8.30484,-74.75217,VIIRS NOAA-20,NRT,3.17,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-19,13:34,2026-11-19,1834,-8.30098,-74.74912,VIIRS NOAA-20,NRT,3.17,nominal,D,Ucayali,Fuera de ANP,,,True,False

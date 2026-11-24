@@ -53,7 +53,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-23,01:22,2026-11-23,622,-8.29108,-74.75114,VIIRS NOAA-20,NRT,0.92,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-23,01:22,2026-11-23,622,-8.29785,-74.73039,VIIRS NOAA-20,NRT,0.78,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-23,01:22,2026-11-23,622,-8.30119,-74.73093,VIIRS NOAA-20,NRT,0.78,nominal,N,Ucayali,Fuera de ANP,,,False,True
-2026-11-23,01:22,2026-11-23,622,-8.30559,-74.7462,VIIRS NOAA-20,NRT,0.9,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-23,01:22,2026-11-23,622,-8.30559,-74.7462,VIIRS NOAA-20,NRT,0.9,nominal,N,Ucayali,Fuera de ANP,,,True,False
 2026-11-23,01:22,2026-11-23,622,-8.39157,-74.63662,VIIRS NOAA-20,NRT,0.76,nominal,N,Ucayali,Fuera de ANP,,,False,True
 2026-11-23,01:22,2026-11-23,622,-8.3949,-74.63716,VIIRS NOAA-20,NRT,1.26,nominal,N,Ucayali,Fuera de ANP,,,True,False
 2026-11-23,01:22,2026-11-23,622,-8.31211,-75.33448,VIIRS NOAA-20,NRT,0.7,nominal,N,Ucayali,Fuera de ANP,,,False,True
@@ -403,7 +403,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-23,13:57,2026-11-23,1857,-10.0284,-76.65105,VIIRS NOAA-20,NRT,4.74,nominal,D,Huanuco,Fuera de ANP,,,False,True
 2026-11-23,13:57,2026-11-23,1857,-9.49995,-73.55566,VIIRS NOAA-20,NRT,5.95,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-23,13:57,2026-11-23,1857,-9.5007,-73.55991,VIIRS NOAA-20,NRT,5.95,nominal,D,Ucayali,Fuera de ANP,,,False,True
-2026-11-23,13:57,2026-11-23,1857,-9.49404,-73.54776,VIIRS NOAA-20,NRT,6.81,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-23,13:57,2026-11-23,1857,-9.49404,-73.54776,VIIRS NOAA-20,NRT,6.81,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-23,13:57,2026-11-23,1857,-9.48812,-73.53984,VIIRS NOAA-20,NRT,7.57,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-23,13:57,2026-11-23,1857,-9.48372,-73.5406,VIIRS NOAA-20,NRT,5.96,baja,D,Ucayali,Fuera de ANP,,,False,False
 2026-11-23,13:57,2026-11-23,1857,-9.71476,-74.87099,VIIRS NOAA-20,NRT,3.63,nominal,D,Huanuco,Zona de amortiguamiento,Reserva Comunal El Sira,Zona de amortiguamiento,False,True

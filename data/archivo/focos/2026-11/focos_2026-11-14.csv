@@ -55,7 +55,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-14,13:25,2026-11-14,1825,-11.09933,-74.82321,VIIRS NOAA-20,NRT,7.22,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-14,13:25,2026-11-14,1825,-11.07968,-74.78883,VIIRS NOAA-20,NRT,3.81,nominal,D,Junin,Fuera de ANP,,,False,True
 2026-11-14,13:25,2026-11-14,1825,-11.08023,-74.7927,VIIRS NOAA-20,NRT,4.34,nominal,D,Junin,Fuera de ANP,,,False,True
-2026-11-14,13:25,2026-11-14,1825,-9.49249,-73.54651,VIIRS NOAA-20,NRT,6.16,nominal,D,Ucayali,Fuera de ANP,,,False,True
+2026-11-14,13:25,2026-11-14,1825,-9.49249,-73.54651,VIIRS NOAA-20,NRT,6.16,nominal,D,Ucayali,Fuera de ANP,,,True,False
 2026-11-14,13:25,2026-11-14,1825,-9.48465,-73.54025,VIIRS NOAA-20,NRT,3.82,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-14,13:25,2026-11-14,1825,-9.48519,-73.54389,VIIRS NOAA-20,NRT,5.11,nominal,D,Ucayali,Fuera de ANP,,,False,True
 2026-11-14,13:25,2026-11-14,1825,-9.65599,-75.89712,VIIRS NOAA-20,NRT,6.84,nominal,D,Huanuco,Fuera de ANP,,,False,True
