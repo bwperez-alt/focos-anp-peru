@@ -43,3 +43,25 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-24,01:03,2026-11-24,603,-13.74095,-71.64542,VIIRS NOAA-20,NRT,2.82,nominal,N,Cusco,Fuera de ANP,,,False,True
 2026-11-24,01:03,2026-11-24,603,-13.74208,-71.63855,VIIRS NOAA-20,NRT,1.21,nominal,N,Cusco,Fuera de ANP,,,False,True
 2026-11-24,01:05,2026-11-24,605,-16.25714,-71.68558,VIIRS NOAA-20,NRT,1.36,nominal,N,Arequipa,Fuera de ANP,,,True,False
+2026-11-24,01:46,2026-11-24,646,-6.48441,-76.41792,VIIRS NOAA-21,NRT,3.1,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-6.48207,-76.42051,VIIRS NOAA-21,NRT,1.22,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-6.48257,-76.417,VIIRS NOAA-21,NRT,1.22,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-6.52163,-76.31574,VIIRS NOAA-21,NRT,3.01,nominal,N,San Martin,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-7.21908,-75.32934,VIIRS NOAA-21,NRT,0.81,nominal,N,Loreto,Zona de amortiguamiento,Parque Nacional Cordillera Azul,Zona de amortiguamiento,False,True
+2026-11-24,01:46,2026-11-24,646,-7.58997,-74.82574,VIIRS NOAA-21,NRT,1.12,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-7.9546,-75.15214,VIIRS NOAA-21,NRT,1.05,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-7.95332,-75.15367,VIIRS NOAA-21,NRT,1.36,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.11715,-75.20737,VIIRS NOAA-21,NRT,2.99,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.11778,-75.20291,VIIRS NOAA-21,NRT,1.54,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.14109,-75.13385,VIIRS NOAA-21,NRT,0.74,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.1628,-75.10936,VIIRS NOAA-21,NRT,1.11,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.16663,-75.11452,VIIRS NOAA-21,NRT,0.98,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.24822,-74.77088,VIIRS NOAA-21,NRT,2.25,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.39284,-74.636,VIIRS NOAA-21,NRT,1.63,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-8.56448,-74.41329,VIIRS NOAA-21,NRT,0.97,nominal,N,Ucayali,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-9.05606,-78.60298,VIIRS NOAA-21,NRT,1.86,nominal,N,Ancash,Fuera de ANP,,,True,False
+2026-11-24,01:46,2026-11-24,646,-9.95444,-76.49232,VIIRS NOAA-21,NRT,1.89,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-9.96399,-76.69861,VIIRS NOAA-21,NRT,2.26,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-24,01:46,2026-11-24,646,-10.94213,-75.85919,VIIRS NOAA-21,NRT,0.56,nominal,N,Junin,Fuera de ANP,,,False,True
+2026-11-24,01:48,2026-11-24,648,-11.84116,-72.94598,VIIRS NOAA-21,NRT,1.87,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,01:48,2026-11-24,648,-11.84663,-72.94675,VIIRS NOAA-21,NRT,1.46,nominal,N,Cusco,Fuera de ANP,,,True,False
