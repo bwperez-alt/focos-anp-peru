@@ -1,0 +1,10 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-24,00:08,2026-11-24,508,-13.70535,-71.64375,VIIRS NOAA-21,NRT,5.83,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.71534,-71.63111,VIIRS NOAA-21,NRT,6.83,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.71287,-71.64256,VIIRS NOAA-21,NRT,5.83,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.71439,-71.63551,VIIRS NOAA-21,NRT,6.83,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.74254,-71.63976,VIIRS NOAA-21,NRT,4.62,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.70333,-71.64616,VIIRS NOAA-21,NRT,5.25,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.71381,-71.63179,VIIRS NOAA-21,NRT,8.29,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.71112,-71.64387,VIIRS NOAA-21,NRT,4.49,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-24,00:08,2026-11-24,508,-13.71282,-71.63624,VIIRS NOAA-21,NRT,4.49,nominal,N,Cusco,Fuera de ANP,,,False,True
