@@ -29,6 +29,7 @@ t,lat,lon,mag,prof_km,ref,anp_cercana,dist_anp_km,url,fuente
 2026-10-24 05:01,-18.476,-69.261,4.3,123,"94 km N of Camiña, Chile",Zona Reservada Reserva Paisajística Cerro Khapia,235,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lu,USGS
 2026-10-25 12:11,-16.015,-73.381,4.7,66,"22 km W of Urasqui, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Atico",43,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4v1,USGS
 2026-10-25 02:11,-16.052,-74.727,4.6,35,"48 km SW of Atiquipa, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta Lomas",54,https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4t4,USGS
+2026-11-24 17:36,-15.384,-75.766,4.5,10,"64 km W of San Juan, Peru","Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras - Punta San Juan",60,https://earthquake.usgs.gov/earthquakes/eventpage/us6000udcc,USGS
 2026-11-22 16:35,-10.835,-76.017,5.4,117,"9 km N of Carhuamayo, Peru",Reserva Nacional de Junín,23,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuf,USGS
 2026-11-22 00:51,-10.796,-75.963,5.0,108,"15 km NNE of Carhuamayo, Peru",Reserva Nacional de Junín,30,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqu,USGS
 2026-11-22 00:09,-7.862,-74.508,4.3,150,"57 km N of Pucallpa, Peru",Parque Nacional Sierra del Divisor,100,https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucqn,USGS
