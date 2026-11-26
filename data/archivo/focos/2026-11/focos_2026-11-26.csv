@@ -1,0 +1,7 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-26,01:09,2026-11-26,609,-10.3271,-76.36947,VIIRS NOAA-21,NRT,1.62,nominal,N,Pasco,Fuera de ANP,,,False,True
+2026-11-26,01:09,2026-11-26,609,-10.33069,-76.37064,VIIRS NOAA-21,NRT,2.13,nominal,N,Pasco,Fuera de ANP,,,False,True
+2026-11-26,01:09,2026-11-26,609,-10.33435,-76.37137,VIIRS NOAA-21,NRT,2.13,nominal,N,Pasco,Fuera de ANP,,,False,True
+2026-11-26,02:05,2026-11-26,705,-8.95898,-76.9492,VIIRS NOAA-20,NRT,2.98,nominal,N,Huanuco,Fuera de ANP,,,False,True
+2026-11-26,02:07,2026-11-26,707,-11.90761,-77.06992,VIIRS NOAA-20,NRT,1.12,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-26,02:07,2026-11-26,707,-12.11814,-76.72389,VIIRS NOAA-20,NRT,1.13,nominal,N,Lima,Fuera de ANP,,,False,True
