@@ -36,3 +36,4 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-26,13:45,2026-11-26,1845,-11.16183,-77.30141,VIIRS NOAA-21,NRT,1.81,nominal,D,Lima,Fuera de ANP,,,False,True
 2026-11-26,13:47,2026-11-26,1847,-7.74043,-79.17247,VIIRS NOAA-21,NRT,2.64,nominal,D,La Libertad,Fuera de ANP,,,False,True
 2026-11-26,13:47,2026-11-26,1847,-7.74095,-79.17593,VIIRS NOAA-21,NRT,10.94,nominal,D,La Libertad,Fuera de ANP,,,False,True
+2026-11-26,14:40,2026-11-26,1940,-13.78891,-76.16454,VIIRS NOAA-20,NRT,2.98,nominal,D,Ica,Fuera de ANP,,,True,False

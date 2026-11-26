@@ -414,5 +414,5 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-21,13:40,2026-11-21,1840,-3.24748,-77.87361,VIIRS NOAA-21,NRT,4.78,baja,D,Amazonas,Zona de amortiguamiento,Parque Nacional Ichigkat Muja-Cordillera del Cóndor,Zona de amortiguamiento,False,False
 2026-11-21,13:40,2026-11-21,1840,-2.94921,-76.39036,VIIRS NOAA-21,NRT,8.45,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-21,13:40,2026-11-21,1840,-2.61857,-76.63542,VIIRS NOAA-21,NRT,7.98,baja,D,Loreto,Fuera de ANP,,,False,False
-2026-11-21,14:34,2026-11-21,1934,-13.79,-76.16736,VIIRS NOAA-20,NRT,3.56,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-21,14:34,2026-11-21,1934,-13.79,-76.16736,VIIRS NOAA-20,NRT,3.56,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-21,14:34,2026-11-21,1934,-13.78796,-76.16602,VIIRS NOAA-20,NRT,5.06,nominal,D,Ica,Fuera de ANP,,,True,False

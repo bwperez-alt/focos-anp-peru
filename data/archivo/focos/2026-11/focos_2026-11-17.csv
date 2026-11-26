@@ -255,7 +255,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-17,14:10,2026-11-17,1910,-13.40966,-73.61007,VIIRS NOAA-20,NRT,2.04,baja,D,Apurimac,Fuera de ANP,,,False,False
 2026-11-17,14:10,2026-11-17,1910,-13.46701,-74.17599,VIIRS NOAA-20,NRT,10.41,nominal,D,Ayacucho,Fuera de ANP,,,False,True
 2026-11-17,14:10,2026-11-17,1910,-13.46966,-74.17895,VIIRS NOAA-20,NRT,7.6,baja,D,Ayacucho,Fuera de ANP,,,False,False
-2026-11-17,14:10,2026-11-17,1910,-13.78896,-76.16776,VIIRS NOAA-20,NRT,9.58,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-17,14:10,2026-11-17,1910,-13.78896,-76.16776,VIIRS NOAA-20,NRT,9.58,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-17,14:10,2026-11-17,1910,-13.63909,-76.0607,VIIRS NOAA-20,NRT,7.25,nominal,D,Ica,Fuera de ANP,,,False,True
 2026-11-17,14:10,2026-11-17,1910,-12.89167,-73.54162,VIIRS NOAA-20,NRT,4.42,nominal,D,Ayacucho,Fuera de ANP,,,False,True
 2026-11-17,14:10,2026-11-17,1910,-12.85166,-73.55474,VIIRS NOAA-20,NRT,3.04,nominal,D,Cusco,Fuera de ANP,,,False,True
