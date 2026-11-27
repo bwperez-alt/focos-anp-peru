@@ -1,0 +1,4 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-27,00:10,2026-11-27,510,-17.48349,-71.3713,VIIRS NOAA-20,NRT,3.56,nominal,N,Moquegua,Fuera de ANP,,,False,True
+2026-11-27,00:10,2026-11-27,510,-17.48538,-71.36322,VIIRS NOAA-20,NRT,3.56,nominal,N,Moquegua,Fuera de ANP,,,False,True
+2026-11-27,00:10,2026-11-27,510,-17.48886,-71.36355,VIIRS NOAA-20,NRT,5.35,nominal,N,Moquegua,Fuera de ANP,,,True,False
