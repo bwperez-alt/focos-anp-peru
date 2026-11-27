@@ -17,7 +17,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-14,12:28,2026-11-14,1728,-12.02202,-69.0765,VIIRS NOAA-21,NRT,8.56,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-14,12:28,2026-11-14,1728,-11.75854,-69.18092,VIIRS NOAA-21,NRT,9.32,nominal,D,Madre de Dios,Fuera de ANP,,,False,True
 2026-11-14,13:23,2026-11-14,1823,-17.49152,-71.35875,VIIRS NOAA-20,NRT,7.96,nominal,D,Moquegua,Fuera de ANP,,,True,False
-2026-11-14,13:23,2026-11-14,1823,-17.49208,-71.36253,VIIRS NOAA-20,NRT,7.96,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-11-14,13:23,2026-11-14,1823,-17.49208,-71.36253,VIIRS NOAA-20,NRT,7.96,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-11-14,13:25,2026-11-14,1825,-14.70153,-71.191,VIIRS NOAA-20,NRT,4.31,nominal,D,Cusco,Fuera de ANP,,,False,True
 2026-11-14,13:25,2026-11-14,1825,-14.54244,-70.72696,VIIRS NOAA-20,NRT,3.36,nominal,D,Puno,Fuera de ANP,,,False,True
 2026-11-14,13:25,2026-11-14,1825,-13.01997,-69.78075,VIIRS NOAA-20,NRT,2.64,nominal,D,Madre de Dios,Dentro de ANP,Reserva Nacional Tambopata,Reserva Nacional,False,True

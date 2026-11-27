@@ -2,3 +2,16 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-27,00:10,2026-11-27,510,-17.48349,-71.3713,VIIRS NOAA-20,NRT,3.56,nominal,N,Moquegua,Fuera de ANP,,,False,True
 2026-11-27,00:10,2026-11-27,510,-17.48538,-71.36322,VIIRS NOAA-20,NRT,3.56,nominal,N,Moquegua,Fuera de ANP,,,False,True
 2026-11-27,00:10,2026-11-27,510,-17.48886,-71.36355,VIIRS NOAA-20,NRT,5.35,nominal,N,Moquegua,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-13.15774,-76.35886,VIIRS NOAA-21,NRT,14.84,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-27,00:52,2026-11-27,552,-13.15672,-76.36429,VIIRS NOAA-21,NRT,14.84,nominal,N,Lima,Fuera de ANP,,,False,True
+2026-11-27,00:52,2026-11-27,552,-13.78523,-76.17001,VIIRS NOAA-21,NRT,2.03,nominal,N,Ica,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-13.78838,-76.16785,VIIRS NOAA-21,NRT,2.61,nominal,N,Ica,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-16.25648,-71.68415,VIIRS NOAA-21,NRT,1.56,nominal,N,Arequipa,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-16.40381,-71.66728,VIIRS NOAA-21,NRT,0.79,nominal,N,Arequipa,Fuera de ANP,,,False,True
+2026-11-27,00:52,2026-11-27,552,-17.48531,-71.36012,VIIRS NOAA-21,NRT,1.06,nominal,N,Moquegua,Fuera de ANP,,,False,True
+2026-11-27,00:52,2026-11-27,552,-17.48868,-71.36081,VIIRS NOAA-21,NRT,1.06,nominal,N,Moquegua,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-17.48933,-71.35691,VIIRS NOAA-21,NRT,1.06,nominal,N,Moquegua,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-17.49208,-71.3614,VIIRS NOAA-21,NRT,9.6,nominal,N,Moquegua,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-17.49273,-71.35751,VIIRS NOAA-21,NRT,9.6,nominal,N,Moquegua,Fuera de ANP,,,True,False
+2026-11-27,00:52,2026-11-27,552,-17.49949,-71.3588,VIIRS NOAA-21,NRT,1.65,nominal,N,Moquegua,Fuera de ANP,,,False,True
+2026-11-27,00:52,2026-11-27,552,-17.77725,-71.18614,VIIRS NOAA-21,NRT,0.84,nominal,N,Moquegua,Fuera de ANP,,,False,True

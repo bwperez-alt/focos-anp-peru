@@ -25,7 +25,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-10-30,13:06,2026-10-30,1806,-17.4939,-71.35712,VIIRS NOAA-20,NRT,8.86,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-10-30,13:06,2026-10-30,1806,-17.4897,-71.35774,VIIRS NOAA-20,NRT,8.86,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-10-30,13:06,2026-10-30,1806,-17.49326,-71.356,VIIRS NOAA-20,NRT,12.94,nominal,D,Moquegua,Fuera de ANP,,,False,True
-2026-10-30,13:06,2026-10-30,1806,-17.49382,-71.3604,VIIRS NOAA-20,NRT,12.94,nominal,D,Moquegua,Fuera de ANP,,,False,True
+2026-10-30,13:06,2026-10-30,1806,-17.49382,-71.3604,VIIRS NOAA-20,NRT,12.94,nominal,D,Moquegua,Fuera de ANP,,,True,False
 2026-10-30,13:06,2026-10-30,1806,-14.56379,-70.30883,VIIRS NOAA-20,NRT,10.61,nominal,D,Puno,Fuera de ANP,,,False,True
 2026-10-30,13:06,2026-10-30,1806,-14.56001,-70.30933,VIIRS NOAA-20,NRT,10.61,baja,D,Puno,Fuera de ANP,,,False,False
 2026-10-30,13:06,2026-10-30,1806,-14.56326,-70.30661,VIIRS NOAA-20,NRT,11.46,baja,D,Puno,Fuera de ANP,,,False,False
