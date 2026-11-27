@@ -514,7 +514,7 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-24,13:40,2026-11-24,1840,-4.02227,-70.58324,VIIRS NOAA-20,NRT,5.79,nominal,D,Loreto,Fuera de ANP,,,False,True
 2026-11-24,13:40,2026-11-24,1840,-4.86906,-80.74964,VIIRS NOAA-20,NRT,4.1,nominal,D,Piura,Fuera de ANP,,,False,True
 2026-11-24,14:21,2026-11-24,1921,-13.78838,-76.16912,VIIRS NOAA-21,NRT,3.78,nominal,D,Ica,Fuera de ANP,,,True,False
-2026-11-24,14:21,2026-11-24,1921,-13.78333,-76.16994,VIIRS NOAA-21,NRT,2.88,nominal,D,Ica,Fuera de ANP,,,False,True
+2026-11-24,14:21,2026-11-24,1921,-13.78333,-76.16994,VIIRS NOAA-21,NRT,2.88,nominal,D,Ica,Fuera de ANP,,,True,False
 2026-11-24,14:21,2026-11-24,1921,-13.08501,-73.89903,VIIRS NOAA-21,NRT,6.52,baja,D,Ayacucho,Fuera de ANP,,,False,False
 2026-11-24,14:21,2026-11-24,1921,-12.61533,-74.29643,VIIRS NOAA-21,NRT,32.35,alta,D,Ayacucho,Fuera de ANP,,,False,True
 2026-11-24,14:21,2026-11-24,1921,-12.61469,-74.29337,VIIRS NOAA-21,NRT,32.6,nominal,D,Ayacucho,Fuera de ANP,,,False,True

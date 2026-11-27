@@ -47,8 +47,8 @@ fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confia
 2026-11-18,01:58,2026-11-18,658,-12.64495,-74.49904,VIIRS NOAA-21,NRT,3.65,nominal,N,Huancavelica,Fuera de ANP,,,False,True
 2026-11-18,01:58,2026-11-18,658,-12.66543,-74.42813,VIIRS NOAA-21,NRT,5.72,nominal,N,Huancavelica,Fuera de ANP,,,False,True
 2026-11-18,01:58,2026-11-18,658,-13.7851,-76.17023,VIIRS NOAA-21,NRT,4.66,nominal,N,Ica,Fuera de ANP,,,True,False
-2026-11-18,01:58,2026-11-18,658,-13.78374,-76.16801,VIIRS NOAA-21,NRT,2.18,nominal,N,Ica,Fuera de ANP,,,False,True
-2026-11-18,01:58,2026-11-18,658,-13.78332,-76.17181,VIIRS NOAA-21,NRT,2.18,nominal,N,Ica,Fuera de ANP,,,False,True
+2026-11-18,01:58,2026-11-18,658,-13.78374,-76.16801,VIIRS NOAA-21,NRT,2.18,nominal,N,Ica,Fuera de ANP,,,True,False
+2026-11-18,01:58,2026-11-18,658,-13.78332,-76.17181,VIIRS NOAA-21,NRT,2.18,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-18,01:58,2026-11-18,658,-13.78934,-76.16874,VIIRS NOAA-21,NRT,1.19,nominal,N,Ica,Fuera de ANP,,,True,False
 2026-11-18,02:01,2026-11-18,701,-9.32592,-77.07046,VIIRS NOAA-21,NRT,4.42,nominal,N,Ancash,Fuera de ANP,,,False,True
 2026-11-18,02:01,2026-11-18,701,-9.33131,-77.06765,VIIRS NOAA-21,NRT,3.09,nominal,N,Ancash,Fuera de ANP,,,False,True
