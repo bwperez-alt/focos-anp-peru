@@ -1,0 +1,5 @@
+fecha_pe,hora_pe,acq_date,acq_time,latitude,longitude,sensor,producto,frp,confianza,daynight,departamento,zona,area,categoria,persistente,valido
+2026-11-28,00:31,2026-11-28,531,-7.99759,-74.93872,VIIRS NOAA-21,NRT,0.84,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-28,00:31,2026-11-28,531,-8.00403,-74.93993,VIIRS NOAA-21,NRT,1.61,nominal,N,Loreto,Fuera de ANP,,,False,True
+2026-11-28,00:31,2026-11-28,531,-11.83869,-72.94559,VIIRS NOAA-21,NRT,0.77,nominal,N,Cusco,Fuera de ANP,,,False,True
+2026-11-28,00:31,2026-11-28,531,-11.84402,-72.94662,VIIRS NOAA-21,NRT,1.91,nominal,N,Cusco,Fuera de ANP,,,True,False
